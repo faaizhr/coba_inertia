@@ -21,9 +21,7 @@
 <script>
 
   export default {
-    name: "SecondaryCard"
+    name: "BasicCard"
   }
 
 </script>
-
-<style></style>

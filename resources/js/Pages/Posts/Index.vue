@@ -1,9 +1,42 @@
 <template>
+
+<div class="card border-0 rounded shadow-sm">
+          <div class="card-body">
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col">TITLE</th>
+                          <th scope="col">CONTENT</th>
+                          <th scope="col">CATEGORY</th>
+                          <th scope="col">IMAGE</th>
+                          <th scope="col">CREATED_AT</th>
+                          <th scope="col">ACTIONS</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr v-for="post in posts" :key="post.id">
+                          <td>{{ post.title }}haloo</td>
+                          <td>{{ post.content }}</td>
+                          <td>{{ post.category }}</td>
+                          <td>{{ post.image }}</td>
+                          <td>{{ post.created_at }}</td>
+                          <td class="text-center">
+                            <inertia-link :href="`/posts/${post.id}/edit`" class="btn btn-sm btn-primary me-2">EDIT</inertia-link>
+                            <button @click.prevent="deletePost(`${post.id}`)" class="btn btn-sm btn-danger">DELETE</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      <!-- <button @click="cekconsole" class="w-52 h-10 bg-neutral-500">CEK CONSOLE LOG</button> -->
+      <!-- <h1>{{ number.x }} + {{ number.y }} = {{ number.jumlah }} HALLOOOO</h1> -->
+
     <div class="px-6 sm:px-8 md:px-8 xl:px-72">
       <div class="py-1 text-sm">
        <p><inertia-link to="/">Beranda </inertia-link>> <b>Artikel</b></p>
       </div>
-      <inertia-link href="/detail" class="btn btn-md btn-primary">Detail</inertia-link>
       <div class="mb-20">
         <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center">
           <h1 class="text-3xl font-bold text-center md:text-left mb-5 md:mb-0">Bacaan Untukmu</h1>
@@ -47,12 +80,12 @@
         </div>
       </div>
       <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-        <SecondaryCard/>
-        <SecondaryCard/>
-        <SecondaryCard/>
-        <SecondaryCard/>
-        <SecondaryCard/>
-        <SecondaryCard/>
+        <BasicCard/>
+        <BasicCard/>
+        <BasicCard/>
+        <BasicCard/>
+        <BasicCard/>
+        <BasicCard/>
       </div>
       <div class="flex justify-center mt-10">
         <button class="bg-white px-5 py-1 rounded-lg ">Load More</button>
@@ -69,39 +102,69 @@
   import { Inertia } from '@inertiajs/inertia'
 
   //import component
-    import MainCard from '../../Components/MainCard.vue';
-    import SmallCard from '../../Components/SmallCard.vue'
-    import SecondaryCard from '../../Components/SecondaryCard.vue'
+  import MainCard from '../../Components/MainCard.vue';
+  import SmallCard from '../../Components/SmallCard.vue'
+  import BasicCard from '../../Components/BasicCard.vue';
+  // import SecondaryCard from '../../Components/SecondaryCard.vue';
+
+  
 
   export default {
 
-      //layout
-      layout: LayoutApp,
+    layout: LayoutApp,
       
-      //register Link di component
-      components: {
+    components: {
         'inertia-link': Link,
         MainCard,
-        SecondaryCard,
-        SmallCard
-      },
+        SmallCard,
+        BasicCard
+        // SecondaryCard
+    },
 
-      //props
-      props: {
-          posts: Array // <- nama props yang dibuat di controller saat parsing data
-      },
-
-       //define Composition Api
-       setup() {
-        //method deletePost
-        function deletePost(id) {
-            Inertia.delete(`/posts/${id}`)
-        }
+    props: {
+        posts: Array // <- nama props yang dibuat di controller saat parsing data
+    },
+    
+    data() {
         return {
-            deletePost
-        }
+        dropDown: false,
+        // number: [
+        //   x = 1,
+        //   y = 2,
+        //   jumlah = null
+        // ]
+        };
+    },
+    methods: {
+        setPokes(data) {
+        this.pokemon = data;
+        },
+        handleDropdown() {
+            if (this.dropDown == false) {
+                this.dropDown = true;
+            } else if (this.dropDown == true) {
+                this.dropDown = false
+            }
+        },
+    },
 
+    // computed: {
+    //   jumlah: function() {
+    //     return this.number.x + this.number.y
+    //   }
+    // },
+
+    setup() {
+      function deletePost(id) {
+        Inertia.delete(`/posts/${id}`)
       }
+      return {
+        deletePost
+      }
+    },
+    log() {
+      console.log("HAALOOO");
+    }
   }
 </script>
 
