@@ -50,9 +50,12 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        return Inertia::render('Posts/Detail');
+        $post = Post::find($id);
+        return Inertia::render('Blog/Detail', [
+            'post'=>$post
+        ]);
     }
 
     /**
@@ -63,7 +66,9 @@ class BlogController extends Controller
      */
     public function edit(Post $post)
     {
-
+        return Inertia::render('Blog/Edit', [
+            'post'=>$post
+        ]);
     }
 
     /**

@@ -15,21 +15,19 @@
             <table class="bg-white rounded-2xl min-w-full">
               <thead class="bg-black rounded-3xl">
                 <tr class="">
+                  <th class="py-3 text-white">IMAGE</th>
                   <th class="py-3 text-white">TITLE</th>
                   <th class="py-3 text-white">CONTENT</th>
                   <th class="py-3 text-white">CATEGORY</th>
-                  <th class="py-3 text-white">IMAGE</th>
-                  <th class="py-3 text-white">CREATED_AT</th>
                   <th class="py-3 text-white">ACTIONS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="post in posts" :key="post.id">
+                  <td class="py-2 px-2"><img :src="post.image"/></td>
                   <td class="py-2 px-2">{{ post.title }}</td>
                   <td class="py-2 px-2">{{ post.content }}</td>
                   <td class="py-2 px-2">{{ post.category }}</td>
-                  <td class="py-2 px-2"><img :src="post.image"/></td>
-                  <td class="py-2 px-2">{{ post.created_at }}</td>
                   <td class="py-2 px-2 text-center">
                     <inertia-link :href="`/posts/${post.id}/edit`" class=""><button class="bg-black px-5 py-1 rounded-xl hover:bg-white mb-2 text-white hover:text-black">EDIT</button></inertia-link>
                     <button @click.prevent="deletePost(`${post.id}`)" class="bg-red-700 px-5 py-1 text-white rounded-xl">DELETE</button>
@@ -82,12 +80,6 @@
     data() {
         return {
         dropDown: false,
-
-        dataPost: function() {
-          var theData =  {
-            somevar: this.posts
-          }
-        }
         // number: [
         //   x = 1,
         //   y = 2,
@@ -108,12 +100,6 @@
         },
     },
 
-    // computed: {
-    //   jumlah: function() {
-    //     return this.number.x + this.number.y
-    //   }
-    // },
-
     setup() {
       function deletePost(id) {
         Inertia.delete(`/posts/${id}`)
@@ -122,9 +108,6 @@
         deletePost
       }
     },
-    log() {
-      console.log("HAALOOO");
-    }
   }
 </script>
 

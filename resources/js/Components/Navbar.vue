@@ -6,7 +6,7 @@
       </div>
       <div class=" w-full md:grid md:justify-items-end hidden">
         <div class="">
-          <a class="mr-5"><inertia-link href="/admin">Beranda</inertia-link></a>
+          <a class="mr-5"><inertia-link href="/artikel">Beranda</inertia-link></a>
           <a class="mr-5">Bantuan</a>
           <a class="mr-5">Tentang Kami</a>
           <a class="mr-5">Artikel</a>

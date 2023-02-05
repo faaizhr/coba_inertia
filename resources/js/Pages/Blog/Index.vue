@@ -1,10 +1,6 @@
 <template>
   
-        <!-- <button @click="cekconsole" class="w-52 h-10 bg-neutral-500">CEK CONSOLE LOG</button> -->
-        <!-- <h1>{{ number.x }} + {{ number.y }} = {{ number.jumlah }} HALLOOOO</h1> -->
-  
       <div class="px-6 sm:px-8 md:px-8 xl:px-72">
-        <h1 class="text-3xl text-red-600">INI DI BLOGG</h1>
         <div class="py-1 text-sm">
          <p><inertia-link to="/">Beranda </inertia-link>> <b>Artikel</b></p>
         </div>
@@ -16,12 +12,25 @@
   
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="">
-              <MainCard/>
+              <MainCard v-for="post in posts.slice(0, 1)" 
+                :key="post.id" 
+                :title="post.title" 
+                :content="post.content" 
+                :image="post.image" 
+                :category="post.category" 
+                :index="index"
+              />
             </div>
             <div class="">
-              <SmallCard/>
-              <SmallCard/>
-              <SmallCard/>
+              <SmallCard
+              v-for="post in posts.slice(1, 4)" 
+                :key="post.id" 
+                :id="post.id" 
+                :title="post.title" 
+                :content="post.content" 
+                :image="post.image" 
+                :category="post.category" 
+                :index="index"/>
             </div>
           </div>
           
@@ -51,12 +60,14 @@
           </div>
         </div>
         <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-          <BasicCard/>
-          <BasicCard/>
-          <BasicCard/>
-          <BasicCard/>
-          <BasicCard/>
-          <BasicCard/>
+          <BasicCard v-for="post in posts" 
+            :key="post.id"
+            :id="post.id"  
+            :title="post.title" 
+            :content="post.content" 
+            :image="post.image" 
+            :category="post.category" 
+            :index="index"/>
         </div>
         <div class="flex justify-center mt-10">
           <button class="bg-white px-5 py-1 rounded-lg ">Load More</button>

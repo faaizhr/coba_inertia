@@ -72,7 +72,7 @@ class PostController extends Controller
      */
     public function show()
     {
-        return Inertia::render('Posts/Detail');
+        // 
     }
 
     /**
