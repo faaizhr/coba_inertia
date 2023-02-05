@@ -19,7 +19,7 @@
 
 <template>
     <div class=" px-6 sm:px-8 md:px-8 xl:px-72 mx-auto py-1 text-sm">
-     <p><inertia-link href="/">Beranda </inertia-link>> <b>Artikel</b> > <b>Apa Itu Sugar Craving dan Cara Mengelolanya?</b></p>
+     <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b>Apa Itu Sugar Craving dan Cara Mengelolanya?</b></p>
     </div>
     <div class="px-6 sm:px-8 md:px-8 xl:px-72 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
 

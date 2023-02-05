@@ -47,12 +47,16 @@ class PostController extends Controller
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
+            'image' => 'required',
+            'category' => 'required',
         ]);
 
         //create post
         $post = Post::create([
             'title'     => $request->title,
-            'content'   => $request->content
+            'content'   => $request->content,
+            'image'   => $request->image,
+            'category'   => $request->category
         ]);
 
         if($post) {
@@ -68,7 +72,7 @@ class PostController extends Controller
      */
     public function show()
     {
-        // return Inertia::render('Posts/Create');
+        return Inertia::render('Posts/Detail');
     }
 
     /**
@@ -97,12 +101,16 @@ class PostController extends Controller
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
+            'image' => 'required',
+            'category' => 'required',
         ]);
 
         //update post
         $post->update([
             'title'     => $request->title,
-            'content'   => $request->content
+            'content'   => $request->content,
+            'image'   => $request->image,
+            'category'   => $request->category
         ]);
 
         if($post) {

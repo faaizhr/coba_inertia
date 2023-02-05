@@ -10,10 +10,10 @@
       </div>
       <div class="mt-2">
         <h6 class="my-3 text-xl font-semibold">Apa Itu Sugar Craving dan Cara Mengelolanya?</h6>
-        <router-link to="/detail" class="font-bold text-gray-500">
+        <inertia-link href="/posts/detail" class="font-bold text-gray-500">
           Selengkapnya
           <font-awesome-icon icon="fa-solid fa-arrow-right" class="ml-1"/>
-        </router-link>
+        </inertia-link>
       </div>
     </div>
   </div>
@@ -21,10 +21,14 @@
 
 <script>
 
-
+import { Link } from '@inertiajs/inertia-vue3';
+import { Inertia } from '@inertiajs/inertia'
 
 export default {
-name: "MainCard"
+  name: "MainCard",
+  components: {
+    'inertia-link': Link,
+  },
 }
 
 </script>

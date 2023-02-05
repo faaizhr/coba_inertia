@@ -6,7 +6,7 @@
       </div>
       <div class=" w-full md:grid md:justify-items-end hidden">
         <div class="">
-          <a class="mr-5">Beranda</a>
+          <a class="mr-5"><inertia-link href="/admin">Beranda</inertia-link></a>
           <a class="mr-5">Bantuan</a>
           <a class="mr-5">Tentang Kami</a>
           <a class="mr-5">Artikel</a>
@@ -32,7 +32,7 @@
         <li class="py-5">
           <button class="rounded-lg px-5 py-2 bg-white text-sm font-semibold">Get the app</button>
         </li>
-        <li class="text-white py-3">Beranda</li>
+        <li class="text-white py-3"><inertia-link href="/posts">Beranda</inertia-link></li>
         <li class="text-white py-3">Bantuan</li>
         <li class="text-white py-3">Tentang Kami</li>
         <li class="text-white py-3">Artikel</li>
@@ -49,9 +49,15 @@
 
 <script>
 
+import { Link } from '@inertiajs/inertia-vue3';
+import { Inertia } from '@inertiajs/inertia'
+
 export default {
   name: "Navbar",
-    data() {
+  components: {
+    'inertia-link': Link,
+  },
+  data() {
     return {
       toggleNavbar: false
     };

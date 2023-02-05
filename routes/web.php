@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('/posts', \App\Http\Controllers\PostController::class);
-Route::inertia('detail', 'Posts/Detail');
+Route::resource('/artikel', \App\Http\Controllers\BlogController::class);
