@@ -74,7 +74,7 @@
     },
 
     props: {
-        posts: Array // <- nama props yang dibuat di controller saat parsing data
+        posts: Array, // <- nama props yang dibuat di controller saat parsing data
     },
     
     data() {

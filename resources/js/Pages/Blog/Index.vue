@@ -19,6 +19,8 @@
                 :content="post.content" 
                 :image="post.image" 
                 :category="post.category" 
+                :ditulis_oleh="post.ditulis_oleh" 
+                :ditinjau_oleh="post.ditinjau_oleh" 
                 :index="index"
               />
             </div>
@@ -31,6 +33,8 @@
                 :content="post.content" 
                 :image="post.image" 
                 :category="post.category" 
+                :ditulis_oleh="post.ditulis_oleh" 
+                :ditinjau_oleh="post.ditinjau_oleh" 
                 :index="index"/>
             </div>
           </div>
@@ -51,11 +55,7 @@
             class="border border-white text-white w-4/6 mx-auto static m-0 md:ml-auto md:mr-0 z-50"
             :style="{ display: dropDown ? 'block' : 'none' }">
             <ul> 
-              <li class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">Active Lifestyle</li>
-              <li class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">Cardiovascular</li>
-              <li class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">Diabetes</li>
-              <li class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">Diet Program</li>
-              <li class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">Healthy Eating</li>
+              <li v-for="kategori in category" class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">{{ kategori.category }}</li>
             </ul>
           </div>
         </div>
@@ -67,6 +67,8 @@
             :content="post.content" 
             :image="post.image" 
             :category="post.category" 
+            :ditulis_oleh="post.ditulis_oleh" 
+            :ditinjau_oleh="post.ditinjau_oleh" 
             :index="index"/>
         </div>
         <div class="flex justify-center mt-10">
@@ -87,6 +89,7 @@
     import MainCard from '../../Components/MainCard.vue';
     import SmallCard from '../../Components/SmallCard.vue'
     import BasicCard from '../../Components/BasicCard.vue';
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     // import SecondaryCard from '../../Components/SecondaryCard.vue';
   
     
@@ -95,16 +98,17 @@
   
       layout: LayoutApp,
         
-      components: {
-          'inertia-link': Link,
-          MainCard,
-          SmallCard,
-          BasicCard
-          // SecondaryCard
-      },
+      components: { 
+      "inertia-link": Link,
+      MainCard,
+      SmallCard,
+      BasicCard,
+      FontAwesomeIcon
+},
   
       props: {
-          posts: Array // <- nama props yang dibuat di controller saat parsing data
+          posts: Array, // <- nama props yang dibuat di controller saat parsing data
+          category: Array, 
       },
       
       data() {

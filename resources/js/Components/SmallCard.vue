@@ -27,12 +27,14 @@
 <script>
 
 import { Link } from '@inertiajs/inertia-vue3';
-import { Inertia } from '@inertiajs/inertia'
+import { Inertia } from '@inertiajs/inertia';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
   name: "SmallCard",
   components: {
       'inertia-link': Link,
+      FontAwesomeIcon
     },
 
     props: [
@@ -40,7 +42,9 @@ export default {
       'title',
       'content',
       'image',
-      'category'
+      'category',
+      'ditulis_oleh',
+      'ditinjau_oleh'
     ]
 
 

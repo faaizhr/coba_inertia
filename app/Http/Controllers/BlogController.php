@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
+use App\Models\Categories;
+use App\Models\Katagori;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 
@@ -26,10 +29,13 @@ class BlogController extends Controller
      */
     public function index()
     {
+        
         $posts = Post::latest()->get();
+        $category = Category::get();
 
         return Inertia::render('Blog/Index', [
             'posts' => $posts,
+            'category' => $category,
         ]);
     }
 
@@ -69,9 +75,7 @@ class BlogController extends Controller
      */
     public function edit(Post $post)
     {
-        return Inertia::render('Blog/Edit', [
-            'post'=>$post
-        ]);
+ 
     }
 
     /**

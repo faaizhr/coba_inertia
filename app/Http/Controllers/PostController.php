@@ -27,9 +27,14 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::latest()->get();
+        $category = Post::latest()->get();
+
+        // $complexPosts = Post::join('categories', 'id', '=', 'categories.posts_id')
+        //     ->join('category', 'id', '=', 'category')
 
         return Inertia::render('Posts/Index', [
             'posts' => $posts,
+            'category' => $category,
         ]);
 
         
@@ -49,6 +54,8 @@ class PostController extends Controller
             'content' => 'required',
             'image' => 'required',
             'category' => 'required',
+            'ditulis_oleh' => 'required',
+            'ditinjau_oleh' => 'required',
         ]);
 
         //create post
@@ -56,7 +63,9 @@ class PostController extends Controller
             'title'     => $request->title,
             'content'   => $request->content,
             'image'   => $request->image,
-            'category'   => $request->category
+            'category'   => $request->category,
+            'ditulis_oleh'   => $request->ditulis_oleh,
+            'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);
 
         if($post) {
@@ -103,6 +112,8 @@ class PostController extends Controller
             'content' => 'required',
             'image' => 'required',
             'category' => 'required',
+            'ditulis_oleh' => 'required',
+            'ditinjau_oleh' => 'required',
         ]);
 
         //update post
@@ -110,7 +121,9 @@ class PostController extends Controller
             'title'     => $request->title,
             'content'   => $request->content,
             'image'   => $request->image,
-            'category'   => $request->category
+            'category'   => $request->category,
+            'ditulis_oleh'   => $request->ditulis_oleh,
+            'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);
 
         if($post) {

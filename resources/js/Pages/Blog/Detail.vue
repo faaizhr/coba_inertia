@@ -3,7 +3,8 @@
   import LayoutApp from '../../Layouts/App.vue'
 
   import { Link } from '@inertiajs/inertia-vue3';
-  import { Inertia } from '@inertiajs/inertia'
+  import { Inertia } from '@inertiajs/inertia';
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
   import { reactive } from 'vue'
   import BasicCard from '../../Components/BasicCard.vue';
 
@@ -13,24 +14,68 @@
   export default {
     layout: LayoutApp,
     components: {
-    "inertia-link": Link,
-    BasicCard
-},
+      "inertia-link": Link,
+      BasicCard,
+      FontAwesomeIcon
+    },
 
-      props: {
-        post: Object,
-        posts: Array
-      },
-      setup(props) {
-        const post = reactive({
-          title: props.post.title,
-          content: props.post.content,
-          image: props.post.image,
-          category: props.post.category,
-        })
-        console.log(post)
-        return post
+    props: {
+      post: Object,
+      posts: Array
+    },
+
+    data() {
+      return {
+        getYear: this.post.updated_at.substring(0, 4),
+        getMonth: this.post.updated_at.substring(5, 7),
+        getDay: this.post.updated_at.substring(8, 10),
+        getTime: this.post.updated_at.substring(11, 16),
+
       }
+    },
+
+    computed: {
+      getMonthName: function() {
+        if (this.getMonth == "01") {
+          return "Januari"
+        } 
+        else if(this.getMonth == "02") {
+          return "Februari"
+        }
+        else if(this.getMonth == "03") {
+          return "Maret"
+        }
+        else if(this.getMonth == "04") {
+          return "April"
+        }
+        else if(this.getMonth == "05") {
+          return "Mei"
+        }
+        else if(this.getMonth == "06") {
+          return "Juni"
+        }
+        else if(this.getMonth == "07") {
+          return "Juli"
+        }
+        else if(this.getMonth == "08") {
+          return "Agustus"
+        }
+        else if(this.getMonth == "09") {
+          return "September"
+        }
+        else if(this.getMonth == "10") {
+          return "Oktober"
+        }
+        else if(this.getMonth == "11") {
+          return "November"
+        }
+        else if(this.getMonth == "12") {
+          return "Desember"
+        }
+      }
+    }
+      
+      
   }
 
 </script>
@@ -66,16 +111,16 @@
       <div class="grid grid-cols-1 md:grid-cols-3">
           <div class="border-b md:border-b-0 md:border-r border-black pb-4">
             <h6>Ditulis oleh:</h6>
-            <p>Jeliana Seliatuw</p>
+            <p>{{ post.ditulis_oleh }}</p>
           </div>
           <div class="col-span-2 md:ml-10 pt-4 md:pt-0">
             <h6>Ditinjau oleh:</h6>
-            <p>Siska Darmayanti, S.Si, M.Farm</p>
+            <p>{{ post.ditinjau_oleh }}</p>
           </div>
       </div>
 
       <div class="mt-10">
-        <p class="block md:inline">Terakhir Update, January 31, 2023 09:16 am</p>
+        <p class="block md:inline">Terakhir Update, {{ getMonthName }} {{ getDay }}, {{ getYear }} {{ getTime }}</p>
         <button class="text-white bg-green-500 px-4 py-1 rounded ml-0 mt-3 md:mt-0 md:ml-4">{{ post.category }}</button>
       </div>
       <div>
@@ -104,6 +149,8 @@
           :content="post.content" 
           :image="post.image" 
           :category="post.category" 
+          :ditulis_oleh="post.ditulis_oleh" 
+          :ditinjau_oleh="post.ditinjau_oleh" 
           :index="index"
         />
       </div>

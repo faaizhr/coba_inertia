@@ -2,43 +2,8 @@
 
   <div>
       <div class="">
-          <div class="px-6 sm:px-8 md:px-8 xl:px-72">
+          <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96">
               <h1 class="text-3xl font-bold text-center md:text-left mb-5">TAMBAH ARTIKEL</h1>
-              <!-- <form @submit.prevent="storePost">
-                  <div class="">
-                      <label class="">JUDUL ARTIKEL</label>
-                      <input type="text" class="" v-model="post.title" placeholder="Masukkan Title Post">
-                      <div v-if="errors.title" class="">
-                          {{ errors.title }}
-                      </div>
-                  </div>
-                  <div class="mb-3">
-                      <label class="form-label">GAMBAR ARTIKEL</label>
-                      <input type="text" class="" v-model="post.image" placeholder="Masukkan Content Post">
-                      <div v-if="errors.content" class="">
-                        {{ errors.content }}
-                      </div>
-                    </div>
-                  <div class="mb-3">
-                      <label class="form-label">KATEGORI</label>
-                      <input type="text" class="" v-model="post.category" placeholder="Masukkan Content Post">
-                      <div v-if="errors.content" class="">
-                        {{ errors.content }}
-                    </div>
-                    </div>
-                <div class="mb-3">
-                    <label class="form-label">ISI ARTIKEL</label>
-                    <textarea class="" rows="5" v-model="post.content" placeholder="Masukkan Content Post"></textarea>
-                    <div v-if="errors.content" class="">
-                        {{ errors.content }}
-                    </div>
-                </div>
-                  <div class="mb-3">
-                      <button type="submit" class="">SIMPAN</button>
-                      <button type="reset" class="">RESET</button>
-                  </div>
-              </form> -->
-
               <form @submit.prevent="storePost">
               <div class="bg-white p-5 rounded-xl">
                 <table class="bg-white min-w-full table-auto">
@@ -73,6 +38,24 @@
                         <td class="text-lg font-semibold pr-5">Upload Gambar</td>
                         <td>
                             <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.image" placeholder="Masukkan Content Post">
+                            <div v-if="errors.content" class="">
+                                {{ errors.content }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-lg font-semibold pr-5">Ditulis Oleh</td>
+                        <td>
+                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditulis_oleh" placeholder="Masukkan Content Post">
+                            <div v-if="errors.content" class="">
+                                {{ errors.content }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-lg font-semibold pr-5">Ditinjau Oleh</td>
+                        <td>
+                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditinjau_oleh" placeholder="Masukkan Content Post">
                             <div v-if="errors.content" class="">
                                 {{ errors.content }}
                             </div>
@@ -117,7 +100,9 @@
               title: '',
               content: '',
               image: '',
-              category: ''
+              category: '',
+              ditulis_oleh: '',
+              ditinjau_oleh: ''
           })
 
           //function storePost
@@ -128,13 +113,17 @@
               let content = post.content
               let image = post.image
               let category = post.category
+              let ditulis_oleh = post.ditulis_oleh
+              let ditinjau_oleh = post.ditinjau_oleh
 
               //send data
               Inertia.post('/posts/', {
                   title: title,
                   content: content,
                   image: image,
-                  category: category
+                  category: category,
+                  ditulis_oleh: ditulis_oleh,
+                  ditinjau_oleh: ditinjau_oleh
               })
            
           }

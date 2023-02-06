@@ -1,7 +1,7 @@
 <template>
 
   <div>
-      <div class="px-6 sm:px-8 md:px-8 xl:px-72">
+      <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96">
           <div class="">
               <h1 class="text-3xl font-bold text-center md:text-left mb-5">EDIT POST</h1>
               <form @submit.prevent="updatePost">
@@ -38,6 +38,24 @@
                         <td class="text-lg font-semibold pr-5">Upload Gambar</td>
                         <td>
                             <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.image" placeholder="Masukkan Content Post">
+                            <div v-if="errors.content" class="">
+                                {{ errors.content }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-lg font-semibold pr-5">Ditulis Oleh</td>
+                        <td>
+                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditulis_oleh" placeholder="Masukkan Content Post">
+                            <div v-if="errors.content" class="">
+                                {{ errors.content }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-lg font-semibold pr-5">Ditinjau Oleh</td>
+                        <td>
+                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditinjau_oleh" placeholder="Masukkan Content Post">
                             <div v-if="errors.content" class="">
                                 {{ errors.content }}
                             </div>
@@ -83,6 +101,8 @@
               content: props.post.content,
               image: props.post.image,
               category: props.post.category,
+              ditulis_oleh: props.post.ditulis_oleh,
+              ditinjau_oleh: props.post.ditinjau_oleh,
           })
 
           //function updatePost
@@ -93,6 +113,8 @@
               let content = post.content
               let image = post.image
               let category = post.category
+              let ditulis_oleh = post.ditulis_oleh
+              let ditinjau_oleh = post.ditinjau_oleh
 
               //send data
               Inertia.put(`/posts/${props.post.id}`, {
@@ -100,6 +122,8 @@
                   content: content,
                   image: image,
                   category: category,
+                  ditulis_oleh: ditulis_oleh,
+                  ditinjau_oleh: ditinjau_oleh,
               })
            
           }

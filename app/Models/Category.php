@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Category extends Model
 {
     use HasFactory;
+
+    public $table = "Category";
 
     /**
      * fillable
@@ -15,15 +17,10 @@ class Post extends Model
      * @var array
      */
     protected $fillable = [
-        'title',
-        'content',
-        'image',
         'category',
-        'ditulis_oleh',
-        'ditinjau_oleh',
     ];
 
-    // public function category() {
-    //     return $this->belongsToMany('App\Models\Category')
+    // public function posts() {
+    //     return $this->belongsToMany('App\Models\Posts')
     // };
 }

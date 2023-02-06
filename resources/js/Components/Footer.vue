@@ -23,9 +23,14 @@
 
 <script>
 
-export default {
-name: "Footers"
-}
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+  export default {
+    name: "Footers",
+    components: {
+      FontAwesomeIcon
+    }
+  }
 </script>
 
 <style></style>

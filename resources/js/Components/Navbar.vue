@@ -32,9 +32,11 @@
       <font-awesome-icon icon="fa-solid fa-xmark "  class="whiteColorIcon fa-2xl float-right cursor-pointer" @click="handleToggleNavbar"/>
       <ul class="mt-10">
         <li class="py-5">
-          <button class="rounded-lg px-5 py-2 bg-white text-sm font-semibold">Get the app</button>
+          <inertia-link href="/posts">
+            <button class="rounded-lg px-5 py-2 bg-white text-sm font-semibold">Admin Site</button>
+          </inertia-link>
         </li>
-        <li class="text-white py-3"><inertia-link href="/posts">Beranda</inertia-link></li>
+        <li class="py-3"><inertia-link href="/artikel" class="text-white py-3">Beranda</inertia-link></li>
         <li class="text-white py-3">Bantuan</li>
         <li class="text-white py-3">Tentang Kami</li>
         <li class="text-white py-3">Artikel</li>
@@ -52,12 +54,14 @@
 <script>
 
 import { Link } from '@inertiajs/inertia-vue3';
-import { Inertia } from '@inertiajs/inertia'
+import { Inertia } from '@inertiajs/inertia';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
   name: "Navbar",
   components: {
     'inertia-link': Link,
+    FontAwesomeIcon
   },
   data() {
     return {
