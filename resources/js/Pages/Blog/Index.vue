@@ -1,19 +1,20 @@
 <template>
   
-      <div class="px-6 sm:px-8 md:px-8 xl:px-72">
+      <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96">
         <div class="py-1 text-sm">
          <p><inertia-link to="/">Beranda </inertia-link>> <b>Artikel</b></p>
         </div>
         <div class="mb-20">
           <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center">
-            <h1 class="text-3xl font-bold text-center md:text-left mb-5 md:mb-0">Bacaan Untukmu</h1>
-            <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:max-w-xs h-10 border border-green-900 bg-transparent md:ml-auto"/>
+            <h1 class="text-5xl font-bold text-center md:text-left mb-5 md:mb-0 text-[#073231]">Bacaan Untukmu</h1>
+            <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:max-w-xs h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black"/>
           </div>
   
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="">
               <MainCard v-for="post in posts.slice(0, 1)" 
                 :key="post.id" 
+                :id="post.id"  
                 :title="post.title" 
                 :content="post.content" 
                 :image="post.image" 
@@ -36,8 +37,7 @@
           
         </div>
       </div>
-      <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-72 bg-black py-20 rounded-b-3xl">
-        
+      <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 bg-black py-20 rounded-b-3xl">
         <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center h-10 z-10">
           <h1 class="text-3xl text-center md:text-left mb-5 md:mb-0 font-bold inline text-white">Artikel Lainnya</h1>
           <div>
@@ -70,7 +70,7 @@
             :index="index"/>
         </div>
         <div class="flex justify-center mt-10">
-          <button class="bg-white px-5 py-1 rounded-lg ">Load More</button>
+          <button class="bg-[#073231] text-white hover:bg-blend-darken px-10 py-2 rounded-lg ">Load More</button>
         </div>
       </div>
   </template>

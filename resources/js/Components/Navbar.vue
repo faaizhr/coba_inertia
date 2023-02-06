@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 sm:px-8 md:px-8 xl:px-72 mx-auto py-10">
+  <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-10">
     <div class="flex justify-between items-center">
       <div class="">
         <h1 class="text-xl font-bold">dentsu</h1>
@@ -11,14 +11,16 @@
           <a class="mr-5">Tentang Kami</a>
           <a class="mr-5">Artikel</a>
           <a class="mr-5">Fitur</a>
-          <button class="border border-green-900 rounded-lg px-3 py-1 mr-3 ml-3 hover:bg-green-900 hover:text-white">English</button>
-          <button class="border border-green-900 rounded-lg px-3 py-1 hover:bg-green-900 hover:text-white">Get the app</button>
+          <button class="border border-[#073231] rounded-lg px-3 py-1 mr-3 ml-3 hover:bg-[#073231] hover:text-white">English</button>
+          <inertia-link href="/posts">
+            <button class="border border-green-900 rounded-lg px-3 py-1 bg-[#073231] hover:bg-transparent text-white hover:text-black">Admin Site</button>
+          </inertia-link>
         </div>
         <div>
         </div>
       </div>
       <div>
-        <button class="mr-10 bg-green-900 text-white px-5 py-2 rounded-lg text-sm font-medium md:hidden" >Get the app</button>
+        <button class="mr-10 bg-green-900 text-white px-5 py-2 rounded-lg text-sm font-medium md:hidden">Admin Site</button>
         <font-awesome-icon icon="fa-solid fa-bars-staggered" class="fa-2xl cursor-pointer md:hidden" @click="handleToggleNavbar" />
       </div>
     </div>

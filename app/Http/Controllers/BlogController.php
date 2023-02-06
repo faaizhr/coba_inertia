@@ -52,9 +52,12 @@ class BlogController extends Controller
      */
     public function show($id)
     {
+        $posts = Post::where('id', '!=', $id)->get();
+
         $post = Post::find($id);
         return Inertia::render('Blog/Detail', [
-            'post'=>$post
+            'post'=>$post,
+            'posts'=>$posts
         ]);
     }
 

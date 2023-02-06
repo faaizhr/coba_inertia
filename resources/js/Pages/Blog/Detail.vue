@@ -5,6 +5,7 @@
   import { Link } from '@inertiajs/inertia-vue3';
   import { Inertia } from '@inertiajs/inertia'
   import { reactive } from 'vue'
+  import BasicCard from '../../Components/BasicCard.vue';
 
   // import SecondaryCard from '../../components/SecondaryCard.vue'
 
@@ -12,12 +13,13 @@
   export default {
     layout: LayoutApp,
     components: {
-        'inertia-link': Link,
-        // SecondaryCard,
-      },
+    "inertia-link": Link,
+    BasicCard
+},
 
       props: {
-        post: Object
+        post: Object,
+        posts: Array
       },
       setup(props) {
         const post = reactive({
@@ -34,10 +36,10 @@
 </script>
 
 <template>
-    <div class=" px-6 sm:px-8 md:px-8 xl:px-72 mx-auto py-1 text-sm">
+    <div class=" px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-1 text-sm">
      <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b>{{ post.title }}</b></p>
     </div>
-    <div class="px-6 sm:px-8 md:px-8 xl:px-72 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
+    <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
 
       <div class="col-span-2 hidden md:block sticky ">
         <div class="sticky top-10">
@@ -85,19 +87,25 @@
             <p class="ml-3">76</p>
           </div>
         </div>
-        <img class="rounded-xl mt-5" :src="post.image"/>
+        <img class="rounded-xl mt-5 w-full" :src="post.image"/>
       </div>
-      <div class="">
- 
+      <div class="mt-10">
+        <p>{{ post.content }}</p>
       </div>
     </div>
   </div>
-    <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-72 bg-black py-20 rounded-b-3xl">
+    <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 bg-black py-20 rounded-b-3xl">
       <h1 class="text-3xl font-bold inline text-white">Artikel Lainnya</h1>
       <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-        <!-- <SecondaryCard/>
-        <SecondaryCard/>
-        <SecondaryCard/> -->
+        <BasicCard v-for="post in posts" 
+          :key="post.id"
+          :id="post.id"  
+          :title="post.title" 
+          :content="post.content" 
+          :image="post.image" 
+          :category="post.category" 
+          :index="index"
+        />
       </div>
     </div>
 </template>
