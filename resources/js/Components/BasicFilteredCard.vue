@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="mb-5">
     <div>
       <inertia-link :href="`/artikel/${item.id}`" class="">
@@ -6,7 +6,6 @@
       </inertia-link>
     </div>
     <div class="pt-3">
-      <!-- <h1 class="text-xl text-red-600">{{ item.category }}</h1> -->
       <div class="flex justify-end">
         <button 
           v-if="(getCatColor == 'Diet Program')"
@@ -41,6 +40,12 @@
       </div>
     </div>
   </div>
+</template> -->
+
+<template>
+  <div class="w-52 h-32 bg-red-700">
+    <p class="text-white">{{ item }}</p>
+  </div>
 </template>
 
 <script>
@@ -50,7 +55,7 @@ import { Inertia } from '@inertiajs/inertia'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
   export default {
-    name: "BasicCard",
+    name: "BasicFilteredCard",
     components: {
       'inertia-link': Link,
       FontAwesomeIcon

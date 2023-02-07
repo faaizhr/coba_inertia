@@ -34,7 +34,7 @@
           <h1 class="text-3xl text-center md:text-left mb-5 md:mb-0 font-bold inline text-white">Artikel Lainnya</h1>
           <div>
             <div @click="handleDropdown" class="rounded px-5 py-2 w-4/6 mx-auto md:mx-0 md:ml-auto text-white border border-white cursor-pointer  bg-black flex justify-between items-center">
-              <p>Category</p>
+              <p>All Category</p>
               <font-awesome-icon class="whiteColorIcon" icon="fa-chevron-down" />
             </div>
           </div>
@@ -43,15 +43,43 @@
             class="border border-white text-white w-4/6 mx-auto static m-0 md:ml-auto md:mr-0 z-50"
             :style="{ display: dropDown ? 'block' : 'none' }">
             <ul> 
-              <li v-for="kategori in category" class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700">{{ kategori.category }}</li>
+              <li v-for="kategori in filter" class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700" @click="handleChangeCat(kategori.id)" >{{ kategori.category }}</li>
             </ul>
           </div>
         </div>
         <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-          <BasicCard v-for="post in joinTable" 
+          <BasicCard v-if="category == ''" v-for="post in joinTable" 
             :key="post.id"
             :item="post"
-            :index="index"/>
+            :index="index"
+          />
+          <div v-if="category != ''" v-for="post in filter.filter(cat => cat.id == category)">
+            <div class="" v-for="pos in post.posts">
+              <div class="mb-5">
+                <div>
+                  <inertia-link :href="`/artikel/${pos.id}`" class="">
+                    <img class="rounded" :src="pos.image"/>
+                  </inertia-link>
+                </div>
+                <div class="pt-3">
+                  <div class="mt-2">
+                    <inertia-link :href="`/artikel/${pos.id}`" class="">
+                      <h6 class="my-3 text-lg font-semibold  text-white">{{ pos.title }}</h6>
+                    </inertia-link>
+                    <inertia-link :href="`/artikel/${pos.id}`" class="font-bold text-white text-sm underline underline-offset-1">
+                      Selengkapnya
+                      <font-awesome-icon icon="fa-arrow-right" class="ml-1"/>
+                    </inertia-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <BasicFilteredCard v-if="category != ''" v-for="post in filter.filter(cat => cat.id == category)"
+              :key="post.id"
+              :item="post"
+              :index="index"
+            /> -->
+          </div>
         </div>
         <div class="flex justify-center mt-10">
           <button class="bg-[#073231] text-white hover:bg-blend-darken px-10 py-2 rounded-lg ">Load More</button>
@@ -71,6 +99,7 @@
     import MainCard from '../../Components/MainCard.vue';
     import SmallCard from '../../Components/SmallCard.vue'
     import BasicCard from '../../Components/BasicCard.vue';
+    import BasicFilteredCard from '../../Components/BasicFilteredCard.vue';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     // import SecondaryCard from '../../Components/SecondaryCard.vue';
   
@@ -92,11 +121,13 @@
           posts: Array, // <- nama props yang dibuat di controller saat parsing data
           category: Array, 
           joinTable: Array, 
+          filter: Array,
       },
       
       data() {
           return {
           dropDown: false,
+          category: '',
 
           };
       },
@@ -108,6 +139,11 @@
                   this.dropDown = false
               }
           },
+
+          handleChangeCat(value) {
+            this.category = value
+            console.log("cek ceok", this.category)
+          }
       },
   
   

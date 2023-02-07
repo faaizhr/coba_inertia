@@ -40,11 +40,14 @@ class BlogController extends Controller
 
         $joinTable = Post::with('category')->get();
 
+        $filter = Category::with('posts')->get();
+
         return Inertia::render('Blog/Index', [
             'posts' => $posts,
             'category' => $category,
             // 'joinTable' => $joinTable,
             'joinTable' => $joinTable,
+            'filter' => $filter,
         ]);
     }
 
