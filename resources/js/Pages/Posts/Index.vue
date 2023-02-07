@@ -23,11 +23,22 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="post in posts" :key="post.id">
-                  <td class="py-2 px-2"><img :src="post.image"/></td>
-                  <td class="py-2 px-2">{{ post.title }}</td>
-                  <td class="py-2 px-2">{{ post.content }}</td>
-                  <td class="py-2 px-2">{{ post.category }}</td>
+                <tr v-for="post in joinTable" :key="post.id" class="hover:bg-slate-100">
+                  <td class="py-2 px-2"><img :src="post.image"/>
+                    <inertia-link :href="`/posts/${post.id}`">
+                    </inertia-link>
+                  </td>
+                  <td class="py-2 px-2">
+                    <inertia-link :href="`/posts/${post.id}`" class="font-medium">
+                      {{ post.title }}
+                    </inertia-link>
+                  </td>
+                  <td class="py-2 px-2">{{ post.content.substring(0, 90) }}....</td>
+                  <td class="py-2 px-2">
+                    <p v-for="cat in post.category" class="mb-3">
+                      {{ cat.category }}
+                    </p>
+                  </td>
                   <td class="py-2 px-2 text-center">
                     <inertia-link :href="`/posts/${post.id}/edit`" class=""><button class="bg-black px-5 py-1 rounded-xl hover:bg-white mb-2 text-white hover:text-black">EDIT</button></inertia-link>
                     <button @click.prevent="deletePost(`${post.id}`)" class="bg-red-700 px-5 py-1 text-white rounded-xl">DELETE</button>
@@ -75,6 +86,7 @@
 
     props: {
         posts: Array, // <- nama props yang dibuat di controller saat parsing data
+        joinTable: Array
     },
     
     data() {

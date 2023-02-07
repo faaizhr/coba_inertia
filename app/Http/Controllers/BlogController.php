@@ -29,13 +29,22 @@ class BlogController extends Controller
      */
     public function index()
     {
+        // $joinTable = Post::join('category_post', 'posts.id', '=', 'category_post.post_id')
+        //     ->join('category', 'category.id', '=', 'category_post.category_id')
+        //     ->select('posts.*', 'category.category')
+        //     ->get();
         
         $posts = Post::latest()->get();
         $category = Category::get();
+        
+
+        $joinTable = Post::with('category')->get();
 
         return Inertia::render('Blog/Index', [
             'posts' => $posts,
             'category' => $category,
+            // 'joinTable' => $joinTable,
+            'joinTable' => $joinTable,
         ]);
     }
 
@@ -61,9 +70,13 @@ class BlogController extends Controller
         $posts = Post::where('id', '!=', $id)->get();
 
         $post = Post::find($id);
+        
+        $joinTable = Post::with('category')->find($id);
+
         return Inertia::render('Blog/Detail', [
             'post'=>$post,
-            'posts'=>$posts
+            'posts'=>$posts,
+            'joinTable'=>$joinTable,
         ]);
     }
 

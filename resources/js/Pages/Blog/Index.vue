@@ -12,29 +12,17 @@
   
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="">
-              <MainCard v-for="post in posts.slice(0, 1)" 
+              <MainCard v-for="post in joinTable.slice(0, 1)" 
                 :key="post.id" 
-                :id="post.id"  
-                :title="post.title" 
-                :content="post.content" 
-                :image="post.image" 
-                :category="post.category" 
-                :ditulis_oleh="post.ditulis_oleh" 
-                :ditinjau_oleh="post.ditinjau_oleh" 
+                :item="post"
                 :index="index"
               />
             </div>
             <div class="">
               <SmallCard
-              v-for="post in posts.slice(1, 4)" 
+              v-for="post in joinTable.slice(1, 4)" 
                 :key="post.id" 
-                :id="post.id" 
-                :title="post.title" 
-                :content="post.content" 
-                :image="post.image" 
-                :category="post.category" 
-                :ditulis_oleh="post.ditulis_oleh" 
-                :ditinjau_oleh="post.ditinjau_oleh" 
+                :item="post"
                 :index="index"/>
             </div>
           </div>
@@ -60,15 +48,9 @@
           </div>
         </div>
         <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-          <BasicCard v-for="post in posts" 
+          <BasicCard v-for="post in joinTable" 
             :key="post.id"
-            :id="post.id"  
-            :title="post.title" 
-            :content="post.content" 
-            :image="post.image" 
-            :category="post.category" 
-            :ditulis_oleh="post.ditulis_oleh" 
-            :ditinjau_oleh="post.ditinjau_oleh" 
+            :item="post"
             :index="index"/>
         </div>
         <div class="flex justify-center mt-10">
@@ -109,6 +91,7 @@
       props: {
           posts: Array, // <- nama props yang dibuat di controller saat parsing data
           category: Array, 
+          joinTable: Array, 
       },
       
       data() {

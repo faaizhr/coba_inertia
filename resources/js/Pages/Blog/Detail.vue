@@ -21,20 +21,27 @@
 
     props: {
       post: Object,
-      posts: Array
+      posts: Array,
+      joinTable: Object,
     },
 
     data() {
       return {
-        getYear: this.post.updated_at.substring(0, 4),
-        getMonth: this.post.updated_at.substring(5, 7),
-        getDay: this.post.updated_at.substring(8, 10),
-        getTime: this.post.updated_at.substring(11, 16),
+        getColor: this.joinTable.category,
+
+        getYear: this.joinTable.updated_at.substring(0, 4),
+        getMonth: this.joinTable.updated_at.substring(5, 7),
+        getDay: this.joinTable.updated_at.substring(8, 10),
+        getTime: this.joinTable.updated_at.substring(11, 16),
 
       }
     },
 
     computed: {
+      getCatColor: function() {
+        return this.getColor
+      },
+
       getMonthName: function() {
         if (this.getMonth == "01") {
           return "Januari"
@@ -72,7 +79,7 @@
         else if(this.getMonth == "12") {
           return "Desember"
         }
-      }
+      },
     }
       
       
@@ -82,7 +89,7 @@
 
 <template>
     <div class=" px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-1 text-sm">
-     <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b>{{ post.title }}</b></p>
+     <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b>{{ joinTable.title }}</b></p>
     </div>
     <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
 
@@ -111,20 +118,27 @@
       <div class="grid grid-cols-1 md:grid-cols-3">
           <div class="border-b md:border-b-0 md:border-r border-black pb-4">
             <h6>Ditulis oleh:</h6>
-            <p>{{ post.ditulis_oleh }}</p>
+            <p>{{ joinTable.ditulis_oleh }}</p>
           </div>
           <div class="col-span-2 md:ml-10 pt-4 md:pt-0">
             <h6>Ditinjau oleh:</h6>
-            <p>{{ post.ditinjau_oleh }}</p>
+            <p>{{ joinTable.ditinjau_oleh }}</p>
           </div>
       </div>
 
-      <div class="mt-10">
+      <div class="mt-10 md:flex md:justify-between md:items-center">
         <p class="block md:inline">Terakhir Update, {{ getMonthName }} {{ getDay }}, {{ getYear }} {{ getTime }}</p>
-        <button class="text-white bg-green-500 px-4 py-1 rounded ml-0 mt-3 md:mt-0 md:ml-4">{{ post.category }}</button>
+        <div  class="">
+          <button 
+            v-for="cat in getCatColor"
+            class="text-white bg-green-500 px-4 py-1 rounded ml-0 mt-3 mb-2 mr-3 md:mr-0 md:mt-0 md:ml-4 inline"
+          >
+            {{ cat.category }}
+          </button>
+        </div>
       </div>
       <div>
-        <h1 class="mt-10 font-bold text-4xl leading-normal">{{ post.title }}</h1>
+        <h1 class="mt-10 font-bold text-4xl leading-normal">{{ joinTable.title }}</h1>
         <div class="mt-10 flex justify-between">
           <p class="text-sm">Durasi membaca: 3,996 menit</p>
           <div class="flex items-center">
@@ -132,10 +146,10 @@
             <p class="ml-3">76</p>
           </div>
         </div>
-        <img class="rounded-xl mt-5 w-full" :src="post.image"/>
+        <img class="rounded-xl mt-5 w-full" :src="joinTable.image"/>
       </div>
       <div class="mt-10">
-        <p>{{ post.content }}</p>
+        <p>{{ joinTable.content }}</p>
       </div>
     </div>
   </div>
@@ -144,13 +158,7 @@
       <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
         <BasicCard v-for="post in posts" 
           :key="post.id"
-          :id="post.id"  
-          :title="post.title" 
-          :content="post.content" 
-          :image="post.image" 
-          :category="post.category" 
-          :ditulis_oleh="post.ditulis_oleh" 
-          :ditinjau_oleh="post.ditinjau_oleh" 
+          :item="post"
           :index="index"
         />
       </div>

@@ -21,3 +21,4 @@ Route::resource('/posts', \App\Http\Controllers\PostController::class);
 Route::resource('/artikel', \App\Http\Controllers\BlogController::class);
 
 Route::get('/artikel/{id}', [BlogController::class, 'show']);
+Route::get('/posts/{id}', [PostController::class, 'show']);

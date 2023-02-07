@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,11 @@ class PostController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Posts/Create');
+        $category = Category::get();
+
+        return Inertia::render('Posts/Create', [
+            'category' => $category,
+        ]);
     }
 
 
@@ -29,12 +34,13 @@ class PostController extends Controller
         $posts = Post::latest()->get();
         $category = Post::latest()->get();
 
-        // $complexPosts = Post::join('categories', 'id', '=', 'categories.posts_id')
-        //     ->join('category', 'id', '=', 'category')
+        $joinTable = Post::with('category')->get();
+
 
         return Inertia::render('Posts/Index', [
             'posts' => $posts,
             'category' => $category,
+            'joinTable' => $joinTable,
         ]);
 
         
@@ -48,12 +54,13 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+
+        // dd($request->category);
         //set validation
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
             'image' => 'required',
-            'category' => 'required',
             'ditulis_oleh' => 'required',
             'ditinjau_oleh' => 'required',
         ]);
@@ -63,11 +70,12 @@ class PostController extends Controller
             'title'     => $request->title,
             'content'   => $request->content,
             'image'   => $request->image,
-            'category'   => $request->category,
             'ditulis_oleh'   => $request->ditulis_oleh,
             'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);
-
+        if ($request->has('category')) {
+            $post->category()->attach($request->category);
+        };
         if($post) {
             return Redirect()->route('posts.index')->with('message', 'Data Berhasil Disimpan!');
         }
@@ -79,9 +87,13 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        // 
+        $joinTable = Post::with('category')->find($id);
+
+        return Inertia::render('Posts/Detail', [
+            'joinTable'=>$joinTable,
+        ]);
     }
 
     /**
@@ -92,8 +104,13 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $category = Category::get();
+        $joinTable = Post::with('category')->find($post->id);
+
         return Inertia::render('Posts/Edit', [
-            'post'=>$post
+            'post'=>$joinTable,
+            'category'=>$category,
+            // 'joinTable'=>$joinTable,
         ]);
     }
 
@@ -106,12 +123,12 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+        // dd($request);
         //set validation
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
             'image' => 'required',
-            'category' => 'required',
             'ditulis_oleh' => 'required',
             'ditinjau_oleh' => 'required',
         ]);
@@ -121,10 +138,12 @@ class PostController extends Controller
             'title'     => $request->title,
             'content'   => $request->content,
             'image'   => $request->image,
-            'category'   => $request->category,
             'ditulis_oleh'   => $request->ditulis_oleh,
             'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);
+        if ($request->has('category')) {
+            $post->category()->attach($request->category);
+        };
 
         if($post) {
             return Redirect()->route('posts.index')->with('message', 'Data Berhasil Diupdate!');

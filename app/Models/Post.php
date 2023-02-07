@@ -24,6 +24,9 @@ class Post extends Model
     ];
 
     // public function category() {
-    //     return $this->belongsToMany('App\Models\Category')
-    // };
+    //     return $this->belongsToMany('App\Models\Category', 'categories', 'posts_id', 'category_id');
+    // }
+    public function category() {
+        return $this->belongsToMany(Category::class);
+    }
 }

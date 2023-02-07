@@ -1,20 +1,42 @@
 <template>
   <div class="border-b border-gray-300 pb-5 md:border-0">
     <div>
-      <inertia-link :href="`/artikel/${id}`">
-        <img class="rounded-2xl" :src="image"/>
+      <inertia-link :href="`/artikel/${item.id}`">
+        <img class="rounded-2xl" :src="item.image"/>
       </inertia-link>
     </div>
     <div>
       <div class="flex justify-between mt-4">
-        <p class="inline">Desember 14, 2020</p>
-        <button class="text-white bg-green-500 px-4 py-1 rounded text-xs">{{ category }}</button>
+        <p class="inline">{{ getMonthName }} {{ getDay }}, {{ getYear }}</p>
+        <div class="flex justify-end">
+          <button 
+            v-if="(getCatColor == 'Diet Program')"
+            class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
+          >{{ item.category[0].category }}</button>
+          <button 
+            v-else-if="(getCatColor == 'Sleep')"
+            class="text-white bg-amber-700 px-4 py-1 rounded text-xs"  
+          >{{ item.category[0].category }}</button>
+          <button 
+            v-else-if="(getCatColor == 'Healthy Eating')"
+            class="text-white bg-teal-600 px-4 py-1 rounded text-xs"  
+          >{{ item.category[0].category }}</button>
+          <button 
+            v-else-if="(getCatColor == 'Mindfullness & Stress')"
+            class="text-white bg-orange-700 px-4 py-1 rounded text-xs"  
+          >{{ item.category[0].category }}</button>
+          <button 
+            v-else-if="(getCatColor == 'Weight Management')"
+            class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
+          >{{ item.category[0].category }}</button>
+          <button v-else class="">Unknown</button>
+        </div>
       </div>
       <div class="mt-2">
-        <inertia-link :href="`/artikel/${id}`">
-          <h6 class="my-3 text-xl font-semibold">{{ title }}</h6>
+        <inertia-link :href="`/artikel/${item.id}`">
+          <h6 class="my-3 text-xl font-semibold">{{ item.title }}</h6>
         </inertia-link>
-        <inertia-link :href="`/artikel/${id}`" class="font-semibold text-sm text-gray-800 underline underline-offset-1">
+        <inertia-link :href="`/artikel/${item.id}`" class="font-semibold text-sm text-gray-800 underline underline-offset-1">
           Selengkapnya
           <font-awesome-icon icon="fa-solid fa-arrow-right" class="ml-1"/>
         </inertia-link>
@@ -37,15 +59,64 @@ export default {
     FontAwesomeIcon
   },
 
-  props: [
-      'id',
-      'title',
-      'content',
-      'image',
-      'category',
-      'ditulis_oleh',
-      'ditinjau_oleh'
-    ]
+  props: {
+      item: Object
+    },
+
+    data() {
+      return {
+        getColor: this.item.category[0].category,
+
+        getYear: this.item.updated_at.substring(0, 4),
+        getMonth: this.item.updated_at.substring(5, 7),
+        getDay: this.item.updated_at.substring(8, 10),
+        getTime: this.item.updated_at.substring(11, 16),
+      }
+    },
+    computed: {
+      getCatColor: function() {
+        return this.getColor
+      },
+
+      getMonthName: function() {
+        if (this.getMonth == "01") {
+          return "Januari"
+        } 
+        else if(this.getMonth == "02") {
+          return "Februari"
+        }
+        else if(this.getMonth == "03") {
+          return "Maret"
+        }
+        else if(this.getMonth == "04") {
+          return "April"
+        }
+        else if(this.getMonth == "05") {
+          return "Mei"
+        }
+        else if(this.getMonth == "06") {
+          return "Juni"
+        }
+        else if(this.getMonth == "07") {
+          return "Juli"
+        }
+        else if(this.getMonth == "08") {
+          return "Agustus"
+        }
+        else if(this.getMonth == "09") {
+          return "September"
+        }
+        else if(this.getMonth == "10") {
+          return "Oktober"
+        }
+        else if(this.getMonth == "11") {
+          return "November"
+        }
+        else if(this.getMonth == "12") {
+          return "Desember"
+        }
+      }
+    }
 }
 
 </script>
