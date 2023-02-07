@@ -1,6 +1,6 @@
 <template>
   
-      <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96">
+      <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <div class="py-1 text-sm">
          <p><inertia-link to="/">Beranda </inertia-link>> <b>Artikel</b></p>
         </div>
@@ -29,7 +29,7 @@
           
         </div>
       </div>
-      <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 bg-black py-20 rounded-b-3xl">
+      <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl">
         <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center h-10 z-10">
           <h1 class="text-3xl text-center md:text-left mb-5 md:mb-0 font-bold inline text-white">Artikel Lainnya</h1>
           <div>

@@ -88,10 +88,10 @@
 </script>
 
 <template>
-    <div class=" px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-1 text-sm">
+    <div class=" px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-1 text-sm">
      <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b>{{ joinTable.title }}</b></p>
     </div>
-    <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
+    <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
 
       <div class="col-span-2 hidden md:block sticky ">
         <div class="sticky top-10">
@@ -153,7 +153,7 @@
       </div>
     </div>
   </div>
-    <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 bg-black py-20 rounded-b-3xl">
+    <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl">
       <h1 class="text-3xl font-bold inline text-white">Artikel Lainnya</h1>
       <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
         <BasicCard v-for="post in posts" 

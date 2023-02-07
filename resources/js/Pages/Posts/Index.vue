@@ -1,6 +1,6 @@
 <template>
 
-    <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96">
+    <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
       <div class="py-1 text-sm">
        <p><inertia-link to="/posts">Admin Panel </inertia-link>> <b>Artikel</b></p>
       </div>

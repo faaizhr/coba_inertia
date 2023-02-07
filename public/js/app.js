@@ -21047,7 +21047,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-2"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-2"
 };
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "py-10 border-b border-black"
@@ -21218,7 +21218,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-10"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-10"
 };
 var _hoisted_2 = {
   "class": "flex justify-between items-center"
@@ -21451,14 +21451,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-1 text-sm"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-1 text-sm"
 };
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda ");
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("> ");
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "Artikel", -1 /* HOISTED */);
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" > ");
 var _hoisted_6 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9"
 };
 var _hoisted_7 = {
   "class": "col-span-2 hidden md:block sticky"
@@ -21527,7 +21527,7 @@ var _hoisted_30 = {
   "class": "mt-10"
 };
 var _hoisted_31 = {
-  "class": "mx-auto px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 bg-black py-20 rounded-b-3xl"
+  "class": "mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl"
 };
 var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "text-3xl font-bold inline text-white"
@@ -21586,7 +21586,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
 };
 var _hoisted_2 = {
   "class": "py-1 text-sm"
@@ -21616,7 +21616,7 @@ var _hoisted_10 = {
   "class": ""
 };
 var _hoisted_11 = {
-  "class": "mx-auto px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 bg-black py-20 rounded-b-3xl"
+  "class": "mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl"
 };
 var _hoisted_12 = {
   "class": "my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center h-10 z-10"
@@ -21706,7 +21706,7 @@ var _hoisted_1 = {
   "class": ""
 };
 var _hoisted_2 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
 };
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "text-3xl font-bold text-center md:text-left mb-5"
@@ -21860,7 +21860,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
 };
 var _hoisted_2 = {
   "class": "py-1 text-sm"
@@ -21969,7 +21969,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
 };
 var _hoisted_2 = {
   "class": ""
@@ -22109,7 +22109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
 };
 var _hoisted_2 = {
   "class": "py-1 text-sm"

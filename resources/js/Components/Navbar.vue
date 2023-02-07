@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96 mx-auto py-10">
+  <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-10">
     <div class="flex justify-between items-center">
       <div class="">
         <h1 class="text-xl font-bold">dentsu</h1>

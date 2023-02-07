@@ -1,7 +1,7 @@
 <template>
 
   <div>
-      <div class="px-6 sm:px-8 md:px-8 xl:px-72 2xl:px-96">
+      <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
           <div class="">
               <h1 class="text-3xl font-bold text-center md:text-left mb-5">EDIT POST</h1>
               <form @submit.prevent="updatePost">
