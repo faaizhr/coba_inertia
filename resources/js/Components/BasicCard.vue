@@ -6,7 +6,7 @@
       </inertia-link>
     </div>
     <div class="pt-3">
-      <!-- <h1 class="text-xl text-red-600">{{ item.category }}</h1> -->
+      <!-- <h1 class="text-xl text-red-600">{{ item.category[0].category }}</h1> -->
       <div class="flex justify-end">
         <button 
           v-if="(getCatColor == 'Diet Program')"

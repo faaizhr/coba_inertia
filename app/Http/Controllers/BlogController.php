@@ -70,7 +70,7 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        $posts = Post::where('id', '!=', $id)->get();
+        $posts = Post::with('category')->where('id', '!=', $id)->get();
 
         $post = Post::find($id);
         

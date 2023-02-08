@@ -19,23 +19,11 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">KATEGORI</td>
                         <td class="pb-5">
-                            <!-- <p :v-model="post.category">{{ post.category }}</p> -->
-                            <!-- <h1>{{ post.category }}</h1> -->
-                            <div class="bg-zinc-300 mb-3 rounded-lg">
-                                <p v-for="picked in post.category" class="px-2 py-1">{{ picked.category }}</p>
-                                <!-- <p class="px-2 py-1">{{  }}</p> -->
-                            </div>
-                            <!-- <input type="checkbox" checked> -->
-                            <!-- <div v-for="cat in post.category">
-                                <input type="checkbox" :id="cat.category" :value="cat.id" checked>
-                                <label class="ml-3">{{ cat.category }}</label>
-                            </div> -->
                             <div v-for="cat in category">
                                 <input type="checkbox" :id="cat.category" :value="cat.id" v-model="post.category"/>
                                 <label class="ml-3">{{ cat.category }}</label>
                             </div>
                             
-                            <!-- <input type="checkbox" :checked="checked"/> -->
                         </td>
                     </tr>
                     <tr>
@@ -121,7 +109,7 @@
               title: props.post.title,
               content: props.post.content,
               image: props.post.image,
-              category: props.post.category,
+              category: props.post.category.map(cat => cat.id),
               ditulis_oleh: props.post.ditulis_oleh,
               ditinjau_oleh: props.post.ditinjau_oleh,
           })
