@@ -23,11 +23,19 @@
                             <!-- <h1>{{ post.category }}</h1> -->
                             <div class="bg-zinc-300 mb-3 rounded-lg">
                                 <p v-for="picked in post.category" class="px-2 py-1">{{ picked.category }}</p>
+                                <!-- <p class="px-2 py-1">{{  }}</p> -->
                             </div>
-                            <!-- <div v-for="cat in category">
-                                <input type="checkbox" :id="cat.category" :value="cat.id" v-model="post.category"/>
+                            <!-- <input type="checkbox" checked> -->
+                            <!-- <div v-for="cat in post.category">
+                                <input type="checkbox" :id="cat.category" :value="cat.id" checked>
                                 <label class="ml-3">{{ cat.category }}</label>
                             </div> -->
+                            <div v-for="cat in category">
+                                <input type="checkbox" :id="cat.category" :value="cat.id" v-model="post.category"/>
+                                <label class="ml-3">{{ cat.category }}</label>
+                            </div>
+                            
+                            <!-- <input type="checkbox" :checked="checked"/> -->
                         </td>
                     </tr>
                     <tr>
@@ -91,6 +99,13 @@
       //layout
       layout: LayoutApp,
 
+      data() {
+        return {
+            checkedCategory: this.post.category,
+            selectedCategory: []
+        }
+      },
+
       //props
       props: {
           post: Object,
@@ -118,7 +133,7 @@
               let title   = post.title
               let content = post.content
               let image = post.image
-            //   let category = post.category
+              let category = post.category
               let ditulis_oleh = post.ditulis_oleh
               let ditinjau_oleh = post.ditinjau_oleh
 
@@ -127,7 +142,7 @@
                   title: title,
                   content: content,
                   image: image,
-                //   category: category,
+                  category: category,
                   ditulis_oleh: ditulis_oleh,
                   ditinjau_oleh: ditinjau_oleh,
               })

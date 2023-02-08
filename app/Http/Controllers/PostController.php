@@ -123,7 +123,7 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        // dd($request);
+        dd($request->category);
         //set validation
         $request->validate([
             'title'   => 'required',
@@ -142,7 +142,7 @@ class PostController extends Controller
             'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);
         if ($request->has('category')) {
-            $post->category()->attach($request->category);
+            $post->category()->sync($request->category);
         };
 
         if($post) {

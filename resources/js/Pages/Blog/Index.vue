@@ -34,7 +34,14 @@
           <h1 class="text-3xl text-center md:text-left mb-5 md:mb-0 font-bold inline text-white">Artikel Lainnya</h1>
           <div>
             <div @click="handleDropdown" class="rounded px-5 py-2 w-4/6 mx-auto md:mx-0 md:ml-auto text-white border border-white cursor-pointer  bg-black flex justify-between items-center">
-              <p>All Category</p>
+              <p v-if="category == ''">All Category</p>
+              <p v-else-if="category == 1" >Active Lifestyle</p>
+              <p v-else-if="category == 2" >Cardiovascular</p>
+              <p v-else-if="category == 3" >Diet Program</p>
+              <p v-else-if="category == 4" >Healthy Eating</p>
+              <p v-else-if="category == 5" >Mindfullness & Stress</p>
+              <p v-else-if="category == 6" >Sleep</p>
+              <p v-else-if="category == 7" >Weight Management</p>
               <font-awesome-icon class="whiteColorIcon" icon="fa-chevron-down" />
             </div>
           </div>
@@ -43,17 +50,22 @@
             class="border border-white text-white w-4/6 mx-auto static m-0 md:ml-auto md:mr-0 z-50"
             :style="{ display: dropDown ? 'block' : 'none' }">
             <ul> 
+              <li class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700" @click="handleChangeCat('')">All Category</li>
               <li v-for="kategori in filter" class="px-5 py-2 cursor-pointer bg-black hover:bg-gray-700" @click="handleChangeCat(kategori.id)" >{{ kategori.category }}</li>
             </ul>
           </div>
         </div>
-        <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-          <BasicCard v-if="category == ''" v-for="post in joinTable" 
+        <div v-if="category == ''">
+          <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
+            <BasicCard v-for="post in joinTable" 
             :key="post.id"
             :item="post"
             :index="index"
-          />
-          <div v-if="category != ''" v-for="post in filter.filter(cat => cat.id == category)">
+            />
+          </div>
+        </div>
+        <div v-if="category != ''">
+          <div v-for="post in filter.filter(cat => cat.id == category)" class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
             <div class="" v-for="pos in post.posts">
               <div class="mb-5">
                 <div>
@@ -62,6 +74,32 @@
                   </inertia-link>
                 </div>
                 <div class="pt-3">
+                  <!-- <button v-if="post.category == 'Sleep'" class="bg-green-500 px-5 py-1 text-white">
+                    {{ post.category }}
+                  </button> -->
+                  <div class="flex justify-end">
+                    <button 
+                      v-if="(post.category == 'Diet Program')"
+                      class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button 
+                      v-else-if="(post.category == 'Sleep')"
+                      class="text-white bg-amber-700 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button 
+                      v-else-if="(post.category == 'Healthy Eating')"
+                      class="text-white bg-teal-600 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button 
+                      v-else-if="(post.category == 'Mindfullness & Stress')"
+                      class="text-white bg-orange-700 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button 
+                      v-else-if="(post.category == 'Weight Management')"
+                      class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button v-else class="text-white">Unknown</button>
+                  </div>
                   <div class="mt-2">
                     <inertia-link :href="`/artikel/${pos.id}`" class="">
                       <h6 class="my-3 text-lg font-semibold  text-white">{{ pos.title }}</h6>

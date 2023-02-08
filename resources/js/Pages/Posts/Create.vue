@@ -19,10 +19,10 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">KATEGORI</td>
                         <td class="pb-5">
-                            <h1>{{ post.category }}</h1>
-                            <div class="bg-zinc-300 mb-3 rounded-lg">
+                            <!-- <h1>{{ post.category }}</h1> -->
+                            <!-- <div class="bg-zinc-300 mb-3 rounded-lg">
                                 <p v-for="picked in post.category" class="px-2 py-1">{{ picked }}</p>
-                            </div>
+                            </div> -->
                             <div v-for="cat in category">
                                 <input type="checkbox" :id="cat.category" :value="cat.id" v-model="post.category"/>
                                 <label class="ml-3">{{ cat.category }}</label>
