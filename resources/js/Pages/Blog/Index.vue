@@ -12,7 +12,7 @@
   
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="">
-              <MainCard v-for="post in joinTable.slice(0, 1)" 
+              <MainCard v-for="post in postsDESC.slice(0, 1)" 
                 :key="post.id" 
                 :item="post"
                 :index="index"
@@ -20,7 +20,7 @@
             </div>
             <div class="">
               <SmallCard
-              v-for="post in joinTable.slice(1, 4)" 
+              v-for="post in postsDESC.slice(1, 4)" 
                 :key="post.id" 
                 :item="post"
                 :index="index"/>
@@ -70,7 +70,7 @@
               <div class="mb-5">
                 <div>
                   <inertia-link :href="`/artikel/${pos.id}`" class="">
-                    <img class="rounded" :src="pos.image"/>
+                    <img class="rounded" :src="`storage/${pos.image}`"/>
                   </inertia-link>
                 </div>
                 <div class="pt-3">
@@ -156,7 +156,7 @@
 },
   
       props: {
-          posts: Array, // <- nama props yang dibuat di controller saat parsing data
+          postsDESC: Array,
           category: Array, 
           joinTable: Array, 
           filter: Array,

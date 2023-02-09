@@ -3,35 +3,38 @@
   <div class="grid grid-cols-6 mb-4 border-b border-gray-300 md:border-0 pb-5">
     <div class="col-span-2">
       <inertia-link :href="`/artikel/${item.id}`">
-        <img class="rounded-2xl w-5/6 h-4/6 sm:h-5/6 md:h-5/6 lg:h-full object-cover" :src="item.image"/>
+        <img class="rounded-2xl w-5/6 h-4/6 sm:h-5/6 md:h-5/6 lg:h-full object-cover" :src="`storage/${item.image}`"/>
       </inertia-link>
     </div>
     <div class="col-span-4">
       <div class="">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <p class="text-sm md:text-base">{{ getMonthName }} {{ getDay }}, {{ getYear }}</p>
-          <div class="mt-2 md:mt-0 mr-0 ml-0 md:ml-auto md:mr-0">
+          <div v-if="item.category.length > 0" class="mt-2 md:mt-0 mr-0 ml-0 md:ml-auto md:mr-0">
             <button 
-              v-if="(getCatColor == 'Diet Program')"
+              v-if="(item.category[0].category == 'Diet Program')"
               class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
             <button 
-              v-else-if="(getCatColor == 'Sleep')"
+              v-else-if="(item.category[0].category == 'Sleep')"
               class="text-white bg-amber-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
             <button 
-              v-else-if="(getCatColor == 'Healthy Eating')"
+              v-else-if="(item.category[0].category == 'Healthy Eating')"
               class="text-white bg-teal-600 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
             <button 
-              v-else-if="(getCatColor == 'Mindfullness & Stress')"
+              v-else-if="(item.category[0].category == 'Mindfullness & Stress')"
               class="text-white bg-orange-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
             <button 
-              v-else-if="(getCatColor == 'Weight Management')"
+              v-else-if="(item.category[0].category == 'Weight Management')"
               class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
             <button v-else class="">Unknown</button>
+          </div>
+          <div v-if="item.category.length == 0" class="mt-2 md:mt-0 mr-0 ml-0 md:ml-auto md:mr-0">
+            <button class="text-white bg-yellow-600 px-4 py-1 rounded text-xs">Uncategorized</button>
           </div>
         </div>
         <inertia-link :href="`/artikel/${item.id}`">

@@ -146,7 +146,7 @@
             <p class="ml-3">76</p>
           </div>
         </div>
-        <img class="rounded-xl mt-5 w-full" :src="joinTable.image"/>
+        <img class="rounded-xl mt-5 w-full" :src="`../storage/${post.image}`"/>
       </div>
       <div class="mt-10">
         <p>{{ joinTable.content }}</p>

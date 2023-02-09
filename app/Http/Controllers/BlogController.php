@@ -34,7 +34,7 @@ class BlogController extends Controller
         //     ->select('posts.*', 'category.category')
         //     ->get();
         
-        $posts = Post::latest()->get();
+        $postsDESC = Post::with('category')->orderBy('id', 'desc')->get();
         $category = Category::get();
         
 
@@ -43,11 +43,11 @@ class BlogController extends Controller
         $filter = Category::with('posts')->get();
 
         return Inertia::render('Blog/Index', [
-            'posts' => $posts,
+            // 'posts' => $posts,
             'category' => $category,
-            // 'joinTable' => $joinTable,
             'joinTable' => $joinTable,
             'filter' => $filter,
+            'postsDESC' => $postsDESC,
         ]);
     }
 

@@ -54,13 +54,13 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-
-        // dd($request->category);
+        
+        // dd($request);
         //set validation
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
-            'image' => 'required',
+            'image' => 'required|image|file|max:2048',
             'ditulis_oleh' => 'required',
             'ditinjau_oleh' => 'required',
         ]);
@@ -69,7 +69,7 @@ class PostController extends Controller
         $post = Post::create([
             'title'     => $request->title,
             'content'   => $request->content,
-            'image'   => $request->image,
+            'image'   => $request->file('image')->store('post-images'),
             'ditulis_oleh'   => $request->ditulis_oleh,
             'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);

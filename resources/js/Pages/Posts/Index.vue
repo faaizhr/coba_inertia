@@ -24,10 +24,14 @@
               </thead>
               <tbody>
                 <tr v-for="post in joinTable" :key="post.id" class="hover:bg-slate-100">
-                  <td class="py-2 px-2"><img :src="post.image"/>
+                  <td class="py-2 px-2"><img :src="`storage/${post.image}`"/>
                     <inertia-link :href="`/posts/${post.id}`">
                     </inertia-link>
                   </td>
+                  <!-- <td class="py-2 px-2"><img :src="post.image"/>
+                    <inertia-link :href="`/posts/${post.id}`">
+                    </inertia-link>
+                  </td> -->
                   <td class="py-2 px-2">
                     <inertia-link :href="`/posts/${post.id}`" class="font-medium">
                       {{ post.title }}

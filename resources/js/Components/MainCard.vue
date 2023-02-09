@@ -2,34 +2,37 @@
   <div class="border-b border-gray-300 pb-5 md:border-0">
     <div>
       <inertia-link :href="`/artikel/${item.id}`">
-        <img class="rounded-2xl" :src="item.image"/>
+        <img class="rounded-2xl" :src="`storage/${item.image}`"/>
       </inertia-link>
     </div>
     <div>
       <div class="flex justify-between mt-4">
         <p class="inline">{{ getMonthName }} {{ getDay }}, {{ getYear }}</p>
-        <div class="flex justify-end">
+        <div v-if="item.category.length > 0" class="flex justify-end">
           <button 
-            v-if="(getCatColor == 'Diet Program')"
+            v-if="(item.category[0].category == 'Diet Program')"
             class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
           >{{ item.category[0].category }}</button>
           <button 
-            v-else-if="(getCatColor == 'Sleep')"
+            v-else-if="(item.category[0].category == 'Sleep')"
             class="text-white bg-amber-700 px-4 py-1 rounded text-xs"  
           >{{ item.category[0].category }}</button>
           <button 
-            v-else-if="(getCatColor == 'Healthy Eating')"
+            v-else-if="(item.category[0].category == 'Healthy Eating')"
             class="text-white bg-teal-600 px-4 py-1 rounded text-xs"  
           >{{ item.category[0].category }}</button>
           <button 
-            v-else-if="(getCatColor == 'Mindfullness & Stress')"
+            v-else-if="(item.category[0].category == 'Mindfullness & Stress')"
             class="text-white bg-orange-700 px-4 py-1 rounded text-xs"  
           >{{ item.category[0].category }}</button>
           <button 
-            v-else-if="(getCatColor == 'Weight Management')"
+            v-else-if="(item.category[0].category == 'Weight Management')"
             class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
           >{{ item.category[0].category }}</button>
           <button v-else class="">Unknown</button>
+        </div>
+        <div v-if="item.category.length == 0" class="flex justify-end">
+          <button class="text-white bg-yellow-600 px-4 py-1 rounded text-xs">Uncategorized</button>
         </div>
       </div>
       <div class="mt-2">
@@ -65,7 +68,7 @@ export default {
 
     data() {
       return {
-        getColor: this.item.category[0].category,
+        // getColor: this.item.category[0].category,
 
         getYear: this.item.updated_at.substring(0, 4),
         getMonth: this.item.updated_at.substring(5, 7),
@@ -74,9 +77,9 @@ export default {
       }
     },
     computed: {
-      getCatColor: function() {
-        return this.getColor
-      },
+      // getCatColor: function() {
+      //   return this.getColor
+      // },
 
       getMonthName: function() {
         if (this.getMonth == "01") {
