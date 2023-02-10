@@ -11,9 +11,9 @@
           <a class="mr-5">Tentang Kami</a>
           <a class="mr-5">Artikel</a>
           <a class="mr-5">Fitur</a>
-          <button class="border border-[#073231] rounded-lg px-3 py-1 mr-3 ml-3 hover:bg-[#073231] hover:text-white">English</button>
+          <button class="border border-[#073231] rounded-lg px-7 py-2 mr-3 ml-3 hover:bg-[#073231] hover:text-white">English</button>
           <inertia-link href="/posts">
-            <button class="border border-green-900 rounded-lg px-3 py-1 bg-[#073231] hover:bg-transparent text-white hover:text-black">Admin Site</button>
+            <button class="border border-green-900 rounded-lg px-7 py-2 bg-[#073231] hover:bg-transparent text-white hover:text-black">Admin Site</button>
           </inertia-link>
         </div>
         <div>
