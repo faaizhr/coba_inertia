@@ -25,6 +25,30 @@
     </div>
   </div>
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl -z-50">
+    <div class="w-full h-96 bg-black">
+      <h2 class="text-4xl tracking-wide font-bold text-white text-center mt-10">Download Sekarang</h2>
+      <div></div>
+    </div>
+    <div></div>
+    <div class="w-full grid grid-cols-3">
+      <div class="bg-white w-full">
+        <h2>Pemeriksaan Lab</h2>
+        <p>Pesan pemeriksaan lab, seperti check up jantung, cek diabetes, atau cek gula darah di cabang Prodia terdekat. Seluruh hasil lab akan dikirimkan langsung di aplikasi.</p>
+      </div>
+      <div class="bg-red-500 w-full">
+
+      </div>
+      <div class="bg-blue-500 w-full">
+        <div>
+          <h2>Health Score</h2>
+          <p>Pahami langkah untuk menjaga kesehatan dirimu dengan mengambil penilaian Health Score.</p>
+        </div>
+        <div>
+          <h2>Home Service</h2>
+          <p>Lakukan pemeriksaan lab dari rumah! Cukup pesan tes dan kami akan datang untuk pengambilan sampel.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
