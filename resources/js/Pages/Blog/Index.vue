@@ -112,11 +112,6 @@
                 </div>
               </div>
             </div>
-            <!-- <BasicFilteredCard v-if="category != ''" v-for="post in filter.filter(cat => cat.id == category)"
-              :key="post.id"
-              :item="post"
-              :index="index"
-            /> -->
           </div>
         </div>
         <div class="flex justify-center mt-10">
@@ -137,7 +132,6 @@
     import MainCard from '../../Components/MainCard.vue';
     import SmallCard from '../../Components/SmallCard.vue'
     import BasicCard from '../../Components/BasicCard.vue';
-    import BasicFilteredCard from '../../Components/BasicFilteredCard.vue';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     // import SecondaryCard from '../../Components/SecondaryCard.vue';
   

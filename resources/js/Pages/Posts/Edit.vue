@@ -4,7 +4,7 @@
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
           <div class="">
               <h1 class="text-3xl font-bold text-center md:text-left mb-5">EDIT POST</h1>
-              <form @submit.prevent="updatePost">
+              <form @submit.prevent="updatePost" enctype="multipart/form-data">
               <div class="bg-white p-5 rounded-xl">
                 <table class="bg-white min-w-full table-auto">
                     <tr class="">
@@ -38,7 +38,17 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">Upload Gambar</td>
                         <td>
-                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1 " v-model="post.image" placeholder="Masukkan Content Post">
+                            <input 
+                                type="file" 
+                                accept="image/png, image/jpeg, image/jpg" 
+                                id="image"
+                                name="image"
+                                @input="post.image = $event.target.files[0]"
+                                @change="(event) => getImagePreview(event)"
+                            >
+                            <div id="preview" class="w-56 object-cover p-2 border border-gray-300 mt-2 rounded-lg">
+                            </div>
+                            <img :src="`../../storage/${post.image}`"/>
                             <div v-if="errors.content" class="">
                                 {{ errors.content }}
                             </div>
@@ -89,8 +99,7 @@
 
       data() {
         return {
-            checkedCategory: this.post.category,
-            selectedCategory: []
+
         }
       },
 
@@ -101,10 +110,31 @@
           category: Array
       },
 
+      methods: {
+        getImagePreview(event) {
+            var image=URL.createObjectURL(event.target.files[0]);
+            var imagediv= document.getElementById('preview');
+            var newimg=document.createElement('img');
+            imagediv.innerHTML='';
+            newimg.src=image;
+            // newimg.width="150";
+            imagediv.appendChild(newimg);
+            console.log(event.target.files[0])
+        },
+      },
+
       //define Composition Api
       setup(props) {
 
           //state posts
+        //   const post = reactive({
+        //       title: '',
+        //       content: '',
+        //       image: '',
+        //       category: [],
+        //       ditulis_oleh: '',
+        //       ditinjau_oleh: '',
+        //   })
           const post = reactive({
               title: props.post.title,
               content: props.post.content,

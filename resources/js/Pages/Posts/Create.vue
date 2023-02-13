@@ -32,7 +32,9 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">CONTENT</td>
                         <td class="pb-5">
-                            <textarea class="w-full h-56 border-b border-gray-300 px-1 py-1" v-model="post.content" placeholder="Masukkan Content Post"></textarea>
+                            <!-- <textarea class="w-full h-56 border-b border-gray-300 px-1 py-1" placeholder="Masukkan Content Post"></textarea> -->
+                            <input id="content" type="hidden" name="content" @change="handleChange">
+                            <trix-editor input="content" class="trix-content"></trix-editor>
                             <div v-if="errors.content" class="mt-2 alert alert-danger">
                                 {{ errors.content }}
                             </div>
@@ -58,7 +60,7 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">Ditulis Oleh</td>
                         <td>
-                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditulis_oleh" placeholder="Masukkan Content Post">
+                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditulis_oleh" placeholder="Masukkan Nama Penulis">
                             <div v-if="errors.content" class="">
                                 {{ errors.content }}
                             </div>
@@ -67,7 +69,7 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">Ditinjau Oleh</td>
                         <td>
-                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditinjau_oleh" placeholder="Masukkan Content Post">
+                            <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditinjau_oleh" placeholder="Masukkan Nama Peninjau">
                             <div v-if="errors.content" class="">
                                 {{ errors.content }}
                             </div>
@@ -128,7 +130,17 @@
           this.name = e.target.files[0];
           console.log(e.target.files[0])
         },
+        handleChange() {
+            console.log(event.target.value)
+        },
+        setTextToTrix: function() {
+            this.post.content = document.getElementById("content").value; 
+    }
       },
+
+    mounted() {
+        document.addEventListener("trix-change", this.setTextToTrix); // Listen to the changes on the editor
+    },
 
       //define Composition Api
       setup() {

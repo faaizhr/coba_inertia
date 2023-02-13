@@ -31,12 +31,13 @@ class PostController extends Controller
      */
     public function index()
     {
+
         $posts = Post::latest()->get();
         $category = Post::latest()->get();
 
         $joinTable = Post::with('category')->get();
 
-
+        
         return Inertia::render('Posts/Index', [
             'posts' => $posts,
             'category' => $category,
@@ -45,7 +46,7 @@ class PostController extends Controller
 
         
     }
-
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -123,12 +124,12 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        // dd($request->category);
+        dd($request);
         //set validation
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
-            'image' => 'required',
+            // 'image' => 'required',
             'ditulis_oleh' => 'required',
             'ditinjau_oleh' => 'required',
         ]);
@@ -137,13 +138,17 @@ class PostController extends Controller
         $post->update([
             'title'     => $request->title,
             'content'   => $request->content,
-            'image'   => $request->image,
+            // 'image'   => $request->file('image')->store('post-images'),
             'ditulis_oleh'   => $request->ditulis_oleh,
             'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);
         if ($request->has('category')) {
             $post->category()->sync($request->category);
         };
+        if ($request->has('iamge')) {
+            $post->post()->sync($request->file('image')->store('post-images'));
+        };
+
 
         if($post) {
             return Redirect()->route('posts.index')->with('message', 'Data Berhasil Diupdate!');

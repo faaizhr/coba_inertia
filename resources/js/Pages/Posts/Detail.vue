@@ -13,7 +13,9 @@
         </div>
         <div class="mb-5">
           <h6 class="font-semibold text-xl">Isi Artikel</h6>
-          <p>{{ joinTable.content }}</p>
+          <div class="trix-content">
+            {{ joinTable.content.slice }}
+          </div>
         </div>
         <div class="mb-5">
           <h6 class="font-semibold text-xl">Kategori</h6>

@@ -1,6 +1,9718 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@coreui/vue/dist/index.es.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@coreui/vue/dist/index.es.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CAccordion": () => (/* binding */ CAccordion),
+/* harmony export */   "CAccordionBody": () => (/* binding */ CAccordionBody),
+/* harmony export */   "CAccordionButton": () => (/* binding */ CAccordionButton),
+/* harmony export */   "CAccordionHeader": () => (/* binding */ CAccordionHeader),
+/* harmony export */   "CAccordionItem": () => (/* binding */ CAccordionItem),
+/* harmony export */   "CAccordionPlugin": () => (/* binding */ CAccordionPlugin),
+/* harmony export */   "CAlert": () => (/* binding */ CAlert),
+/* harmony export */   "CAlertHeading": () => (/* binding */ CAlertHeading),
+/* harmony export */   "CAlertLink": () => (/* binding */ CAlertLink),
+/* harmony export */   "CAlertPlugin": () => (/* binding */ CAlertPlugin),
+/* harmony export */   "CAvatar": () => (/* binding */ CAvatar),
+/* harmony export */   "CAvatarPlugin": () => (/* binding */ CAvatarPlugin),
+/* harmony export */   "CBackdrop": () => (/* binding */ CBackdrop),
+/* harmony export */   "CBackdropPlugin": () => (/* binding */ CBackdropPlugin),
+/* harmony export */   "CBadge": () => (/* binding */ CBadge),
+/* harmony export */   "CBadgePlugin": () => (/* binding */ CBadgePlugin),
+/* harmony export */   "CBreadcrumb": () => (/* binding */ CBreadcrumb),
+/* harmony export */   "CBreadcrumbItem": () => (/* binding */ CBreadcrumbItem),
+/* harmony export */   "CBreadcrumbPlugin": () => (/* binding */ CBreadcrumbPlugin),
+/* harmony export */   "CButton": () => (/* binding */ CButton),
+/* harmony export */   "CButtonGroup": () => (/* binding */ CButtonGroup),
+/* harmony export */   "CButtonGroupPlugin": () => (/* binding */ CButtonGroupPlugin),
+/* harmony export */   "CButtonPlugin": () => (/* binding */ CButtonPlugin),
+/* harmony export */   "CButtonToolbar": () => (/* binding */ CButtonToolbar),
+/* harmony export */   "CCLinkPlugin": () => (/* binding */ CCLinkPlugin),
+/* harmony export */   "CCallout": () => (/* binding */ CCallout),
+/* harmony export */   "CCalloutPlugin": () => (/* binding */ CCalloutPlugin),
+/* harmony export */   "CCard": () => (/* binding */ CCard),
+/* harmony export */   "CCardBody": () => (/* binding */ CCardBody),
+/* harmony export */   "CCardFooter": () => (/* binding */ CCardFooter),
+/* harmony export */   "CCardGroup": () => (/* binding */ CCardGroup),
+/* harmony export */   "CCardHeader": () => (/* binding */ CCardHeader),
+/* harmony export */   "CCardImage": () => (/* binding */ CCardImage),
+/* harmony export */   "CCardImageOverlay": () => (/* binding */ CCardImageOverlay),
+/* harmony export */   "CCardLink": () => (/* binding */ CCardLink),
+/* harmony export */   "CCardPlugin": () => (/* binding */ CCardPlugin),
+/* harmony export */   "CCardSubtitle": () => (/* binding */ CCardSubtitle),
+/* harmony export */   "CCardText": () => (/* binding */ CCardText),
+/* harmony export */   "CCardTitle": () => (/* binding */ CCardTitle),
+/* harmony export */   "CCarousel": () => (/* binding */ CCarousel),
+/* harmony export */   "CCarouselCaption": () => (/* binding */ CCarouselCaption),
+/* harmony export */   "CCarouselItem": () => (/* binding */ CCarouselItem),
+/* harmony export */   "CCarouselPlugin": () => (/* binding */ CCarouselPlugin),
+/* harmony export */   "CCloseButton": () => (/* binding */ CCloseButton),
+/* harmony export */   "CCloseButtonPlugin": () => (/* binding */ CCloseButtonPlugin),
+/* harmony export */   "CCol": () => (/* binding */ CCol),
+/* harmony export */   "CCollapse": () => (/* binding */ CCollapse),
+/* harmony export */   "CCollapsePlugin": () => (/* binding */ CCollapsePlugin),
+/* harmony export */   "CContainer": () => (/* binding */ CContainer),
+/* harmony export */   "CDropdown": () => (/* binding */ CDropdown),
+/* harmony export */   "CDropdownDivider": () => (/* binding */ CDropdownDivider),
+/* harmony export */   "CDropdownHeader": () => (/* binding */ CDropdownHeader),
+/* harmony export */   "CDropdownItem": () => (/* binding */ CDropdownItem),
+/* harmony export */   "CDropdownMenu": () => (/* binding */ CDropdownMenu),
+/* harmony export */   "CDropdownPlugin": () => (/* binding */ CDropdownPlugin),
+/* harmony export */   "CDropdownToggle": () => (/* binding */ CDropdownToggle),
+/* harmony export */   "CFooter": () => (/* binding */ CFooter),
+/* harmony export */   "CFooterPlugin": () => (/* binding */ CFooterPlugin),
+/* harmony export */   "CForm": () => (/* binding */ CForm),
+/* harmony export */   "CFormCheck": () => (/* binding */ CFormCheck),
+/* harmony export */   "CFormFeedback": () => (/* binding */ CFormFeedback),
+/* harmony export */   "CFormFloating": () => (/* binding */ CFormFloating),
+/* harmony export */   "CFormInput": () => (/* binding */ CFormInput),
+/* harmony export */   "CFormLabel": () => (/* binding */ CFormLabel),
+/* harmony export */   "CFormPlugin": () => (/* binding */ CFormPlugin),
+/* harmony export */   "CFormRange": () => (/* binding */ CFormRange),
+/* harmony export */   "CFormSelect": () => (/* binding */ CFormSelect),
+/* harmony export */   "CFormSwitch": () => (/* binding */ CFormSwitch),
+/* harmony export */   "CFormText": () => (/* binding */ CFormText),
+/* harmony export */   "CFormTextarea": () => (/* binding */ CFormTextarea),
+/* harmony export */   "CGridPlugin": () => (/* binding */ CGridPlugin),
+/* harmony export */   "CHeader": () => (/* binding */ CHeader),
+/* harmony export */   "CHeaderBrand": () => (/* binding */ CHeaderBrand),
+/* harmony export */   "CHeaderDivider": () => (/* binding */ CHeaderDivider),
+/* harmony export */   "CHeaderNav": () => (/* binding */ CHeaderNav),
+/* harmony export */   "CHeaderPlugin": () => (/* binding */ CHeaderPlugin),
+/* harmony export */   "CHeaderText": () => (/* binding */ CHeaderText),
+/* harmony export */   "CHeaderToggler": () => (/* binding */ CHeaderToggler),
+/* harmony export */   "CImage": () => (/* binding */ CImage),
+/* harmony export */   "CImagePlugin": () => (/* binding */ CImagePlugin),
+/* harmony export */   "CInputGroup": () => (/* binding */ CInputGroup),
+/* harmony export */   "CInputGroupText": () => (/* binding */ CInputGroupText),
+/* harmony export */   "CLink": () => (/* binding */ CLink),
+/* harmony export */   "CListGroup": () => (/* binding */ CListGroup),
+/* harmony export */   "CListGroupItem": () => (/* binding */ CListGroupItem),
+/* harmony export */   "CListGroupPlugin": () => (/* binding */ CListGroupPlugin),
+/* harmony export */   "CModal": () => (/* binding */ CModal),
+/* harmony export */   "CModalBody": () => (/* binding */ CModalBody),
+/* harmony export */   "CModalFooter": () => (/* binding */ CModalFooter),
+/* harmony export */   "CModalHeader": () => (/* binding */ CModalHeader),
+/* harmony export */   "CModalPlugin": () => (/* binding */ CModalPlugin),
+/* harmony export */   "CModalTitle": () => (/* binding */ CModalTitle),
+/* harmony export */   "CNav": () => (/* binding */ CNav),
+/* harmony export */   "CNavGroup": () => (/* binding */ CNavGroup),
+/* harmony export */   "CNavGroupItems": () => (/* binding */ CNavGroupItems),
+/* harmony export */   "CNavItem": () => (/* binding */ CNavItem),
+/* harmony export */   "CNavLink": () => (/* binding */ CNavLink),
+/* harmony export */   "CNavPlugin": () => (/* binding */ CNavPlugin),
+/* harmony export */   "CNavTitle": () => (/* binding */ CNavTitle),
+/* harmony export */   "CNavbar": () => (/* binding */ CNavbar),
+/* harmony export */   "CNavbarBrand": () => (/* binding */ CNavbarBrand),
+/* harmony export */   "CNavbarNav": () => (/* binding */ CNavbarNav),
+/* harmony export */   "CNavbarPlugin": () => (/* binding */ CNavbarPlugin),
+/* harmony export */   "CNavbarText": () => (/* binding */ CNavbarText),
+/* harmony export */   "CNavbarToggler": () => (/* binding */ CNavbarToggler),
+/* harmony export */   "COffcanvas": () => (/* binding */ COffcanvas),
+/* harmony export */   "COffcanvasBody": () => (/* binding */ COffcanvasBody),
+/* harmony export */   "COffcanvasHeader": () => (/* binding */ COffcanvasHeader),
+/* harmony export */   "COffcanvasPlugin": () => (/* binding */ COffcanvasPlugin),
+/* harmony export */   "COffcanvasTitle": () => (/* binding */ COffcanvasTitle),
+/* harmony export */   "CPagination": () => (/* binding */ CPagination),
+/* harmony export */   "CPaginationItem": () => (/* binding */ CPaginationItem),
+/* harmony export */   "CPaginationPlugin": () => (/* binding */ CPaginationPlugin),
+/* harmony export */   "CPlaceholder": () => (/* binding */ CPlaceholder),
+/* harmony export */   "CPlaceholderPlugin": () => (/* binding */ CPlaceholderPlugin),
+/* harmony export */   "CPopover": () => (/* binding */ CPopover),
+/* harmony export */   "CPopoverPlugin": () => (/* binding */ CPopoverPlugin),
+/* harmony export */   "CProgress": () => (/* binding */ CProgress),
+/* harmony export */   "CProgressBar": () => (/* binding */ CProgressBar),
+/* harmony export */   "CProgressPlugin": () => (/* binding */ CProgressPlugin),
+/* harmony export */   "CRow": () => (/* binding */ CRow),
+/* harmony export */   "CSidebar": () => (/* binding */ CSidebar),
+/* harmony export */   "CSidebarBrand": () => (/* binding */ CSidebarBrand),
+/* harmony export */   "CSidebarFooter": () => (/* binding */ CSidebarFooter),
+/* harmony export */   "CSidebarHeader": () => (/* binding */ CSidebarHeader),
+/* harmony export */   "CSidebarNav": () => (/* binding */ CSidebarNav),
+/* harmony export */   "CSidebarPlugin": () => (/* binding */ CSidebarPlugin),
+/* harmony export */   "CSidebarToggler": () => (/* binding */ CSidebarToggler),
+/* harmony export */   "CSpinner": () => (/* binding */ CSpinner),
+/* harmony export */   "CSpinnerPlugin": () => (/* binding */ CSpinnerPlugin),
+/* harmony export */   "CTabContent": () => (/* binding */ CTabContent),
+/* harmony export */   "CTabPane": () => (/* binding */ CTabPane),
+/* harmony export */   "CTable": () => (/* binding */ CTable),
+/* harmony export */   "CTableBody": () => (/* binding */ CTableBody),
+/* harmony export */   "CTableCaption": () => (/* binding */ CTableCaption),
+/* harmony export */   "CTableDataCell": () => (/* binding */ CTableDataCell),
+/* harmony export */   "CTableFoot": () => (/* binding */ CTableFoot),
+/* harmony export */   "CTableHead": () => (/* binding */ CTableHead),
+/* harmony export */   "CTableHeaderCell": () => (/* binding */ CTableHeaderCell),
+/* harmony export */   "CTablePlugin": () => (/* binding */ CTablePlugin),
+/* harmony export */   "CTableRow": () => (/* binding */ CTableRow),
+/* harmony export */   "CTabsPlugin": () => (/* binding */ CTabsPlugin),
+/* harmony export */   "CToast": () => (/* binding */ CToast),
+/* harmony export */   "CToastBody": () => (/* binding */ CToastBody),
+/* harmony export */   "CToastClose": () => (/* binding */ CToastClose),
+/* harmony export */   "CToastHeader": () => (/* binding */ CToastHeader),
+/* harmony export */   "CToastPlugin": () => (/* binding */ CToastPlugin),
+/* harmony export */   "CToaster": () => (/* binding */ CToaster),
+/* harmony export */   "CTooltip": () => (/* binding */ CTooltip),
+/* harmony export */   "CTooltipPlugin": () => (/* binding */ CTooltipPlugin),
+/* harmony export */   "CWidgetStatsA": () => (/* binding */ CWidgetStatsA),
+/* harmony export */   "CWidgetStatsB": () => (/* binding */ CWidgetStatsB),
+/* harmony export */   "CWidgetStatsC": () => (/* binding */ CWidgetStatsC),
+/* harmony export */   "CWidgetStatsD": () => (/* binding */ CWidgetStatsD),
+/* harmony export */   "CWidgetStatsE": () => (/* binding */ CWidgetStatsE),
+/* harmony export */   "CWidgetStatsF": () => (/* binding */ CWidgetStatsF),
+/* harmony export */   "CWidgetsStatsPlugin": () => (/* binding */ CWidgetsStatsPlugin),
+/* harmony export */   "default": () => (/* binding */ CoreuiVue),
+/* harmony export */   "vcplaceholder": () => (/* binding */ vcplaceholder),
+/* harmony export */   "vcpopover": () => (/* binding */ vcpopover),
+/* harmony export */   "vctooltip": () => (/* binding */ vctooltip)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+const CAccordion = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAccordion',
+    props: {
+        /**
+         * The active item key.
+         */
+        activeItemKey: {
+            type: [Number, String],
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Make accordion items stay open when another item is opened
+         */
+        alwaysOpen: Boolean,
+        /**
+         * Removes the default background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent container.
+         */
+        flush: Boolean,
+    },
+    setup(props, { slots }) {
+        const activeItemKey = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.activeItemKey);
+        const setActiveItemKey = (key) => {
+            activeItemKey.value = key;
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('activeItemKey', activeItemKey);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('alwaysOpen', props.alwaysOpen);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('setActiveItemKey', setActiveItemKey);
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['accordion', { ['accordion-flush']: props.flush }] }, slots.default && slots.default());
+    },
+});
+
+const vVisible = {
+    beforeMount(el, { value }, { transition }) {
+        el._vod = el.style.display === 'none' ? '' : el.style.display;
+        if (transition && value) {
+            transition.beforeEnter(el);
+        }
+    },
+    mounted(el, { value }, { transition }) {
+        if (transition && value) {
+            transition.enter(el);
+        }
+    },
+    updated(el, { value, oldValue }, { transition }) {
+        if (!value === !oldValue)
+            return;
+        if (transition) {
+            if (value) {
+                transition.beforeEnter(el);
+                transition.enter(el);
+            }
+            else {
+                transition.leave(el, () => {
+                    // setDisplay(el, false)
+                });
+            }
+        }
+    },
+};
+
+const execute = (callback) => {
+    if (typeof callback === 'function') {
+        callback();
+    }
+};
+const executeAfterTransition = (callback, transitionElement, waitForTransition = true) => {
+    if (!waitForTransition) {
+        execute(callback);
+        return;
+    }
+    const durationPadding = 5;
+    const emulatedDuration = getTransitionDurationFromElement(transitionElement) + durationPadding;
+    let called = false;
+    const handler = ({ target }) => {
+        if (target !== transitionElement) {
+            return;
+        }
+        called = true;
+        transitionElement.removeEventListener('transitionend', handler);
+        execute(callback);
+    };
+    transitionElement.addEventListener('transitionend', handler);
+    setTimeout(() => {
+        if (!called) {
+            triggerTransitionEnd(transitionElement);
+        }
+    }, emulatedDuration);
+};
+const getTransitionDurationFromElement = (element) => {
+    if (!element) {
+        return 0;
+    }
+    // Get transition-duration of the element
+    let { transitionDuration, transitionDelay } = window.getComputedStyle(element);
+    const floatTransitionDuration = Number.parseFloat(transitionDuration);
+    const floatTransitionDelay = Number.parseFloat(transitionDelay);
+    // Return 0 if element or transition duration is not found
+    if (!floatTransitionDuration && !floatTransitionDelay) {
+        return 0;
+    }
+    // If multiple durations are defined, take the first
+    transitionDuration = transitionDuration.split(',')[0];
+    transitionDelay = transitionDelay.split(',')[0];
+    return (Number.parseFloat(transitionDuration) + Number.parseFloat(transitionDelay)) * 1000;
+};
+const triggerTransitionEnd = (element) => {
+    element.dispatchEvent(new Event('transitionend'));
+};
+
+const CCollapse = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCollapse',
+    props: {
+        /**
+         * Set horizontal collapsing to transition the width instead of height.
+         */
+        horizontal: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Toggle the visibility of component.
+         */
+        visible: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const collapsing = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
+        const show = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        const handleBeforeEnter = () => {
+            collapsing.value = true;
+        };
+        const handleEnter = (el, done) => {
+            emit('show');
+            // collapsing.value = true
+            setTimeout(() => {
+                executeAfterTransition(() => done(), el);
+                if (props.horizontal) {
+                    el.style.width = `${el.scrollWidth}px`;
+                    return;
+                }
+                el.style.height = `${el.scrollHeight}px`;
+            }, 1);
+        };
+        const handleAfterEnter = (el) => {
+            show.value = true;
+            collapsing.value = false;
+            props.horizontal ? el.style.removeProperty('width') : el.style.removeProperty('height');
+        };
+        const handleBeforeLeave = (el) => {
+            collapsing.value = true;
+            show.value = false;
+            if (props.horizontal) {
+                el.style.width = `${el.scrollWidth}px`;
+                return;
+            }
+            el.style.height = `${el.scrollHeight}px`;
+        };
+        const handleLeave = (el, done) => {
+            emit('hide');
+            setTimeout(() => {
+                executeAfterTransition(() => done(), el);
+                if (props.horizontal) {
+                    el.style.width = '0px';
+                    return;
+                }
+                el.style.height = '0px';
+            }, 1);
+        };
+        const handleAfterLeave = (el) => {
+            collapsing.value = false;
+            props.horizontal ? el.style.removeProperty('width') : el.style.removeProperty('height');
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+            css: false,
+            onBeforeEnter: () => handleBeforeEnter(),
+            onEnter: (el, done) => handleEnter(el, done),
+            onAfterEnter: (el) => handleAfterEnter(el),
+            onBeforeLeave: (el) => handleBeforeLeave(el),
+            onLeave: (el, done) => handleLeave(el, done),
+            onAfterLeave: (el) => handleAfterLeave(el),
+        }, () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                collapsing.value ? 'collapsing' : 'collapse',
+                { 'collapse-horizontal': props.horizontal, show: show.value },
+            ],
+        }, slots.default && slots.default()), [[vVisible, props.visible]]));
+    },
+});
+
+const CAccordionBody = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAccordionBody',
+    setup(_, { slots }) {
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('visible');
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCollapse, { class: 'accordion-collapse', visible: visible.value }, {
+            default: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['accordion-body'] }, slots.default && slots.default()),
+        });
+    },
+});
+
+const CAccordionButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAccordionButton',
+    setup(_, { slots }) {
+        const toggleVisibility = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('toggleVisibility');
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('visible');
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+            type: 'button',
+            'aria-expanded': !visible.value,
+            class: ['accordion-button', { ['collapsed']: !visible.value }],
+            onClick: () => toggleVisibility(),
+        }, slots.default && slots.default());
+    },
+});
+
+const CAccordionHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAccordionHeader',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['accordion-header'] }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CAccordionButton, {}, {
+            default: () => slots.default && slots.default(),
+        }));
+    },
+});
+
+const CAccordionItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAccordionItem',
+    props: {
+        /**
+         * The item key.
+         */
+        itemKey: {
+            type: [Number, String],
+            default: undefined,
+            require: false,
+        },
+    },
+    setup(props, { slots }) {
+        const activeItemKey = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('activeItemKey');
+        const alwaysOpen = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('alwaysOpen');
+        // eslint-disable-next-line no-unused-vars
+        const setActiveItemKey = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('setActiveItemKey');
+        const itemKey = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.itemKey ? props.itemKey : Math.random().toString(36).substr(2, 9));
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(Boolean(activeItemKey.value === itemKey.value));
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(activeItemKey, () => (visible.value = Boolean(activeItemKey.value === itemKey.value)));
+        const toggleVisibility = () => {
+            visible.value = !visible.value;
+            !alwaysOpen && visible && setActiveItemKey(itemKey.value);
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('visible', visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('toggleVisibility', toggleVisibility);
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['accordion-item'] }, slots.default && slots.default());
+    },
+});
+
+const CAccordionPlugin = {
+    install: (app) => {
+        app.component(CAccordion.name, CAccordion);
+        app.component(CAccordionBody.name, CAccordionBody);
+        app.component(CAccordionButton.name, CAccordionButton);
+        app.component(CAccordionHeader.name, CAccordionHeader);
+        app.component(CAccordionItem.name, CAccordionItem);
+    },
+};
+
+const Shape = {
+    type: String,
+    validator: (value) => {
+        // The value must match one of these strings
+        return [
+            'rounded',
+            'rounded-top',
+            'rounded-end',
+            'rounded-bottom',
+            'rounded-start',
+            'rounded-circle',
+            'rounded-pill',
+            'rounded-0',
+            'rounded-1',
+            'rounded-2',
+            'rounded-3',
+        ].includes(value);
+    },
+};
+const Color = {
+    type: String,
+    validator: (value) => {
+        // The value must match one of these strings
+        return [
+            'primary',
+            'secondary',
+            'success',
+            'danger',
+            'warning',
+            'info',
+            'dark',
+            'light',
+            'link',
+            'transparent',
+        ].includes(value);
+    },
+};
+const TextColor = {
+    type: String,
+    validator: (value) => {
+        return [
+            'primary',
+            'secondary',
+            'success',
+            'danger',
+            'warning',
+            'info',
+            'dark',
+            'light',
+            'white',
+            'muted',
+            'high-emphasis',
+            'medium-emphasis',
+            'disabled',
+            'high-emphasis-inverse',
+            'medium-emphasis-inverse',
+            'disabled-inverse',
+        ].includes(value);
+    },
+};
+
+const CCloseButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCloseButton',
+    props: {
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Change the default color to white.
+         */
+        white: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Event called when the user clicks on the component.
+         */
+        'click',
+    ],
+    setup(props, { emit }) {
+        const handleClick = () => {
+            if (props.disabled) {
+                return;
+            }
+            emit('click');
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+            type: 'button',
+            class: [
+                'btn',
+                'btn-close',
+                {
+                    ['btn-close-white']: props.white,
+                },
+                props.disabled,
+            ],
+            'aria-label': 'Close',
+            disabled: props.disabled,
+            onClick: handleClick,
+        });
+    },
+});
+
+const CAlert = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAlert',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Optionally add a close button to alert and allow it to self dismisss.
+         */
+        dismissible: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+        /**
+         * Set the alert variant to a solid.
+         *
+         * @values 'solid'
+         */
+        variant: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return value === 'solid';
+            },
+        },
+        /**
+         * Toggle the visibility of alert component.
+         */
+        visible: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be closed.
+         */
+        'close',
+    ],
+    setup(props, { slots, emit }) {
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.visible, () => {
+            visible.value = props.visible;
+        });
+        const handleDismiss = () => {
+            visible.value = false;
+            emit('close');
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+            name: 'fade',
+            duration: 350,
+            enterFromClass: '',
+            enterActiveClass: 'fade',
+            enterToClass: 'fade show',
+            leaveActiveClass: 'fade',
+        }, {
+            default: () => visible.value &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: [
+                        'alert',
+                        props.variant === 'solid'
+                            ? `bg-${props.color} text-white border-0`
+                            : `alert-${props.color}`,
+                        {
+                            [`alert-${props.color}`]: props.color,
+                            'alert-dismissible': props.dismissible,
+                        },
+                    ],
+                }, [
+                    slots.default && slots.default(),
+                    props.dismissible &&
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCloseButton, {
+                            onClick: () => {
+                                handleDismiss();
+                            },
+                        }),
+                ]),
+        });
+    },
+});
+
+const CAlertHeading = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAlertHeading',
+    props: {
+        /**
+         * 	Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'h4',
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: 'alert-heading',
+        }, slots);
+    },
+});
+
+const CAlertLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAlertLink',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('a', {
+            class: 'alert-link',
+        }, slots);
+    },
+});
+
+const CAlertPlugin = {
+    install: (app) => {
+        app.component(CAlert.name, CAlert);
+        app.component(CAlertHeading.name, CAlertHeading);
+        app.component(CAlertLink.name, CAlertLink);
+    },
+};
+
+const CAvatar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CAvatar',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Select the shape of the component.
+         *
+         * @values 'rounded', 'rounded-top', 'rounded-end', 'rounded-bottom', 'rounded-start', 'rounded-circle', 'rounded-pill', 'rounded-0', 'rounded-1', 'rounded-2', 'rounded-3'
+         */
+        shape: Shape,
+        /**
+         * Size the component small, large, or extra large.
+         *
+         * @values 'sm', 'md', 'lg', 'xl'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'md', 'lg', 'xl'].includes(value);
+            },
+        },
+        /**
+         * The src attribute for the img element.
+         */
+        src: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Sets the color context of the status indicator to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        status: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return [
+                    'primary',
+                    'secondary',
+                    'success',
+                    'danger',
+                    'warning',
+                    'info',
+                    'dark',
+                    'light',
+                ].includes(value);
+            },
+        },
+        /**
+         * Sets the text color of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'white', 'muted', 'high-emphasis', 'medium-emphasis', 'disabled', 'high-emphasis-inverse', 'medium-emphasis-inverse', 'disabled-inverse'
+         */
+        textColor: TextColor,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'avatar',
+                {
+                    [`bg-${props.color}`]: props.color,
+                    [`avatar-${props.size}`]: props.size,
+                    [`text-${props.textColor}`]: props.textColor,
+                },
+                `${props.shape}`,
+            ],
+        }, [
+            props.src
+                ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('img', { src: props.src, class: 'avatar-img' })
+                : slots.default && slots.default(),
+            props.status && (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: ['avatar-status', `bg-${props.status}`] }),
+        ]);
+    },
+});
+
+const CAvatarPlugin = {
+    install: (app) => {
+        app.component(CAvatar.name, CAvatar);
+    },
+};
+
+const CBackdrop = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CBackdrop',
+    props: {
+        /**
+         * Toggle the visibility of modal component.
+         */
+        visible: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+    },
+    setup(props) {
+        const handleBeforeEnter = (el) => {
+            el.classList.remove('d-none');
+        };
+        const handleEnter = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            setTimeout(() => {
+                el.style.visibility = 'visible';
+                el.classList.add('show');
+            }, 1);
+        };
+        const handleLeave = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            el.classList.remove('show');
+        };
+        const handleAfterLeave = (el) => {
+            el.classList.add('d-none');
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+            onBeforeEnter: (el) => handleBeforeEnter(el),
+            onEnter: (el, done) => handleEnter(el, done),
+            onLeave: (el, done) => handleLeave(el, done),
+            onAfterLeave: (el) => handleAfterLeave(el),
+        }, () => props.visible &&
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                class: 'fade',
+            }));
+    },
+});
+
+const CBackdropPlugin = {
+    install: (app) => {
+        app.component(CBackdrop.name, CBackdrop);
+    },
+};
+
+const CBadge = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CBadge',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'span',
+        },
+        /**
+         * Position badge in one of the corners of a link or button.
+         *
+         * @values 'top-start', 'top-end', 'bottom-end', 'bottom-start'
+         */
+        position: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['top-start', 'top-end', 'bottom-end', 'bottom-start'].includes(value);
+            },
+        },
+        /**
+         * Select the shape of the component.
+         *
+         * @values 'rounded', 'rounded-top', 'rounded-end', 'rounded-bottom', 'rounded-start', 'rounded-circle', 'rounded-pill', 'rounded-0', 'rounded-1', 'rounded-2', 'rounded-3'
+         */
+        shape: Shape,
+        /**
+         * Size the component small.
+         *
+         * @values 'sm'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return value === 'sm';
+            },
+        },
+        /**
+         * Sets the text color of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'white', 'muted', 'high-emphasis', 'medium-emphasis', 'disabled', 'high-emphasis-inverse', 'medium-emphasis-inverse', 'disabled-inverse'
+         */
+        textColor: TextColor,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'badge',
+                {
+                    [`bg-${props.color}`]: props.color,
+                    'position-absolute translate-middle': props.position,
+                    'top-0': props.position && props.position.includes('top'),
+                    'top-100': props.position && props.position.includes('bottom'),
+                    'start-100': props.position && props.position.includes('end'),
+                    'start-0': props.position && props.position.includes('start'),
+                    [`badge-${props.size}`]: props.size,
+                    [`text-${props.textColor}`]: props.textColor,
+                },
+                props.shape,
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CBadgePlugin = {
+    install: (app) => {
+        app.component(CBadge.name, CBadge);
+    },
+};
+
+const CBreadcrumbItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CBreadcrumbItem',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * The `href` attribute for the inner link component.
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('li', {
+            class: [
+                'breadcrumb-item',
+                {
+                    active: props.active,
+                },
+            ],
+            ...(props.active && { 'aria-current': 'page' }),
+        }, props.href
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('a', { href: props.href }, slots.default && slots.default())
+            : slots.default && slots.default());
+    },
+});
+
+const CBreadcrumb = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CBreadcrumb',
+    setup(_, { slots, attrs }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('nav', {
+            'aria-label': 'breadcrumb',
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('ol', { class: ['breadcrumb', attrs.class] }, slots.default && slots.default()));
+    },
+});
+
+const CBreadcrumbPlugin = {
+    install: (app) => {
+        app.component(CBreadcrumb.name, CBreadcrumb);
+        app.component(CBreadcrumbItem.name, CBreadcrumbItem);
+    },
+};
+
+const CButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CButton',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'button',
+            required: false,
+        },
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * The href attribute specifies the URL of the page the link goes to.
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Select the shape of the component.
+         *
+         * @values 'rounded', 'rounded-top', 'rounded-end', 'rounded-bottom', 'rounded-start', 'rounded-circle', 'rounded-pill', 'rounded-0', 'rounded-1', 'rounded-2', 'rounded-3'
+         */
+        shape: Shape,
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm', 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+        /**
+         * Specifies the type of button. Always specify the type attribute for the `<button>` element.
+         * Different browsers may use different default types for the `<button>` element.
+         *
+         * @values 'button', 'submit', 'reset'
+         */
+        type: {
+            type: String,
+            default: 'button',
+            required: false,
+            validator: (value) => {
+                return ['button', 'submit', 'reset'].includes(value);
+            },
+        },
+        /**
+         * Set the button variant to an outlined button or a ghost button.
+         *
+         * @values 'ghost', 'outline'
+         */
+        variant: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['ghost', 'outline'].includes(value);
+            },
+        },
+    },
+    emits: [
+        /**
+         * Event called when the user clicks on the button.
+         */
+        'click',
+    ],
+    setup(props, { emit, slots }) {
+        const handleClick = (event) => {
+            if (props.disabled) {
+                return;
+            }
+            emit('click', event);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'btn',
+                props.variant ? `btn-${props.variant}-${props.color}` : `btn-${props.color}`,
+                {
+                    [`btn-${props.size}`]: props.size,
+                    active: props.active,
+                    disabled: props.disabled,
+                },
+                props.shape,
+            ],
+            disabled: props.disabled && props.component !== 'a',
+            ...(props.component === 'a' && props.disabled && { 'aria-disabled': true, tabIndex: -1 }),
+            ...(props.component === 'a' && props.href && { href: props.href }),
+            ...(props.component === 'button' && { type: props.type }),
+            onClick: handleClick,
+        }, slots.default && slots.default());
+    },
+});
+
+const CButtonPlugin = {
+    install: (app) => {
+        app.component(CButton.name, CButton);
+    },
+};
+
+const CButtonToolbar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CButtonToolbar',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'btn-toolbar' }, slots.default && slots.default());
+    },
+});
+
+const CButtonGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CButtonGroup',
+    props: {
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm', 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+        /**
+         * Create a set of buttons that appear vertically stacked rather than horizontally. Split button dropdowns are not supported here.
+         */
+        vertical: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                props.vertical ? 'btn-group-vertical' : 'btn-group',
+                { [`btn-group-${props.size}`]: props.size },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CButtonGroupPlugin = {
+    install: (app) => {
+        app.component(CButtonToolbar.name, CButtonToolbar);
+        app.component(CButtonGroup.name, CButtonGroup);
+    },
+};
+
+const CCallout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCallout',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'callout',
+                {
+                    [`callout-${props.color}`]: props.color,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CCalloutPlugin = {
+    install: (app) => {
+        app.component(CCallout.name, CCallout);
+    },
+};
+
+const CCard = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCard',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Sets the text color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'white', 'muted', 'high-emphasis', 'medium-emphasis', 'disabled', 'high-emphasis-inverse', 'medium-emphasis-inverse', 'disabled-inverse'
+         */
+        textColor: TextColor,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'card',
+                {
+                    [`bg-${props.color}`]: props.color,
+                    [`text-${props.textColor}`]: props.textColor,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CCardBody = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardBody',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'card-body' }, slots.default && slots.default());
+    },
+});
+
+const CCardFooter = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardFooter',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'card-footer' }, slots.default && slots.default());
+    },
+});
+
+const CCardGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardGroup',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'card-group' }, slots.default && slots.default());
+    },
+});
+
+const CCardHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardHeader',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'div',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'card-header' }, slots.default && slots.default());
+    },
+});
+
+const CCardImage = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardImage',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'img',
+        },
+        /**
+         * Optionally orientate the image to the top, bottom.
+         *
+         * @values 'top', 'bottom'
+         */
+        orientation: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['top', 'bottom'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: `card-img${props.orientation ? `-${props.orientation}` : ''}`,
+        }, slots.default && slots.default());
+    },
+});
+
+const CCardImageOverlay = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardImageOverlay',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'card-img-overlay' }, slots.default && slots.default());
+    },
+});
+
+const CLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CLink',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'a',
+        },
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * The href attribute specifies the URL of the page the link goes to.
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Event called when the user clicks on the component.
+         */
+        'click',
+    ],
+    setup(props, { slots, emit }) {
+        const handleClick = () => {
+            emit('click', props.href);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [{ active: props.active, disabled: props.disabled }],
+            ...(props.active && { 'aria-current': 'page' }),
+            ...(props.component === 'a' && props.disabled && { 'aria-disabled': true, tabIndex: -1 }),
+            ...((props.component === 'a' || props.component === 'button') && {
+                onClick: handleClick,
+            }),
+            href: props.href,
+        }, slots.default && slots.default());
+    },
+});
+
+const CCLinkPlugin = {
+    install: (app) => {
+        app.component(CLink.name, CLink);
+    },
+};
+
+const CCardLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardLink',
+    props: {
+        /**
+         * The href attribute specifies the URL of the page the link goes to.
+         */
+        href: {
+            type: String,
+            default: '#',
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CLink, { class: 'card-link', href: props.href }, { default: () => slots.default && slots.default() });
+    },
+});
+
+const CCardSubtitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardSubtitle',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'h6',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'card-subtitle' }, slots.default && slots.default());
+    },
+});
+
+const CCardText = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardText',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'p',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'card-text' }, slots.default && slots.default());
+    },
+});
+
+const CCardTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCardTitle',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'h5',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'card-title' }, slots.default && slots.default());
+    },
+});
+
+const CCardPlugin = {
+    install: (app) => {
+        app.component(CCard.name, CCard);
+        app.component(CCardBody.name, CCardBody);
+        app.component(CCardFooter.name, CCardFooter);
+        app.component(CCardGroup.name, CCardGroup);
+        app.component(CCardHeader.name, CCardHeader);
+        app.component(CCardImage.name, CCardImage);
+        app.component(CCardImageOverlay.name, CCardImageOverlay);
+        app.component(CCardLink.name, CCardLink);
+        app.component(CCardSubtitle.name, CCardSubtitle);
+        app.component(CCardText.name, CCardText);
+        app.component(CCardTitle.name, CCardTitle);
+    },
+};
+
+const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (Math.floor(rect.top) >= 0 &&
+        Math.floor(rect.left) >= 0 &&
+        Math.floor(rect.bottom) <= (window.innerHeight || document.documentElement.clientHeight) &&
+        Math.floor(rect.right) <= (window.innerWidth || document.documentElement.clientWidth));
+};
+
+const CCarousel = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCarousel',
+    props: {
+        /**
+         * Adding in the previous and next controls.
+         */
+        controls: Boolean,
+        /**
+         * Add darker controls, indicators, and captions.
+         */
+        dark: Boolean,
+        /**
+         * index of the active item.
+         */
+        index: {
+            type: Number,
+            default: 0,
+            required: false,
+        },
+        /**
+         * Adding indicators at the bottom of the carousel for each item.
+         */
+        indicators: Boolean,
+        /**
+         * The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
+         */
+        interval: {
+            type: [Boolean, Number],
+            default: 5000,
+            required: false,
+        },
+        /**
+         * If set to 'hover', pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave. If set to false, hovering over the carousel won't pause it.
+         */
+        pause: {
+            type: [Boolean, String],
+            default: 'hover',
+            required: false,
+            validator: (value) => {
+                return typeof value === 'boolean' || value === 'hover';
+            },
+        },
+        /**
+         * Set type of the transition.
+         *
+         * @values 'crossfade', 'slide'
+         */
+        transition: {
+            type: String,
+            default: 'slide',
+            required: false,
+            validator: (value) => {
+                return ['crossfade', 'slide'].includes(value);
+            },
+        },
+        /**
+         * Set whether the carousel should cycle continuously or have hard stops.
+         */
+        wrap: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        const carouselRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const timeout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const animating = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const customInterval = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.interval);
+        const setAnimating = (value) => {
+            animating.value = value;
+        };
+        const setCustomInterval = (value) => {
+            customInterval.value = value;
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('setAnimating', setAnimating);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('setCustomInterval', setCustomInterval);
+        const pause = () => timeout.value && clearInterval(timeout.value);
+        const cycle = () => {
+            pause();
+            if (typeof props.interval === 'number') {
+                timeout.value = setTimeout(() => nextItemWhenVisible(), typeof customInterval.value === 'number' ? customInterval.value : props.interval);
+            }
+        };
+        const state = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)({
+            items: [],
+            active: props.index,
+            direction: 'next',
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onBeforeMount)(() => {
+            if (slots.default) {
+                // @ts-expect-error TODO: fix types
+                state.items = slots.default().filter((child) => child.type.name === 'CCarouselItem');
+            }
+        });
+        const handleControlClick = (direction) => {
+            if (animating.value) {
+                return;
+            }
+            state.direction = direction;
+            if (direction === 'next') {
+                state.active === state.items.length - 1 ? (state.active = 0) : state.active++;
+            }
+            else {
+                state.active === 0 ? (state.active = state.items.length - 1) : state.active--;
+            }
+        };
+        const nextItemWhenVisible = () => {
+            // Don't call next when the page isn't visible
+            // or the carousel or its parent isn't visible
+            if (!document.hidden && isInViewport(carouselRef.value)) {
+                handleControlClick('next');
+            }
+        };
+        const handleIndicatorClick = (index) => {
+            if (state.active === index) {
+                return;
+            }
+            if (state.active < index) {
+                state.direction = 'next';
+                state.active = index;
+                return;
+            }
+            if (state.active > index) {
+                state.direction = 'prev';
+                state.active = index;
+            }
+        };
+        const handleScroll = () => {
+            if (!document.hidden && isInViewport(carouselRef.value)) {
+                visible.value = true;
+            }
+            else {
+                visible.value = false;
+            }
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+            window.addEventListener('scroll', handleScroll);
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onUpdated)(() => {
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(animating, () => {
+                if (props.wrap) {
+                    !animating.value && cycle();
+                    return;
+                }
+                if (!props.wrap && state.active < state.items.length - 1) {
+                    !animating.value && cycle();
+                }
+            });
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(visible, () => {
+            visible.value && cycle();
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'carousel slide',
+                props.transition === 'crossfade' && 'carousel-fade',
+                props.dark && 'carousel-dark',
+            ],
+            onmouseover: () => props.pause && pause(),
+            onmouseleave: () => cycle(),
+            ref: carouselRef,
+        }, [
+            props.indicators &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'carousel-indicators',
+                }, state.items.map((_, index) => {
+                    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+                        type: 'button',
+                        id: index,
+                        'data-coreui-target': '',
+                        ...(state.active === index && { class: 'active' }),
+                        onClick: () => handleIndicatorClick(index),
+                    });
+                })),
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'carousel-inner' }, state.items.map((item, index) => {
+                return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(item, {
+                    active: state.active === index ? true : false,
+                    direction: state.direction,
+                });
+            })),
+            props.controls && [
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+                    type: 'button',
+                    class: 'carousel-control-prev',
+                    'data-coreui-target': '',
+                    onClick: () => handleControlClick('prev'),
+                }, [
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'carousel-control-prev-icon', ariaHidden: 'true' }),
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'visually-hidden' }, 'Previous'),
+                ]),
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+                    type: 'button',
+                    class: 'carousel-control-next',
+                    'data-coreui-target': '',
+                    onClick: () => handleControlClick('next'),
+                }, [
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'carousel-control-next-icon', ariaHidden: 'true' }),
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'visually-hidden' }, 'Next'),
+                ]),
+            ],
+        ]);
+    },
+});
+
+const CCarouselCaption = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCarouselCaption',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: 'carousel-caption',
+        }, slots.default && slots.default());
+    },
+});
+
+const CCarouselItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCarouselItem',
+    props: {
+        /**
+         * @ignore
+         */
+        active: {
+            type: Boolean,
+            default: false,
+        },
+        /**
+         * @ignore
+         */
+        direction: {
+            type: String,
+            default: 'next',
+            required: false,
+        },
+        /**
+         * The amount of time to delay between automatically cycling an item.
+         */
+        interval: {
+            type: [Boolean, Number],
+            default: false,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        const carouselItemRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const { active } = (0,vue__WEBPACK_IMPORTED_MODULE_0__.toRefs)(props);
+        const directionClassName = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const orderClassName = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const activeClassName = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(active.value && 'active');
+        // eslint-disable-next-line no-unused-vars
+        const setAnimating = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('setAnimating');
+        // eslint-disable-next-line no-unused-vars
+        const setCustomInterval = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('setCustomInterval');
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(active, (active, prevActive) => {
+            active && setCustomInterval(props.interval);
+            if (!prevActive && active) {
+                orderClassName.value = `carousel-item-${props.direction}`;
+                setCustomInterval(props.interval);
+            }
+            setTimeout(() => {
+                if (prevActive && !active) {
+                    activeClassName.value = 'active';
+                }
+                directionClassName.value = `carousel-item-${props.direction === 'next' ? 'start' : 'end'}`;
+            }, 0);
+            carouselItemRef.value.addEventListener('transitionstart', () => {
+                setAnimating(true);
+            });
+            carouselItemRef.value.addEventListener('transitionend', () => {
+                setAnimating(false);
+                if (active) {
+                    directionClassName.value = '';
+                    orderClassName.value = '';
+                    activeClassName.value = 'active';
+                }
+                if (!active) {
+                    directionClassName.value = '';
+                    orderClassName.value = '';
+                    activeClassName.value = '';
+                }
+            });
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'carousel-item',
+                activeClassName.value,
+                directionClassName.value,
+                orderClassName.value,
+            ],
+            ref: carouselItemRef,
+        }, slots.default && slots.default());
+    },
+});
+
+const CCarouselPlugin = {
+    install: (app) => {
+        app.component(CCarousel.name, CCarousel);
+        app.component(CCarouselCaption.name, CCarouselCaption);
+        app.component(CCarouselItem.name, CCarouselItem);
+    },
+};
+
+const CCloseButtonPlugin = {
+    install: (app) => {
+        app.component(CCloseButton.name, CCloseButton);
+    },
+};
+
+const CCollapsePlugin = {
+    install: (app) => {
+        app.component(CCollapse.name, CCollapse);
+    },
+};
+
+var top = 'top';
+var bottom = 'bottom';
+var right = 'right';
+var left = 'left';
+var auto = 'auto';
+var basePlacements = [top, bottom, right, left];
+var start = 'start';
+var end = 'end';
+var clippingParents = 'clippingParents';
+var viewport = 'viewport';
+var popper = 'popper';
+var reference = 'reference';
+var variationPlacements = /*#__PURE__*/basePlacements.reduce(function (acc, placement) {
+  return acc.concat([placement + "-" + start, placement + "-" + end]);
+}, []);
+var placements = /*#__PURE__*/[].concat(basePlacements, [auto]).reduce(function (acc, placement) {
+  return acc.concat([placement, placement + "-" + start, placement + "-" + end]);
+}, []); // modifiers that need to read the DOM
+
+var beforeRead = 'beforeRead';
+var read = 'read';
+var afterRead = 'afterRead'; // pure-logic modifiers
+
+var beforeMain = 'beforeMain';
+var main = 'main';
+var afterMain = 'afterMain'; // modifier with the purpose to write to the DOM (or write into a framework state)
+
+var beforeWrite = 'beforeWrite';
+var write = 'write';
+var afterWrite = 'afterWrite';
+var modifierPhases = [beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite];
+
+function getNodeName(element) {
+  return element ? (element.nodeName || '').toLowerCase() : null;
+}
+
+function getWindow(node) {
+  if (node == null) {
+    return window;
+  }
+
+  if (node.toString() !== '[object Window]') {
+    var ownerDocument = node.ownerDocument;
+    return ownerDocument ? ownerDocument.defaultView || window : window;
+  }
+
+  return node;
+}
+
+function isElement(node) {
+  var OwnElement = getWindow(node).Element;
+  return node instanceof OwnElement || node instanceof Element;
+}
+
+function isHTMLElement(node) {
+  var OwnElement = getWindow(node).HTMLElement;
+  return node instanceof OwnElement || node instanceof HTMLElement;
+}
+
+function isShadowRoot(node) {
+  // IE 11 has no ShadowRoot
+  if (typeof ShadowRoot === 'undefined') {
+    return false;
+  }
+
+  var OwnElement = getWindow(node).ShadowRoot;
+  return node instanceof OwnElement || node instanceof ShadowRoot;
+}
+
+// and applies them to the HTMLElements such as popper and arrow
+
+function applyStyles(_ref) {
+  var state = _ref.state;
+  Object.keys(state.elements).forEach(function (name) {
+    var style = state.styles[name] || {};
+    var attributes = state.attributes[name] || {};
+    var element = state.elements[name]; // arrow is optional + virtual elements
+
+    if (!isHTMLElement(element) || !getNodeName(element)) {
+      return;
+    } // Flow doesn't support to extend this property, but it's the most
+    // effective way to apply styles to an HTMLElement
+    // $FlowFixMe[cannot-write]
+
+
+    Object.assign(element.style, style);
+    Object.keys(attributes).forEach(function (name) {
+      var value = attributes[name];
+
+      if (value === false) {
+        element.removeAttribute(name);
+      } else {
+        element.setAttribute(name, value === true ? '' : value);
+      }
+    });
+  });
+}
+
+function effect$2(_ref2) {
+  var state = _ref2.state;
+  var initialStyles = {
+    popper: {
+      position: state.options.strategy,
+      left: '0',
+      top: '0',
+      margin: '0'
+    },
+    arrow: {
+      position: 'absolute'
+    },
+    reference: {}
+  };
+  Object.assign(state.elements.popper.style, initialStyles.popper);
+  state.styles = initialStyles;
+
+  if (state.elements.arrow) {
+    Object.assign(state.elements.arrow.style, initialStyles.arrow);
+  }
+
+  return function () {
+    Object.keys(state.elements).forEach(function (name) {
+      var element = state.elements[name];
+      var attributes = state.attributes[name] || {};
+      var styleProperties = Object.keys(state.styles.hasOwnProperty(name) ? state.styles[name] : initialStyles[name]); // Set all values to an empty string to unset them
+
+      var style = styleProperties.reduce(function (style, property) {
+        style[property] = '';
+        return style;
+      }, {}); // arrow is optional + virtual elements
+
+      if (!isHTMLElement(element) || !getNodeName(element)) {
+        return;
+      }
+
+      Object.assign(element.style, style);
+      Object.keys(attributes).forEach(function (attribute) {
+        element.removeAttribute(attribute);
+      });
+    });
+  };
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var applyStyles$1 = {
+  name: 'applyStyles',
+  enabled: true,
+  phase: 'write',
+  fn: applyStyles,
+  effect: effect$2,
+  requires: ['computeStyles']
+};
+
+function getBasePlacement(placement) {
+  return placement.split('-')[0];
+}
+
+var max = Math.max;
+var min = Math.min;
+var round = Math.round;
+
+function getUAString() {
+  var uaData = navigator.userAgentData;
+
+  if (uaData != null && uaData.brands) {
+    return uaData.brands.map(function (item) {
+      return item.brand + "/" + item.version;
+    }).join(' ');
+  }
+
+  return navigator.userAgent;
+}
+
+function isLayoutViewport() {
+  return !/^((?!chrome|android).)*safari/i.test(getUAString());
+}
+
+function getBoundingClientRect(element, includeScale, isFixedStrategy) {
+  if (includeScale === void 0) {
+    includeScale = false;
+  }
+
+  if (isFixedStrategy === void 0) {
+    isFixedStrategy = false;
+  }
+
+  var clientRect = element.getBoundingClientRect();
+  var scaleX = 1;
+  var scaleY = 1;
+
+  if (includeScale && isHTMLElement(element)) {
+    scaleX = element.offsetWidth > 0 ? round(clientRect.width) / element.offsetWidth || 1 : 1;
+    scaleY = element.offsetHeight > 0 ? round(clientRect.height) / element.offsetHeight || 1 : 1;
+  }
+
+  var _ref = isElement(element) ? getWindow(element) : window,
+      visualViewport = _ref.visualViewport;
+
+  var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
+  var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
+  var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
+  var width = clientRect.width / scaleX;
+  var height = clientRect.height / scaleY;
+  return {
+    width: width,
+    height: height,
+    top: y,
+    right: x + width,
+    bottom: y + height,
+    left: x,
+    x: x,
+    y: y
+  };
+}
+
+// means it doesn't take into account transforms.
+
+function getLayoutRect(element) {
+  var clientRect = getBoundingClientRect(element); // Use the clientRect sizes if it's not been transformed.
+  // Fixes https://github.com/popperjs/popper-core/issues/1223
+
+  var width = element.offsetWidth;
+  var height = element.offsetHeight;
+
+  if (Math.abs(clientRect.width - width) <= 1) {
+    width = clientRect.width;
+  }
+
+  if (Math.abs(clientRect.height - height) <= 1) {
+    height = clientRect.height;
+  }
+
+  return {
+    x: element.offsetLeft,
+    y: element.offsetTop,
+    width: width,
+    height: height
+  };
+}
+
+function contains(parent, child) {
+  var rootNode = child.getRootNode && child.getRootNode(); // First, attempt with faster native method
+
+  if (parent.contains(child)) {
+    return true;
+  } // then fallback to custom implementation with Shadow DOM support
+  else if (rootNode && isShadowRoot(rootNode)) {
+      var next = child;
+
+      do {
+        if (next && parent.isSameNode(next)) {
+          return true;
+        } // $FlowFixMe[prop-missing]: need a better way to handle this...
+
+
+        next = next.parentNode || next.host;
+      } while (next);
+    } // Give up, the result is false
+
+
+  return false;
+}
+
+function getComputedStyle$1(element) {
+  return getWindow(element).getComputedStyle(element);
+}
+
+function isTableElement(element) {
+  return ['table', 'td', 'th'].indexOf(getNodeName(element)) >= 0;
+}
+
+function getDocumentElement(element) {
+  // $FlowFixMe[incompatible-return]: assume body is always available
+  return ((isElement(element) ? element.ownerDocument : // $FlowFixMe[prop-missing]
+  element.document) || window.document).documentElement;
+}
+
+function getParentNode(element) {
+  if (getNodeName(element) === 'html') {
+    return element;
+  }
+
+  return (// this is a quicker (but less type safe) way to save quite some bytes from the bundle
+    // $FlowFixMe[incompatible-return]
+    // $FlowFixMe[prop-missing]
+    element.assignedSlot || // step into the shadow DOM of the parent of a slotted node
+    element.parentNode || ( // DOM Element detected
+    isShadowRoot(element) ? element.host : null) || // ShadowRoot detected
+    // $FlowFixMe[incompatible-call]: HTMLElement is a Node
+    getDocumentElement(element) // fallback
+
+  );
+}
+
+function getTrueOffsetParent(element) {
+  if (!isHTMLElement(element) || // https://github.com/popperjs/popper-core/issues/837
+  getComputedStyle$1(element).position === 'fixed') {
+    return null;
+  }
+
+  return element.offsetParent;
+} // `.offsetParent` reports `null` for fixed elements, while absolute elements
+// return the containing block
+
+
+function getContainingBlock(element) {
+  var isFirefox = /firefox/i.test(getUAString());
+  var isIE = /Trident/i.test(getUAString());
+
+  if (isIE && isHTMLElement(element)) {
+    // In IE 9, 10 and 11 fixed elements containing block is always established by the viewport
+    var elementCss = getComputedStyle$1(element);
+
+    if (elementCss.position === 'fixed') {
+      return null;
+    }
+  }
+
+  var currentNode = getParentNode(element);
+
+  if (isShadowRoot(currentNode)) {
+    currentNode = currentNode.host;
+  }
+
+  while (isHTMLElement(currentNode) && ['html', 'body'].indexOf(getNodeName(currentNode)) < 0) {
+    var css = getComputedStyle$1(currentNode); // This is non-exhaustive but covers the most common CSS properties that
+    // create a containing block.
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
+
+    if (css.transform !== 'none' || css.perspective !== 'none' || css.contain === 'paint' || ['transform', 'perspective'].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === 'filter' || isFirefox && css.filter && css.filter !== 'none') {
+      return currentNode;
+    } else {
+      currentNode = currentNode.parentNode;
+    }
+  }
+
+  return null;
+} // Gets the closest ancestor positioned element. Handles some edge cases,
+// such as table ancestors and cross browser bugs.
+
+
+function getOffsetParent(element) {
+  var window = getWindow(element);
+  var offsetParent = getTrueOffsetParent(element);
+
+  while (offsetParent && isTableElement(offsetParent) && getComputedStyle$1(offsetParent).position === 'static') {
+    offsetParent = getTrueOffsetParent(offsetParent);
+  }
+
+  if (offsetParent && (getNodeName(offsetParent) === 'html' || getNodeName(offsetParent) === 'body' && getComputedStyle$1(offsetParent).position === 'static')) {
+    return window;
+  }
+
+  return offsetParent || getContainingBlock(element) || window;
+}
+
+function getMainAxisFromPlacement(placement) {
+  return ['top', 'bottom'].indexOf(placement) >= 0 ? 'x' : 'y';
+}
+
+function within(min$1, value, max$1) {
+  return max(min$1, min(value, max$1));
+}
+function withinMaxClamp(min, value, max) {
+  var v = within(min, value, max);
+  return v > max ? max : v;
+}
+
+function getFreshSideObject() {
+  return {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0
+  };
+}
+
+function mergePaddingObject(paddingObject) {
+  return Object.assign({}, getFreshSideObject(), paddingObject);
+}
+
+function expandToHashMap(value, keys) {
+  return keys.reduce(function (hashMap, key) {
+    hashMap[key] = value;
+    return hashMap;
+  }, {});
+}
+
+var toPaddingObject = function toPaddingObject(padding, state) {
+  padding = typeof padding === 'function' ? padding(Object.assign({}, state.rects, {
+    placement: state.placement
+  })) : padding;
+  return mergePaddingObject(typeof padding !== 'number' ? padding : expandToHashMap(padding, basePlacements));
+};
+
+function arrow(_ref) {
+  var _state$modifiersData$;
+
+  var state = _ref.state,
+      name = _ref.name,
+      options = _ref.options;
+  var arrowElement = state.elements.arrow;
+  var popperOffsets = state.modifiersData.popperOffsets;
+  var basePlacement = getBasePlacement(state.placement);
+  var axis = getMainAxisFromPlacement(basePlacement);
+  var isVertical = [left, right].indexOf(basePlacement) >= 0;
+  var len = isVertical ? 'height' : 'width';
+
+  if (!arrowElement || !popperOffsets) {
+    return;
+  }
+
+  var paddingObject = toPaddingObject(options.padding, state);
+  var arrowRect = getLayoutRect(arrowElement);
+  var minProp = axis === 'y' ? top : left;
+  var maxProp = axis === 'y' ? bottom : right;
+  var endDiff = state.rects.reference[len] + state.rects.reference[axis] - popperOffsets[axis] - state.rects.popper[len];
+  var startDiff = popperOffsets[axis] - state.rects.reference[axis];
+  var arrowOffsetParent = getOffsetParent(arrowElement);
+  var clientSize = arrowOffsetParent ? axis === 'y' ? arrowOffsetParent.clientHeight || 0 : arrowOffsetParent.clientWidth || 0 : 0;
+  var centerToReference = endDiff / 2 - startDiff / 2; // Make sure the arrow doesn't overflow the popper if the center point is
+  // outside of the popper bounds
+
+  var min = paddingObject[minProp];
+  var max = clientSize - arrowRect[len] - paddingObject[maxProp];
+  var center = clientSize / 2 - arrowRect[len] / 2 + centerToReference;
+  var offset = within(min, center, max); // Prevents breaking syntax highlighting...
+
+  var axisProp = axis;
+  state.modifiersData[name] = (_state$modifiersData$ = {}, _state$modifiersData$[axisProp] = offset, _state$modifiersData$.centerOffset = offset - center, _state$modifiersData$);
+}
+
+function effect$1(_ref2) {
+  var state = _ref2.state,
+      options = _ref2.options;
+  var _options$element = options.element,
+      arrowElement = _options$element === void 0 ? '[data-popper-arrow]' : _options$element;
+
+  if (arrowElement == null) {
+    return;
+  } // CSS selector
+
+
+  if (typeof arrowElement === 'string') {
+    arrowElement = state.elements.popper.querySelector(arrowElement);
+
+    if (!arrowElement) {
+      return;
+    }
+  }
+
+  if (true) {
+    if (!isHTMLElement(arrowElement)) {
+      console.error(['Popper: "arrow" element must be an HTMLElement (not an SVGElement).', 'To use an SVG arrow, wrap it in an HTMLElement that will be used as', 'the arrow.'].join(' '));
+    }
+  }
+
+  if (!contains(state.elements.popper, arrowElement)) {
+    if (true) {
+      console.error(['Popper: "arrow" modifier\'s `element` must be a child of the popper', 'element.'].join(' '));
+    }
+
+    return;
+  }
+
+  state.elements.arrow = arrowElement;
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var arrow$1 = {
+  name: 'arrow',
+  enabled: true,
+  phase: 'main',
+  fn: arrow,
+  effect: effect$1,
+  requires: ['popperOffsets'],
+  requiresIfExists: ['preventOverflow']
+};
+
+function getVariation(placement) {
+  return placement.split('-')[1];
+}
+
+var unsetSides = {
+  top: 'auto',
+  right: 'auto',
+  bottom: 'auto',
+  left: 'auto'
+}; // Round the offsets to the nearest suitable subpixel based on the DPR.
+// Zooming can change the DPR, but it seems to report a value that will
+// cleanly divide the values into the appropriate subpixels.
+
+function roundOffsetsByDPR(_ref) {
+  var x = _ref.x,
+      y = _ref.y;
+  var win = window;
+  var dpr = win.devicePixelRatio || 1;
+  return {
+    x: round(x * dpr) / dpr || 0,
+    y: round(y * dpr) / dpr || 0
+  };
+}
+
+function mapToStyles(_ref2) {
+  var _Object$assign2;
+
+  var popper = _ref2.popper,
+      popperRect = _ref2.popperRect,
+      placement = _ref2.placement,
+      variation = _ref2.variation,
+      offsets = _ref2.offsets,
+      position = _ref2.position,
+      gpuAcceleration = _ref2.gpuAcceleration,
+      adaptive = _ref2.adaptive,
+      roundOffsets = _ref2.roundOffsets,
+      isFixed = _ref2.isFixed;
+  var _offsets$x = offsets.x,
+      x = _offsets$x === void 0 ? 0 : _offsets$x,
+      _offsets$y = offsets.y,
+      y = _offsets$y === void 0 ? 0 : _offsets$y;
+
+  var _ref3 = typeof roundOffsets === 'function' ? roundOffsets({
+    x: x,
+    y: y
+  }) : {
+    x: x,
+    y: y
+  };
+
+  x = _ref3.x;
+  y = _ref3.y;
+  var hasX = offsets.hasOwnProperty('x');
+  var hasY = offsets.hasOwnProperty('y');
+  var sideX = left;
+  var sideY = top;
+  var win = window;
+
+  if (adaptive) {
+    var offsetParent = getOffsetParent(popper);
+    var heightProp = 'clientHeight';
+    var widthProp = 'clientWidth';
+
+    if (offsetParent === getWindow(popper)) {
+      offsetParent = getDocumentElement(popper);
+
+      if (getComputedStyle$1(offsetParent).position !== 'static' && position === 'absolute') {
+        heightProp = 'scrollHeight';
+        widthProp = 'scrollWidth';
+      }
+    } // $FlowFixMe[incompatible-cast]: force type refinement, we compare offsetParent with window above, but Flow doesn't detect it
+
+
+    offsetParent = offsetParent;
+
+    if (placement === top || (placement === left || placement === right) && variation === end) {
+      sideY = bottom;
+      var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : // $FlowFixMe[prop-missing]
+      offsetParent[heightProp];
+      y -= offsetY - popperRect.height;
+      y *= gpuAcceleration ? 1 : -1;
+    }
+
+    if (placement === left || (placement === top || placement === bottom) && variation === end) {
+      sideX = right;
+      var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : // $FlowFixMe[prop-missing]
+      offsetParent[widthProp];
+      x -= offsetX - popperRect.width;
+      x *= gpuAcceleration ? 1 : -1;
+    }
+  }
+
+  var commonStyles = Object.assign({
+    position: position
+  }, adaptive && unsetSides);
+
+  var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
+    x: x,
+    y: y
+  }) : {
+    x: x,
+    y: y
+  };
+
+  x = _ref4.x;
+  y = _ref4.y;
+
+  if (gpuAcceleration) {
+    var _Object$assign;
+
+    return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? '0' : '', _Object$assign[sideX] = hasX ? '0' : '', _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
+  }
+
+  return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : '', _Object$assign2[sideX] = hasX ? x + "px" : '', _Object$assign2.transform = '', _Object$assign2));
+}
+
+function computeStyles(_ref5) {
+  var state = _ref5.state,
+      options = _ref5.options;
+  var _options$gpuAccelerat = options.gpuAcceleration,
+      gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat,
+      _options$adaptive = options.adaptive,
+      adaptive = _options$adaptive === void 0 ? true : _options$adaptive,
+      _options$roundOffsets = options.roundOffsets,
+      roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
+
+  if (true) {
+    var transitionProperty = getComputedStyle$1(state.elements.popper).transitionProperty || '';
+
+    if (adaptive && ['transform', 'top', 'right', 'bottom', 'left'].some(function (property) {
+      return transitionProperty.indexOf(property) >= 0;
+    })) {
+      console.warn(['Popper: Detected CSS transitions on at least one of the following', 'CSS properties: "transform", "top", "right", "bottom", "left".', '\n\n', 'Disable the "computeStyles" modifier\'s `adaptive` option to allow', 'for smooth transitions, or remove these properties from the CSS', 'transition declaration on the popper element if only transitioning', 'opacity or background-color for example.', '\n\n', 'We recommend using the popper element as a wrapper around an inner', 'element that can have any CSS property transitioned for animations.'].join(' '));
+    }
+  }
+
+  var commonStyles = {
+    placement: getBasePlacement(state.placement),
+    variation: getVariation(state.placement),
+    popper: state.elements.popper,
+    popperRect: state.rects.popper,
+    gpuAcceleration: gpuAcceleration,
+    isFixed: state.options.strategy === 'fixed'
+  };
+
+  if (state.modifiersData.popperOffsets != null) {
+    state.styles.popper = Object.assign({}, state.styles.popper, mapToStyles(Object.assign({}, commonStyles, {
+      offsets: state.modifiersData.popperOffsets,
+      position: state.options.strategy,
+      adaptive: adaptive,
+      roundOffsets: roundOffsets
+    })));
+  }
+
+  if (state.modifiersData.arrow != null) {
+    state.styles.arrow = Object.assign({}, state.styles.arrow, mapToStyles(Object.assign({}, commonStyles, {
+      offsets: state.modifiersData.arrow,
+      position: 'absolute',
+      adaptive: false,
+      roundOffsets: roundOffsets
+    })));
+  }
+
+  state.attributes.popper = Object.assign({}, state.attributes.popper, {
+    'data-popper-placement': state.placement
+  });
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var computeStyles$1 = {
+  name: 'computeStyles',
+  enabled: true,
+  phase: 'beforeWrite',
+  fn: computeStyles,
+  data: {}
+};
+
+var passive = {
+  passive: true
+};
+
+function effect(_ref) {
+  var state = _ref.state,
+      instance = _ref.instance,
+      options = _ref.options;
+  var _options$scroll = options.scroll,
+      scroll = _options$scroll === void 0 ? true : _options$scroll,
+      _options$resize = options.resize,
+      resize = _options$resize === void 0 ? true : _options$resize;
+  var window = getWindow(state.elements.popper);
+  var scrollParents = [].concat(state.scrollParents.reference, state.scrollParents.popper);
+
+  if (scroll) {
+    scrollParents.forEach(function (scrollParent) {
+      scrollParent.addEventListener('scroll', instance.update, passive);
+    });
+  }
+
+  if (resize) {
+    window.addEventListener('resize', instance.update, passive);
+  }
+
+  return function () {
+    if (scroll) {
+      scrollParents.forEach(function (scrollParent) {
+        scrollParent.removeEventListener('scroll', instance.update, passive);
+      });
+    }
+
+    if (resize) {
+      window.removeEventListener('resize', instance.update, passive);
+    }
+  };
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var eventListeners = {
+  name: 'eventListeners',
+  enabled: true,
+  phase: 'write',
+  fn: function fn() {},
+  effect: effect,
+  data: {}
+};
+
+var hash$1 = {
+  left: 'right',
+  right: 'left',
+  bottom: 'top',
+  top: 'bottom'
+};
+function getOppositePlacement(placement) {
+  return placement.replace(/left|right|bottom|top/g, function (matched) {
+    return hash$1[matched];
+  });
+}
+
+var hash = {
+  start: 'end',
+  end: 'start'
+};
+function getOppositeVariationPlacement(placement) {
+  return placement.replace(/start|end/g, function (matched) {
+    return hash[matched];
+  });
+}
+
+function getWindowScroll(node) {
+  var win = getWindow(node);
+  var scrollLeft = win.pageXOffset;
+  var scrollTop = win.pageYOffset;
+  return {
+    scrollLeft: scrollLeft,
+    scrollTop: scrollTop
+  };
+}
+
+function getWindowScrollBarX(element) {
+  // If <html> has a CSS width greater than the viewport, then this will be
+  // incorrect for RTL.
+  // Popper 1 is broken in this case and never had a bug report so let's assume
+  // it's not an issue. I don't think anyone ever specifies width on <html>
+  // anyway.
+  // Browsers where the left scrollbar doesn't cause an issue report `0` for
+  // this (e.g. Edge 2019, IE11, Safari)
+  return getBoundingClientRect(getDocumentElement(element)).left + getWindowScroll(element).scrollLeft;
+}
+
+function getViewportRect(element, strategy) {
+  var win = getWindow(element);
+  var html = getDocumentElement(element);
+  var visualViewport = win.visualViewport;
+  var width = html.clientWidth;
+  var height = html.clientHeight;
+  var x = 0;
+  var y = 0;
+
+  if (visualViewport) {
+    width = visualViewport.width;
+    height = visualViewport.height;
+    var layoutViewport = isLayoutViewport();
+
+    if (layoutViewport || !layoutViewport && strategy === 'fixed') {
+      x = visualViewport.offsetLeft;
+      y = visualViewport.offsetTop;
+    }
+  }
+
+  return {
+    width: width,
+    height: height,
+    x: x + getWindowScrollBarX(element),
+    y: y
+  };
+}
+
+// of the `<html>` and `<body>` rect bounds if horizontally scrollable
+
+function getDocumentRect(element) {
+  var _element$ownerDocumen;
+
+  var html = getDocumentElement(element);
+  var winScroll = getWindowScroll(element);
+  var body = (_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body;
+  var width = max(html.scrollWidth, html.clientWidth, body ? body.scrollWidth : 0, body ? body.clientWidth : 0);
+  var height = max(html.scrollHeight, html.clientHeight, body ? body.scrollHeight : 0, body ? body.clientHeight : 0);
+  var x = -winScroll.scrollLeft + getWindowScrollBarX(element);
+  var y = -winScroll.scrollTop;
+
+  if (getComputedStyle$1(body || html).direction === 'rtl') {
+    x += max(html.clientWidth, body ? body.clientWidth : 0) - width;
+  }
+
+  return {
+    width: width,
+    height: height,
+    x: x,
+    y: y
+  };
+}
+
+function isScrollParent(element) {
+  // Firefox wants us to check `-x` and `-y` variations as well
+  var _getComputedStyle = getComputedStyle$1(element),
+      overflow = _getComputedStyle.overflow,
+      overflowX = _getComputedStyle.overflowX,
+      overflowY = _getComputedStyle.overflowY;
+
+  return /auto|scroll|overlay|hidden/.test(overflow + overflowY + overflowX);
+}
+
+function getScrollParent(node) {
+  if (['html', 'body', '#document'].indexOf(getNodeName(node)) >= 0) {
+    // $FlowFixMe[incompatible-return]: assume body is always available
+    return node.ownerDocument.body;
+  }
+
+  if (isHTMLElement(node) && isScrollParent(node)) {
+    return node;
+  }
+
+  return getScrollParent(getParentNode(node));
+}
+
+/*
+given a DOM element, return the list of all scroll parents, up the list of ancesors
+until we get to the top window object. This list is what we attach scroll listeners
+to, because if any of these parent elements scroll, we'll need to re-calculate the
+reference element's position.
+*/
+
+function listScrollParents(element, list) {
+  var _element$ownerDocumen;
+
+  if (list === void 0) {
+    list = [];
+  }
+
+  var scrollParent = getScrollParent(element);
+  var isBody = scrollParent === ((_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body);
+  var win = getWindow(scrollParent);
+  var target = isBody ? [win].concat(win.visualViewport || [], isScrollParent(scrollParent) ? scrollParent : []) : scrollParent;
+  var updatedList = list.concat(target);
+  return isBody ? updatedList : // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
+  updatedList.concat(listScrollParents(getParentNode(target)));
+}
+
+function rectToClientRect(rect) {
+  return Object.assign({}, rect, {
+    left: rect.x,
+    top: rect.y,
+    right: rect.x + rect.width,
+    bottom: rect.y + rect.height
+  });
+}
+
+function getInnerBoundingClientRect(element, strategy) {
+  var rect = getBoundingClientRect(element, false, strategy === 'fixed');
+  rect.top = rect.top + element.clientTop;
+  rect.left = rect.left + element.clientLeft;
+  rect.bottom = rect.top + element.clientHeight;
+  rect.right = rect.left + element.clientWidth;
+  rect.width = element.clientWidth;
+  rect.height = element.clientHeight;
+  rect.x = rect.left;
+  rect.y = rect.top;
+  return rect;
+}
+
+function getClientRectFromMixedType(element, clippingParent, strategy) {
+  return clippingParent === viewport ? rectToClientRect(getViewportRect(element, strategy)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent, strategy) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+} // A "clipping parent" is an overflowable container with the characteristic of
+// clipping (or hiding) overflowing elements with a position different from
+// `initial`
+
+
+function getClippingParents(element) {
+  var clippingParents = listScrollParents(getParentNode(element));
+  var canEscapeClipping = ['absolute', 'fixed'].indexOf(getComputedStyle$1(element).position) >= 0;
+  var clipperElement = canEscapeClipping && isHTMLElement(element) ? getOffsetParent(element) : element;
+
+  if (!isElement(clipperElement)) {
+    return [];
+  } // $FlowFixMe[incompatible-return]: https://github.com/facebook/flow/issues/1414
+
+
+  return clippingParents.filter(function (clippingParent) {
+    return isElement(clippingParent) && contains(clippingParent, clipperElement) && getNodeName(clippingParent) !== 'body';
+  });
+} // Gets the maximum area that the element is visible in due to any number of
+// clipping parents
+
+
+function getClippingRect(element, boundary, rootBoundary, strategy) {
+  var mainClippingParents = boundary === 'clippingParents' ? getClippingParents(element) : [].concat(boundary);
+  var clippingParents = [].concat(mainClippingParents, [rootBoundary]);
+  var firstClippingParent = clippingParents[0];
+  var clippingRect = clippingParents.reduce(function (accRect, clippingParent) {
+    var rect = getClientRectFromMixedType(element, clippingParent, strategy);
+    accRect.top = max(rect.top, accRect.top);
+    accRect.right = min(rect.right, accRect.right);
+    accRect.bottom = min(rect.bottom, accRect.bottom);
+    accRect.left = max(rect.left, accRect.left);
+    return accRect;
+  }, getClientRectFromMixedType(element, firstClippingParent, strategy));
+  clippingRect.width = clippingRect.right - clippingRect.left;
+  clippingRect.height = clippingRect.bottom - clippingRect.top;
+  clippingRect.x = clippingRect.left;
+  clippingRect.y = clippingRect.top;
+  return clippingRect;
+}
+
+function computeOffsets(_ref) {
+  var reference = _ref.reference,
+      element = _ref.element,
+      placement = _ref.placement;
+  var basePlacement = placement ? getBasePlacement(placement) : null;
+  var variation = placement ? getVariation(placement) : null;
+  var commonX = reference.x + reference.width / 2 - element.width / 2;
+  var commonY = reference.y + reference.height / 2 - element.height / 2;
+  var offsets;
+
+  switch (basePlacement) {
+    case top:
+      offsets = {
+        x: commonX,
+        y: reference.y - element.height
+      };
+      break;
+
+    case bottom:
+      offsets = {
+        x: commonX,
+        y: reference.y + reference.height
+      };
+      break;
+
+    case right:
+      offsets = {
+        x: reference.x + reference.width,
+        y: commonY
+      };
+      break;
+
+    case left:
+      offsets = {
+        x: reference.x - element.width,
+        y: commonY
+      };
+      break;
+
+    default:
+      offsets = {
+        x: reference.x,
+        y: reference.y
+      };
+  }
+
+  var mainAxis = basePlacement ? getMainAxisFromPlacement(basePlacement) : null;
+
+  if (mainAxis != null) {
+    var len = mainAxis === 'y' ? 'height' : 'width';
+
+    switch (variation) {
+      case start:
+        offsets[mainAxis] = offsets[mainAxis] - (reference[len] / 2 - element[len] / 2);
+        break;
+
+      case end:
+        offsets[mainAxis] = offsets[mainAxis] + (reference[len] / 2 - element[len] / 2);
+        break;
+    }
+  }
+
+  return offsets;
+}
+
+function detectOverflow(state, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var _options = options,
+      _options$placement = _options.placement,
+      placement = _options$placement === void 0 ? state.placement : _options$placement,
+      _options$strategy = _options.strategy,
+      strategy = _options$strategy === void 0 ? state.strategy : _options$strategy,
+      _options$boundary = _options.boundary,
+      boundary = _options$boundary === void 0 ? clippingParents : _options$boundary,
+      _options$rootBoundary = _options.rootBoundary,
+      rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary,
+      _options$elementConte = _options.elementContext,
+      elementContext = _options$elementConte === void 0 ? popper : _options$elementConte,
+      _options$altBoundary = _options.altBoundary,
+      altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary,
+      _options$padding = _options.padding,
+      padding = _options$padding === void 0 ? 0 : _options$padding;
+  var paddingObject = mergePaddingObject(typeof padding !== 'number' ? padding : expandToHashMap(padding, basePlacements));
+  var altContext = elementContext === popper ? reference : popper;
+  var popperRect = state.rects.popper;
+  var element = state.elements[altBoundary ? altContext : elementContext];
+  var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary, strategy);
+  var referenceClientRect = getBoundingClientRect(state.elements.reference);
+  var popperOffsets = computeOffsets({
+    reference: referenceClientRect,
+    element: popperRect,
+    strategy: 'absolute',
+    placement: placement
+  });
+  var popperClientRect = rectToClientRect(Object.assign({}, popperRect, popperOffsets));
+  var elementClientRect = elementContext === popper ? popperClientRect : referenceClientRect; // positive = overflowing the clipping rect
+  // 0 or negative = within the clipping rect
+
+  var overflowOffsets = {
+    top: clippingClientRect.top - elementClientRect.top + paddingObject.top,
+    bottom: elementClientRect.bottom - clippingClientRect.bottom + paddingObject.bottom,
+    left: clippingClientRect.left - elementClientRect.left + paddingObject.left,
+    right: elementClientRect.right - clippingClientRect.right + paddingObject.right
+  };
+  var offsetData = state.modifiersData.offset; // Offsets can be applied only to the popper element
+
+  if (elementContext === popper && offsetData) {
+    var offset = offsetData[placement];
+    Object.keys(overflowOffsets).forEach(function (key) {
+      var multiply = [right, bottom].indexOf(key) >= 0 ? 1 : -1;
+      var axis = [top, bottom].indexOf(key) >= 0 ? 'y' : 'x';
+      overflowOffsets[key] += offset[axis] * multiply;
+    });
+  }
+
+  return overflowOffsets;
+}
+
+function computeAutoPlacement(state, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var _options = options,
+      placement = _options.placement,
+      boundary = _options.boundary,
+      rootBoundary = _options.rootBoundary,
+      padding = _options.padding,
+      flipVariations = _options.flipVariations,
+      _options$allowedAutoP = _options.allowedAutoPlacements,
+      allowedAutoPlacements = _options$allowedAutoP === void 0 ? placements : _options$allowedAutoP;
+  var variation = getVariation(placement);
+  var placements$1 = variation ? flipVariations ? variationPlacements : variationPlacements.filter(function (placement) {
+    return getVariation(placement) === variation;
+  }) : basePlacements;
+  var allowedPlacements = placements$1.filter(function (placement) {
+    return allowedAutoPlacements.indexOf(placement) >= 0;
+  });
+
+  if (allowedPlacements.length === 0) {
+    allowedPlacements = placements$1;
+
+    if (true) {
+      console.error(['Popper: The `allowedAutoPlacements` option did not allow any', 'placements. Ensure the `placement` option matches the variation', 'of the allowed placements.', 'For example, "auto" cannot be used to allow "bottom-start".', 'Use "auto-start" instead.'].join(' '));
+    }
+  } // $FlowFixMe[incompatible-type]: Flow seems to have problems with two array unions...
+
+
+  var overflows = allowedPlacements.reduce(function (acc, placement) {
+    acc[placement] = detectOverflow(state, {
+      placement: placement,
+      boundary: boundary,
+      rootBoundary: rootBoundary,
+      padding: padding
+    })[getBasePlacement(placement)];
+    return acc;
+  }, {});
+  return Object.keys(overflows).sort(function (a, b) {
+    return overflows[a] - overflows[b];
+  });
+}
+
+function getExpandedFallbackPlacements(placement) {
+  if (getBasePlacement(placement) === auto) {
+    return [];
+  }
+
+  var oppositePlacement = getOppositePlacement(placement);
+  return [getOppositeVariationPlacement(placement), oppositePlacement, getOppositeVariationPlacement(oppositePlacement)];
+}
+
+function flip(_ref) {
+  var state = _ref.state,
+      options = _ref.options,
+      name = _ref.name;
+
+  if (state.modifiersData[name]._skip) {
+    return;
+  }
+
+  var _options$mainAxis = options.mainAxis,
+      checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis,
+      _options$altAxis = options.altAxis,
+      checkAltAxis = _options$altAxis === void 0 ? true : _options$altAxis,
+      specifiedFallbackPlacements = options.fallbackPlacements,
+      padding = options.padding,
+      boundary = options.boundary,
+      rootBoundary = options.rootBoundary,
+      altBoundary = options.altBoundary,
+      _options$flipVariatio = options.flipVariations,
+      flipVariations = _options$flipVariatio === void 0 ? true : _options$flipVariatio,
+      allowedAutoPlacements = options.allowedAutoPlacements;
+  var preferredPlacement = state.options.placement;
+  var basePlacement = getBasePlacement(preferredPlacement);
+  var isBasePlacement = basePlacement === preferredPlacement;
+  var fallbackPlacements = specifiedFallbackPlacements || (isBasePlacement || !flipVariations ? [getOppositePlacement(preferredPlacement)] : getExpandedFallbackPlacements(preferredPlacement));
+  var placements = [preferredPlacement].concat(fallbackPlacements).reduce(function (acc, placement) {
+    return acc.concat(getBasePlacement(placement) === auto ? computeAutoPlacement(state, {
+      placement: placement,
+      boundary: boundary,
+      rootBoundary: rootBoundary,
+      padding: padding,
+      flipVariations: flipVariations,
+      allowedAutoPlacements: allowedAutoPlacements
+    }) : placement);
+  }, []);
+  var referenceRect = state.rects.reference;
+  var popperRect = state.rects.popper;
+  var checksMap = new Map();
+  var makeFallbackChecks = true;
+  var firstFittingPlacement = placements[0];
+
+  for (var i = 0; i < placements.length; i++) {
+    var placement = placements[i];
+
+    var _basePlacement = getBasePlacement(placement);
+
+    var isStartVariation = getVariation(placement) === start;
+    var isVertical = [top, bottom].indexOf(_basePlacement) >= 0;
+    var len = isVertical ? 'width' : 'height';
+    var overflow = detectOverflow(state, {
+      placement: placement,
+      boundary: boundary,
+      rootBoundary: rootBoundary,
+      altBoundary: altBoundary,
+      padding: padding
+    });
+    var mainVariationSide = isVertical ? isStartVariation ? right : left : isStartVariation ? bottom : top;
+
+    if (referenceRect[len] > popperRect[len]) {
+      mainVariationSide = getOppositePlacement(mainVariationSide);
+    }
+
+    var altVariationSide = getOppositePlacement(mainVariationSide);
+    var checks = [];
+
+    if (checkMainAxis) {
+      checks.push(overflow[_basePlacement] <= 0);
+    }
+
+    if (checkAltAxis) {
+      checks.push(overflow[mainVariationSide] <= 0, overflow[altVariationSide] <= 0);
+    }
+
+    if (checks.every(function (check) {
+      return check;
+    })) {
+      firstFittingPlacement = placement;
+      makeFallbackChecks = false;
+      break;
+    }
+
+    checksMap.set(placement, checks);
+  }
+
+  if (makeFallbackChecks) {
+    // `2` may be desired in some cases – research later
+    var numberOfChecks = flipVariations ? 3 : 1;
+
+    var _loop = function _loop(_i) {
+      var fittingPlacement = placements.find(function (placement) {
+        var checks = checksMap.get(placement);
+
+        if (checks) {
+          return checks.slice(0, _i).every(function (check) {
+            return check;
+          });
+        }
+      });
+
+      if (fittingPlacement) {
+        firstFittingPlacement = fittingPlacement;
+        return "break";
+      }
+    };
+
+    for (var _i = numberOfChecks; _i > 0; _i--) {
+      var _ret = _loop(_i);
+
+      if (_ret === "break") break;
+    }
+  }
+
+  if (state.placement !== firstFittingPlacement) {
+    state.modifiersData[name]._skip = true;
+    state.placement = firstFittingPlacement;
+    state.reset = true;
+  }
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var flip$1 = {
+  name: 'flip',
+  enabled: true,
+  phase: 'main',
+  fn: flip,
+  requiresIfExists: ['offset'],
+  data: {
+    _skip: false
+  }
+};
+
+function getSideOffsets(overflow, rect, preventedOffsets) {
+  if (preventedOffsets === void 0) {
+    preventedOffsets = {
+      x: 0,
+      y: 0
+    };
+  }
+
+  return {
+    top: overflow.top - rect.height - preventedOffsets.y,
+    right: overflow.right - rect.width + preventedOffsets.x,
+    bottom: overflow.bottom - rect.height + preventedOffsets.y,
+    left: overflow.left - rect.width - preventedOffsets.x
+  };
+}
+
+function isAnySideFullyClipped(overflow) {
+  return [top, right, bottom, left].some(function (side) {
+    return overflow[side] >= 0;
+  });
+}
+
+function hide(_ref) {
+  var state = _ref.state,
+      name = _ref.name;
+  var referenceRect = state.rects.reference;
+  var popperRect = state.rects.popper;
+  var preventedOffsets = state.modifiersData.preventOverflow;
+  var referenceOverflow = detectOverflow(state, {
+    elementContext: 'reference'
+  });
+  var popperAltOverflow = detectOverflow(state, {
+    altBoundary: true
+  });
+  var referenceClippingOffsets = getSideOffsets(referenceOverflow, referenceRect);
+  var popperEscapeOffsets = getSideOffsets(popperAltOverflow, popperRect, preventedOffsets);
+  var isReferenceHidden = isAnySideFullyClipped(referenceClippingOffsets);
+  var hasPopperEscaped = isAnySideFullyClipped(popperEscapeOffsets);
+  state.modifiersData[name] = {
+    referenceClippingOffsets: referenceClippingOffsets,
+    popperEscapeOffsets: popperEscapeOffsets,
+    isReferenceHidden: isReferenceHidden,
+    hasPopperEscaped: hasPopperEscaped
+  };
+  state.attributes.popper = Object.assign({}, state.attributes.popper, {
+    'data-popper-reference-hidden': isReferenceHidden,
+    'data-popper-escaped': hasPopperEscaped
+  });
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var hide$1 = {
+  name: 'hide',
+  enabled: true,
+  phase: 'main',
+  requiresIfExists: ['preventOverflow'],
+  fn: hide
+};
+
+function distanceAndSkiddingToXY(placement, rects, offset) {
+  var basePlacement = getBasePlacement(placement);
+  var invertDistance = [left, top].indexOf(basePlacement) >= 0 ? -1 : 1;
+
+  var _ref = typeof offset === 'function' ? offset(Object.assign({}, rects, {
+    placement: placement
+  })) : offset,
+      skidding = _ref[0],
+      distance = _ref[1];
+
+  skidding = skidding || 0;
+  distance = (distance || 0) * invertDistance;
+  return [left, right].indexOf(basePlacement) >= 0 ? {
+    x: distance,
+    y: skidding
+  } : {
+    x: skidding,
+    y: distance
+  };
+}
+
+function offset(_ref2) {
+  var state = _ref2.state,
+      options = _ref2.options,
+      name = _ref2.name;
+  var _options$offset = options.offset,
+      offset = _options$offset === void 0 ? [0, 0] : _options$offset;
+  var data = placements.reduce(function (acc, placement) {
+    acc[placement] = distanceAndSkiddingToXY(placement, state.rects, offset);
+    return acc;
+  }, {});
+  var _data$state$placement = data[state.placement],
+      x = _data$state$placement.x,
+      y = _data$state$placement.y;
+
+  if (state.modifiersData.popperOffsets != null) {
+    state.modifiersData.popperOffsets.x += x;
+    state.modifiersData.popperOffsets.y += y;
+  }
+
+  state.modifiersData[name] = data;
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var offset$1 = {
+  name: 'offset',
+  enabled: true,
+  phase: 'main',
+  requires: ['popperOffsets'],
+  fn: offset
+};
+
+function popperOffsets(_ref) {
+  var state = _ref.state,
+      name = _ref.name;
+  // Offsets are the actual position the popper needs to have to be
+  // properly positioned near its reference element
+  // This is the most basic placement, and will be adjusted by
+  // the modifiers in the next step
+  state.modifiersData[name] = computeOffsets({
+    reference: state.rects.reference,
+    element: state.rects.popper,
+    strategy: 'absolute',
+    placement: state.placement
+  });
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var popperOffsets$1 = {
+  name: 'popperOffsets',
+  enabled: true,
+  phase: 'read',
+  fn: popperOffsets,
+  data: {}
+};
+
+function getAltAxis(axis) {
+  return axis === 'x' ? 'y' : 'x';
+}
+
+function preventOverflow(_ref) {
+  var state = _ref.state,
+      options = _ref.options,
+      name = _ref.name;
+  var _options$mainAxis = options.mainAxis,
+      checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis,
+      _options$altAxis = options.altAxis,
+      checkAltAxis = _options$altAxis === void 0 ? false : _options$altAxis,
+      boundary = options.boundary,
+      rootBoundary = options.rootBoundary,
+      altBoundary = options.altBoundary,
+      padding = options.padding,
+      _options$tether = options.tether,
+      tether = _options$tether === void 0 ? true : _options$tether,
+      _options$tetherOffset = options.tetherOffset,
+      tetherOffset = _options$tetherOffset === void 0 ? 0 : _options$tetherOffset;
+  var overflow = detectOverflow(state, {
+    boundary: boundary,
+    rootBoundary: rootBoundary,
+    padding: padding,
+    altBoundary: altBoundary
+  });
+  var basePlacement = getBasePlacement(state.placement);
+  var variation = getVariation(state.placement);
+  var isBasePlacement = !variation;
+  var mainAxis = getMainAxisFromPlacement(basePlacement);
+  var altAxis = getAltAxis(mainAxis);
+  var popperOffsets = state.modifiersData.popperOffsets;
+  var referenceRect = state.rects.reference;
+  var popperRect = state.rects.popper;
+  var tetherOffsetValue = typeof tetherOffset === 'function' ? tetherOffset(Object.assign({}, state.rects, {
+    placement: state.placement
+  })) : tetherOffset;
+  var normalizedTetherOffsetValue = typeof tetherOffsetValue === 'number' ? {
+    mainAxis: tetherOffsetValue,
+    altAxis: tetherOffsetValue
+  } : Object.assign({
+    mainAxis: 0,
+    altAxis: 0
+  }, tetherOffsetValue);
+  var offsetModifierState = state.modifiersData.offset ? state.modifiersData.offset[state.placement] : null;
+  var data = {
+    x: 0,
+    y: 0
+  };
+
+  if (!popperOffsets) {
+    return;
+  }
+
+  if (checkMainAxis) {
+    var _offsetModifierState$;
+
+    var mainSide = mainAxis === 'y' ? top : left;
+    var altSide = mainAxis === 'y' ? bottom : right;
+    var len = mainAxis === 'y' ? 'height' : 'width';
+    var offset = popperOffsets[mainAxis];
+    var min$1 = offset + overflow[mainSide];
+    var max$1 = offset - overflow[altSide];
+    var additive = tether ? -popperRect[len] / 2 : 0;
+    var minLen = variation === start ? referenceRect[len] : popperRect[len];
+    var maxLen = variation === start ? -popperRect[len] : -referenceRect[len]; // We need to include the arrow in the calculation so the arrow doesn't go
+    // outside the reference bounds
+
+    var arrowElement = state.elements.arrow;
+    var arrowRect = tether && arrowElement ? getLayoutRect(arrowElement) : {
+      width: 0,
+      height: 0
+    };
+    var arrowPaddingObject = state.modifiersData['arrow#persistent'] ? state.modifiersData['arrow#persistent'].padding : getFreshSideObject();
+    var arrowPaddingMin = arrowPaddingObject[mainSide];
+    var arrowPaddingMax = arrowPaddingObject[altSide]; // If the reference length is smaller than the arrow length, we don't want
+    // to include its full size in the calculation. If the reference is small
+    // and near the edge of a boundary, the popper can overflow even if the
+    // reference is not overflowing as well (e.g. virtual elements with no
+    // width or height)
+
+    var arrowLen = within(0, referenceRect[len], arrowRect[len]);
+    var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
+    var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
+    var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
+    var clientOffset = arrowOffsetParent ? mainAxis === 'y' ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
+    var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
+    var tetherMin = offset + minOffset - offsetModifierValue - clientOffset;
+    var tetherMax = offset + maxOffset - offsetModifierValue;
+    var preventedOffset = within(tether ? min(min$1, tetherMin) : min$1, offset, tether ? max(max$1, tetherMax) : max$1);
+    popperOffsets[mainAxis] = preventedOffset;
+    data[mainAxis] = preventedOffset - offset;
+  }
+
+  if (checkAltAxis) {
+    var _offsetModifierState$2;
+
+    var _mainSide = mainAxis === 'x' ? top : left;
+
+    var _altSide = mainAxis === 'x' ? bottom : right;
+
+    var _offset = popperOffsets[altAxis];
+
+    var _len = altAxis === 'y' ? 'height' : 'width';
+
+    var _min = _offset + overflow[_mainSide];
+
+    var _max = _offset - overflow[_altSide];
+
+    var isOriginSide = [top, left].indexOf(basePlacement) !== -1;
+
+    var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
+
+    var _tetherMin = isOriginSide ? _min : _offset - referenceRect[_len] - popperRect[_len] - _offsetModifierValue + normalizedTetherOffsetValue.altAxis;
+
+    var _tetherMax = isOriginSide ? _offset + referenceRect[_len] + popperRect[_len] - _offsetModifierValue - normalizedTetherOffsetValue.altAxis : _max;
+
+    var _preventedOffset = tether && isOriginSide ? withinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
+
+    popperOffsets[altAxis] = _preventedOffset;
+    data[altAxis] = _preventedOffset - _offset;
+  }
+
+  state.modifiersData[name] = data;
+} // eslint-disable-next-line import/no-unused-modules
+
+
+var preventOverflow$1 = {
+  name: 'preventOverflow',
+  enabled: true,
+  phase: 'main',
+  fn: preventOverflow,
+  requiresIfExists: ['offset']
+};
+
+function getHTMLElementScroll(element) {
+  return {
+    scrollLeft: element.scrollLeft,
+    scrollTop: element.scrollTop
+  };
+}
+
+function getNodeScroll(node) {
+  if (node === getWindow(node) || !isHTMLElement(node)) {
+    return getWindowScroll(node);
+  } else {
+    return getHTMLElementScroll(node);
+  }
+}
+
+function isElementScaled(element) {
+  var rect = element.getBoundingClientRect();
+  var scaleX = round(rect.width) / element.offsetWidth || 1;
+  var scaleY = round(rect.height) / element.offsetHeight || 1;
+  return scaleX !== 1 || scaleY !== 1;
+} // Returns the composite rect of an element relative to its offsetParent.
+// Composite means it takes into account transforms as well as layout.
+
+
+function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
+  if (isFixed === void 0) {
+    isFixed = false;
+  }
+
+  var isOffsetParentAnElement = isHTMLElement(offsetParent);
+  var offsetParentIsScaled = isHTMLElement(offsetParent) && isElementScaled(offsetParent);
+  var documentElement = getDocumentElement(offsetParent);
+  var rect = getBoundingClientRect(elementOrVirtualElement, offsetParentIsScaled, isFixed);
+  var scroll = {
+    scrollLeft: 0,
+    scrollTop: 0
+  };
+  var offsets = {
+    x: 0,
+    y: 0
+  };
+
+  if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
+    if (getNodeName(offsetParent) !== 'body' || // https://github.com/popperjs/popper-core/issues/1078
+    isScrollParent(documentElement)) {
+      scroll = getNodeScroll(offsetParent);
+    }
+
+    if (isHTMLElement(offsetParent)) {
+      offsets = getBoundingClientRect(offsetParent, true);
+      offsets.x += offsetParent.clientLeft;
+      offsets.y += offsetParent.clientTop;
+    } else if (documentElement) {
+      offsets.x = getWindowScrollBarX(documentElement);
+    }
+  }
+
+  return {
+    x: rect.left + scroll.scrollLeft - offsets.x,
+    y: rect.top + scroll.scrollTop - offsets.y,
+    width: rect.width,
+    height: rect.height
+  };
+}
+
+function order(modifiers) {
+  var map = new Map();
+  var visited = new Set();
+  var result = [];
+  modifiers.forEach(function (modifier) {
+    map.set(modifier.name, modifier);
+  }); // On visiting object, check for its dependencies and visit them recursively
+
+  function sort(modifier) {
+    visited.add(modifier.name);
+    var requires = [].concat(modifier.requires || [], modifier.requiresIfExists || []);
+    requires.forEach(function (dep) {
+      if (!visited.has(dep)) {
+        var depModifier = map.get(dep);
+
+        if (depModifier) {
+          sort(depModifier);
+        }
+      }
+    });
+    result.push(modifier);
+  }
+
+  modifiers.forEach(function (modifier) {
+    if (!visited.has(modifier.name)) {
+      // check for visited object
+      sort(modifier);
+    }
+  });
+  return result;
+}
+
+function orderModifiers(modifiers) {
+  // order based on dependencies
+  var orderedModifiers = order(modifiers); // order based on phase
+
+  return modifierPhases.reduce(function (acc, phase) {
+    return acc.concat(orderedModifiers.filter(function (modifier) {
+      return modifier.phase === phase;
+    }));
+  }, []);
+}
+
+function debounce(fn) {
+  var pending;
+  return function () {
+    if (!pending) {
+      pending = new Promise(function (resolve) {
+        Promise.resolve().then(function () {
+          pending = undefined;
+          resolve(fn());
+        });
+      });
+    }
+
+    return pending;
+  };
+}
+
+function format(str) {
+  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    args[_key - 1] = arguments[_key];
+  }
+
+  return [].concat(args).reduce(function (p, c) {
+    return p.replace(/%s/, c);
+  }, str);
+}
+
+var INVALID_MODIFIER_ERROR = 'Popper: modifier "%s" provided an invalid %s property, expected %s but got %s';
+var MISSING_DEPENDENCY_ERROR = 'Popper: modifier "%s" requires "%s", but "%s" modifier is not available';
+var VALID_PROPERTIES = ['name', 'enabled', 'phase', 'fn', 'effect', 'requires', 'options'];
+function validateModifiers(modifiers) {
+  modifiers.forEach(function (modifier) {
+    [].concat(Object.keys(modifier), VALID_PROPERTIES) // IE11-compatible replacement for `new Set(iterable)`
+    .filter(function (value, index, self) {
+      return self.indexOf(value) === index;
+    }).forEach(function (key) {
+      switch (key) {
+        case 'name':
+          if (typeof modifier.name !== 'string') {
+            console.error(format(INVALID_MODIFIER_ERROR, String(modifier.name), '"name"', '"string"', "\"" + String(modifier.name) + "\""));
+          }
+
+          break;
+
+        case 'enabled':
+          if (typeof modifier.enabled !== 'boolean') {
+            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"enabled"', '"boolean"', "\"" + String(modifier.enabled) + "\""));
+          }
+
+          break;
+
+        case 'phase':
+          if (modifierPhases.indexOf(modifier.phase) < 0) {
+            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"phase"', "either " + modifierPhases.join(', '), "\"" + String(modifier.phase) + "\""));
+          }
+
+          break;
+
+        case 'fn':
+          if (typeof modifier.fn !== 'function') {
+            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"fn"', '"function"', "\"" + String(modifier.fn) + "\""));
+          }
+
+          break;
+
+        case 'effect':
+          if (modifier.effect != null && typeof modifier.effect !== 'function') {
+            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"effect"', '"function"', "\"" + String(modifier.fn) + "\""));
+          }
+
+          break;
+
+        case 'requires':
+          if (modifier.requires != null && !Array.isArray(modifier.requires)) {
+            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"requires"', '"array"', "\"" + String(modifier.requires) + "\""));
+          }
+
+          break;
+
+        case 'requiresIfExists':
+          if (!Array.isArray(modifier.requiresIfExists)) {
+            console.error(format(INVALID_MODIFIER_ERROR, modifier.name, '"requiresIfExists"', '"array"', "\"" + String(modifier.requiresIfExists) + "\""));
+          }
+
+          break;
+
+        case 'options':
+        case 'data':
+          break;
+
+        default:
+          console.error("PopperJS: an invalid property has been provided to the \"" + modifier.name + "\" modifier, valid properties are " + VALID_PROPERTIES.map(function (s) {
+            return "\"" + s + "\"";
+          }).join(', ') + "; but \"" + key + "\" was provided.");
+      }
+
+      modifier.requires && modifier.requires.forEach(function (requirement) {
+        if (modifiers.find(function (mod) {
+          return mod.name === requirement;
+        }) == null) {
+          console.error(format(MISSING_DEPENDENCY_ERROR, String(modifier.name), requirement, requirement));
+        }
+      });
+    });
+  });
+}
+
+function uniqueBy(arr, fn) {
+  var identifiers = new Set();
+  return arr.filter(function (item) {
+    var identifier = fn(item);
+
+    if (!identifiers.has(identifier)) {
+      identifiers.add(identifier);
+      return true;
+    }
+  });
+}
+
+function mergeByName(modifiers) {
+  var merged = modifiers.reduce(function (merged, current) {
+    var existing = merged[current.name];
+    merged[current.name] = existing ? Object.assign({}, existing, current, {
+      options: Object.assign({}, existing.options, current.options),
+      data: Object.assign({}, existing.data, current.data)
+    }) : current;
+    return merged;
+  }, {}); // IE11 does not support Object.values
+
+  return Object.keys(merged).map(function (key) {
+    return merged[key];
+  });
+}
+
+var INVALID_ELEMENT_ERROR = 'Popper: Invalid reference or popper argument provided. They must be either a DOM element or virtual element.';
+var INFINITE_LOOP_ERROR = 'Popper: An infinite loop in the modifiers cycle has been detected! The cycle has been interrupted to prevent a browser crash.';
+var DEFAULT_OPTIONS = {
+  placement: 'bottom',
+  modifiers: [],
+  strategy: 'absolute'
+};
+
+function areValidElements() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return !args.some(function (element) {
+    return !(element && typeof element.getBoundingClientRect === 'function');
+  });
+}
+
+function popperGenerator(generatorOptions) {
+  if (generatorOptions === void 0) {
+    generatorOptions = {};
+  }
+
+  var _generatorOptions = generatorOptions,
+      _generatorOptions$def = _generatorOptions.defaultModifiers,
+      defaultModifiers = _generatorOptions$def === void 0 ? [] : _generatorOptions$def,
+      _generatorOptions$def2 = _generatorOptions.defaultOptions,
+      defaultOptions = _generatorOptions$def2 === void 0 ? DEFAULT_OPTIONS : _generatorOptions$def2;
+  return function createPopper(reference, popper, options) {
+    if (options === void 0) {
+      options = defaultOptions;
+    }
+
+    var state = {
+      placement: 'bottom',
+      orderedModifiers: [],
+      options: Object.assign({}, DEFAULT_OPTIONS, defaultOptions),
+      modifiersData: {},
+      elements: {
+        reference: reference,
+        popper: popper
+      },
+      attributes: {},
+      styles: {}
+    };
+    var effectCleanupFns = [];
+    var isDestroyed = false;
+    var instance = {
+      state: state,
+      setOptions: function setOptions(setOptionsAction) {
+        var options = typeof setOptionsAction === 'function' ? setOptionsAction(state.options) : setOptionsAction;
+        cleanupModifierEffects();
+        state.options = Object.assign({}, defaultOptions, state.options, options);
+        state.scrollParents = {
+          reference: isElement(reference) ? listScrollParents(reference) : reference.contextElement ? listScrollParents(reference.contextElement) : [],
+          popper: listScrollParents(popper)
+        }; // Orders the modifiers based on their dependencies and `phase`
+        // properties
+
+        var orderedModifiers = orderModifiers(mergeByName([].concat(defaultModifiers, state.options.modifiers))); // Strip out disabled modifiers
+
+        state.orderedModifiers = orderedModifiers.filter(function (m) {
+          return m.enabled;
+        }); // Validate the provided modifiers so that the consumer will get warned
+        // if one of the modifiers is invalid for any reason
+
+        if (true) {
+          var modifiers = uniqueBy([].concat(orderedModifiers, state.options.modifiers), function (_ref) {
+            var name = _ref.name;
+            return name;
+          });
+          validateModifiers(modifiers);
+
+          if (getBasePlacement(state.options.placement) === auto) {
+            var flipModifier = state.orderedModifiers.find(function (_ref2) {
+              var name = _ref2.name;
+              return name === 'flip';
+            });
+
+            if (!flipModifier) {
+              console.error(['Popper: "auto" placements require the "flip" modifier be', 'present and enabled to work.'].join(' '));
+            }
+          }
+
+          var _getComputedStyle = getComputedStyle$1(popper),
+              marginTop = _getComputedStyle.marginTop,
+              marginRight = _getComputedStyle.marginRight,
+              marginBottom = _getComputedStyle.marginBottom,
+              marginLeft = _getComputedStyle.marginLeft; // We no longer take into account `margins` on the popper, and it can
+          // cause bugs with positioning, so we'll warn the consumer
+
+
+          if ([marginTop, marginRight, marginBottom, marginLeft].some(function (margin) {
+            return parseFloat(margin);
+          })) {
+            console.warn(['Popper: CSS "margin" styles cannot be used to apply padding', 'between the popper and its reference element or boundary.', 'To replicate margin, use the `offset` modifier, as well as', 'the `padding` option in the `preventOverflow` and `flip`', 'modifiers.'].join(' '));
+          }
+        }
+
+        runModifierEffects();
+        return instance.update();
+      },
+      // Sync update – it will always be executed, even if not necessary. This
+      // is useful for low frequency updates where sync behavior simplifies the
+      // logic.
+      // For high frequency updates (e.g. `resize` and `scroll` events), always
+      // prefer the async Popper#update method
+      forceUpdate: function forceUpdate() {
+        if (isDestroyed) {
+          return;
+        }
+
+        var _state$elements = state.elements,
+            reference = _state$elements.reference,
+            popper = _state$elements.popper; // Don't proceed if `reference` or `popper` are not valid elements
+        // anymore
+
+        if (!areValidElements(reference, popper)) {
+          if (true) {
+            console.error(INVALID_ELEMENT_ERROR);
+          }
+
+          return;
+        } // Store the reference and popper rects to be read by modifiers
+
+
+        state.rects = {
+          reference: getCompositeRect(reference, getOffsetParent(popper), state.options.strategy === 'fixed'),
+          popper: getLayoutRect(popper)
+        }; // Modifiers have the ability to reset the current update cycle. The
+        // most common use case for this is the `flip` modifier changing the
+        // placement, which then needs to re-run all the modifiers, because the
+        // logic was previously ran for the previous placement and is therefore
+        // stale/incorrect
+
+        state.reset = false;
+        state.placement = state.options.placement; // On each update cycle, the `modifiersData` property for each modifier
+        // is filled with the initial data specified by the modifier. This means
+        // it doesn't persist and is fresh on each update.
+        // To ensure persistent data, use `${name}#persistent`
+
+        state.orderedModifiers.forEach(function (modifier) {
+          return state.modifiersData[modifier.name] = Object.assign({}, modifier.data);
+        });
+        var __debug_loops__ = 0;
+
+        for (var index = 0; index < state.orderedModifiers.length; index++) {
+          if (true) {
+            __debug_loops__ += 1;
+
+            if (__debug_loops__ > 100) {
+              console.error(INFINITE_LOOP_ERROR);
+              break;
+            }
+          }
+
+          if (state.reset === true) {
+            state.reset = false;
+            index = -1;
+            continue;
+          }
+
+          var _state$orderedModifie = state.orderedModifiers[index],
+              fn = _state$orderedModifie.fn,
+              _state$orderedModifie2 = _state$orderedModifie.options,
+              _options = _state$orderedModifie2 === void 0 ? {} : _state$orderedModifie2,
+              name = _state$orderedModifie.name;
+
+          if (typeof fn === 'function') {
+            state = fn({
+              state: state,
+              options: _options,
+              name: name,
+              instance: instance
+            }) || state;
+          }
+        }
+      },
+      // Async and optimistically optimized update – it will not be executed if
+      // not necessary (debounced to run at most once-per-tick)
+      update: debounce(function () {
+        return new Promise(function (resolve) {
+          instance.forceUpdate();
+          resolve(state);
+        });
+      }),
+      destroy: function destroy() {
+        cleanupModifierEffects();
+        isDestroyed = true;
+      }
+    };
+
+    if (!areValidElements(reference, popper)) {
+      if (true) {
+        console.error(INVALID_ELEMENT_ERROR);
+      }
+
+      return instance;
+    }
+
+    instance.setOptions(options).then(function (state) {
+      if (!isDestroyed && options.onFirstUpdate) {
+        options.onFirstUpdate(state);
+      }
+    }); // Modifiers have the ability to execute arbitrary code before the first
+    // update cycle runs. They will be executed in the same order as the update
+    // cycle. This is useful when a modifier adds some persistent data that
+    // other modifiers need to use, but the modifier is run after the dependent
+    // one.
+
+    function runModifierEffects() {
+      state.orderedModifiers.forEach(function (_ref3) {
+        var name = _ref3.name,
+            _ref3$options = _ref3.options,
+            options = _ref3$options === void 0 ? {} : _ref3$options,
+            effect = _ref3.effect;
+
+        if (typeof effect === 'function') {
+          var cleanupFn = effect({
+            state: state,
+            name: name,
+            instance: instance,
+            options: options
+          });
+
+          var noopFn = function noopFn() {};
+
+          effectCleanupFns.push(cleanupFn || noopFn);
+        }
+      });
+    }
+
+    function cleanupModifierEffects() {
+      effectCleanupFns.forEach(function (fn) {
+        return fn();
+      });
+      effectCleanupFns = [];
+    }
+
+    return instance;
+  };
+}
+
+var defaultModifiers = [eventListeners, popperOffsets$1, computeStyles$1, applyStyles$1, offset$1, flip$1, preventOverflow$1, arrow$1, hide$1];
+var createPopper = /*#__PURE__*/popperGenerator({
+  defaultModifiers: defaultModifiers
+}); // eslint-disable-next-line import/no-unused-modules
+
+const CDropdown = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CDropdown',
+    props: {
+        /**
+         * Set aligment of dropdown menu.
+         *
+         * @values { 'start' | 'end' | { xs: 'start' | 'end' } | { sm: 'start' | 'end' } | { md: 'start' | 'end' } | { lg: 'start' | 'end' } | { xl: 'start' | 'end'} | { xxl: 'start' | 'end'} }
+         */
+        alignment: {
+            type: [String, Object],
+            default: undefined,
+            required: false,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            validator: (value) => {
+                if (value === 'start' || value === 'end') {
+                    return true;
+                }
+                else {
+                    if (typeof value.xs !== 'undefined' && (value.xs === 'start' || value.xs === 'end')) {
+                        return true;
+                    }
+                    if (typeof value.sm !== 'undefined' && (value.sm === 'start' || value.sm === 'end')) {
+                        return true;
+                    }
+                    if (typeof value.md !== 'undefined' && (value.md === 'start' || value.md === 'end')) {
+                        return true;
+                    }
+                    if (typeof value.lg !== 'undefined' && (value.lg === 'start' || value.lg === 'end')) {
+                        return true;
+                    }
+                    if (typeof value.xl !== 'undefined' && (value.xl === 'start' || value.xl === 'end')) {
+                        return true;
+                    }
+                    if (typeof value.xxl !== 'undefined' && (value.xxl === 'start' || value.xxl === 'end')) {
+                        return true;
+                    }
+                    return false;
+                }
+            },
+        },
+        /**
+         * Configure the auto close behavior of the dropdown:
+         * - `true` - the dropdown will be closed by clicking outside or inside the dropdown menu.
+         * - `false` - the dropdown will be closed by clicking the toggle button and manually calling hide or toggle method. (Also will not be closed by pressing esc key)
+         * - `'inside'` - the dropdown will be closed (only) by clicking inside the dropdown menu.
+         * - `'outside'` - the dropdown will be closed (only) by clicking outside the dropdown menu.
+         */
+        autoClose: {
+            type: [Boolean, String],
+            default: true,
+            validator: (value) => {
+                return typeof value === 'boolean' || ['inside', 'outside'].includes(value);
+            },
+        },
+        /**
+         * Sets a darker color scheme to match a dark navbar.
+         */
+        dark: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Sets a specified  direction and location of the dropdown menu.
+         *
+         * @values 'center', 'dropup', 'dropup-center', 'dropend', 'dropstart'
+         */
+        direction: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['center', 'dropup', 'dropup-center', 'dropend', 'dropstart'].includes(value);
+            },
+        },
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Describes the placement of your component after Popper.js has applied all the modifiers that may have flipped or altered the originally provided placement property.
+         *
+         * @values 'auto', 'top-end', 'top', 'top-start', 'bottom-end', 'bottom', 'bottom-start', 'right-start', 'right', 'right-end', 'left-start', 'left', 'left-end'
+         */
+        placement: {
+            type: String,
+            default: 'bottom-start',
+            required: false,
+        },
+        /**
+         * If you want to disable dynamic positioning set this property to `true`.
+         */
+        popper: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * Sets which event handlers you’d like provided to your toggle prop. You can specify one trigger or an array of them.
+         */
+        trigger: {
+            type: [String, Array],
+            required: false,
+            default: 'click',
+        },
+        /**
+         * Set the dropdown variant to an btn-group, dropdown, input-group, and nav-item.
+         *
+         * @values 'btn-group', 'dropdown', 'input-group', 'nav-item'
+         */
+        variant: {
+            type: String,
+            default: 'btn-group',
+            required: false,
+            validator: (value) => {
+                return ['btn-group', 'dropdown', 'input-group', 'nav-item'].includes(value);
+            },
+        },
+        /**
+         * Toggle the visibility of dropdown menu component.
+         */
+        visible: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const dropdownToggleRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const dropdownMenuRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const placement = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.placement);
+        const popper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.visible, () => {
+            visible.value = props.visible;
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('config', {
+            autoClose: props.autoClose,
+            alignment: props.alignment,
+            dark: props.dark,
+            popper: props.popper,
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('variant', props.variant);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('visible', visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('dropdownToggleRef', dropdownToggleRef);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('dropdownMenuRef', dropdownMenuRef);
+        if (props.direction === 'center') {
+            placement.value = 'bottom';
+        }
+        if (props.direction === 'dropup') {
+            placement.value = 'top-start';
+        }
+        if (props.direction === 'dropup-center') {
+            placement.value = 'top';
+        }
+        if (props.direction === 'dropend') {
+            placement.value = 'right-start';
+        }
+        if (props.direction === 'dropstart') {
+            placement.value = 'left-start';
+        }
+        if (props.alignment === 'end') {
+            placement.value = 'bottom-end';
+        }
+        const initPopper = () => {
+            // Disable popper if responsive aligment is set.
+            if (typeof props.alignment === 'object') {
+                return;
+            }
+            if (dropdownToggleRef.value) {
+                popper.value = createPopper(dropdownToggleRef.value, dropdownMenuRef.value, {
+                    placement: placement.value,
+                });
+            }
+        };
+        const destroyPopper = () => {
+            if (popper.value) {
+                popper.value.destroy();
+            }
+            popper.value = undefined;
+        };
+        const toggleMenu = (_visible) => {
+            if (props.disabled) {
+                return;
+            }
+            if (typeof _visible == 'boolean') {
+                visible.value = _visible;
+                return;
+            }
+            if (visible.value === true) {
+                visible.value = false;
+                return;
+            }
+            visible.value = true;
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('toggleMenu', toggleMenu);
+        const hideMenu = () => {
+            if (props.disabled) {
+                return;
+            }
+            visible.value = false;
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('hideMenu', hideMenu);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(visible, () => {
+            props.popper && (visible.value ? initPopper() : destroyPopper());
+            visible.value ? emit('show') : emit('hide');
+        });
+        return () => props.variant === 'input-group'
+            ? [slots.default && slots.default()]
+            : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                class: [
+                    props.variant === 'nav-item' ? 'nav-item dropdown' : props.variant,
+                    props.direction === 'center'
+                        ? 'dropdown-center'
+                        : props.direction === 'dropup-center'
+                            ? 'dropup dropup-center'
+                            : props.direction,
+                ],
+            }, slots.default && slots.default());
+    },
+});
+
+const CDropdownItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CDropdownItem',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'a',
+            required: false,
+        },
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * The href attribute specifies the URL of the page the link goes to.
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CLink, {
+            class: 'dropdown-item',
+            active: props.active,
+            component: props.component,
+            disabled: props.disabled,
+            href: props.href,
+        }, {
+            default: () => slots.default && slots.default(),
+        });
+    },
+});
+
+const CDropdownHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CDropdownHeader',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'h6',
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: 'dropdown-header',
+        }, slots.default && slots.default());
+    },
+});
+
+const CDropdownDivider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CDropdownDivider',
+    setup() {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('hr', {
+            class: 'dropdown-divider',
+        });
+    },
+});
+
+const CDropdownMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CDropdownMenu',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         *
+         * @values 'div', 'ul'
+         */
+        component: {
+            type: String,
+            default: 'div',
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        const dropdownToggleRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('dropdownToggleRef');
+        const dropdownMenuRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('dropdownMenuRef');
+        const config = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('config'); // eslint-disable-line @typescript-eslint/no-explicit-any
+        const hideMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('hideMenu');
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('visible');
+        const { autoClose, alignment, dark, popper } = config;
+        // eslint-disable-next-line @typescript-eslint/ban-types
+        const alignmentClassNames = (alignment) => {
+            const classNames = [];
+            if (typeof alignment === 'object') {
+                Object.keys(alignment).map((key) => {
+                    classNames.push(`dropdown-menu${key === 'xs' ? '' : `-${key}`}-${alignment[key]}`);
+                });
+            }
+            if (typeof alignment === 'string') {
+                classNames.push(`dropdown-menu-${alignment}`);
+            }
+            return classNames;
+        };
+        const handleKeyup = (event) => {
+            if (autoClose === false) {
+                return;
+            }
+            if (event.key === 'Escape') {
+                hideMenu();
+            }
+        };
+        const handleMouseUp = (event) => {
+            if (dropdownToggleRef.value?.contains(event.target)) {
+                return;
+            }
+            if (autoClose === true) {
+                hideMenu();
+                return;
+            }
+            if (autoClose === 'inside' && dropdownMenuRef.value?.contains(event.target)) {
+                hideMenu();
+                return;
+            }
+            if (autoClose === 'outside' &&
+                !dropdownMenuRef.value?.contains(event.target)) {
+                hideMenu();
+            }
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onUpdated)(() => {
+            visible.value && window.addEventListener('mouseup', handleMouseUp);
+            visible.value && window.addEventListener('keyup', handleKeyup);
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onUnmounted)(() => {
+            window.removeEventListener('mouseup', handleMouseUp);
+            window.removeEventListener('keyup', handleKeyup);
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'dropdown-menu',
+                { 'dropdown-menu-dark': dark, show: visible.value },
+                alignmentClassNames(alignment),
+            ],
+            ...((typeof alignment === 'object' || !popper) && {
+                'data-coreui-popper': 'static',
+            }),
+            ref: dropdownMenuRef,
+        }, props.component === 'ul'
+            ? slots.default && slots.default().map((vnode) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('li', {}, vnode))
+            : slots.default && slots.default());
+    },
+});
+
+const CDropdownToggle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CDropdownToggle',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Enables pseudo element caret on toggler.
+         */
+        caret: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'button',
+            require: false,
+        },
+        /**
+         * Create a custom toggler which accepts any content.
+         */
+        custom: Boolean,
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * @values 'rounded', 'rounded-top', 'rounded-end', 'rounded-bottom', 'rounded-start', 'rounded-circle', 'rounded-pill', 'rounded-0', 'rounded-1', 'rounded-2', 'rounded-3'
+         */
+        shape: Shape,
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm', 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+        /**
+         * Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of `.dropdown-toggle-split` className for proper spacing around the dropdown caret.
+         */
+        split: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Sets which event handlers you’d like provided to your toggle prop. You can specify one trigger or an array of them.
+         *
+         * @type 'hover' | 'focus' | 'click'
+         */
+        trigger: {
+            type: String,
+            default: 'click',
+            required: false,
+        },
+        /**
+         * Set the button variant to an outlined button or a ghost button.
+         *
+         * @values 'ghost', 'outline'
+         */
+        variant: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['ghost', 'outline'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        const togglerRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const dropdownToggleRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('dropdownToggleRef');
+        const dropdownVariant = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('variant');
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('visible');
+        const toggleMenu = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('toggleMenu');
+        const className = [
+            {
+                'dropdown-toggle': props.caret,
+                'dropdown-toggle-split': props.split,
+                active: props.active,
+                disabled: props.disabled,
+            },
+        ];
+        const triggers = {
+            ...((props.trigger === 'click' || props.trigger.includes('click')) && {
+                onClick: () => {
+                    if (props.disabled) {
+                        return;
+                    }
+                    toggleMenu();
+                },
+            }),
+            ...((props.trigger === 'focus' || props.trigger.includes('focus')) && {
+                onfocus: () => {
+                    if (props.disabled) {
+                        return;
+                    }
+                    toggleMenu(true);
+                },
+                onblur: () => {
+                    if (props.disabled) {
+                        return;
+                    }
+                    toggleMenu(false);
+                },
+            }),
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+            if (togglerRef.value) {
+                dropdownToggleRef.value = togglerRef.value.$el;
+            }
+        });
+        return () => props.custom
+            ? slots.default &&
+                slots.default().map((slot) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.cloneVNode)(slot, {
+                    ref: (el) => {
+                        togglerRef.value = el;
+                    },
+                    ...triggers,
+                }))
+            : dropdownVariant === 'nav-item'
+                ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('a', {
+                    active: props.active,
+                    class: [
+                        'nav-link',
+                        className,
+                        {
+                            show: visible.value,
+                        },
+                    ],
+                    disabled: props.disabled,
+                    href: '#',
+                    ref: dropdownToggleRef,
+                    ...triggers,
+                }, { default: () => slots.default && slots.default() })
+                : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CButton, {
+                    class: [
+                        className,
+                        {
+                            show: visible.value,
+                        },
+                    ],
+                    active: props.active,
+                    color: props.color,
+                    disabled: props.disabled,
+                    ref: (el) => {
+                        togglerRef.value = el;
+                    },
+                    shape: props.shape,
+                    size: props.size,
+                    ...triggers,
+                    ...(props.component === 'button' && { type: 'button' }),
+                    variant: props.variant,
+                }, () => props.split
+                    ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'visually-hidden' }, 'Toggle Dropdown')
+                    : slots.default && slots.default());
+    },
+});
+
+const CDropdownPlugin = {
+    install: (app) => {
+        app.component(CDropdown.name, CDropdown);
+        app.component(CDropdownItem.name, CDropdownItem);
+        app.component(CDropdownHeader.name, CDropdownHeader);
+        app.component(CDropdownDivider.name, CDropdownDivider);
+        app.component(CDropdownMenu.name, CDropdownMenu);
+        app.component(CDropdownToggle.name, CDropdownToggle);
+    },
+};
+
+const CFooter = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFooter',
+    props: {
+        /**
+         * Place footer in non-static positions.
+         *
+         * @values 'fixed', 'sticky'
+         */
+        position: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['fixed', 'sticky'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['footer', { [`footer-${props.position}`]: props.position }] }, slots.default && slots.default());
+    },
+});
+
+const CFooterPlugin = {
+    install: (app) => {
+        app.component(CFooter.name, CFooter);
+    },
+};
+
+const CForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CForm',
+    props: {
+        /**
+         * Mark a form as validated. If you set it `true`, all validation styles will be applied to the forms component.
+         */
+        validated: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('form', { class: [{ ['was-validated']: props.validated }] }, slots.default && slots.default());
+    },
+});
+
+const CFormFeedback = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormFeedback',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'div',
+        },
+        /**
+         * Method called immediately after the `value` prop changes.
+         */
+        invalid: Boolean,
+        /**
+         * If your form layout allows it, you can display validation feedback in a styled tooltip.
+         */
+        tooltip: Boolean,
+        /**
+         * Set component validation state to valid.
+         */
+        valid: Boolean,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                {
+                    [`invalid-${props.tooltip ? 'tooltip' : 'feedback'}`]: props.invalid,
+                    [`valid-${props.tooltip ? 'tooltip' : 'feedback'}`]: props.valid,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CFormControlValidation = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormControlValidation',
+    inheritAttrs: false,
+    props: {
+        /**
+         * @ignore
+         */
+        describedby: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedback: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedbackInvalid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable invalid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        feedbackValid: {
+            type: String,
+        },
+        /**
+         * Set component validation state to invalid.
+         */
+        invalid: Boolean,
+        /**
+         * Display validation feedback in a styled tooltip.
+         *
+         * @since 4.3.0
+         */
+        tooltipFeedback: Boolean,
+        /**
+         * Set component validation state to valid.
+         */
+        valid: Boolean,
+    },
+    setup(props, { slots }) {
+        return () => [
+            props.feedback &&
+                (props.valid || props.invalid) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormFeedback, {
+                    ...(props.invalid && { id: props.describedby }),
+                    invalid: props.invalid,
+                    tooltip: props.tooltipFeedback,
+                    valid: props.valid,
+                }, {
+                    default: () => (slots.feedback && slots.feedback()) || props.feedback,
+                }),
+            (props.feedbackInvalid || slots.feedbackInvalid) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormFeedback, {
+                    id: props.describedby,
+                    invalid: true,
+                    tooltip: props.tooltipFeedback,
+                }, {
+                    default: () => (slots.feedbackInvalid && slots.feedbackInvalid()) || props.feedbackInvalid,
+                }),
+            (props.feedbackValid || slots.feedbackValid) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormFeedback, {
+                    tooltip: props.tooltipFeedback,
+                    valid: true,
+                }, {
+                    default: () => (slots.feedbackValid && slots.feedbackValid()) || props.feedbackValid,
+                }),
+        ];
+    },
+});
+
+const CFormLabel = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormLabel',
+    props: {
+        /**
+         * A string of all className you want to be applied to the component, and override standard className value.
+         */
+        customClassName: {
+            type: [Array, String],
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('label', {
+            class: props.customClassName ? props.customClassName : 'form-label',
+        }, slots.default && slots.default());
+    },
+});
+
+const CFormCheck = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormCheck',
+    inheritAttrs: false,
+    props: {
+        /**
+         * Create button-like checkboxes and radio buttons.
+         *
+         * @see http://coreui.io/vue/docs/components/button.html
+         */
+        button: {
+            type: Object,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedback: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedbackInvalid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable invalid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        feedbackValid: {
+            type: String,
+        },
+        /**
+         * Sets hit area to the full area of the component.
+         */
+        hitArea: {
+            type: String,
+            validator: (value) => {
+                // The value must match one of these strings
+                return ['full'].includes(value);
+            },
+        },
+        /**
+         * The id global attribute defines an identifier (ID) that must be unique in the whole document.
+         */
+        id: {
+            type: String,
+        },
+        /**
+         * Input Checkbox indeterminate Property
+         */
+        indeterminate: Boolean,
+        /**
+         * Group checkboxes or radios on the same horizontal row by adding.
+         */
+        inline: {
+            type: Boolean,
+        },
+        /**
+         * Set component validation state to invalid.
+         */
+        invalid: Boolean,
+        /**
+         * The element represents a caption for a component.
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * The default name for a value passed using v-model.
+         */
+        modelValue: {
+            type: [Boolean, String],
+            value: undefined,
+        },
+        /**
+         * Display validation feedback in a styled tooltip.
+         *
+         * @since 4.3.0
+         */
+        tooltipFeedback: Boolean,
+        /**
+         * Specifies the type of component.
+         *
+         * @values 'checkbox', 'radio'
+         */
+        type: {
+            type: String,
+            default: 'checkbox',
+        },
+        /**
+         * Set component validation state to valid.
+         */
+        valid: {
+            type: Boolean,
+        },
+    },
+    emits: [
+        /**
+         * Event occurs when the checked value has been changed.
+         */
+        'change',
+        /**
+         * Emit the new value whenever there’s a change event.
+         */
+        'update:modelValue',
+    ],
+    setup(props, { attrs, emit, slots }) {
+        const handleChange = (event) => {
+            const target = event.target;
+            emit('change', event);
+            emit('update:modelValue', target.checked);
+        };
+        const className = [
+            'form-check',
+            {
+                'form-check-inline': props.inline,
+                'is-invalid': props.invalid,
+                'is-valid': props.valid,
+            },
+            attrs.class,
+        ];
+        const inputClassName = [
+            props.button ? 'btn-check' : 'form-check-input',
+            {
+                'is-invalid': props.invalid,
+                'is-valid': props.valid,
+                'me-2': props.hitArea,
+            },
+        ];
+        const formControl = () => {
+            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('input', {
+                ...attrs,
+                ...(props.modelValue && { checked: props.modelValue }),
+                class: inputClassName,
+                id: props.id,
+                indeterminate: props.indeterminate,
+                onChange: (event) => handleChange(event),
+                type: props.type,
+            });
+        };
+        const formLabel = () => props.button
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CButton, {
+                component: 'label',
+                ...props.button,
+                ...(props.id && { for: props.id }),
+            }, {
+                default: () => (slots.label && slots.label()) || props.label,
+            })
+            : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormLabel, { class: 'form-check-label', ...(props.id && { for: props.id }) }, {
+                default: () => (slots.label && slots.label()) || props.label,
+            });
+        const formValidation = () => {
+            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormControlValidation, {
+                describedby: attrs['aria-describedby'],
+                feedback: props.feedback,
+                feedbackInvalid: props.feedbackInvalid,
+                feedbackValid: props.feedbackValid,
+                invalid: props.invalid,
+                tooltipFeedback: props.tooltipFeedback,
+                valid: props.valid,
+            });
+        };
+        return () => props.button
+            ? [formControl(), (slots.label || props.label) && formLabel(), formValidation()]
+            : props.label
+                ? props.hitArea
+                    ? [
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormLabel, {
+                            customClassName: className,
+                            ...(props.id && { for: props.id }),
+                        }, [formControl(), props.label]),
+                        formValidation(),
+                    ]
+                    : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                        class: className,
+                    }, [formControl(), props.label && formLabel(), formValidation()])
+                : formControl();
+    },
+});
+
+const CFormFloating = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormFloating',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: 'form-floating',
+        }, slots.default && slots.default());
+    },
+});
+
+const CFormText = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormText',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'div',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'form-text' }, slots.default && slots.default());
+    },
+});
+
+const CFormControlWrapper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormControlWrapper',
+    inheritAttrs: false,
+    props: {
+        ...CFormControlValidation.props,
+        /**
+         * Provide valuable, actionable valid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        floatingLabel: {
+            type: String,
+        },
+        /**
+         * @ignore
+         */
+        id: {
+            type: String,
+        },
+        /**
+         * Add a caption for a component.
+         *
+         * @since 4.3.0
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * Add helper text to the component.
+         *
+         * @since 4.3.0
+         */
+        text: {
+            type: String,
+        },
+    },
+    setup(props, { slots }) {
+        const formControlValidation = () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormControlValidation, {
+            describedby: props.describedby,
+            feedback: props.feedback,
+            feedbackInvalid: props.feedbackInvalid,
+            feedbackValid: props.feedbackValid,
+            floatingLabel: props.floatingLabel,
+            invalid: props.invalid,
+            tooltipFeedback: props.tooltipFeedback,
+            valid: props.valid,
+        }, {
+            ...(slots.feedback && { feedback: () => slots.feedback && slots.feedback() }),
+            ...(slots.feedbackInvalid && {
+                feedbackInvalid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.feedbackValid && {
+                feedbackValid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+        });
+        return () => props.floatingLabel
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormFloating, () => [
+                slots.default && slots.default(),
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormLabel, {
+                    for: props.id,
+                }, {
+                    default: () => (slots.label && slots.label()) || props.label || props.floatingLabel,
+                }),
+                (props.text || slots.text) &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormText, {
+                        id: props.describedby,
+                    }, {
+                        default: () => (slots.text && slots.text()) || props.text,
+                    }),
+                formControlValidation(),
+            ])
+            : [
+                (props.label || slots.label) &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormLabel, {
+                        for: props.id,
+                    }, {
+                        default: () => (slots.label && slots.label()) || props.label,
+                    }),
+                slots.default && slots.default(),
+                (props.text || slots.text) &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormText, {
+                        id: props.describedby,
+                    }, {
+                        default: () => (slots.text && slots.text()) || props.text,
+                    }),
+                formControlValidation(),
+            ];
+    },
+});
+
+const File = typeof window !== 'undefined' ? window.File : class File extends Object {
+};
+const CFormInput = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormInput',
+    props: {
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        // Inherited Props from CFormControlWrapper
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedback: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedbackInvalid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable invalid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        feedbackValid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable valid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        floatingLabel: {
+            type: String,
+        },
+        /**
+         * The id global attribute defines an identifier (ID) that must be unique in the whole document.
+         */
+        id: {
+            type: String,
+        },
+        /**
+         * Set component validation state to invalid.
+         */
+        invalid: Boolean,
+        /**
+         * Add a caption for a component.
+         *
+         * @since 4.3.0
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * The default name for a value passed using v-model.
+         */
+        modelValue: {
+            type: [File, Number, String],
+            default: undefined,
+        },
+        /**
+         * Render the component styled as plain text. Removes the default form field styling and preserve the correct margin and padding. Recommend to use only along side `readonly`.
+         */
+        plainText: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Toggle the readonly state for the component.
+         */
+        readonly: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm' | 'lg'
+         */
+        size: {
+            type: String,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+        /**
+         * Add helper text to the component.
+         *
+         * @since 4.3.0
+         */
+        text: {
+            type: String,
+        },
+        /**
+         * Display validation feedback in a styled tooltip.
+         *
+         * @since 4.3.0
+         */
+        tooltipFeedback: Boolean,
+        /**
+         * Specifies the type of component.
+         *
+         * @values 'color' | 'file' | 'text' | string
+         */
+        type: {
+            type: String,
+            default: 'text',
+        },
+        /**
+         * Set component validation state to valid.
+         */
+        valid: Boolean,
+    },
+    emits: [
+        /**
+         * Event occurs when the element loses focus, after the content has been changed.
+         */
+        'change',
+        /**
+         * Event occurs immediately after the value of a component has changed.
+         */
+        'input',
+        /**
+         * Emit the new value whenever there’s an input or change event.
+         */
+        'update:modelValue',
+    ],
+    setup(props, { attrs, emit, slots }) {
+        const handleChange = (event) => {
+            const target = event.target;
+            emit('change', event);
+            emit('update:modelValue', target.value);
+        };
+        const handleInput = (event) => {
+            const target = event.target;
+            emit('input', event);
+            emit('update:modelValue', target.value);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormControlWrapper, {
+            describedby: attrs['aria-describedby'],
+            feedback: props.feedback,
+            feedbackInvalid: props.feedbackInvalid,
+            feedbackValid: props.feedbackValid,
+            floatingLabel: props.floatingLabel,
+            id: props.id,
+            invalid: props.invalid,
+            label: props.label,
+            text: props.text,
+            tooltipFeedback: props.tooltipFeedback,
+            valid: props.valid,
+        }, {
+            default: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('input', {
+                id: props.id,
+                ...attrs,
+                class: [
+                    props.plainText ? 'form-control-plaintext' : 'form-control',
+                    {
+                        'form-control-color': props.type === 'color',
+                        [`form-control-${props.size}`]: props.size,
+                        'is-invalid': props.invalid,
+                        'is-valid': props.valid,
+                    },
+                    attrs.class,
+                ],
+                disabled: props.disabled,
+                onChange: (event) => handleChange(event),
+                onInput: (event) => handleInput(event),
+                readonly: props.readonly,
+                type: props.type,
+                ...((props.modelValue || props.modelValue === 0) && { value: props.modelValue })
+            }, slots.default && slots.default()),
+            ...(slots.feedback && { feedback: () => slots.feedback && slots.feedback() }),
+            ...(slots.feedbackInvalid && {
+                feedbackInvalid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.feedbackValid && {
+                feedbackValid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.label && { label: () => slots.label && slots.label() }),
+            ...(slots.text && { text: () => slots.text && slots.text() }),
+        });
+    },
+});
+
+const CFormRange = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormRange',
+    props: {
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            default: undefined,
+        },
+        /**
+         * Add a caption for a component.
+         *
+         * @since 4.3.0
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * Specifies the maximum value for the component.
+         */
+        max: {
+            type: Number,
+            default: undefined,
+        },
+        /**
+         * Specifies the minimum value for the component.
+         */
+        min: {
+            type: Number,
+            default: undefined,
+        },
+        /**
+         * The default name for a value passed using v-model.
+         */
+        modelValue: {
+            type: String,
+            value: undefined,
+        },
+        /**
+         * Toggle the readonly state for the component.
+         */
+        readonly: {
+            type: Boolean,
+        },
+        /**
+         * Specifies the interval between legal numbers in the component.
+         */
+        steps: {
+            type: Number,
+            default: undefined,
+        },
+        /**
+         * The `value` attribute of component.
+         *
+         * @controllable onChange
+         * */
+        value: {
+            type: Number,
+            default: undefined,
+        },
+    },
+    emits: [
+        /**
+         * Event occurs when the value has been changed.
+         */
+        'change',
+        /**
+         * Emit the new value whenever there’s a change event.
+         */
+        'update:modelValue',
+    ],
+    setup(props, { attrs, emit, slots }) {
+        const handleChange = (event) => {
+            const target = event.target;
+            emit('change', event);
+            emit('update:modelValue', target.value);
+        };
+        return () => [
+            props.label &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormLabel, {
+                    for: attrs.id,
+                }, {
+                    default: () => (slots.label && slots.label()) || props.label,
+                }),
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('input', {
+                ...attrs,
+                class: 'form-range',
+                disabled: props.disabled,
+                max: props.max,
+                min: props.min,
+                onChange: (event) => handleChange(event),
+                readonly: props.readonly,
+                steps: props.steps,
+                type: 'range',
+                value: props.modelValue,
+            }, slots.default && slots.default()),
+        ];
+    },
+});
+
+const CFormSelect = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormSelect',
+    props: {
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedback: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedbackInvalid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable invalid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        feedbackValid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable valid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        floatingLabel: {
+            type: String,
+        },
+        /**
+         * Specifies the number of visible options in a drop-down list.
+         */
+        htmlSize: {
+            type: Number,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * The id global attribute defines an identifier (ID) that must be unique in the whole document.
+         */
+        id: {
+            type: String,
+        },
+        /**
+         * Set component validation state to invalid.
+         */
+        invalid: Boolean,
+        /**
+         * Add a caption for a component.
+         *
+         * @since 4.3.0
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * The default name for a value passed using v-model.
+         */
+        modelValue: {
+            type: [String, Array],
+            default: undefined,
+            require: false,
+        },
+        multiple: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Options list of the select component. Available keys: `label`, `value`, `disabled`.
+         * Examples:
+         * - `:options="[{ value: 'js', label: 'JavaScript' }, { value: 'html', label: 'HTML', disabled: true }]"`
+         * - `:options="['js', 'html']"`
+         */
+        options: {
+            type: Array,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm' | 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            require: false,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+        /**
+         * Add helper text to the component.
+         *
+         * @since 4.3.0
+         */
+        text: {
+            type: String,
+        },
+        /**
+         * Display validation feedback in a styled tooltip.
+         *
+         * @since 4.3.0
+         */
+        tooltipFeedback: Boolean,
+        /**
+         * Set component validation state to valid.
+         */
+        valid: Boolean,
+    },
+    emits: [
+        /**
+         * Event occurs when when a user changes the selected option of a `<select>` element.
+         */
+        'change',
+        /**
+         * Emit the new value whenever there’s a change event.
+         */
+        'update:modelValue',
+    ],
+    setup(props, { attrs, emit, slots }) {
+        const handleChange = (event) => {
+            const target = event.target;
+            const selected = Array.from(target.options)
+                .filter((option) => option.selected)
+                .map((option) => option.value);
+            emit('change', event);
+            emit('update:modelValue', target.multiple ? selected : selected[0]);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormControlWrapper, {
+            describedby: attrs['aria-describedby'],
+            feedback: props.feedback,
+            feedbackInvalid: props.feedbackInvalid,
+            feedbackValid: props.feedbackValid,
+            floatingLabel: props.floatingLabel,
+            id: props.id,
+            invalid: props.invalid,
+            label: props.label,
+            text: props.text,
+            tooltipFeedback: props.tooltipFeedback,
+            valid: props.valid,
+        }, {
+            default: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('select', {
+                id: props.id,
+                ...attrs,
+                class: [
+                    'form-select',
+                    {
+                        [`form-select-${props.size}`]: props.size,
+                        'is-invalid': props.invalid,
+                        'is-valid': props.valid,
+                    },
+                    attrs.class,
+                ],
+                multiple: props.multiple,
+                onChange: (event) => handleChange(event),
+                size: props.htmlSize,
+                ...(props.modelValue && !props.multiple && { value: props.modelValue }),
+            }, props.options
+                ? props.options.map((option) => {
+                    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('option', {
+                        ...(typeof option === 'object' && {
+                            ...(option.disabled && { disabled: option.disabled }),
+                            ...(option.selected && { selected: option.selected }),
+                            ...(option.value && {
+                                value: option.value,
+                                ...(props.modelValue &&
+                                    props.multiple &&
+                                    props.modelValue.includes(option.value) && { selected: true }),
+                            }),
+                        }),
+                    }, typeof option === 'string' ? option : option.label);
+                })
+                : slots.default && slots.default()),
+            ...(slots.feedback && { feedback: () => slots.feedback && slots.feedback() }),
+            ...(slots.feedbackInvalid && {
+                feedbackInvalid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.feedbackValid && {
+                feedbackValid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.label && { label: () => slots.label && slots.label() }),
+            ...(slots.text && { text: () => slots.text && slots.text() }),
+        });
+    },
+});
+
+const CFormSwitch = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormSwitch',
+    inheritAttrs: false,
+    props: {
+        /**
+         * The id global attribute defines an identifier (ID) that must be unique in the whole document
+         */
+        id: {
+            type: String,
+        },
+        /**
+         * Set component validation state to invalid.
+         */
+        invalid: {
+            type: Boolean,
+        },
+        /**
+         * The element represents a caption for a component.
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * The default name for a value passed using v-model.
+         */
+        modelValue: {
+            type: [Boolean, String],
+            value: undefined,
+        },
+        /**
+         * Size the component large or extra large. Works only with `switch`.
+         *
+         * @values 'lg' | 'xl'
+         */
+        size: {
+            type: String,
+            validator: (value) => {
+                return ['lg', 'xl'].includes(value);
+            },
+        },
+        /**
+         * Specifies the type of component.
+         *
+         * @values 'checkbox', 'radio'
+         */
+        type: {
+            type: String,
+            default: 'checkbox',
+        },
+        /**
+         * Set component validation state to valid.
+         */
+        valid: {
+            type: Boolean,
+        },
+    },
+    emits: [
+        /**
+         * Event occurs when the checked value has been changed.
+         */
+        'change',
+        /**
+         * Emit the new value whenever there’s a change event.
+         */
+        'update:modelValue',
+    ],
+    setup(props, { attrs, emit }) {
+        const handleChange = (event) => {
+            const target = event.target;
+            emit('change', event);
+            emit('update:modelValue', target.checked);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'form-check form-switch',
+                {
+                    [`form-switch-${props.size}`]: props.size,
+                    'is-invalid': props.invalid,
+                    'is-valid': props.valid,
+                },
+            ],
+        }, [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('input', {
+                ...attrs,
+                ...(props.modelValue && { checked: props.modelValue }),
+                class: [
+                    'form-check-input',
+                    {
+                        'is-invalid': props.invalid,
+                        'is-valid': props.valid,
+                    },
+                ],
+                id: props.id,
+                onChange: (event) => handleChange(event),
+                type: props.type,
+            }),
+            props.label &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormLabel, {
+                    ...(props.id && { for: props.id }),
+                    class: 'form-check-label',
+                }, {
+                    default: () => props.label,
+                }),
+        ]);
+    },
+});
+
+const CFormTextarea = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CFormTextarea',
+    props: {
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedback: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable feedback.
+         *
+         * @since 4.3.0
+         */
+        feedbackInvalid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable invalid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        feedbackValid: {
+            type: String,
+        },
+        /**
+         * Provide valuable, actionable valid feedback when using standard HTML form validation which applied two CSS pseudo-classes, `:invalid` and `:valid`.
+         *
+         * @since 4.3.0
+         */
+        floatingLabel: {
+            type: String,
+        },
+        /**
+         * The id global attribute defines an identifier (ID) that must be unique in the whole document.
+         */
+        id: {
+            type: String,
+        },
+        /**
+         * Set component validation state to invalid.
+         */
+        invalid: Boolean,
+        /**
+         * Add a caption for a component.
+         *
+         * @since 4.3.0
+         */
+        label: {
+            type: String,
+        },
+        /**
+         * The default name for a value passed using v-model.
+         */
+        modelValue: {
+            type: String,
+            default: undefined,
+        },
+        /**
+         * Render the component styled as plain text. Removes the default form field styling and preserve the correct margin and padding. Recommend to use only along side `readonly`.
+         */
+        plainText: {
+            type: Boolean,
+        },
+        /**
+         * Toggle the readonly state for the component.
+         */
+        readonly: {
+            type: Boolean,
+        },
+        /**
+         * Add helper text to the component.
+         *
+         * @since 4.3.0
+         */
+        text: {
+            type: String,
+        },
+        /**
+         * Display validation feedback in a styled tooltip.
+         *
+         * @since 4.3.0
+         */
+        tooltipFeedback: Boolean,
+        /**
+         * Set component validation state to valid.
+         */
+        valid: Boolean,
+    },
+    emits: [
+        /**
+         * Event occurs when the element loses focus, after the content has been changed.
+         */
+        'change',
+        /**
+         * Event occurs immediately after the value of a component has changed.
+         */
+        'input',
+        /**
+         * Emit the new value whenever there’s an input or change event.
+         */
+        'update:modelValue',
+    ],
+    setup(props, { attrs, emit, slots }) {
+        const handleChange = (event) => {
+            const target = event.target;
+            emit('change', event);
+            emit('update:modelValue', target.value);
+        };
+        const handleInput = (event) => {
+            const target = event.target;
+            emit('input', event);
+            emit('update:modelValue', target.value);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CFormControlWrapper, {
+            describedby: attrs['aria-describedby'],
+            feedback: props.feedback,
+            feedbackInvalid: props.feedbackInvalid,
+            feedbackValid: props.feedbackValid,
+            floatingLabel: props.floatingLabel,
+            id: props.id,
+            invalid: props.invalid,
+            label: props.label,
+            text: props.text,
+            tooltipFeedback: props.tooltipFeedback,
+            valid: props.valid,
+        }, {
+            default: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('textarea', {
+                id: props.id,
+                ...attrs,
+                disabled: props.disabled,
+                readonly: props.readonly,
+                class: [
+                    props.plainText ? 'form-control-plaintext' : 'form-control',
+                    {
+                        'is-invalid': props.invalid,
+                        'is-valid': props.valid,
+                    },
+                ],
+                onChange: (event) => handleChange(event),
+                onInput: (event) => handleInput(event),
+                ...(props.modelValue && { value: props.modelValue }),
+            }, slots.default && slots.default()),
+            ...(slots.feedback && { feedback: () => slots.feedback && slots.feedback() }),
+            ...(slots.feedbackInvalid && {
+                feedbackInvalid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.feedbackValid && {
+                feedbackValid: () => slots.feedbackInvalid && slots.feedbackInvalid(),
+            }),
+            ...(slots.label && { label: () => slots.label && slots.label() }),
+            ...(slots.text && { text: () => slots.text && slots.text() }),
+        });
+    },
+});
+
+const CInputGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CInputGroup',
+    props: {
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm', 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'input-group',
+                {
+                    [`input-group-${props.size}`]: props.size,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CInputGroupText = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CInputGroupText',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'span',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'input-group-text' }, slots.default && slots.default());
+    },
+});
+
+const CFormPlugin = {
+    install: (app) => {
+        app.component(CForm.name, CForm);
+        app.component(CFormCheck.name, CFormCheck);
+        // app.component(CFormControl.name, CFormControl)
+        app.component(CFormFeedback.name, CFormFeedback);
+        app.component(CFormFloating.name, CFormFloating);
+        app.component(CFormInput.name, CFormInput);
+        app.component(CFormLabel.name, CFormLabel);
+        app.component(CFormRange.name, CFormRange);
+        app.component(CFormSelect.name, CFormSelect);
+        app.component(CFormSwitch.name, CFormSwitch);
+        app.component(CFormText.name, CFormText);
+        app.component(CFormTextarea.name, CFormTextarea);
+        app.component(CInputGroup.name, CInputGroup);
+        app.component(CInputGroupText.name, CInputGroupText);
+    },
+};
+
+const BREAKPOINTS$4 = [
+    'xxl',
+    'xl',
+    'lg',
+    'md',
+    'sm',
+    'xs',
+];
+const CCol = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CCol',
+    props: {
+        /**
+         * The number of columns/offset/order on extra small devices (<576px).
+         *
+         * @values 'auto' | number | string | boolean | { span: 'auto' | number | string | boolean } | { offset: number | string } | { order: 'first' | 'last' | number | string }
+         */
+        xs: {
+            type: [Boolean, Number, String, Object],
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns/offset/order on small devices (<768px).
+         *
+         * @values 'auto' | number | string | boolean | { span: 'auto' | number | string | boolean } | { offset: number | string } | { order: 'first' | 'last' | number | string }
+         */
+        sm: {
+            type: [Boolean, Number, String, Object],
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns/offset/order on medium devices (<992px).
+         *
+         * @values 'auto' | number | string | boolean | { span: 'auto' | number | string | boolean } | { offset: number | string } | { order: 'first' | 'last' | number | string }
+         */
+        md: {
+            type: [Boolean, Number, String, Object],
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns/offset/order on large devices (<1200px).
+         *
+         * @values 'auto' | number | string | boolean | { span: 'auto' | number | string | boolean } | { offset: number | string } | { order: 'first' | 'last' | number | string }
+         */
+        lg: {
+            type: [Boolean, Number, String, Object],
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns/offset/order on X-Large devices (<1400px).
+         *
+         * @values 'auto' | number | string | boolean | { span: 'auto' | number | string | boolean } | { offset: number | string } | { order: 'first' | 'last' | number | string }
+         */
+        xl: {
+            type: [Boolean, Number, String, Object],
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns/offset/order on XX-Large devices (≥1400px).
+         *
+         * @values 'auto' | number | string | boolean | { span: 'auto' | number | string | boolean } | { offset: number | string } | { order: 'first' | 'last' | number | string }
+         */
+        xxl: {
+            type: [Boolean, Number, String, Object],
+            default: undefined,
+            require: false,
+        },
+    },
+    setup(props, { slots }) {
+        const repsonsiveClassNames = [];
+        BREAKPOINTS$4.forEach((bp) => {
+            const breakpoint = props[bp];
+            const infix = bp === 'xs' ? '' : `-${bp}`;
+            if (breakpoint) {
+                if (typeof breakpoint === 'number' || typeof breakpoint === 'string') {
+                    repsonsiveClassNames.push(`col${infix}-${breakpoint}`);
+                }
+                if (typeof breakpoint === 'boolean') {
+                    repsonsiveClassNames.push(`col${infix}`);
+                }
+            }
+            if (breakpoint && typeof breakpoint === 'object') {
+                if (typeof breakpoint.span === 'number' || typeof breakpoint.span === 'string') {
+                    repsonsiveClassNames.push(`col${infix}-${breakpoint.span}`);
+                }
+                if (typeof breakpoint.span === 'boolean') {
+                    repsonsiveClassNames.push(`col${infix}`);
+                }
+                if (typeof breakpoint.order === 'number' || typeof breakpoint.order === 'string') {
+                    repsonsiveClassNames.push(`order${infix}-${breakpoint.order}`);
+                }
+                if (typeof breakpoint.offset === 'number') {
+                    repsonsiveClassNames.push(`offset${infix}-${breakpoint.offset}`);
+                }
+            }
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [repsonsiveClassNames.length ? repsonsiveClassNames : 'col'],
+        }, slots.default && slots.default());
+    },
+});
+
+const BREAKPOINTS$3 = [
+    'xxl',
+    'xl',
+    'lg',
+    'md',
+    'sm',
+    'fluid',
+];
+const CContainer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CContainer',
+    props: {
+        /**
+         * Set container 100% wide until small breakpoint.
+         */
+        sm: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set container 100% wide until medium breakpoint.
+         */
+        md: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set container 100% wide until large breakpoint.
+         */
+        lg: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set container 100% wide until X-large breakpoint.
+         */
+        xl: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set container 100% wide until XX-large breakpoint.
+         */
+        xxl: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set container 100% wide, spanning the entire width of the viewport.
+         */
+        fluid: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        const repsonsiveClassNames = [];
+        BREAKPOINTS$3.forEach((bp) => {
+            const breakpoint = props[bp];
+            breakpoint && repsonsiveClassNames.push(`container-${bp}`);
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [repsonsiveClassNames.length ? repsonsiveClassNames : 'container'],
+        }, slots.default && slots.default());
+    },
+});
+
+const BREAKPOINTS$2 = [
+    'xxl',
+    'xl',
+    'lg',
+    'md',
+    'sm',
+    'xs',
+];
+const CRow = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CRow',
+    props: {
+        /**
+         * The number of columns/offset/order on extra small devices (<576px).
+         *
+         * @values { cols: 'auto' | number | string } | { gutter: number | string } | { gutterX: number | string } | { gutterY: number | string }
+         */
+        xs: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * The number of columns/offset/order on small devices (<768px).
+         *
+         * @values { cols: 'auto' | number | string } | { gutter: number | string } | { gutterX: number | string } | { gutterY: number | string }
+         */
+        sm: {
+            type: Object,
+            default: undefined,
+            required: false,
+            /**
+             * The number of columns/offset/order on medium devices (<992px).
+             *
+             * @values { cols: 'auto' | number | string } | { gutter: number | string } | { gutterX: number | string } | { gutterY: number | string }
+             */
+        },
+        md: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * The number of columns/offset/order on large devices (<1200px).
+         *
+         * @values { cols: 'auto' | number | string } | { gutter: number | string } | { gutterX: number | string } | { gutterY: number | string }
+         */
+        lg: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * The number of columns/offset/order on X-Large devices (<1400px).
+         *
+         * @values { cols: 'auto' | number | string } | { gutter: number | string } | { gutterX: number | string } | { gutterY: number | string }
+         */
+        xl: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * The number of columns/offset/order on XX-Large devices (≥1400px).
+         *
+         * @values { cols: 'auto' | number | string } | { gutter: number | string } | { gutterX: number | string } | { gutterY: number | string }
+         */
+        xxl: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        const repsonsiveClassNames = [];
+        BREAKPOINTS$2.forEach((bp) => {
+            const breakpoint = props[bp];
+            const infix = bp === 'xs' ? '' : `-${bp}`;
+            if (typeof breakpoint === 'object') {
+                if (breakpoint.cols) {
+                    repsonsiveClassNames.push(`row-cols${infix}-${breakpoint.cols}`);
+                }
+                if (typeof breakpoint.gutter === 'number') {
+                    repsonsiveClassNames.push(`g${infix}-${breakpoint.gutter}`);
+                }
+                if (typeof breakpoint.gutterX === 'number') {
+                    repsonsiveClassNames.push(`gx${infix}-${breakpoint.gutterX}`);
+                }
+                if (typeof breakpoint.gutterY === 'number') {
+                    repsonsiveClassNames.push(`gy${infix}-${breakpoint.gutterY}`);
+                }
+            }
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: ['row', repsonsiveClassNames],
+        }, slots.default && slots.default());
+    },
+});
+
+const CGridPlugin = {
+    install: (app) => {
+        app.component(CCol.name, CCol);
+        app.component(CContainer.name, CContainer);
+        app.component(CRow.name, CRow);
+    },
+};
+
+const CHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CHeader',
+    props: {
+        /**
+         * Defines optional container wrapping children elements.
+         *
+         * @values boolean, 'sm', 'md', 'lg', 'xl', 'xxl', 'fluid'
+         */
+        container: {
+            type: [Boolean, String],
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return (typeof value === 'boolean' || ['sm', 'md', 'lg', 'xl', 'xxl', 'fluid'].includes(value));
+            },
+        },
+        /**
+         * Place header in non-static positions.
+         *
+         * @values 'fixed', 'sticky'
+         */
+        position: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['fixed', 'sticky'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['header', { [`header-${props.position}`]: props.position }] }, props.container
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: `container${props.container !== true ? '-' + props.container : ''}` }, slots.default && slots.default())
+            : slots.default && slots.default());
+    },
+});
+
+const CHeaderBrand = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CHeaderBrand',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'a',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'header-brand' }, slots.default && slots.default());
+    },
+});
+
+const CHeaderDivider = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CHeaderDivider',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'header-divider' }, slots.default && slots.default());
+    },
+});
+
+const CHeaderNav = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CHeaderNav',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'ul',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: 'header-nav',
+            role: 'navigation',
+        }, slots.default && slots.default());
+    },
+});
+
+const CHeaderText = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CHeaderText',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'header-text' }, slots.default && slots.default());
+    },
+});
+
+const CHeaderToggler = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CHeaderToggler',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+            class: 'header-toggler',
+            type: 'button',
+            'aria-label': 'Toggle navigation',
+        }, slots.default ? slots.default() : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: ['header-toggler-icon'] }));
+    },
+});
+
+const CHeaderPlugin = {
+    install: (app) => {
+        app.component(CHeader.name, CHeader);
+        app.component(CHeaderBrand.name, CHeaderBrand);
+        app.component(CHeaderDivider.name, CHeaderDivider);
+        app.component(CHeaderNav.name, CHeaderNav);
+        app.component(CHeaderText.name, CHeaderText);
+        app.component(CHeaderToggler.name, CHeaderToggler);
+    },
+};
+
+const CImage = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CImage',
+    props: {
+        /**
+         * Set the horizontal aligment.
+         *
+         * @values 'start', 'center', 'end'
+         */
+        align: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['start', 'center', 'end'].includes(value);
+            },
+        },
+        /**
+         * Make image responsive.
+         */
+        fluid: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Make image rounded.
+         */
+        rounded: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Give an image a rounded 1px border appearance.
+         */
+        thumbnail: {
+            type: Boolean,
+            required: false,
+        },
+    },
+    setup(props) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('img', {
+            class: [
+                {
+                    [`float-${props.align}`]: props.align && (props.align === 'start' || props.align === 'end'),
+                    'd-block mx-auto': props.align && props.align === 'center',
+                    'img-fluid': props.fluid,
+                    rounded: props.rounded,
+                    'img-thumbnail': props.thumbnail,
+                },
+            ],
+        });
+    },
+});
+
+const CImagePlugin = {
+    install: (app) => {
+        app.component(CImage.name, CImage);
+    },
+};
+
+const CListGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CListGroup',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'ul',
+        },
+        /**
+         * Remove some borders and rounded corners to render list group items edge-to-edge in a parent component (e.g., `<CCard>`)
+         */
+        flush: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Specify a layout type.
+         *
+         * @values 'horizontal', 'horizontal-sm', 'horizontal-md', 'horizontal-lg', 'horizontal-xl', 'horizontal-xxl',
+         */
+        layout: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return [
+                    'horizontal',
+                    'horizontal-sm',
+                    'horizontal-md',
+                    'horizontal-lg',
+                    'horizontal-xl',
+                    'horizontal-xxl',
+                ].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'list-group',
+                {
+                    'list-group-flush': props.flush,
+                    [`list-group-${props.layout}`]: props.layout,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CListGroupItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CListGroupItem',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'li',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'list-group-item',
+                {
+                    [`list-group-item-${props.color}`]: props.color,
+                    'list-group-item-action': props.component === 'a' || props.component === 'button',
+                    [`active`]: props.active,
+                    [`disabled`]: props.disabled,
+                },
+            ],
+            ...((props.component === 'a' || props.component === 'button') && {
+                active: props.active,
+                disabled: props.disabled,
+            }),
+            ...(props.active && { 'aria-current': true }),
+            ...(props.disabled && { 'aria-disabled': true }),
+        }, slots.default && slots.default());
+    },
+});
+
+const CListGroupPlugin = {
+    install: (app) => {
+        app.component(CListGroup.name, CListGroup);
+        app.component(CListGroupItem.name, CListGroupItem);
+    },
+};
+
+const CModal = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CModal',
+    inheritAttrs: false,
+    props: {
+        /**
+         * Align the modal in the center or top of the screen.
+         *
+         * @values 'top', 'center'
+         */
+        alignment: {
+            default: 'top',
+            required: false,
+            validator: (value) => {
+                return ['top', 'center'].includes(value);
+            },
+        },
+        /**
+         * Apply a backdrop on body while offcanvas is open.
+         *
+         * @values 'static'
+         */
+        backdrop: {
+            type: [Boolean, String],
+            default: true,
+            require: false,
+        },
+        /**
+         * A string of all className you want applied to the modal content component.
+         */
+        contentClassName: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Set modal to covers the entire user viewport
+         *
+         * @values boolean, 'sm', 'md', 'lg', 'xl', 'xxl'
+         */
+        fullscreen: {
+            type: [Boolean, String],
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                if (typeof value == 'string') {
+                    return ['sm', 'md', 'lg', 'xl', 'xxl'].includes(value);
+                }
+                if (typeof value == 'boolean') {
+                    return true;
+                }
+                return false;
+            },
+        },
+        /**
+         * Closes the modal when escape key is pressed.
+         */
+        keyboard: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * Create a scrollable modal that allows scrolling the modal body.
+         */
+        scrollable: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Size the component small, large, or extra large.
+         *
+         * @values 'sm', 'lg', 'xl'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'lg', 'xl'].includes(value);
+            },
+        },
+        /**
+         * Remove animation to create modal that simply appear rather than fade in to view.
+         */
+        transition: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * By default the component is unmounted after close animation, if you want to keep the component mounted set this property to false.
+         */
+        unmountOnClose: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * Toggle the visibility of alert component.
+         */
+        visible: Boolean,
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be closed.
+         */
+        'close',
+        /**
+         * Callback fired when the component requests to be closed.
+         */
+        'close-prevented',
+        /**
+         * Callback fired when the modal is shown, its backdrop is static and a click outside the modal or an escape key press is performed with the keyboard option set to false.
+         */
+        'show',
+    ],
+    setup(props, { slots, attrs, emit }) {
+        const modalRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const modalContentRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.visible, () => {
+            visible.value = props.visible;
+        });
+        const handleEnter = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            document.body.classList.add('modal-open');
+            document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = '0px';
+            el.style.display = 'block';
+            setTimeout(() => {
+                el.classList.add('show');
+            }, 1);
+            emit('show');
+        };
+        const handleAfterEnter = () => {
+            window.addEventListener('mousedown', handleMouseDown);
+            window.addEventListener('keyup', handleKeyUp);
+        };
+        const handleLeave = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            document.body.classList.remove('modal-open');
+            document.body.style.removeProperty('overflow');
+            document.body.style.removeProperty('padding-right');
+            if (document.body.className === '') {
+                document.body.removeAttribute('class');
+            }
+            el.classList.remove('show');
+        };
+        const handleAfterLeave = (el) => {
+            window.removeEventListener('mousedown', handleMouseDown);
+            window.removeEventListener('keyup', handleKeyUp);
+            el.style.display = 'none';
+        };
+        const handleDismiss = () => {
+            emit('close');
+            visible.value = false;
+        };
+        const handleKeyUp = (event) => {
+            if (modalContentRef.value && !modalContentRef.value.contains(event.target)) {
+                if (props.backdrop !== 'static' && event.key === 'Escape' && props.keyboard) {
+                    handleDismiss();
+                }
+                if (props.backdrop === 'static') {
+                    modalRef.value.classList.add('modal-static');
+                    emit('close-prevented');
+                    setTimeout(() => {
+                        modalRef.value.classList.remove('modal-static');
+                    }, 300);
+                }
+            }
+        };
+        const handleMouseDown = (event) => {
+            window.addEventListener('mouseup', () => handleMouseUp(event), { once: true });
+        };
+        const handleMouseUp = (event) => {
+            if (modalContentRef.value && !modalContentRef.value.contains(event.target)) {
+                if (props.backdrop !== 'static') {
+                    handleDismiss();
+                }
+                if (props.backdrop === 'static') {
+                    modalRef.value.classList.add('modal-static');
+                    setTimeout(() => {
+                        modalRef.value.classList.remove('modal-static');
+                    }, 300);
+                }
+            }
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('handleDismiss', handleDismiss);
+        const modal = () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'modal',
+                {
+                    ['fade']: props.transition,
+                },
+                attrs.class,
+            ],
+            ref: modalRef,
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'modal-dialog',
+                {
+                    'modal-dialog-centered': props.alignment === 'center',
+                    [`modal-fullscreen-${props.fullscreen}-down`]: props.fullscreen && typeof props.fullscreen === 'string',
+                    'modal-fullscreen': props.fullscreen && typeof props.fullscreen === 'boolean',
+                    ['modal-dialog-scrollable']: props.scrollable,
+                    [`modal-${props.size}`]: props.size,
+                },
+            ],
+            role: 'dialog',
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: ['modal-content', props.contentClassName], ref: modalContentRef }, slots.default && slots.default())));
+        return () => [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+                css: false,
+                onEnter: (el, done) => handleEnter(el, done),
+                onAfterEnter: () => handleAfterEnter(),
+                onLeave: (el, done) => handleLeave(el, done),
+                onAfterLeave: (el) => handleAfterLeave(el),
+            }, () => props.unmountOnClose
+                ? visible.value && modal()
+                : (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)(modal(), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, visible.value]])),
+            props.backdrop &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CBackdrop, {
+                    class: 'modal-backdrop',
+                    visible: visible.value,
+                }),
+        ];
+    },
+});
+
+const CModalBody = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CModalBody',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'modal-body' }, slots.default && slots.default());
+    },
+});
+
+const CModalFooter = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CModalFooter',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'modal-footer' }, slots.default && slots.default());
+    },
+});
+
+const CModalHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CModalHeader',
+    props: {
+        /**
+         * Add a close button component to the header.
+         */
+        closeButton: {
+            type: Boolean,
+            required: false,
+            default: true,
+        },
+    },
+    setup(props, { slots }) {
+        const handleDismiss = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('handleDismiss');
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'modal-header' }, [
+            slots.default && slots.default(),
+            props.closeButton && (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCloseButton, { onClick: () => handleDismiss() }, ''),
+        ]);
+    },
+});
+
+const CModalTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CModalTitle',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'h5',
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'modal-title' }, slots.default && slots.default());
+    },
+});
+
+const CModalPlugin = {
+    install: (app) => {
+        app.component(CModal.name, CModal);
+        app.component(CModalBody.name, CModalBody);
+        app.component(CModalFooter.name, CModalFooter);
+        app.component(CModalHeader.name, CModalHeader);
+        app.component(CModalTitle.name, CModalTitle);
+    },
+};
+
+const CNav = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNav',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'ul',
+        },
+        /**
+         * Specify a layout type for component.
+         *
+         * @values 'fill', 'justified'
+         */
+        layout: {
+            type: String,
+            required: false,
+            default: undefined,
+            validator: (value) => {
+                return ['fill', 'justified'].includes(value);
+            },
+        },
+        /**
+         * Set the nav variant to tabs or pills.
+         *
+         * @values 'tabs', 'pills'
+         */
+        variant: {
+            type: String,
+            required: false,
+            default: undefined,
+            validator: (value) => {
+                return ['tabs', 'pills'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'nav',
+                {
+                    [`nav-${props.layout}`]: props.layout,
+                    [`nav-${props.variant}`]: props.variant,
+                },
+            ],
+            role: 'navigation',
+        }, slots.default && slots.default());
+    },
+});
+
+const CNavGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavGroup',
+    props: {
+        /**
+         * Make nav group more compact by cutting all `padding` in half.
+         */
+        compact: Boolean,
+        /**
+         * Show nav group items.
+         */
+        visible: Boolean,
+    },
+    emits: ['visible-change'],
+    setup(props, { slots, emit }) {
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const navGroupRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visibleGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const handleVisibleChange = (visible, index) => {
+            if (visible) {
+                visibleGroup.value = index;
+            }
+            else {
+                if (visibleGroup.value === index) {
+                    visibleGroup.value = 0;
+                }
+            }
+        };
+        const isVisible = (index) => Boolean(visibleGroup.value === index);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+            visible.value = props.visible;
+            props.visible && navGroupRef.value.classList.add('show');
+            emit('visible-change', visible.value);
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.visible, () => {
+            visible.value = props.visible;
+            if (visible.value === false) {
+                visibleGroup.value = undefined;
+            }
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(visible, () => {
+            emit('visible-change', visible.value);
+        });
+        const handleTogglerClick = () => {
+            visible.value = !visible.value;
+            emit('visible-change', visible.value);
+        };
+        const handleBeforeEnter = (el) => {
+            el.style.height = '0px';
+            navGroupRef.value.classList.add('show');
+        };
+        const handleEnter = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            el.style.height = `${el.scrollHeight}px`;
+        };
+        const handleAfterEnter = (el) => {
+            el.style.height = 'auto';
+        };
+        const handleBeforeLeave = (el) => {
+            el.style.height = `${el.scrollHeight}px`;
+        };
+        const handleLeave = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            setTimeout(() => {
+                el.style.height = '0px';
+            }, 1);
+        };
+        const handleAfterLeave = () => {
+            navGroupRef.value.classList.remove('show');
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('li', {
+            class: 'nav-group',
+            ref: navGroupRef,
+        }, [
+            slots.togglerContent &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('a', {
+                    class: ['nav-link', 'nav-group-toggle'],
+                    onClick: handleTogglerClick,
+                }, slots.togglerContent && slots.togglerContent()),
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+                css: false,
+                onBeforeEnter: (el) => handleBeforeEnter(el),
+                onEnter: (el, done) => handleEnter(el, done),
+                onAfterEnter: (el) => handleAfterEnter(el),
+                onBeforeLeave: (el) => handleBeforeLeave(el),
+                onLeave: (el, done) => handleLeave(el, done),
+                onAfterLeave: () => handleAfterLeave(),
+            }, {
+                default: () => visible.value &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('ul', {
+                        class: [
+                            'nav-group-items',
+                            {
+                                compact: props.compact,
+                            },
+                        ],
+                    }, slots.default &&
+                        slots.default().map((vnode, index) => {
+                            // @ts-expect-error name is defined in component
+                            if (vnode.type.name === 'CNavGroup') {
+                                return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vnode, {
+                                    onVisibleChange: (visible) => handleVisibleChange(visible, index + 1),
+                                    ...(visibleGroup.value && { visible: isVisible(index + 1) }),
+                                });
+                            }
+                            return vnode;
+                        })),
+            }),
+        ]);
+    },
+});
+
+const CNavGroupItems = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavGroupItems',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('ul', { class: 'nav-group-items' }, slots.default && slots.default());
+    },
+});
+
+const CNavLink = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavLink',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'a',
+        },
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * @ignore
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CLink, {
+            class: 'nav-link',
+            active: props.active,
+            component: props.component,
+            disabled: props.disabled,
+            href: props.href,
+        }, {
+            default: () => slots.default && slots.default(),
+        });
+    },
+});
+
+const CNavItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavItem',
+    props: {
+        ...CNavLink.props,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('li', {
+            class: 'nav-item',
+        }, props.href
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CNavLink, {
+                active: props.active,
+                component: props.component,
+                disabled: props.disabled,
+                href: props.href,
+            }, {
+                default: () => slots.default && slots.default(),
+            })
+            : slots.default && slots.default());
+    },
+});
+
+const CNavTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavTitle',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('li', { class: 'nav-title' }, slots.default && slots.default());
+    },
+});
+
+const CNavPlugin = {
+    install: (app) => {
+        app.component(CNav.name, CNav);
+        app.component(CNavGroup.name, CNavGroup);
+        app.component(CNavGroupItems.name, CNavGroupItems);
+        app.component(CNavItem.name, CNavItem);
+        app.component(CNavLink.name, CNavLink);
+        app.component(CNavTitle.name, CNavTitle);
+    },
+};
+
+const CNavbar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavbar',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+        /**
+         * Sets if the color of text should be colored for a light or dark dark background.
+         *
+         * @values 'dark', 'light'
+         */
+        colorScheme: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['dark', 'light'].includes(value);
+            },
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'nav',
+            required: false,
+        },
+        /**
+         * Defines optional container wrapping children elements.
+         *
+         * @values boolean, 'sm', 'md', 'lg', 'xl', 'xxl', 'fluid'
+         */
+        container: {
+            type: [Boolean, String],
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return (typeof value === 'boolean' || ['sm', 'md', 'lg', 'xl', 'xxl', 'fluid'].includes(value));
+            },
+        },
+        /**
+         * Defines the responsive breakpoint to determine when content collapses.
+         *
+         * @values boolean, 'sm', 'md', 'lg', 'xl', 'xxl'
+         */
+        expand: {
+            type: [Boolean, String],
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return typeof value === 'boolean' || ['sm', 'md', 'lg', 'xl', 'xxl'].includes(value);
+            },
+        },
+        /**
+         * Place component in non-static positions.
+         *
+         * @values 'fixed-top', 'fixed-bottom', 'sticky-top'
+         */
+        placement: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['fixed-top', 'fixed-bottom', 'sticky-top'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                'navbar',
+                {
+                    [`bg-${props.color}`]: props.color,
+                    [`navbar-${props.colorScheme}`]: props.colorScheme,
+                    [typeof props.expand === 'boolean'
+                        ? 'navbar-expand'
+                        : `navbar-expand-${props.expand}`]: props.expand,
+                },
+                props.placement,
+            ],
+        }, props.container
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: [`container${props.container !== true ? '-' + props.container : ''}`] }, slots.default && slots.default())
+            : slots.default && slots.default());
+    },
+});
+
+const CNavbarBrand = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavbarBrand',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         *
+         */
+        component: {
+            type: String,
+            default: 'a',
+            required: false,
+        },
+        /**
+         * The href attribute specifies the URL of the page the link goes to.
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component ? props.component : props.href ? 'a' : 'span', {
+            class: 'navbar-brand',
+            href: props.href,
+        }, slots.default && slots.default());
+    },
+});
+
+const CNavbarNav = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavbarNav',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'ul',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: 'navbar-nav',
+            role: 'navigation',
+        }, slots.default && slots.default());
+    },
+});
+
+const CNavbarText = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavbarText',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: 'navbar-text' }, slots.default && slots.default());
+    },
+});
+
+const CNavbarToggler = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CNavbarToggler',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', {
+            class: 'navbar-toggler',
+        }, slots.default ? slots.default() : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: ['navbar-toggler-icon'] }));
+    },
+});
+
+const CNavbarPlugin = {
+    install: (app) => {
+        app.component(CNavbar.name, CNavbar);
+        app.component(CNavbarBrand.name, CNavbarBrand);
+        app.component(CNavbarNav.name, CNavbarNav);
+        app.component(CNavbarText.name, CNavbarText);
+        app.component(CNavbarToggler.name, CNavbarToggler);
+    },
+};
+
+const COffcanvas = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'COffcanvas',
+    props: {
+        /**
+         * Apply a backdrop on body while offcanvas is open.
+         */
+        backdrop: {
+            type: Boolean,
+            default: true,
+            require: false,
+        },
+        /**
+         * Closes the offcanvas when escape key is pressed.
+         */
+        keyboard: {
+            type: Boolean,
+            default: true,
+            require: false,
+        },
+        /**
+         * Components placement, there’s no default placement.
+         *
+         * @values 'start', 'end', 'top', 'bottom'
+         */
+        placement: {
+            type: String,
+            default: undefined,
+            require: true,
+            validator: (value) => {
+                return ['start', 'end', 'top', 'bottom'].includes(value);
+            },
+        },
+        /**
+         * Allow body scrolling while offcanvas is open
+         */
+        scroll: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+        /**
+         * Toggle the visibility of offcanvas component.
+         */
+        visible: {
+            type: Boolean,
+            require: false,
+        },
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const offcanvasRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.visible, () => {
+            visible.value = props.visible;
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(visible, () => {
+            if (visible.value) {
+                if (!props.scroll) {
+                    document.body.style.overflow = 'hidden';
+                    document.body.style.paddingRight = '0px';
+                }
+                return;
+            }
+            if (!props.scroll) {
+                document.body.style.removeProperty('overflow');
+                document.body.style.removeProperty('padding-right');
+            }
+        });
+        const handleEnter = (el, done) => {
+            emit('show');
+            executeAfterTransition(() => done(), el);
+            setTimeout(() => {
+                el.style.visibility = 'visible';
+                el.classList.add('show');
+            }, 1);
+        };
+        const handleAfterEnter = () => {
+            window.addEventListener('mousedown', handleMouseDown);
+            window.addEventListener('keyup', handleKeyUp);
+        };
+        const handleLeave = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            window.removeEventListener('mousedown', handleMouseDown);
+            window.removeEventListener('keyup', handleKeyUp);
+            el.classList.remove('show');
+        };
+        const handleAfterLeave = (el) => {
+            el.style.visibility = 'hidden';
+        };
+        const handleDismiss = () => {
+            visible.value = false;
+            emit('hide');
+        };
+        const handleKeyUp = (event) => {
+            if (offcanvasRef.value && !offcanvasRef.value.contains(event.target)) {
+                if (event.key === 'Escape' && props.keyboard && props.backdrop) {
+                    return handleDismiss();
+                }
+            }
+        };
+        const handleMouseDown = (event) => {
+            window.addEventListener('mouseup', () => handleMouseUp(event), { once: true });
+        };
+        const handleMouseUp = (event) => {
+            if (offcanvasRef.value && !offcanvasRef.value.contains(event.target)) {
+                props.backdrop && handleDismiss();
+            }
+        };
+        return () => [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+                css: false,
+                onEnter: (el, done) => handleEnter(el, done),
+                onAfterEnter: () => handleAfterEnter(),
+                onLeave: (el, done) => handleLeave(el, done),
+                onAfterLeave: (el) => handleAfterLeave(el),
+            }, () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                class: [
+                    'offcanvas',
+                    {
+                        [`offcanvas-${props.placement}`]: props.placement,
+                    },
+                ],
+                ref: offcanvasRef,
+                role: 'dialog',
+            }, slots.default && slots.default()), [[vVisible, props.visible]])),
+            props.backdrop &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CBackdrop, {
+                    class: 'offcanvas-backdrop',
+                    visible: visible.value,
+                }),
+        ];
+    },
+});
+
+const COffcanvasBody = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'COffcanvasBody',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'offcanvas-body' }, slots.default && slots.default());
+    },
+});
+
+const COffcanvasHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'COffcanvasHeader',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'offcanvas-header' }, slots.default && slots.default());
+    },
+});
+
+const COffcanvasTitle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'COffcanvasTitle',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            required: false,
+            default: 'h5',
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, { class: 'offcanvas-title' }, slots.default && slots.default());
+    },
+});
+
+const COffcanvasPlugin = {
+    install: (app) => {
+        app.component(COffcanvas.name, COffcanvas);
+        app.component(COffcanvasBody.name, COffcanvasBody);
+        app.component(COffcanvasHeader.name, COffcanvasHeader);
+        app.component(COffcanvasTitle.name, COffcanvasTitle);
+    },
+};
+
+const CPagination = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CPagination',
+    props: {
+        /**
+         * Set the alignment of pagination components.
+         *
+         * @values 'start', 'center', 'end'
+         */
+        align: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['start', 'center', 'end'].includes(value);
+            },
+        },
+        /**
+         * Size the component small or large.
+         *
+         * @values 'sm', 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['sm', 'lg'].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('nav', {}, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('ul', {
+            class: [
+                'pagination',
+                {
+                    [`justify-content-${props.align}`]: props.align,
+                    [`pagination-${props.size}`]: props.size,
+                },
+            ],
+        }, slots.default && slots.default()));
+    },
+});
+
+const CPaginationItem = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CPaginationItem',
+    props: {
+        /**
+         * Toggle the active state for the component.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Toggle the disabled state for the component.
+         */
+        disabled: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * The href attribute specifies the URL of the page the link goes to.
+         */
+        href: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => {
+            const component = props.component ? props.component : props.active ? 'span' : 'a';
+            return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('li', {
+                class: [
+                    'page-item',
+                    {
+                        ['active']: props.active,
+                        ['disabled']: props.disabled,
+                    },
+                ],
+                ...(props.active && { active: props.active, 'aria-current': 'page' }),
+            }, component === 'a'
+                ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CLink, {
+                    class: ['page-link'],
+                    component: component,
+                    href: props.href,
+                }, {
+                    default: () => slots.default && slots.default(),
+                })
+                : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(component, { class: ['page-link'] }, slots.default && slots.default()));
+        };
+    },
+});
+
+const CPaginationPlugin = {
+    install: (app) => {
+        app.component(CPagination.name, CPagination);
+        app.component(CPaginationItem.name, CPaginationItem);
+    },
+};
+
+const BREAKPOINTS$1 = [
+    'xxl',
+    'xl',
+    'lg',
+    'md',
+    'sm',
+    'xs',
+];
+const CPlaceholder = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CPlaceholder',
+    props: {
+        /**
+         * Set animation type to better convey the perception of something being actively loaded.
+         *
+         * @values 'glow', 'wave'
+         */
+        animation: {
+            type: String,
+            default: undefined,
+            require: false,
+            validator: (value) => {
+                return ['glow', 'wave'].includes(value);
+            },
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'span',
+            required: false,
+        },
+        /**
+         * Size the component extra small, small, or large.
+         *
+         * @values 'xs', 'sm', 'lg'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['xs', 'sm', 'lg'].includes(value);
+            },
+        },
+        /**
+         * The number of columns on extra small devices (<576px).
+         */
+        xs: {
+            type: Number,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns on small devices (<768px).
+         */
+        sm: {
+            type: Number,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns on medium devices (<992px).
+         */
+        md: {
+            type: Number,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns on large devices (<1200px).
+         */
+        lg: {
+            type: Number,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns on X-Large devices (<1400px).
+         */
+        xl: {
+            type: Number,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * The number of columns on XX-Large devices (≥1400px).
+         */
+        xxl: {
+            type: Number,
+            default: undefined,
+            require: false,
+        },
+    },
+    setup(props, { slots }) {
+        const repsonsiveClassNames = [];
+        BREAKPOINTS$1.forEach((bp) => {
+            const breakpoint = props[bp];
+            const infix = bp === 'xs' ? '' : `-${bp}`;
+            if (typeof breakpoint === 'number') {
+                repsonsiveClassNames.push(`col${infix}-${breakpoint}`);
+            }
+            if (typeof breakpoint === 'boolean') {
+                repsonsiveClassNames.push(`col${infix}`);
+            }
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                props.animation ? `placeholder-${props.animation}` : 'placeholder',
+                {
+                    [`bg-${props.color}`]: props.color,
+                    [`placeholder-${props.size}`]: props.size,
+                },
+                repsonsiveClassNames,
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CPlaceholderPlugin = {
+    install: (app) => {
+        app.component(CPlaceholder.name, CPlaceholder);
+    },
+};
+
+const CProgressBar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CProgressBar',
+    props: {
+        /**
+         * Use to animate the stripes right to left via CSS3 animations.
+         */
+        animated: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * The percent to progress the ProgressBar.
+         */
+        value: {
+            type: Number,
+            required: false,
+            default: 0,
+        },
+        /**
+         * Set the progress bar variant to optional striped.
+         *
+         * @values 'striped'
+         */
+        variant: {
+            type: String,
+            default: undefined,
+            require: false,
+            validator: (value) => {
+                return value === 'striped';
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'progress-bar',
+                `bg-${props.color}`,
+                {
+                    [`progress-bar-${props.variant}`]: props.variant,
+                    ['progress-bar-animated']: props.animated,
+                },
+            ],
+            role: 'progressbar',
+            style: `width: ${props.value}%`,
+            'aria-valuenow': props.value,
+            'aria-valuemin': '0',
+            'aria-valuemax': '100',
+        }, slots.default && slots.default());
+    },
+});
+
+const CProgress = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CProgress',
+    props: {
+        /**
+         * Sets the height of the component. If you set that value the inner `<CProgressBar>` will automatically resize accordingly.
+         */
+        height: {
+            type: Number,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Makes progress bar thinner.
+         */
+        thin: Boolean,
+        /**
+         * Change the default color to white.
+         */
+        white: Boolean,
+        ...CProgressBar.props,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'progress',
+                {
+                    'progress-thin': props.thin,
+                    'progress-white': props.white,
+                },
+            ],
+            ...(props.height, { style: `height: ${props.height}px` }),
+        }, props.value
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CProgressBar, {
+                value: props.value,
+                animated: props.animated,
+                color: props.color,
+                variant: props.variant,
+            }, slots.default && slots.default())
+            : slots.default && slots.default());
+    },
+});
+
+const CProgressPlugin = {
+    install: (app) => {
+        app.component(CProgress.name, CProgress);
+        app.component(CProgressBar.name, CProgressBar);
+    },
+};
+
+const CPopover = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CPopover',
+    props: {
+        /**
+         * Content for your component. If you want to pass non-string value please use dedicated slot `<template #content>...</template>`
+         */
+        content: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Offset of the popover relative to its target.
+         */
+        offset: {
+            type: Array,
+            default: () => [0, 8],
+            required: false,
+        },
+        /**
+         * Describes the placement of your component after Popper.js has applied all the modifiers that may have flipped or altered the originally provided placement property.
+         */
+        placement: {
+            type: String,
+            default: 'top',
+            required: false,
+            validator: (value) => {
+                return ['top', 'right', 'bottom', 'left'].includes(value);
+            },
+        },
+        /**
+         * Title for your component. If you want to pass non-string value please use dedicated slot `<template #title>...</template>`
+         */
+        title: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Sets which event handlers you’d like provided to your toggle prop. You can specify one trigger or an array of them.
+         *
+         * @values 'click', 'focus', 'hover'
+         */
+        trigger: {
+            type: [String, Array],
+            default: 'click',
+            required: false,
+            validator: (value) => {
+                if (typeof value === 'string') {
+                    return ['click', 'focus', 'hover'].includes(value);
+                }
+                if (Array.isArray(value)) {
+                    return value.every((e) => ['click', 'focus', 'hover'].includes(e));
+                }
+                return false;
+            },
+        },
+        /**
+         * Toggle the visibility of popover component.
+         */
+        visible: Boolean,
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const togglerRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const popoverRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const popper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        const handleEnter = (el, done) => {
+            emit('show');
+            initPopper();
+            el.classList.add('show');
+            executeAfterTransition(() => done(), el);
+        };
+        const handleLeave = (el, done) => {
+            emit('hide');
+            el.classList.remove('show');
+            executeAfterTransition(() => {
+                done();
+                destroyPopper();
+            }, el);
+        };
+        const handleToggle = (event) => {
+            togglerRef.value = event.target;
+            visible.value = !visible.value;
+        };
+        const initPopper = () => {
+            if (togglerRef.value) {
+                popper.value = createPopper(togglerRef.value, popoverRef.value, {
+                    placement: props.placement,
+                    modifiers: [
+                        {
+                            name: 'offset',
+                            options: {
+                                offset: props.offset,
+                            },
+                        },
+                    ],
+                });
+            }
+        };
+        const destroyPopper = () => {
+            if (popper.value) {
+                popper.value.destroy();
+            }
+            popper.value = undefined;
+        };
+        return () => [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+                to: 'body',
+            }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+                onEnter: (el, done) => handleEnter(el, done),
+                onLeave: (el, done) => handleLeave(el, done),
+            }, () => visible.value &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'popover fade bs-popover-auto',
+                    ref: popoverRef,
+                    role: 'tooltip',
+                }, [
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'popover-arrow', 'data-popper-arrow': '' }),
+                    (props.title || slots.title) &&
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'popover-header' }, {
+                            default: () => (slots.title && slots.title()) || props.title,
+                        }),
+                    (props.content || slots.content) &&
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'popover-body' }, {
+                            default: () => (slots.content && slots.content()) || props.content,
+                        }),
+                ]))),
+            slots.toggler &&
+                slots.toggler({
+                    on: {
+                        click: (event) => props.trigger.includes('click') && handleToggle(event),
+                        blur: (event) => props.trigger.includes('focus') && handleToggle(event),
+                        focus: (event) => props.trigger.includes('focus') && handleToggle(event),
+                        mouseenter: (event) => props.trigger.includes('hover') && handleToggle(event),
+                        mouseleave: (event) => props.trigger.includes('hover') && handleToggle(event),
+                    },
+                }),
+        ];
+    },
+});
+
+const CPopoverPlugin = {
+    install: (app) => {
+        app.component(CPopover.name, CPopover);
+    },
+};
+
+const isOnMobile = (element) => Boolean(getComputedStyle(element).getPropertyValue('--cui-is-mobile'));
+const CSidebar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSidebar',
+    props: {
+        /**
+         * Make sidebar narrow.
+         */
+        narrow: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set sidebar to overlaid variant.
+         */
+        overlaid: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Place sidebar in non-static positions.
+         */
+        position: {
+            type: String,
+            default: undefined,
+            validator: (value) => {
+                return ['fixed'].includes(value);
+            },
+        },
+        /**
+         * Size the component small, large, or extra large.
+         */
+        size: {
+            type: String,
+            default: undefined,
+            validator: (value) => {
+                return ['sm', 'lg', 'xl'].includes(value);
+            },
+        },
+        /**
+         * Expand narrowed sidebar on hover.
+         */
+        unfoldable: Boolean,
+        /**
+         * Toggle the visibility of sidebar component.
+         */
+        visible: Boolean,
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+        /**
+         * Event emitted after visibility of component changed.
+         */
+        'visible-change',
+    ],
+    setup(props, { attrs, slots, emit }) {
+        const mobile = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const inViewport = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const sidebarRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(inViewport, () => {
+            emit('visible-change', inViewport.value);
+            inViewport.value ? emit('show') : emit('hide');
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(() => props.visible, () => (visible.value = props.visible));
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.watch)(mobile, () => {
+            if (mobile.value && visible.value)
+                visible.value = false;
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+            mobile.value = isOnMobile(sidebarRef.value);
+            inViewport.value = isInViewport(sidebarRef.value);
+            window.addEventListener('resize', () => handleResize());
+            window.addEventListener('mouseup', handleClickOutside);
+            window.addEventListener('keyup', handleKeyup);
+            sidebarRef.value.addEventListener('mouseup', handleOnClick);
+            sidebarRef.value.addEventListener('transitionend', () => {
+                inViewport.value = isInViewport(sidebarRef.value);
+            });
+        });
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onBeforeUnmount)(() => {
+            window.removeEventListener('resize', () => handleResize());
+            window.removeEventListener('mouseup', handleClickOutside);
+            window.removeEventListener('keyup', handleKeyup);
+            sidebarRef.value.removeEventListener('mouseup', handleOnClick);
+            sidebarRef.value.removeEventListener('transitionend', () => {
+                inViewport.value = isInViewport(sidebarRef.value);
+            });
+        });
+        const handleHide = () => {
+            visible.value = false;
+            emit('visible-change', false);
+        };
+        const handleResize = () => {
+            mobile.value = isOnMobile(sidebarRef.value);
+            inViewport.value = isInViewport(sidebarRef.value);
+        };
+        const handleKeyup = (event) => {
+            if (mobile.value && !sidebarRef.value.contains(event.target)) {
+                handleHide();
+            }
+        };
+        const handleClickOutside = (event) => {
+            if (mobile.value && !sidebarRef.value.contains(event.target)) {
+                handleHide();
+            }
+        };
+        const handleOnClick = (event) => {
+            const target = event.target;
+            target &&
+                target.classList.contains('nav-link') &&
+                !target.classList.contains('nav-group-toggle') &&
+                mobile.value &&
+                handleHide();
+        };
+        return () => [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                class: [
+                    'sidebar',
+                    {
+                        'sidebar-narrow': props.narrow,
+                        'sidebar-overlaid': props.overlaid,
+                        [`sidebar-${props.position}`]: props.position,
+                        [`sidebar-${props.size}`]: props.size,
+                        'sidebar-narrow-unfoldable': props.unfoldable,
+                        show: visible.value === true && mobile.value,
+                        hide: visible.value === false && !mobile.value,
+                    },
+                    attrs.class,
+                ],
+                ref: sidebarRef,
+            }, slots.default && slots.default()),
+            mobile.value &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CBackdrop, {
+                    class: 'sidebar-backdrop d-none',
+                    visible: props.visible,
+                    onClick: () => handleHide(),
+                }),
+        ];
+    },
+});
+
+const CSidebarBrand = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSidebarBrand',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'sidebar-brand' }, slots.default && slots.default());
+    },
+});
+
+const CSidebarFooter = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSidebarFooter',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'sidebar-footer' }, slots.default && slots.default());
+    },
+});
+
+const CSidebarHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSidebarHeader',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'sidebar-header' }, slots.default && slots.default());
+    },
+});
+
+const CSidebarNav = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSidebarNav',
+    setup(_, { slots }) {
+        const visibleGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const handleVisibleChange = (visible, index) => {
+            if (visible) {
+                visibleGroup.value = index;
+            }
+            else {
+                if (visibleGroup.value === index) {
+                    visibleGroup.value = 0;
+                }
+            }
+        };
+        const isVisible = (index) => Boolean(visibleGroup.value === index);
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('ul', {
+            class: 'sidebar-nav',
+        }, slots.default &&
+            slots.default().map((vnode, index) => {
+                // @ts-expect-error name is defined in component
+                if (vnode.type.name === 'CNavGroup') {
+                    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vnode, {
+                        onVisibleChange: (visible) => handleVisibleChange(visible, index + 1),
+                        ...(visibleGroup.value && { visible: isVisible(index + 1) }),
+                    });
+                }
+                return vnode;
+            }));
+    },
+});
+
+const CSidebarToggler = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSidebarToggler',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('button', { class: 'sidebar-toggler' }, slots.default && slots.default());
+    },
+});
+
+const CSidebarPlugin = {
+    install: (app) => {
+        app.component(CSidebar.name, CSidebar);
+        app.component(CSidebarBrand.name, CSidebarBrand);
+        app.component(CSidebarFooter.name, CSidebarFooter);
+        app.component(CSidebarHeader.name, CSidebarHeader);
+        app.component(CSidebarNav.name, CSidebarNav);
+        app.component(CSidebarToggler.name, CSidebarToggler);
+    },
+};
+
+const CSpinner = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CSpinner',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return [
+                    'primary',
+                    'secondary',
+                    'success',
+                    'danger',
+                    'warning',
+                    'info',
+                    'dark',
+                    'light',
+                ].includes(value);
+            },
+        },
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: 'div',
+            required: false,
+        },
+        /**
+         * Size the component small.
+         *
+         * @values 'sm'
+         */
+        size: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return value === 'sm';
+            },
+        },
+        /**
+         * Set the button variant to an outlined button or a ghost button.
+         *
+         * @values 'border', 'grow'
+         */
+        variant: {
+            type: String,
+            default: 'border',
+            required: false,
+            validator: (value) => {
+                return ['border', 'grow'].includes(value);
+            },
+        },
+        /**
+         * Set visually hidden label for accessibility purposes.
+         */
+        visuallyHiddenLabel: {
+            type: String,
+            default: 'Loading...',
+            required: false,
+        },
+    },
+    setup(props) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+            class: [
+                `spinner-${props.variant}`,
+                `text-${props.color}`,
+                props.size && `spinner-${props.variant}-${props.size}`,
+            ],
+            role: 'status',
+        }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('span', { class: ['visually-hidden'] }, props.visuallyHiddenLabel));
+    },
+});
+
+const CSpinnerPlugin = {
+    install: (app) => {
+        app.component(CSpinner.name, CSpinner);
+    },
+};
+
+const CTableBody = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableBody',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('tbody', {
+            class: [
+                {
+                    [`table-${props.color}`]: props.color,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CTableCaption = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableCaption',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('caption', {}, slots.default && slots.default());
+    },
+});
+
+const CTableDataCell = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableDataCell',
+    props: {
+        /**
+         * Highlight a table row or cell.
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set the vertical aligment.
+         *
+         * @values 'bottom', 'middle', 'top'
+         */
+        align: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['bottom', 'middle', 'top'].includes(value);
+            },
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+        /**
+         * @ignore
+         */
+        scope: {
+            type: String,
+            required: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.scope ? 'th' : 'td', {
+            class: [
+                {
+                    [`align-${props.align}`]: props.align,
+                    'table-active': props.active,
+                    [`table-${props.color}`]: props.color,
+                },
+            ],
+            ...(props.scope && { scope: props.scope }),
+        }, slots.default && slots.default());
+    },
+});
+
+const CTableFoot = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableFoot',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('tfoot', {
+            class: [
+                {
+                    [`table-${props.color}`]: props.color,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CTableHead = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableHead',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('thead', {
+            class: [
+                {
+                    [`table-${props.color}`]: props.color,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CTableHeaderCell = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableHeaderCell',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('th', {
+            class: [
+                {
+                    [`table-${props.color}`]: props.color,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CTableRow = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTableRow',
+    props: {
+        /**
+         * Highlight a table row or cell..
+         */
+        active: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Set the vertical aligment.
+         *
+         * @values 'bottom', 'middle', 'top'
+         */
+        align: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['bottom', 'middle', 'top'].includes(value);
+            },
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('tr', {
+            class: [
+                {
+                    [`align-${props.align}`]: props.align,
+                    'table-active': props.active,
+                    [`table-${props.color}`]: props.color,
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const pretifyName = (name) => {
+    return name
+        .replace(/[-_.]/g, ' ')
+        .replace(/ +/g, ' ')
+        .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+        .split(' ')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+};
+const label = (column) => typeof column === 'object'
+    ? column.label !== undefined
+        ? column.label
+        : pretifyName(column.key)
+    : pretifyName(column);
+const CTable = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTable',
+    props: {
+        /**
+         * Set the vertical aligment.
+         *
+         * @values 'bottom', 'middle', 'top'
+         */
+        align: {
+            type: String,
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                return ['bottom', 'middle', 'top'].includes(value);
+            },
+        },
+        /**
+         * Sets the border color of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        borderColor: Color,
+        /**
+         * Add borders on all sides of the table and cells.
+         */
+        bordered: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Remove borders on all sides of the table and cells.
+         */
+        borderless: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Put the `<caption>` on the top of the table.
+         *
+         * @values 'top' | string
+         */
+        caption: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Set the text of the table caption and the caption on the top of the table.
+         *
+         * @since 4.5.0
+         */
+        captionTop: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Prop for table columns configuration. If prop is not defined, table will display columns based on the first item keys, omitting keys that begins with underscore (e.g. '_props')
+         *
+         * In columns prop each array item represents one column. Item might be specified in two ways:
+         * String: each item define column name equal to item value.
+         * Object: item is object with following keys available as column configuration:
+         * - key (required)(String) - define column name equal to item key.
+         * - label (String) - define visible label of column. If not defined, label will be generated automatically based on column name, by converting kebab-case and snake_case to individual words and capitalization of each word.
+         * - _props (Object) - adds classes to all cels in column, ex. _props: { scope: 'col', className: 'custom-class' },
+         * - _style (Object) - adds styles to the column header (useful for defining widths)
+         *
+         * @since 4.5.0
+         */
+        columns: {
+            type: Array,
+            required: false,
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values  'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+        /**
+         * Array of objects or strings, where each element represents one cell in the table footer.
+         *
+         * Example items:
+         * ['FooterCell', 'FooterCell', 'FooterCell']
+         * or
+         * [{ label: 'FooterCell', _props: { color: 'success' }, ...]
+         *
+         * @since 4.5.0
+         */
+        footer: {
+            type: Array,
+            required: false,
+        },
+        /**
+         * Enable a hover state on table rows within a `<CTableBody>`.
+         */
+        hover: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Array of objects, where each object represents one item - row in table. Additionally, you can add style classes to each row by passing them by '_props' key and to single cell by '_cellProps'.
+         *
+         * Example item:
+         * { name: 'John' , age: 12, _props: { color: 'success' }, _cellProps: { age: { className: 'fw-bold'}}}
+         *
+         * @since 4.5.0
+         */
+        items: {
+            type: Array,
+            required: false,
+        },
+        responsive: {
+            type: [Boolean, String],
+            default: undefined,
+            required: false,
+            validator: (value) => {
+                if (typeof value == 'string') {
+                    return ['sm', 'md', 'lg', 'xl', 'xxl'].includes(value);
+                }
+                if (typeof value == 'boolean') {
+                    return true;
+                }
+                return false;
+            },
+        },
+        /**
+         * Make table more compact by cutting all cell `padding` in half.
+         */
+        small: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Add zebra-striping to any table row within the `<CTableBody>`.
+         */
+        striped: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Add zebra-striping to any table column.
+         *
+         * @since 4.4.0
+         */
+        stripedColumns: {
+            type: Boolean,
+            required: false,
+        },
+        /**
+         * Properties that will be passed to the table footer component.
+         *
+         * Properties to [CTableFoot](#ctablefoot) component.
+         * @since 4.5.0
+         */
+        tableFootProps: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Properties that will be passed to the table head component.
+         *
+         *  Properties to [CTableHead](#ctablehead) component.
+         * @since 4.5.0
+         */
+        tableHeadProps: {
+            type: Object,
+            default: undefined,
+            required: false,
+        },
+    },
+    setup(props, { slots, attrs }) {
+        const rawColumnNames = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => props.columns
+            ? props.columns.map((column) => {
+                if (typeof column === 'object')
+                    return column.key;
+                else
+                    return column;
+            })
+            : Object.keys((props.items && props.items[0]) || {}).filter((el) => el.charAt(0) !== '_'));
+        const table = () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('table', {
+            class: [
+                'table',
+                {
+                    [`align-${props.align}`]: props.align,
+                    [`caption-top`]: props.captionTop || props.caption === 'top',
+                    [`border-${props.borderColor}`]: props.borderColor,
+                    'table-bordered': props.bordered,
+                    'table-borderless': props.borderless,
+                    [`table-${props.color}`]: props.color,
+                    'table-hover': props.hover,
+                    'table-sm': props.small,
+                    'table-striped': props.striped,
+                    'table-striped-columns': props.stripedColumns,
+                },
+                attrs.class,
+            ],
+        }, {
+            default: () => [
+                ((props.caption && props.caption !== 'top') || props.captionTop) &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableCaption, {}, {
+                        default: () => props.caption || props.captionTop,
+                    }),
+                props.columns &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableHead, {
+                        ...props.tableHeadProps,
+                    }, {
+                        default: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableRow, {}, {
+                            default: () => [
+                                props.columns &&
+                                    props.columns.map((column) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableHeaderCell, {
+                                        ...(typeof column === 'object' &&
+                                            column._props && { ...column._props }),
+                                        ...(typeof column === 'object' &&
+                                            column._style && { style: { ...column._style } }),
+                                    }, {
+                                        default: () => label(column),
+                                    })),
+                            ],
+                        }),
+                    }),
+                props.items &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableBody, {}, {
+                        default: () => [
+                            props.items &&
+                                props.items.map((item) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableRow, {
+                                    ...(item._props && { ...item._props }),
+                                }, {
+                                    default: () => [
+                                        rawColumnNames.value.map((colName) => item[colName] &&
+                                            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableDataCell, {
+                                                ...(item._cellProps &&
+                                                    item._cellProps['all'] && { ...item._cellProps['all'] }),
+                                                ...(item._cellProps &&
+                                                    item._cellProps[colName] && {
+                                                    ...item._cellProps[colName],
+                                                }),
+                                            }, {
+                                                default: () => item[colName],
+                                            })),
+                                    ],
+                                })),
+                        ],
+                    }),
+                slots.default && slots.default(),
+                props.footer &&
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableFoot, {
+                        ...props.tableFootProps,
+                    }, {
+                        default: () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableRow, {}, {
+                            default: () => [
+                                props.footer &&
+                                    props.footer.map((item) => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CTableDataCell, {
+                                        ...(typeof item === 'object' &&
+                                            item._props && { ...item._props }),
+                                    }, {
+                                        default: () => (typeof item === 'object' ? item.label : item),
+                                    })),
+                            ],
+                        }),
+                    }),
+            ],
+        });
+        return () => [
+            props.responsive
+                ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: typeof props.responsive === 'boolean'
+                        ? 'table-responsive'
+                        : `table-responsive-${props.responsive}`,
+                }, table())
+                : table(),
+        ];
+    },
+});
+
+const CTablePlugin = {
+    install: (app) => {
+        app.component(CTable.name, CTable);
+        app.component(CTableBody.name, CTableBody);
+        app.component(CTableCaption.name, CTableCaption);
+        app.component(CTableDataCell.name, CTableDataCell);
+        app.component(CTableFoot.name, CTableFoot);
+        app.component(CTableHead.name, CTableHead);
+        app.component(CTableHeaderCell.name, CTableHeaderCell);
+        app.component(CTableRow.name, CTableRow);
+    },
+};
+
+const CTabContent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTabContent',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'tab-content' }, slots.default && slots.default());
+    },
+});
+
+const CTabPane = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTabPane',
+    props: {
+        /**
+         * Toggle the visibility of component.
+         */
+        visible: {
+            type: Boolean,
+            default: false,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const tabPaneRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const firstRender = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(true);
+        const handleEnter = (el, done) => {
+            firstRender.value = false;
+            emit('show');
+            setTimeout(() => {
+                executeAfterTransition(() => done(), el);
+                el.classList.add('show');
+            }, 1);
+        };
+        const handleLeave = (el, done) => {
+            firstRender.value = false;
+            emit('hide');
+            el.classList.remove('show');
+            executeAfterTransition(() => done(), el);
+        };
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+            onEnter: (el, done) => handleEnter(el, done),
+            onLeave: (el, done) => handleLeave(el, done),
+        }, () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'tab-pane',
+                'fade',
+                {
+                    active: props.visible,
+                    show: firstRender.value && props.visible,
+                },
+            ],
+            ref: tabPaneRef,
+        }, slots.default && slots.default()), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, props.visible]]));
+    },
+});
+
+const CTabsPlugin = {
+    install: (app) => {
+        app.component(CTabContent.name, CTabContent);
+        app.component(CTabPane.name, CTabPane);
+    },
+};
+
+const CToast = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CToast',
+    props: {
+        /**
+         * Auto hide the toast.
+         */
+        autohide: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', string
+         */
+        color: Color,
+        /**
+         * Delay hiding the toast (ms).
+         */
+        delay: {
+            type: Number,
+            default: 5000,
+            required: false,
+        },
+        /**
+         * Optionally add a close button to component and allow it to self dismiss.
+         */
+        dismissible: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+        /**
+         * index of the component.
+         */
+        index: {
+            type: Number,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Title node for your component.
+         */
+        title: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Toggle the visibility of component.
+         */
+        visible: {
+            type: Boolean,
+            default: true,
+            required: false,
+        },
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be closed.
+         */
+        'close',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        let timeout = 0;
+        const updateVisible = (v) => {
+            visible.value = v;
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.provide)('updateVisible', updateVisible);
+        const handleBeforeEnter = (el) => {
+            el.classList.add('showing');
+        };
+        const handleEnter = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            el.classList.add('show');
+            setTimeout(() => {
+                el.classList.remove('showing');
+            }, 1);
+            if (props.index) {
+                emit('show', props.index);
+            }
+            else {
+                emit('show');
+            }
+        };
+        const handleLeave = (el, done) => {
+            executeAfterTransition(() => done(), el);
+            el.classList.add('showing');
+        };
+        const handleAfterLeave = (el) => {
+            el.classList.remove('show');
+            el.classList.add('hide');
+            if (props.index) {
+                emit('close', props.index);
+            }
+            else {
+                emit('close');
+            }
+        };
+        (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(() => {
+            if (props.autohide) {
+                clearTimeout(timeout);
+                timeout = window.setTimeout(() => {
+                    visible.value = false;
+                    emit('close');
+                }, props.delay);
+            }
+        });
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+            appear: true,
+            onBeforeEnter: (el) => handleBeforeEnter(el),
+            onEnter: (el, done) => handleEnter(el, done),
+            onLeave: (el, done) => handleLeave(el, done),
+            onAfterLeave: (el) => handleAfterLeave(el),
+        }, () => visible.value &&
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                class: [
+                    'toast fade',
+                    {
+                        [`bg-${props.color}`]: props.color,
+                    },
+                ],
+                'aria-live': 'assertive',
+                'aria-atomic': true,
+                role: 'alert',
+                ref: 'toastRef',
+            }, slots.default && slots.default()));
+    },
+});
+
+const CToastBody = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CToastBody',
+    setup(_, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'toast-body' }, slots.default && slots.default());
+    },
+});
+
+const CToastClose = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CToastClose',
+    props: {
+        /**
+         * Component used for the root node. Either a string to use a HTML element or a component.
+         */
+        component: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        ...CCloseButton.props,
+    },
+    emits: [
+        /**
+         * Event called before the dissmiss animation has started.
+         */
+        'close',
+    ],
+    setup(props, { slots, emit }) {
+        // eslint-disable-next-line no-unused-vars
+        const updateVisible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.inject)('updateVisible');
+        const handleClose = () => {
+            emit('close');
+            updateVisible(false);
+        };
+        return () => props.component
+            ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(props.component, {
+                onClick: () => {
+                    handleClose();
+                },
+            }, () => slots.default && slots.default())
+            : (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCloseButton, {
+                ...props,
+                onClick: () => {
+                    handleClose();
+                },
+            });
+    },
+});
+
+const CToaster = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CToaster',
+    props: {
+        /**
+         * Describes the placement of component.
+         *
+         * @values 'top-start', 'top', 'top-end', 'middle-start', 'middle', 'middle-end', 'bottom-start', 'bottom', 'bottom-end'
+         */
+        placement: {
+            type: String,
+            default: undefined,
+            require: false,
+            validator: (value) => {
+                return [
+                    'top-start',
+                    'top-center',
+                    'top-end',
+                    'middle-start',
+                    'middle-center',
+                    'middle-end',
+                    'bottom-start',
+                    'bottom-center',
+                    'bottom-end',
+                ].includes(value);
+            },
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+            class: [
+                'toaster toast-container p-3',
+                {
+                    'position-fixed': props.placement,
+                    'top-0': props.placement && props.placement.includes('top'),
+                    'top-50 translate-middle-y': props.placement && props.placement.includes('middle'),
+                    'bottom-0': props.placement && props.placement.includes('bottom'),
+                    'start-0': props.placement && props.placement.includes('start'),
+                    'start-50 translate-middle-x': props.placement && props.placement.includes('center'),
+                    'end-0': props.placement && props.placement.includes('end'),
+                },
+            ],
+        }, slots.default && slots.default());
+    },
+});
+
+const CToastHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CToastHeader',
+    props: {
+        /**
+         * Automatically add a close button to the header.
+         */
+        closeButton: {
+            type: Boolean,
+            require: false,
+        },
+    },
+    emits: [
+        /**
+         * Event called after clicking the close button.
+         */
+        'close',
+    ],
+    setup(props, { slots, emit }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'toast-header' }, [
+            slots.default && slots.default(),
+            props.closeButton &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CToastClose, {
+                    onClose: () => emit('close'),
+                }),
+        ]);
+    },
+});
+
+const CToastPlugin = {
+    install: (app) => {
+        app.component(CToast.name, CToast);
+        app.component(CToastBody.name, CToastBody);
+        app.component(CToastClose.name, CToastClose);
+        app.component(CToaster.name, CToaster);
+        app.component(CToastHeader.name, CToastHeader);
+    },
+};
+
+const CTooltip = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CTooltip',
+    props: {
+        /**
+         * Content for your component. If you want to pass non-string value please use dedicated slot `<template #content>...</template>`
+         */
+        content: {
+            type: String,
+            default: undefined,
+            required: false,
+        },
+        /**
+         * Offset of the tooltip relative to its target.
+         */
+        offset: {
+            type: Array,
+            default: () => [0, 0],
+            required: false,
+        },
+        /**
+         * Describes the placement of your component after Popper.js has applied all the modifiers that may have flipped or altered the originally provided placement property.
+         */
+        placement: {
+            type: String,
+            default: 'top',
+            required: false,
+            validator: (value) => {
+                return ['top', 'right', 'bottom', 'left'].includes(value);
+            },
+        },
+        /**
+         * Sets which event handlers you’d like provided to your toggle prop. You can specify one trigger or an array of them.
+         *
+         * @values 'click', 'focus', 'hover'
+         */
+        trigger: {
+            type: [String, Array],
+            default: 'hover',
+            required: false,
+            validator: (value) => {
+                if (typeof value === 'string') {
+                    return ['click', 'focus', 'hover'].includes(value);
+                }
+                if (Array.isArray(value)) {
+                    return value.every((e) => ['click', 'focus', 'hover'].includes(e));
+                }
+                return false;
+            },
+        },
+        /**
+         * Toggle the visibility of tooltip component.
+         */
+        visible: Boolean,
+    },
+    emits: [
+        /**
+         * Callback fired when the component requests to be hidden.
+         */
+        'hide',
+        /**
+         * Callback fired when the component requests to be shown.
+         */
+        'show',
+    ],
+    setup(props, { slots, emit }) {
+        const togglerRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const tooltipRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const popper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)();
+        const visible = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(props.visible);
+        const handleEnter = (el, done) => {
+            emit('show');
+            initPopper();
+            el.classList.add('show');
+            executeAfterTransition(() => done(), el);
+        };
+        const handleLeave = (el, done) => {
+            emit('hide');
+            el.classList.remove('show');
+            executeAfterTransition(() => {
+                done();
+                destroyPopper();
+            }, el);
+        };
+        const handleToggle = (event) => {
+            togglerRef.value = event.target;
+            visible.value = !visible.value;
+        };
+        const initPopper = () => {
+            if (togglerRef.value) {
+                popper.value = createPopper(togglerRef.value, tooltipRef.value, {
+                    placement: props.placement,
+                    modifiers: [
+                        {
+                            name: 'offset',
+                            options: {
+                                offset: props.offset,
+                            },
+                        },
+                    ],
+                });
+            }
+        };
+        const destroyPopper = () => {
+            if (popper.value) {
+                popper.value.destroy();
+            }
+            popper.value = undefined;
+        };
+        return () => [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Teleport, {
+                to: 'body',
+            }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+                onEnter: (el, done) => handleEnter(el, done),
+                onLeave: (el, done) => handleLeave(el, done),
+            }, () => visible.value &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'tooltip fade bs-tooltip-auto',
+                    ref: tooltipRef,
+                    role: 'tooltip',
+                }, [
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'tooltip-arrow', 'data-popper-arrow': '' }),
+                    (props.content || slots.content) &&
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'tooltip-inner' }, {
+                            default: () => (slots.content && slots.content()) || props.content,
+                        }),
+                ]))),
+            slots.toggler &&
+                slots.toggler({
+                    on: {
+                        click: (event) => props.trigger.includes('click') && handleToggle(event),
+                        blur: (event) => props.trigger.includes('focus') && handleToggle(event),
+                        focus: (event) => props.trigger.includes('focus') && handleToggle(event),
+                        mouseenter: (event) => props.trigger.includes('hover') && handleToggle(event),
+                        mouseleave: (event) => props.trigger.includes('hover') && handleToggle(event),
+                    },
+                }),
+        ];
+    },
+});
+
+const CTooltipPlugin = {
+    install: (app) => {
+        app.component(CTooltip.name, CTooltip);
+    },
+};
+
+const CWidgetStatsA = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CWidgetStatsA',
+    props: {
+        color: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Title for your component. If you want to pass non-string value please use dedicated slot `<template #title>...</template>`
+         */
+        title: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Value for your component. If you want to pass non-string or non-number value please use dedicated slot `<template #value>...</template>`
+         */
+        value: {
+            type: [Number, String],
+            default: 0,
+            require: false,
+        },
+    },
+    /**
+     * Location for action component, ex. `<CDropdown>`.
+     *
+     * @slot action
+     */
+    /**
+     * Location for chart component.
+     *
+     * @slot chart
+     */
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCard, {
+            class: [
+                { [`bg-${props.color}`]: props.color, 'text-high-emphasis-inverse': props.color },
+            ],
+        }, () => [
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardBody, {
+                class: 'pb-0 d-flex justify-content-between align-items-start',
+            }, () => [
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {}, [
+                    (props.value || slots.value) &&
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'fs-4 fw-semibold' }, {
+                            default: () => (slots.value && slots.value()) || props.value,
+                        }),
+                    (props.title || slots.title) &&
+                        (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {}, {
+                            default: () => (slots.title && slots.title()) || props.title,
+                        }),
+                ]),
+                /**
+                 * @slot Location for action component, ex. `<CDropdown>`.
+                 */
+                slots.action && slots.action(),
+            ]),
+            /**
+             * @slot Location for chart component.
+             */
+            slots.chart && slots.chart(),
+            slots.default && slots.default(),
+        ]);
+    },
+});
+
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+function isObject(o) {
+  return Object.prototype.toString.call(o) === '[object Object]';
+}
+
+function isPlainObject(o) {
+  var ctor,prot;
+
+  if (isObject(o) === false) return false;
+
+  // If has modified constructor
+  ctor = o.constructor;
+  if (ctor === undefined) return true;
+
+  // If has modified prototype
+  prot = ctor.prototype;
+  if (isObject(prot) === false) return false;
+
+  // If constructor does not have an Object-specific method
+  if (prot.hasOwnProperty('isPrototypeOf') === false) {
+    return false;
+  }
+
+  // Most likely a plain Object
+  return true;
+}
+
+function t(){return t=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r]);}return e},t.apply(this,arguments)}function n(e,t){if(null==e)return {};var n,r,i={},o=Object.keys(e);for(r=0;r<o.length;r++)t.indexOf(n=o[r])>=0||(i[n]=e[n]);return i}const r={silent:!1,logLevel:"warn"},i=["validator"],o=Object.prototype,a=o.toString,s=o.hasOwnProperty,u=/^\s*function (\w+)/;function l(e){var t;const n=null!==(t=null==e?void 0:e.type)&&void 0!==t?t:e;if(n){const e=n.toString().match(u);return e?e[1]:""}return ""}const c=isPlainObject,d=e=>e;let f=d;if(true){const e="undefined"!=typeof console;f=e?function(e,t=r.logLevel){!1===r.silent&&console[t](`[VueTypes warn]: ${e}`);}:d;}const p=(e,t)=>s.call(e,t),y=Number.isInteger||function(e){return "number"==typeof e&&isFinite(e)&&Math.floor(e)===e},v=Array.isArray||function(e){return "[object Array]"===a.call(e)},h=e=>"[object Function]"===a.call(e),b=(e,t)=>c(e)&&p(e,"_vueTypes_name")&&(!t||e._vueTypes_name===t),g=e=>c(e)&&(p(e,"type")||["_vueTypes_name","validator","default","required"].some(t=>p(e,t)));function O(e,t){return Object.defineProperty(e.bind(t),"__original",{value:e})}function m(e,t,n=!1){let r,i=!0,o="";r=c(e)?e:{type:e};const a=b(r)?r._vueTypes_name+" - ":"";if(g(r)&&null!==r.type){if(void 0===r.type||!0===r.type)return i;if(!r.required&&void 0===t)return i;v(r.type)?(i=r.type.some(e=>!0===m(e,t,!0)),o=r.type.map(e=>l(e)).join(" or ")):(o=l(r),i="Array"===o?v(t):"Object"===o?c(t):"String"===o||"Number"===o||"Boolean"===o||"Function"===o?function(e){if(null==e)return "";const t=e.constructor.toString().match(u);return t?t[1]:""}(t)===o:t instanceof r.type);}if(!i){const e=`${a}value "${t}" should be of type "${o}"`;return !1===n?(f(e),!1):e}if(p(r,"validator")&&h(r.validator)){const e=f,o=[];if(f=e=>{o.push(e);},i=r.validator(t),f=e,!i){const e=(o.length>1?"* ":"")+o.join("\n* ");return o.length=0,!1===n?(f(e),i):e}}return i}function j(e,t){const n=Object.defineProperties(t,{_vueTypes_name:{value:e,writable:!0},isRequired:{get(){return this.required=!0,this}},def:{value(e){return void 0===e?this.type===Boolean||Array.isArray(this.type)&&this.type.includes(Boolean)?void(this.default=void 0):(p(this,"default")&&delete this.default,this):h(e)||!0===m(this,e,!0)?(this.default=v(e)?()=>[...e]:c(e)?()=>Object.assign({},e):e,this):(f(`${this._vueTypes_name} - invalid default value: "${e}"`),this)}}}),{validator:r}=n;return h(r)&&(n.validator=O(r,n)),n}function _(e,t){const n=j(e,t);return Object.defineProperty(n,"validate",{value(e){return h(this.validator)&&f(`${this._vueTypes_name} - calling .validate() will overwrite the current custom validator function. Validator info:\n${JSON.stringify(this)}`),this.validator=O(e,this),this}})}function T(e,t,r){const o=function(e){const t={};return Object.getOwnPropertyNames(e).forEach(n=>{t[n]=Object.getOwnPropertyDescriptor(e,n);}),Object.defineProperties({},t)}(t);if(o._vueTypes_name=e,!c(r))return o;const{validator:a}=r,s=n(r,i);if(h(a)){let{validator:e}=o;e&&(e=null!==(l=(u=e).__original)&&void 0!==l?l:u),o.validator=O(e?function(t){return e.call(this,t)&&a.call(this,t)}:a,o);}var u,l;return Object.assign(o,s)}function $(e){return e.replace(/^(?!\s*$)/gm,"  ")}const w=()=>_("any",{}),x=()=>_("function",{type:Function}),P=()=>_("boolean",{type:Boolean}),A=()=>_("string",{type:String}),E=()=>_("number",{type:Number}),S=()=>_("array",{type:Array}),N=()=>_("object",{type:Object}),V=()=>j("integer",{type:Number,validator(e){const t=y(e);return !1===t&&f(`integer - "${e}" is not an integer`),t}}),q=()=>j("symbol",{validator(e){const t="symbol"==typeof e;return !1===t&&f(`symbol - invalid value "${e}"`),t}}),k=()=>Object.defineProperty({type:null,validator(e){const t=null===e;return !1===t&&f("nullable - value should be null"),t}},"_vueTypes_name",{value:"nullable"});function D(e,t="custom validation failed"){if("function"!=typeof e)throw new TypeError("[VueTypes error]: You must provide a function as argument");return j(e.name||"<<anonymous function>>",{type:null,validator(n){const r=e(n);return r||f(`${this._vueTypes_name} - ${t}`),r}})}function L(e){if(!v(e))throw new TypeError("[VueTypes error]: You must provide an array as argument.");const t=`oneOf - value should be one of "${e.map(e=>"symbol"==typeof e?e.toString():e).join('", "')}".`,n={validator(n){const r=-1!==e.indexOf(n);return r||f(t),r}};if(-1===e.indexOf(null)){const t=e.reduce((e,t)=>{if(null!=t){const n=t.constructor;-1===e.indexOf(n)&&e.push(n);}return e},[]);t.length>0&&(n.type=t);}return j("oneOf",n)}function B(e){if(!v(e))throw new TypeError("[VueTypes error]: You must provide an array as argument");let t=!1,n=!1,r=[];for(let i=0;i<e.length;i+=1){const o=e[i];if(g(o)){if(h(o.validator)&&(t=!0),b(o,"oneOf")&&o.type){r=r.concat(o.type);continue}if(b(o,"nullable")){n=!0;continue}if(!0===o.type||!o.type){f('oneOfType - invalid usage of "true" and "null" as types.');continue}r=r.concat(o.type);}else r.push(o);}r=r.filter((e,t)=>r.indexOf(e)===t);const i=!1===n&&r.length>0?r:null;return j("oneOfType",t?{type:i,validator(t){const n=[],r=e.some(e=>{const r=m(e,t,!0);return "string"==typeof r&&n.push(r),!0===r});return r||f(`oneOfType - provided value does not match any of the ${n.length} passed-in validators:\n${$(n.join("\n"))}`),r}}:{type:i})}function F(e){return j("arrayOf",{type:Array,validator(t){let n="";const r=t.every(t=>(n=m(e,t,!0),!0===n));return r||f(`arrayOf - value validation error:\n${$(n)}`),r}})}function Y(e){return j("instanceOf",{type:e})}function I(e){return j("objectOf",{type:Object,validator(t){let n="";const r=Object.keys(t).every(r=>(n=m(e,t[r],!0),!0===n));return r||f(`objectOf - value validation error:\n${$(n)}`),r}})}function J(e){const t=Object.keys(e),n=t.filter(t=>{var n;return !(null===(n=e[t])||void 0===n||!n.required)}),r=j("shape",{type:Object,validator(r){if(!c(r))return !1;const i=Object.keys(r);if(n.length>0&&n.some(e=>-1===i.indexOf(e))){const e=n.filter(e=>-1===i.indexOf(e));return f(1===e.length?`shape - required property "${e[0]}" is not defined.`:`shape - required properties "${e.join('", "')}" are not defined.`),!1}return i.every(n=>{if(-1===t.indexOf(n))return !0===this._vueTypes_isLoose||(f(`shape - shape definition does not include a "${n}" property. Allowed keys: "${t.join('", "')}".`),!1);const i=m(e[n],r[n],!0);return "string"==typeof i&&f(`shape - "${n}" property validation error:\n ${$(i)}`),!0===i})}});return Object.defineProperty(r,"_vueTypes_isLoose",{writable:!0,value:!1}),Object.defineProperty(r,"loose",{get(){return this._vueTypes_isLoose=!0,this}}),r}const M=["name","validate","getter"],R=/*#__PURE__*/(()=>{var e;return (e=class{static get any(){return w()}static get func(){return x().def(this.defaults.func)}static get bool(){return void 0===this.defaults.bool?P():P().def(this.defaults.bool)}static get string(){return A().def(this.defaults.string)}static get number(){return E().def(this.defaults.number)}static get array(){return S().def(this.defaults.array)}static get object(){return N().def(this.defaults.object)}static get integer(){return V().def(this.defaults.integer)}static get symbol(){return q()}static get nullable(){return k()}static extend(e){if(f("VueTypes.extend is deprecated. Use the ES6+ method instead. See https://dwightjack.github.io/vue-types/advanced/extending-vue-types.html#extending-namespaced-validators-in-es6 for details."),v(e))return e.forEach(e=>this.extend(e)),this;const{name:t,validate:r=!1,getter:i=!1}=e,o=n(e,M);if(p(this,t))throw new TypeError(`[VueTypes error]: Type "${t}" already defined`);const{type:a}=o;if(b(a))return delete o.type,Object.defineProperty(this,t,i?{get:()=>T(t,a,o)}:{value(...e){const n=T(t,a,o);return n.validator&&(n.validator=n.validator.bind(n,...e)),n}});let s;return s=i?{get(){const e=Object.assign({},o);return r?_(t,e):j(t,e)},enumerable:!0}:{value(...e){const n=Object.assign({},o);let i;return i=r?_(t,n):j(t,n),n.validator&&(i.validator=n.validator.bind(i,...e)),i},enumerable:!0},Object.defineProperty(this,t,s)}}).defaults={},e.sensibleDefaults=void 0,e.config=r,e.custom=D,e.oneOf=L,e.instanceOf=Y,e.oneOfType=B,e.arrayOf=F,e.objectOf=I,e.shape=J,e.utils={validate:(e,t)=>!0===m(t,e,!0),toType:(e,t,n=!1)=>n?_(e,t):j(e,t)},e})();function U(e={func:()=>{},bool:!0,string:"",number:0,array:()=>[],object:()=>({}),integer:0}){var n;return (n=class extends R{static get sensibleDefaults(){return t({},this.defaults)}static set sensibleDefaults(n){this.defaults=!1!==n?t({},!0!==n?n:e):{};}}).defaults=t({},e),n}class z extends(U()){}
+
+const CWidgetStatsB = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CWidgetStatsB',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Colors have been inverted from their default dark shade.
+         */
+        inverse: {
+            type: Boolean,
+            default: undefined,
+            require: false,
+        },
+        progress: J({
+            /**
+             * Sets the color context of the progress bar to one of CoreUI’s themed colors
+             *
+             * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+             */
+            color: Color,
+            /**
+             * The percent to progress the ProgressBar (out of 100).
+             */
+            value: {
+                type: Number,
+                default: 0,
+            },
+        }),
+        /**
+         * Helper text for your component. If you want to pass non-string value please use dedicated slot `<template #text>...</template>`
+         */
+        text: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Title for your component. If you want to pass non-string value please use dedicated slot `<template #title>...</template>`
+         */
+        title: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Value for your component. If you want to pass non-string or non-number value please use dedicated slot `<template #value>...</template>`
+         */
+        value: {
+            type: [Number, String],
+            default: 0,
+            require: false,
+        },
+    },
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCard, {
+            class: [
+                {
+                    'text-high-emphasis-inverse': props.inverse,
+                },
+            ],
+            color: props.color,
+        }, () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardBody, {
+            class: 'card-body',
+        }, () => [
+            (props.value || slots.value) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'fs-4 fw-semibold',
+                }, {
+                    default: () => (slots.value && slots.value()) || props.value,
+                }),
+            (props.title || slots.title) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {}, {
+                    default: () => (slots.title && slots.title()) || props.title,
+                }),
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CProgress, {
+                class: 'my-2',
+                ...(props.progress && props.progress.color && { color: props.progress.color }),
+                height: 4,
+                ...(props.progress && props.progress.value && { value: props.progress.value }),
+                white: props.inverse,
+            }),
+            (props.text || slots.text) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('small', {
+                    class: [
+                        props.inverse ? 'text-medium-emphasis-inverse' : 'text-medium-emphasis',
+                    ],
+                }, {
+                    default: () => (slots.text && slots.text()) || props.text,
+                }),
+        ]));
+    },
+});
+
+const CWidgetStatsC = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CWidgetStatsC',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Colors have been inverted from their default dark shade.
+         */
+        inverse: {
+            type: Boolean,
+            default: undefined,
+            require: false,
+        },
+        progress: J({
+            /**
+             * Sets the color context of the progress bar to one of CoreUI’s themed colors
+             *
+             * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+             */
+            color: Color,
+            /**
+             * The percent to progress the ProgressBar (out of 100).
+             */
+            value: {
+                type: Number,
+                default: 0,
+            },
+        }),
+        /**
+         * Title for your component. If you want to pass non-string value please use dedicated slot `<template #title>...</template>`
+         */
+        title: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Value for your component. If you want to pass non-string or non-number value please use dedicated slot `<template #value>...</template>`
+         */
+        value: {
+            type: [Number, String],
+            default: 0,
+            require: false,
+        },
+    },
+    /**
+     * Location for icon component.
+     *
+     * @slot icon
+     */
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCard, {
+            class: [
+                {
+                    ['text-white']: props.inverse,
+                },
+            ],
+            color: props.color,
+        }, () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardBody, {
+            class: 'card-body',
+        }, () => [
+            slots.icon &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: [
+                        'text-end mb-4',
+                        props.inverse ? 'text-medium-emphasis-inverse' : 'text-medium-emphasis',
+                    ],
+                }, slots.icon && slots.icon()),
+            (props.value || slots.value) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'fs-4 fw-semibold',
+                }, {
+                    default: () => (slots.value && slots.value()) || props.value,
+                }),
+            (props.title || slots.title) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: [
+                        'text-uppercase fw-semibold small',
+                        props.inverse ? 'text-medium-emphasis-inverse' : 'text-medium-emphasis',
+                    ],
+                }, {
+                    default: () => (slots.title && slots.title()) || props.title,
+                }),
+            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CProgress, {
+                class: 'my-2',
+                ...(props.progress && props.progress.color && { color: props.progress.color }),
+                height: 4,
+                ...(props.progress && props.progress.value && { value: props.progress.value }),
+                white: props.inverse,
+            }),
+        ]));
+    },
+});
+
+const CWidgetStatsD = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CWidgetStatsD',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Values and titles for your component.
+         */
+        values: {
+            type: Array,
+            default: () => [],
+            require: false,
+        },
+    },
+    /**
+     * Location for icon component, ex. `<CDropdown>`.
+     *
+     * @slot icon
+     */
+    /**
+     * Location for chart component.
+     *
+     * @slot chart
+     */
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCard, {}, {
+            default: () => [
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardHeader, {
+                    class: [
+                        'position-relative d-flex justify-content-center align-items-center',
+                        {
+                            [`bg-${props.color}`]: props.color,
+                        },
+                    ],
+                }, () => [slots.icon && slots.icon(), slots.chart && slots.chart()]),
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardBody, {
+                    class: 'row text-center',
+                }, {
+                    default: () => props.values &&
+                        props.values.map((value, index) => [
+                            index % 2 !== 0 && (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', { class: 'vr' }),
+                            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCol, {}, {
+                                default: () => [
+                                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCol, { class: 'fs-5 fw-semibold' }, () => value.value),
+                                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCol, { class: 'text-uppercase text-medium-emphasis small' }, () => value.title),
+                                ],
+                            }),
+                        ]),
+                }),
+            ],
+        });
+    },
+});
+
+const CWidgetStatsE = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CWidgetStatsE',
+    props: {
+        /**
+         * Title for your component. If you want to pass non-string value please use dedicated slot `<template #title>...</template>`
+         */
+        title: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Value for your component. If you want to pass non-string or non-number value please use dedicated slot `<template #value>...</template>`
+         */
+        value: {
+            type: [Number, String],
+            default: 0,
+            require: false,
+        },
+    },
+    /**
+     * Location for chart component.
+     *
+     * @slot chart
+     */
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCard, {}, () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardBody, {
+            class: 'text-center',
+        }, () => [
+            (props.title || slots.title) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'text-muted small text-uppercase font-weight-bold',
+                }, {
+                    default: () => (slots.title && slots.title()) || props.title,
+                }),
+            (props.value || slots.value) &&
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                    class: 'h2 py-3',
+                }, {
+                    default: () => (slots.value && slots.value()) || props.value,
+                }),
+            slots.chart && slots.chart(),
+            slots.default && slots.default(),
+        ]));
+    },
+});
+
+const CWidgetStatsF = (0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+    name: 'CWidgetStatsF',
+    props: {
+        /**
+         * Sets the color context of the component to one of CoreUI’s themed colors.
+         *
+         * @values 'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light'
+         */
+        color: Color,
+        /**
+         * Set padding of your component.
+         */
+        padding: {
+            type: Boolean,
+            default: true,
+        },
+        /**
+         * Title for your component. If you want to pass non-string value please use dedicated slot `<template #title>...</template>`
+         */
+        title: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Helper text for your component. If you want to pass non-string value please use dedicated slot `<template #text>...</template>`
+         */
+        text: {
+            type: String,
+            default: undefined,
+            require: false,
+        },
+        /**
+         * Value for your component. If you want to pass non-string or non-number value please use dedicated slot `<template #value>...</template>`
+         */
+        value: {
+            type: [Number, String],
+            default: 0,
+            require: false,
+        },
+    },
+    /**
+     * Location for icon component.
+     *
+     * @slot icon
+     */
+    setup(props, { slots }) {
+        return () => (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCard, {}, {
+            default: () => [
+                (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardBody, {
+                    class: ['d-flex align-items-center', props.padding === false && 'p-0'],
+                }, () => [
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                        class: [
+                            'me-3',
+                            'text-white',
+                            `bg-${props.color}`,
+                            props.padding ? 'p-3' : 'p-4',
+                        ],
+                    }, (slots.default && slots.default()) || (slots.icon && slots.icon())),
+                    (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {}, [
+                        (props.value || slots.value) &&
+                            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                                class: [`fs-6 fw-semibold text-${props.color}`],
+                            }, {
+                                default: () => (slots.value && slots.value()) || props.value,
+                            }),
+                        (props.title || slots.title) &&
+                            (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)('div', {
+                                class: 'text-medium-emphasis text-uppercase fw-semibold small',
+                            }, {
+                                default: () => (slots.title && slots.title()) || props.title,
+                            }),
+                    ]),
+                ]),
+                slots.footer && (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(CCardFooter, {}, () => slots.footer && slots.footer()),
+            ],
+        });
+    },
+});
+
+const CWidgetsStatsPlugin = {
+    install: (app) => {
+        app.component(CWidgetStatsA.name, CWidgetStatsA);
+        app.component(CWidgetStatsB.name, CWidgetStatsB);
+        app.component(CWidgetStatsC.name, CWidgetStatsC);
+        app.component(CWidgetStatsD.name, CWidgetStatsD);
+        app.component(CWidgetStatsE.name, CWidgetStatsE);
+        app.component(CWidgetStatsF.name, CWidgetStatsF);
+    },
+};
+
+var Components = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    CAccordion: CAccordion,
+    CAccordionBody: CAccordionBody,
+    CAccordionButton: CAccordionButton,
+    CAccordionHeader: CAccordionHeader,
+    CAccordionItem: CAccordionItem,
+    CAccordionPlugin: CAccordionPlugin,
+    CAlert: CAlert,
+    CAlertHeading: CAlertHeading,
+    CAlertLink: CAlertLink,
+    CAlertPlugin: CAlertPlugin,
+    CAvatar: CAvatar,
+    CAvatarPlugin: CAvatarPlugin,
+    CBackdrop: CBackdrop,
+    CBackdropPlugin: CBackdropPlugin,
+    CBadge: CBadge,
+    CBadgePlugin: CBadgePlugin,
+    CBreadcrumb: CBreadcrumb,
+    CBreadcrumbItem: CBreadcrumbItem,
+    CBreadcrumbPlugin: CBreadcrumbPlugin,
+    CButton: CButton,
+    CButtonGroup: CButtonGroup,
+    CButtonGroupPlugin: CButtonGroupPlugin,
+    CButtonPlugin: CButtonPlugin,
+    CButtonToolbar: CButtonToolbar,
+    CCLinkPlugin: CCLinkPlugin,
+    CCallout: CCallout,
+    CCalloutPlugin: CCalloutPlugin,
+    CCard: CCard,
+    CCardBody: CCardBody,
+    CCardFooter: CCardFooter,
+    CCardGroup: CCardGroup,
+    CCardHeader: CCardHeader,
+    CCardImage: CCardImage,
+    CCardImageOverlay: CCardImageOverlay,
+    CCardLink: CCardLink,
+    CCardPlugin: CCardPlugin,
+    CCardSubtitle: CCardSubtitle,
+    CCardText: CCardText,
+    CCardTitle: CCardTitle,
+    CCarousel: CCarousel,
+    CCarouselCaption: CCarouselCaption,
+    CCarouselItem: CCarouselItem,
+    CCarouselPlugin: CCarouselPlugin,
+    CCloseButton: CCloseButton,
+    CCloseButtonPlugin: CCloseButtonPlugin,
+    CCol: CCol,
+    CCollapse: CCollapse,
+    CCollapsePlugin: CCollapsePlugin,
+    CContainer: CContainer,
+    CDropdown: CDropdown,
+    CDropdownDivider: CDropdownDivider,
+    CDropdownHeader: CDropdownHeader,
+    CDropdownItem: CDropdownItem,
+    CDropdownMenu: CDropdownMenu,
+    CDropdownPlugin: CDropdownPlugin,
+    CDropdownToggle: CDropdownToggle,
+    CFooter: CFooter,
+    CFooterPlugin: CFooterPlugin,
+    CForm: CForm,
+    CFormCheck: CFormCheck,
+    CFormFeedback: CFormFeedback,
+    CFormFloating: CFormFloating,
+    CFormInput: CFormInput,
+    CFormLabel: CFormLabel,
+    CFormPlugin: CFormPlugin,
+    CFormRange: CFormRange,
+    CFormSelect: CFormSelect,
+    CFormSwitch: CFormSwitch,
+    CFormText: CFormText,
+    CFormTextarea: CFormTextarea,
+    CGridPlugin: CGridPlugin,
+    CHeader: CHeader,
+    CHeaderBrand: CHeaderBrand,
+    CHeaderDivider: CHeaderDivider,
+    CHeaderNav: CHeaderNav,
+    CHeaderPlugin: CHeaderPlugin,
+    CHeaderText: CHeaderText,
+    CHeaderToggler: CHeaderToggler,
+    CImage: CImage,
+    CImagePlugin: CImagePlugin,
+    CInputGroup: CInputGroup,
+    CInputGroupText: CInputGroupText,
+    CLink: CLink,
+    CListGroup: CListGroup,
+    CListGroupItem: CListGroupItem,
+    CListGroupPlugin: CListGroupPlugin,
+    CModal: CModal,
+    CModalBody: CModalBody,
+    CModalFooter: CModalFooter,
+    CModalHeader: CModalHeader,
+    CModalPlugin: CModalPlugin,
+    CModalTitle: CModalTitle,
+    CNav: CNav,
+    CNavGroup: CNavGroup,
+    CNavGroupItems: CNavGroupItems,
+    CNavItem: CNavItem,
+    CNavLink: CNavLink,
+    CNavPlugin: CNavPlugin,
+    CNavTitle: CNavTitle,
+    CNavbar: CNavbar,
+    CNavbarBrand: CNavbarBrand,
+    CNavbarNav: CNavbarNav,
+    CNavbarPlugin: CNavbarPlugin,
+    CNavbarText: CNavbarText,
+    CNavbarToggler: CNavbarToggler,
+    COffcanvas: COffcanvas,
+    COffcanvasBody: COffcanvasBody,
+    COffcanvasHeader: COffcanvasHeader,
+    COffcanvasPlugin: COffcanvasPlugin,
+    COffcanvasTitle: COffcanvasTitle,
+    CPagination: CPagination,
+    CPaginationItem: CPaginationItem,
+    CPaginationPlugin: CPaginationPlugin,
+    CPlaceholder: CPlaceholder,
+    CPlaceholderPlugin: CPlaceholderPlugin,
+    CPopover: CPopover,
+    CPopoverPlugin: CPopoverPlugin,
+    CProgress: CProgress,
+    CProgressBar: CProgressBar,
+    CProgressPlugin: CProgressPlugin,
+    CRow: CRow,
+    CSidebar: CSidebar,
+    CSidebarBrand: CSidebarBrand,
+    CSidebarFooter: CSidebarFooter,
+    CSidebarHeader: CSidebarHeader,
+    CSidebarNav: CSidebarNav,
+    CSidebarPlugin: CSidebarPlugin,
+    CSidebarToggler: CSidebarToggler,
+    CSpinner: CSpinner,
+    CSpinnerPlugin: CSpinnerPlugin,
+    CTabContent: CTabContent,
+    CTabPane: CTabPane,
+    CTable: CTable,
+    CTableBody: CTableBody,
+    CTableCaption: CTableCaption,
+    CTableDataCell: CTableDataCell,
+    CTableFoot: CTableFoot,
+    CTableHead: CTableHead,
+    CTableHeaderCell: CTableHeaderCell,
+    CTablePlugin: CTablePlugin,
+    CTableRow: CTableRow,
+    CTabsPlugin: CTabsPlugin,
+    CToast: CToast,
+    CToastBody: CToastBody,
+    CToastClose: CToastClose,
+    CToastHeader: CToastHeader,
+    CToastPlugin: CToastPlugin,
+    CToaster: CToaster,
+    CTooltip: CTooltip,
+    CTooltipPlugin: CTooltipPlugin,
+    CWidgetStatsA: CWidgetStatsA,
+    CWidgetStatsB: CWidgetStatsB,
+    CWidgetStatsC: CWidgetStatsC,
+    CWidgetStatsD: CWidgetStatsD,
+    CWidgetStatsE: CWidgetStatsE,
+    CWidgetStatsF: CWidgetStatsF,
+    CWidgetsStatsPlugin: CWidgetsStatsPlugin
+});
+
+const BREAKPOINTS = [
+    'xxl',
+    'xl',
+    'lg',
+    'md',
+    'sm',
+    'xs',
+];
+var vcplaceholder = {
+    name: 'c-placeholder',
+    mounted(el, binding) {
+        const value = binding.value;
+        el.classList.add(value.animation ? `placeholder-${value.animation}` : 'placeholder');
+        BREAKPOINTS.forEach((bp) => {
+            const breakpoint = value[bp];
+            const infix = bp === 'xs' ? '' : `-${bp}`;
+            if (typeof breakpoint === 'number') {
+                el.classList.add(`col${infix}-${breakpoint}`);
+            }
+            if (typeof breakpoint === 'boolean') {
+                el.classList.add(`col${infix}`);
+            }
+        });
+    },
+};
+
+const getUID$1 = (prefix) => {
+    do {
+        prefix += Math.floor(Math.random() * 1000000);
+    } while (document.getElementById(prefix));
+    return prefix;
+};
+const createPopoverElement = (id, header, content) => {
+    const popover = document.createElement('div');
+    popover.id = id;
+    popover.classList.add('popover', 'bs-popover-auto', 'fade');
+    popover.setAttribute('role', 'popover');
+    popover.innerHTML = `<div class="popover-arrow" data-popper-arrow></div>
+     <div class="popover-header">${header}</div>
+     <div class="popover-body" id="">${content}</div>`;
+    return popover;
+};
+const addPopoverElement = (popover, el, popperOptions) => {
+    document.body.appendChild(popover);
+    createPopper(el, popover, popperOptions);
+    setTimeout(() => {
+        popover.classList.add('show');
+    }, 1);
+};
+const removePopoverElement = (popover) => {
+    popover.classList.remove('show');
+    setTimeout(() => {
+        document.body.removeChild(popover);
+    }, 300);
+};
+const togglePopoverElement = (popover, el, popperOptions) => {
+    const popperElement = document.getElementById(popover.id);
+    if (popperElement && popperElement.classList.contains('show')) {
+        removePopoverElement(popover);
+        return;
+    }
+    addPopoverElement(popover, el, popperOptions);
+};
+var vcpopover = {
+    name: 'c-popover',
+    uid: '',
+    mounted(el, binding) {
+        const value = binding.value;
+        const content = typeof value === 'string' ? value : value.content ? value.content : '';
+        const header = value.header ? value.header : '';
+        const trigger = value.trigger ? value.trigger : 'click';
+        // Popper Config
+        const offset = value.offset ? value.offset : [0, 8];
+        const placement = value.placement ? value.placement : 'top';
+        const popperOptions = {
+            placement: placement,
+            modifiers: [
+                {
+                    name: 'offset',
+                    options: {
+                        offset: offset,
+                    },
+                },
+            ],
+        };
+        const popoverUID = getUID$1('popover');
+        binding.arg = popoverUID;
+        const popover = createPopoverElement(popoverUID, header, content);
+        trigger.includes('click') &&
+            el.addEventListener('click', () => {
+                togglePopoverElement(popover, el, popperOptions);
+            });
+        if (trigger.includes('focus')) {
+            el.addEventListener('focus', () => {
+                addPopoverElement(popover, el, popperOptions);
+            });
+            el.addEventListener('blur', () => {
+                removePopoverElement(popover);
+            });
+        }
+        if (trigger.includes('hover')) {
+            el.addEventListener('mouseenter', () => {
+                addPopoverElement(popover, el, popperOptions);
+            });
+            el.addEventListener('mouseleave', () => {
+                removePopoverElement(popover);
+            });
+        }
+    },
+    unmounted(_el, binding) {
+        const popover = binding.arg && document.getElementById(binding.arg);
+        popover && popover.remove();
+    },
+};
+
+const getUID = (prefix) => {
+    do {
+        prefix += Math.floor(Math.random() * 1000000);
+    } while (document.getElementById(prefix));
+    return prefix;
+};
+const createTooltipElement = (id, content) => {
+    const tooltip = document.createElement('div');
+    tooltip.id = id;
+    tooltip.classList.add('tooltip', 'bs-tooltip-auto', 'fade');
+    tooltip.setAttribute('role', 'tooltip');
+    tooltip.innerHTML = `<div class="tooltip-arrow" data-popper-arrow></div>
+     <div class="tooltip-inner" id="">${content}</div>`;
+    return tooltip;
+};
+const addTooltipElement = (tooltip, el, popperOptions) => {
+    document.body.appendChild(tooltip);
+    createPopper(el, tooltip, popperOptions);
+    setTimeout(() => {
+        tooltip.classList.add('show');
+    }, 1);
+};
+const removeTooltipElement = (tooltip) => {
+    tooltip.classList.remove('show');
+    setTimeout(() => {
+        document.body.removeChild(tooltip);
+    }, 300);
+};
+const toggleTooltipElement = (tooltip, el, popperOptions) => {
+    const popperElement = document.getElementById(tooltip.id);
+    if (popperElement && popperElement.classList.contains('show')) {
+        removeTooltipElement(tooltip);
+        return;
+    }
+    addTooltipElement(tooltip, el, popperOptions);
+};
+var vctooltip = {
+    mounted(el, binding) {
+        const value = binding.value;
+        const content = typeof value === 'string' ? value : value.content ? value.content : '';
+        const trigger = value.trigger ? value.trigger : 'hover';
+        // Popper Config
+        const offset = value.offset ? value.offset : [0, 0];
+        const placement = value.placement ? value.placement : 'top';
+        const popperOptions = {
+            placement: placement,
+            modifiers: [
+                {
+                    name: 'offset',
+                    options: {
+                        offset: offset,
+                    },
+                },
+            ],
+        };
+        const tooltipUID = getUID('tooltip');
+        binding.arg = tooltipUID;
+        const tooltip = createTooltipElement(tooltipUID, content);
+        trigger.includes('click') &&
+            el.addEventListener('click', () => {
+                toggleTooltipElement(tooltip, el, popperOptions);
+            });
+        if (trigger.includes('focus')) {
+            el.addEventListener('focus', () => {
+                addTooltipElement(tooltip, el, popperOptions);
+            });
+            el.addEventListener('blur', () => {
+                removeTooltipElement(tooltip);
+            });
+        }
+        if (trigger.includes('hover')) {
+            el.addEventListener('mouseenter', () => {
+                addTooltipElement(tooltip, el, popperOptions);
+            });
+            el.addEventListener('mouseleave', () => {
+                removeTooltipElement(tooltip);
+            });
+        }
+    },
+    beforeUnmount(_el, binding) {
+        const tooltip = binding.arg && document.getElementById(binding.arg);
+        tooltip && tooltip.remove();
+    },
+};
+
+const removeKeysFromObject = (object, keys) => {
+    return Object.entries(object).reduce((obj, [key, value]) => {
+        if (!keys.includes(key) && !keys.includes(value.name)) {
+            obj[key] = value;
+        }
+        return obj;
+    }, {});
+};
+const CoreuiVue = {
+    install: (app, options) => {
+        let pluginComponents = Components;
+        // let pluginDirectives = Directives
+        const toRemove = options && options.remove ? options.remove : null;
+        if (toRemove && Array.isArray(toRemove)) {
+            pluginComponents = removeKeysFromObject(Components, toRemove);
+            // pluginDirectives = removeKeysFromObject(Directives, toRemove)
+        }
+        for (const plugin in pluginComponents) {
+            app.component(plugin, Components[plugin]);
+        }
+        // for (const directive in pluginDirectives) {
+        //   app.directive(directive, Directives[directive])
+        // }
+        app.directive('c-placeholder', vcplaceholder);
+        app.directive('c-popover', vcpopover);
+        app.directive('c-tooltip', vctooltip);
+    },
+};
+
+
+//# sourceMappingURL=index.es.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/@fortawesome/vue-fontawesome/index.es.js":
 /*!***************************************************************!*\
   !*** ./node_modules/@fortawesome/vue-fontawesome/index.es.js ***!
@@ -20153,6 +29865,32 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Accordion.vue?vue&type=script&lang=js":
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Accordion.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      isOpen: false
+    };
+  },
+  methods: {
+    toggleAccordion: function toggleAccordion() {
+      this.isOpen = !this.isOpen;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCard.vue?vue&type=script&lang=js":
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCard.vue?vue&type=script&lang=js ***!
@@ -20221,10 +29959,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicFilteredCard.vue?vue&type=script&lang=js":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicFilteredCard.vue?vue&type=script&lang=js ***!
-  \***********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCardHome.vue?vue&type=script&lang=js":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCardHome.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20239,7 +29977,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "BasicFilteredCard",
+  name: "BasicCardHome",
   components: {
     'inertia-link': _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link,
     FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon
@@ -20249,13 +29987,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      getColor: this.item.category[0].category
+      // getColor: this.item.category[0].category,
     };
   },
   computed: {
-    getCatColor: function getCatColor() {
-      return this.getColor;
-    },
+    // getCatColor: function() {
+    //   return this.getColor
+    // },
+
     getMonthName: function getMonthName() {
       if (this.getMonth == "01") {
         return "Januari";
@@ -20400,6 +30139,89 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// ============== ACTIVE NAVBAR =========================== //
+
+var scrollNavbar;
+window.onscroll = function () {
+  scrollNavbar();
+};
+scrollNavbar = function scrollNavbar() {
+  // Target elements
+  var navBar = document.getElementById("navBar");
+  var links = document.querySelectorAll("#navBar a");
+  var mainButton = document.querySelectorAll("#mainButton button");
+  var secButton = document.querySelectorAll("#secButton button");
+  var icon = document.querySelectorAll("#icon");
+  if (document.documentElement.scrollTop > 50) {
+    navBar.classList.add("pa-fixed-header");
+
+    // Change the color of links on scroll
+    for (var i = 0; i < links.length; i++) {
+      var element = links[i];
+      element.classList.add('text-white');
+      element.classList.remove('text-black');
+    }
+    for (var _i = 0; _i < secButton.length; _i++) {
+      var _element = secButton[_i];
+      _element.classList.add('bg-black');
+      _element.classList.add('text-white');
+      _element.classList.add('border-white');
+      _element.classList.add('hover:bg-white');
+      _element.classList.add('hover:text-black');
+    }
+    for (var _i2 = 0; _i2 < mainButton.length; _i2++) {
+      var _element2 = mainButton[_i2];
+      _element2.classList.remove('hover:text-black');
+      _element2.classList.remove('bg-[#073231]');
+      _element2.classList.remove('border-[#073231]');
+      _element2.classList.add('text-black');
+      _element2.classList.add('bg-white');
+      _element2.classList.add('border-white');
+      _element2.classList.add('hover:bg-black');
+      _element2.classList.add('hover:text-white');
+    }
+    for (var _i3 = 0; _i3 < icon.length; _i3++) {
+      var _element3 = icon[_i3];
+      _element3.classList.add('whiteColorIcon');
+    }
+  } else {
+    navBar.classList.remove("pa-fixed-header");
+
+    // Change the color of links back to default
+    for (var _i4 = 0; _i4 < links.length; _i4++) {
+      var _element4 = links[_i4];
+      _element4.classList.add('text-black');
+      _element4.classList.remove('text-white');
+    }
+    for (var _i5 = 0; _i5 < secButton.length; _i5++) {
+      var _element5 = secButton[_i5];
+      _element5.classList.remove('bg-black');
+      _element5.classList.remove('text-white');
+      _element5.classList.remove('border-white');
+      _element5.classList.remove('hover:bg-white');
+      _element5.classList.remove('hover:text-black');
+    }
+    for (var _i6 = 0; _i6 < mainButton.length; _i6++) {
+      var _element6 = mainButton[_i6];
+      _element6.classList.add('hover:text-black');
+      _element6.classList.add('bg-[#073231]');
+      _element6.classList.add('border-[#073231]');
+      _element6.classList.remove('text-black');
+      _element6.classList.remove('bg-white');
+      _element6.classList.remove('border-white');
+      _element6.classList.remove('hover:bg-black');
+      _element6.classList.remove('hover:text-white');
+    }
+    for (var _i7 = 0; _i7 < icon.length; _i7++) {
+      var _element7 = icon[_i7];
+      _element7.classList.remove('whiteColorIcon');
+    }
+  }
+};
+
+//=============================================================//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Navbar",
   components: {
@@ -20523,6 +30345,64 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=script&lang=js":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layouts/App.vue */ "./resources/js/Layouts/App.vue");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/BasicCard.vue */ "./resources/js/Components/BasicCard.vue");
+/* harmony import */ var _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/BasicCardHome.vue */ "./resources/js/Components/BasicCardHome.vue");
+/* harmony import */ var _Components_Accordion_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Accordion.vue */ "./resources/js/Components/Accordion.vue");
+/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+/* harmony import */ var _coreui_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @coreui/vue */ "./node_modules/@coreui/vue/dist/index.es.js");
+//import layout
+
+
+//import Link dari inertia
+
+
+
+//import component
+
+
+
+
+
+//import coreui componenet
+// import '@coreui/coreui/dist/css/coreui.min.css'
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  layout: _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+  components: {
+    "inertia-link": _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
+    BasicCard: _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    BasicCardHome: _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_6__.FontAwesomeIcon,
+    Accordion: _Components_Accordion_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
+    CAccordion: _coreui_vue__WEBPACK_IMPORTED_MODULE_7__.CAccordion,
+    CAccordionItem: _coreui_vue__WEBPACK_IMPORTED_MODULE_7__.CAccordionItem,
+    CAccordionHeader: _coreui_vue__WEBPACK_IMPORTED_MODULE_7__.CAccordionHeader,
+    CAccordionBody: _coreui_vue__WEBPACK_IMPORTED_MODULE_7__.CAccordionBody
+  },
+  props: {
+    postsDESC: Array
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Detail.vue?vue&type=script&lang=js":
 /*!************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Detail.vue?vue&type=script&lang=js ***!
@@ -20623,8 +30503,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_MainCard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/MainCard.vue */ "./resources/js/Components/MainCard.vue");
 /* harmony import */ var _Components_SmallCard_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/SmallCard.vue */ "./resources/js/Components/SmallCard.vue");
 /* harmony import */ var _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/BasicCard.vue */ "./resources/js/Components/BasicCard.vue");
-/* harmony import */ var _Components_BasicFilteredCard_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Components/BasicFilteredCard.vue */ "./resources/js/Components/BasicFilteredCard.vue");
-/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
 //import layout
 
 
@@ -20633,7 +30512,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //import component
-
 
 
 
@@ -20647,7 +30525,7 @@ __webpack_require__.r(__webpack_exports__);
     MainCard: _Components_MainCard_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
     SmallCard: _Components_SmallCard_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
     BasicCard: _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_7__.FontAwesomeIcon
+    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_6__.FontAwesomeIcon
   },
   props: {
     postsDESC: Array,
@@ -20678,6 +30556,49 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=script&lang=js":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=script&lang=js ***!
+  \************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layouts/App.vue */ "./resources/js/Layouts/App.vue");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/BasicCard.vue */ "./resources/js/Components/BasicCard.vue");
+/* harmony import */ var _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/BasicCardHome.vue */ "./resources/js/Components/BasicCardHome.vue");
+/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+//import layout
+
+
+//import Link dari inertia
+
+
+
+//import component
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  layout: _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+  components: {
+    "inertia-link": _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
+    BasicCard: _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    BasicCardHome: _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon
+  },
+  props: {
+    postsDESC: Array
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Home/Index.vue?vue&type=script&lang=js":
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Home/Index.vue?vue&type=script&lang=js ***!
@@ -20692,11 +30613,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layouts/App.vue */ "./resources/js/Layouts/App.vue");
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var _Components_MainCard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/MainCard.vue */ "./resources/js/Components/MainCard.vue");
-/* harmony import */ var _Components_SmallCard_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/SmallCard.vue */ "./resources/js/Components/SmallCard.vue");
-/* harmony import */ var _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/BasicCard.vue */ "./resources/js/Components/BasicCard.vue");
-/* harmony import */ var _Components_BasicFilteredCard_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Components/BasicFilteredCard.vue */ "./resources/js/Components/BasicFilteredCard.vue");
-/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+/* harmony import */ var _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/BasicCard.vue */ "./resources/js/Components/BasicCard.vue");
+/* harmony import */ var _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/BasicCardHome.vue */ "./resources/js/Components/BasicCardHome.vue");
+/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
 //import layout
 
 
@@ -20708,18 +30627,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-// import SecondaryCard from '../../Components/SecondaryCard.vue';
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
   components: {
     "inertia-link": _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
-    MainCard: _Components_MainCard_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    SmallCard: _Components_SmallCard_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    BasicCard: _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_7__.FontAwesomeIcon
+    BasicCard: _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    BasicCardHome: _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon
   },
   props: {
     postsDESC: Array
@@ -20794,7 +30708,16 @@ __webpack_require__.r(__webpack_exports__);
     onChange: function onChange(e) {
       this.name = e.target.files[0];
       console.log(e.target.files[0]);
+    },
+    handleChange: function handleChange() {
+      console.log(event.target.value);
+    },
+    setTextToTrix: function setTextToTrix() {
+      this.post.content = document.getElementById("content").value;
     }
+  },
+  mounted: function mounted() {
+    document.addEventListener("trix-change", this.setTextToTrix); // Listen to the changes on the editor
   },
   //define Composition Api
   setup: function setup() {
@@ -20978,10 +30901,7 @@ __webpack_require__.r(__webpack_exports__);
   //layout
   layout: _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
   data: function data() {
-    return {
-      checkedCategory: this.post.category,
-      selectedCategory: []
-    };
+    return {};
   },
   //props
   props: {
@@ -20989,9 +30909,29 @@ __webpack_require__.r(__webpack_exports__);
     errors: Object,
     category: Array
   },
+  methods: {
+    getImagePreview: function getImagePreview(event) {
+      var image = URL.createObjectURL(event.target.files[0]);
+      var imagediv = document.getElementById('preview');
+      var newimg = document.createElement('img');
+      imagediv.innerHTML = '';
+      newimg.src = image;
+      // newimg.width="150";
+      imagediv.appendChild(newimg);
+      console.log(event.target.files[0]);
+    }
+  },
   //define Composition Api
   setup: function setup(props) {
     //state posts
+    //   const post = reactive({
+    //       title: '',
+    //       content: '',
+    //       image: '',
+    //       category: [],
+    //       ditulis_oleh: '',
+    //       ditinjau_oleh: '',
+    //   })
     var post = (0,vue__WEBPACK_IMPORTED_MODULE_1__.reactive)({
       title: props.post.title,
       content: props.post.content,
@@ -21112,6 +31052,108 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Layouts/App.vue */ "./resources/js/Layouts/App.vue");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/BasicCard.vue */ "./resources/js/Components/BasicCard.vue");
+/* harmony import */ var _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/BasicCardHome.vue */ "./resources/js/Components/BasicCardHome.vue");
+/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+/* harmony import */ var _coreui_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @coreui/vue */ "./node_modules/@coreui/vue/dist/index.es.js");
+//import layout
+
+
+//import Link dari inertia
+
+
+
+//import component
+
+
+
+
+//import coreui componenet
+// import '@coreui/coreui/dist/css/coreui.min.css'
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  layout: _Layouts_App_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+  components: {
+    "inertia-link": _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.Link,
+    BasicCard: _Components_BasicCard_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    BasicCardHome: _Components_BasicCardHome_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon,
+    CAccordion: _coreui_vue__WEBPACK_IMPORTED_MODULE_6__.CAccordion,
+    CAccordionItem: _coreui_vue__WEBPACK_IMPORTED_MODULE_6__.CAccordionItem,
+    CAccordionHeader: _coreui_vue__WEBPACK_IMPORTED_MODULE_6__.CAccordionHeader,
+    CAccordionBody: _coreui_vue__WEBPACK_IMPORTED_MODULE_6__.CAccordionBody
+  },
+  props: {
+    postsDESC: Array
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Accordion.vue?vue&type=template&id=d0b0a0e6":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Accordion.vue?vue&type=template&id=d0b0a0e6 ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = ["aria-expanded", "aria-controls"];
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  d: "M15 1.2l-7 7-7-7",
+  "stroke-width": "2",
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round"
+}, null, -1 /* HOISTED */);
+var _hoisted_3 = [_hoisted_2];
+var _hoisted_4 = ["id"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[0] || (_cache[0] = function ($event) {
+      return $options.toggleAccordion();
+    }),
+    "class": "flex items-center space-x-3",
+    "aria-expanded": $data.isOpen,
+    "aria-controls": "collapse".concat(_ctx._uid)
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "title"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["w-3 transition-all duration-200 transform", {
+      'rotate-180': $data.isOpen,
+      'rotate-0': !$data.isOpen
+    }]),
+    fill: "none",
+    stroke: "currentColor",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 16 10",
+    "aria-hidden": "true"
+  }, _hoisted_3, 2 /* CLASS */))], 8 /* PROPS */, _hoisted_1), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    id: "collapse".concat(_ctx._uid)
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "content")], 8 /* PROPS */, _hoisted_4), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $data.isOpen]])]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCard.vue?vue&type=template&id=54b06ba3":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCard.vue?vue&type=template&id=54b06ba3 ***!
@@ -21214,10 +31256,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicFilteredCard.vue?vue&type=template&id=353e77da":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicFilteredCard.vue?vue&type=template&id=353e77da ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCardHome.vue?vue&type=template&id=767ebfa2":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCardHome.vue?vue&type=template&id=767ebfa2 ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21228,13 +31270,90 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "w-52 h-32 bg-red-700"
+  "class": "mb-5"
 };
-var _hoisted_2 = {
-  "class": "text-white"
+var _hoisted_2 = ["src"];
+var _hoisted_3 = {
+  "class": "pt-3"
 };
+var _hoisted_4 = {
+  key: 0,
+  "class": "flex justify-end"
+};
+var _hoisted_5 = {
+  key: 0,
+  "class": "text-white bg-green-500 px-4 py-1 rounded text-xs"
+};
+var _hoisted_6 = {
+  key: 1,
+  "class": "text-white bg-amber-700 px-4 py-1 rounded text-xs"
+};
+var _hoisted_7 = {
+  key: 2,
+  "class": "text-white bg-teal-600 px-4 py-1 rounded text-xs"
+};
+var _hoisted_8 = {
+  key: 3,
+  "class": "text-white bg-orange-700 px-4 py-1 rounded text-xs"
+};
+var _hoisted_9 = {
+  key: 4,
+  "class": "text-white bg-red-700 px-4 py-1 rounded text-xs"
+};
+var _hoisted_10 = {
+  key: 5,
+  "class": "text-white bg-violet-600 px-4 py-1 rounded text-xs"
+};
+var _hoisted_11 = {
+  key: 1,
+  "class": "flex justify-end"
+};
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "text-white bg-yellow-600 px-4 py-1 rounded text-xs"
+}, "Uncategorized", -1 /* HOISTED */);
+var _hoisted_13 = [_hoisted_12];
+var _hoisted_14 = {
+  "class": "mt-2"
+};
+var _hoisted_15 = {
+  "class": "my-3 text-lg font-semibold text-black"
+};
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Selengkapnya ");
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item), 1 /* TEXT */)]);
+  var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
+  var _component_font_awesome_icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("font-awesome-icon");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/artikel/".concat($props.item.id),
+    "class": ""
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+        "class": "rounded w-full h-auto md:h-56 object-cover",
+        src: "../storage/".concat($props.item.image)
+      }, null, 8 /* PROPS */, _hoisted_2)];
+    }),
+    _: 1 /* STABLE */
+  }, 8 /* PROPS */, ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [$props.item.category.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [$props.item.category[0].category == 'Diet Program' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.category[0].category), 1 /* TEXT */)) : $props.item.category[0].category == 'Sleep' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.category[0].category), 1 /* TEXT */)) : $props.item.category[0].category == 'Healthy Eating' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.category[0].category), 1 /* TEXT */)) : $props.item.category[0].category == 'Mindfullness & Stress' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.category[0].category), 1 /* TEXT */)) : $props.item.category[0].category == 'Weight Management' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.category[0].category), 1 /* TEXT */)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_10, "Unknown"))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $props.item.category.length == 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, _hoisted_13)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/artikel/".concat($props.item.id),
+    "class": ""
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.title), 1 /* TEXT */)];
+    }),
+
+    _: 1 /* STABLE */
+  }, 8 /* PROPS */, ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/artikel/".concat($props.item.id),
+    "class": "font-bold text-black text-sm underline underline-offset-1"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
+        icon: "fa-arrow-right",
+        "class": "ml-1"
+      })];
+    }),
+    _: 1 /* STABLE */
+  }, 8 /* PROPS */, ["href"])])])]);
 }
 
 /***/ }),
@@ -21257,28 +31376,39 @@ var _hoisted_1 = {
 };
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "py-10 border-b border-black"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "font-bold text-2xl"
-}, "dentsu Indonesia")], -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "w-32",
+  src: "https://prodiadigital.com/assets/images/logo.svg"
+})], -1 /* HOISTED */);
 var _hoisted_3 = {
-  "class": "py-10 grid grid-cols-1 md:grid-cols-3"
+  "class": "py-10 grid grid-cols-1 md:grid-cols-12 items-center"
 };
-var _hoisted_4 = {
-  "class": "mt-5 md:mt-0 font-medium"
-};
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Kebijakan Privasi");
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Syarat & Ketentuan");
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Penafian");
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": ""
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "flex justify-start items-center col-span-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-5 md:mt-0 font-light md:text-right text-left"
-}, "© Copyright PT. dentsu Indonesia")], -1 /* HOISTED */);
+  "class": "mr-10 font-medium"
+}, "Part of"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "https://prodiadigital.com/assets/images/footer-logo.svg"
+})], -1 /* HOISTED */);
+var _hoisted_5 = {
+  "class": "col-span-2 mt-5 md:mt-0"
+};
+var _hoisted_6 = {
+  "class": "mt-5 md:mt-0 font-medium text-sm col-span-4"
+};
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Kebijakan Privasi");
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Syarat & Ketentuan");
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Penafian");
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-span-3"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-5 md:mt-0 font-light md:text-right text-left text-sm"
+}, "© Copyright PT. Prodia Digital Indonesia")], -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_font_awesome_icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("font-awesome-icon");
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
     "class": "fa-xl mr-5",
     icon: "fa-brands fa-facebook"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
@@ -21287,23 +31417,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
     "class": "fa-xl mr-5",
     icon: "fa-brands fa-youtube"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/",
-    "class": "mr-4"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_5];
-    }),
-    _: 1 /* STABLE */
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/",
-    "class": "mr-4"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_6];
-    }),
-    _: 1 /* STABLE */
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/",
     "class": "mr-4"
   }, {
@@ -21311,7 +31425,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [_hoisted_7];
     }),
     _: 1 /* STABLE */
-  })]), _hoisted_8])]);
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/",
+    "class": "mr-4"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_8];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/",
+    "class": "mr-4"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_9];
+    }),
+    _: 1 /* STABLE */
+  })]), _hoisted_10])]);
 }
 
 /***/ }),
@@ -21419,10 +31549,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca":
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca&class=true":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca&class=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21433,69 +31563,155 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-10"
+  "class": "px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto sticky top-0 z-",
+  id: "navBar"
 };
 var _hoisted_2 = {
   "class": "flex justify-between items-center"
 };
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "text-xl font-bold"
-}, "dentsu")], -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "w-32",
+  src: "https://prodiadigital.com/assets/images/logo.svg"
+})], -1 /* HOISTED */);
 var _hoisted_4 = {
   "class": "w-full md:grid md:justify-items-end hidden"
 };
 var _hoisted_5 = {
-  "class": ""
+  id: ""
 };
 var _hoisted_6 = {
   "class": "mr-5"
 };
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda");
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<a class=\"mr-5\">Bantuan</a><a class=\"mr-5\">Tentang Kami</a><a class=\"mr-5\">Artikel</a><a class=\"mr-5\">Fitur</a><button class=\"border border-[#073231] rounded-lg px-7 py-2 mr-3 ml-3 hover:bg-[#073231] hover:text-white\">English</button>", 5);
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "border border-green-900 rounded-lg px-7 py-2 bg-[#073231] hover:bg-transparent text-white hover:text-black"
+var _hoisted_8 = {
+  "class": "mr-5"
+};
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Bantuan");
+var _hoisted_10 = {
+  "class": "mr-5"
+};
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Tentang Kami");
+var _hoisted_12 = {
+  "class": "mr-5"
+};
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Artikel");
+var _hoisted_14 = {
+  "class": "mr-5"
+};
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Fitur");
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "border border-[#073231] rounded-lg px-7 py-2 mr-3 ml-3 hover:bg-[#073231] hover:text-white"
+}, "English", -1 /* HOISTED */);
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "border border-[#073231] rounded-lg px-7 py-2 bg-[#073231] hover:bg-transparent text-white hover:text-black"
 }, "Admin Site", -1 /* HOISTED */);
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, null, -1 /* HOISTED */);
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "mr-10 bg-green-900 text-white px-5 py-2 rounded-lg text-sm font-medium md:hidden"
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, null, -1 /* HOISTED */);
+var _hoisted_19 = {
+  id: "icon"
+};
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "mr-10 bg-[#073231] hover:bg-transparent border border-black text-white hover:text-black px-5 py-2 rounded-lg text-sm font-medium md:hidden"
 }, "Admin Site", -1 /* HOISTED */);
-var _hoisted_16 = {
+var _hoisted_21 = {
   "class": "bg-black w-5/6 h-screen fixed top-0 right-0 p-10 rounded-l-3xl"
 };
-var _hoisted_17 = {
+var _hoisted_22 = {
   "class": "mt-10"
 };
-var _hoisted_18 = {
+var _hoisted_23 = {
   "class": "py-5"
 };
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   "class": "rounded-lg px-5 py-2 bg-white text-sm font-semibold"
 }, "Admin Site", -1 /* HOISTED */);
-var _hoisted_20 = {
+var _hoisted_25 = {
   "class": "py-3"
 };
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda");
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"text-white py-3\">Bantuan</li><li class=\"text-white py-3\">Tentang Kami</li><li class=\"text-white py-3\">Artikel</li><li class=\"text-white py-3\">Fitur</li><li class=\"py-5\"><button class=\"rounded-lg px-7 py-2 text-sm font-semibold bg-black text-white border border-white\">English</button></li>", 5);
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda");
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  "class": "text-white py-3"
+}, "Bantuan", -1 /* HOISTED */);
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  "class": "text-white py-3"
+}, "Tentang Kami", -1 /* HOISTED */);
+var _hoisted_29 = {
+  "class": "text-white py-3"
+};
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Artikel");
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  "class": "text-white py-3"
+}, "Fitur", -1 /* HOISTED */);
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  "class": "py-5"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "rounded-lg px-7 py-2 text-sm font-semibold bg-black text-white border border-white"
+}, "English")], -1 /* HOISTED */);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
   var _component_font_awesome_icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("font-awesome-icon");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
-    href: "/artikel"
+    href: "/"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_7];
     }),
     _: 1 /* STABLE */
-  })]), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
-    href: "/posts"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/bantuan"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_9];
+    }),
+    _: 1 /* STABLE */
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/tentang-kami"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_11];
+    }),
+    _: 1 /* STABLE */
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/artikel"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_13];
     }),
     _: 1 /* STABLE */
-  })]), _hoisted_14]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/fitur"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_15];
+    }),
+    _: 1 /* STABLE */
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/posts",
+    id: "secButton"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_16];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/posts",
+    id: "mainButton"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_17];
+    }),
+    _: 1 /* STABLE */
+  })]), _hoisted_18]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/posts",
+    id: "mainButton"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_20];
+    }),
+    _: 1 /* STABLE */
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
     icon: "fa-solid fa-bars-staggered",
     "class": "fa-2xl cursor-pointer md:hidden",
     onClick: $options.handleToggleNavbar
@@ -21504,26 +31720,34 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
       display: $data.toggleNavbar ? 'block' : 'none'
     })
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
     icon: "fa-solid fa-xmark ",
     "class": "whiteColorIcon fa-2xl float-right cursor-pointer",
     onClick: $options.handleToggleNavbar
-  }, null, 8 /* PROPS */, ["onClick"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+  }, null, 8 /* PROPS */, ["onClick"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
     href: "/posts"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_19];
+      return [_hoisted_24];
     }),
     _: 1 /* STABLE */
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
-    href: "/artikel",
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/",
     "class": "text-white py-3"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_21];
+      return [_hoisted_26];
     }),
     _: 1 /* STABLE */
-  })]), _hoisted_22])])], 4 /* STYLE */)], 64 /* STABLE_FRAGMENT */);
+  })]), _hoisted_27, _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/",
+    "class": "text-white py-3"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_30];
+    }),
+    _: 1 /* STABLE */
+  })]), _hoisted_31, _hoisted_32])])], 4 /* STYLE */)], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -21656,7 +31880,61 @@ var _hoisted_1 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Navbar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Navbar");
   var _component_Footer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Footer");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Navbar), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Navbar, {
+    "class": ""
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=template&id=52ea5847":
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=template&id=52ea5847 ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": ""
+};
+var _hoisted_2 = {
+  "class": ""
+};
+var _hoisted_3 = {
+  "class": "mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
+};
+var _hoisted_4 = {
+  "class": "py-1 text-sm mb-10"
+};
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda ");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("> ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "Bantuan", -1 /* HOISTED */);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "grid grid-cols-1 md:grid-cols-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  "class": "text-5xl text-[#073231] font-bold leading-tight text-center md:text-left"
+}, "Bantuan"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  type: "text",
+  placeholder: "CARI...",
+  "class": "rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black hidden md:block"
+})], -1 /* HOISTED */);
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><p class=\"mt-14 leading-loose\">Apakah Kamu membutuhkan bantuan terkait fitur dan layanan kami? Dapatkan bantuan pada panduan berikut.</p></div><div class=\"mt-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-white py-20\"><div class=\"grid grid-cols-1 md:grid-cols-2\"><div><div></div></div><div></div></div><div class=\"bg-bantuan w-full rounded-xl mt-28 p-10 grid grid-cols-1 md:grid-cols-4\"><div class=\"col-span-1 md:col-span-3\"><h6 class=\"text-2xl md:text-4xl font-bold leading-snug\">Selalu terdapat beberapa pertanyaan yang belum terjawab. Kamu dapat menghubungi kami dengan mudah.</h6></div><div class=\"col-span-1 md:col-span-1 flex md:items-center md:justify-end justify-center mt-10 md:mt-0\"><button class=\"text-white text-base font-semibold px-7 py-2 bg-[#073231] rounded-lg\">Hubungi Kami</button></div></div></div>", 2);
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_5];
+    }),
+    _: 1 /* STABLE */
+  }), _hoisted_6, _hoisted_7])]), _hoisted_8]), _hoisted_9])]);
 }
 
 /***/ }),
@@ -22028,8 +32306,60 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }),
         _: 2 /* DYNAMIC */
       }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["href"])])])])]);
-    }), 256 /* UNKEYED_FRAGMENT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <BasicFilteredCard v-if=\"category != ''\" v-for=\"post in filter.filter(cat => cat.id == category)\"\r\n              :key=\"post.id\"\r\n              :item=\"post\"\r\n              :index=\"index\"\r\n            /> ")]);
+    }), 256 /* UNKEYED_FRAGMENT */))]);
   }), 256 /* UNKEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_42])], 64 /* STABLE_FRAGMENT */);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=template&id=7bc75390":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=template&id=7bc75390 ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": ""
+};
+var _hoisted_2 = {
+  "class": ""
+};
+var _hoisted_3 = {
+  "class": "mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
+};
+var _hoisted_4 = {
+  "class": "py-1 text-sm mb-10"
+};
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda ");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("> ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "Fitur", -1 /* HOISTED */);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "grid grid-cols-1 md:grid-cols-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  "class": "text-5xl text-[#073231] font-bold leading-tight text-center md:text-left"
+}, "Fitur"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  type: "text",
+  placeholder: "CARI...",
+  "class": "rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black hidden md:block"
+})], -1 /* HOISTED */);
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><p class=\"mt-14 leading-loose text-center md:text-left\">Fitur dan layanan yang tersedia untuk mendukung kesehatan Kamu.</p><div class=\"flex justify-start mt-10\"><img class=\"w-52 rounded-xl\" src=\"https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&amp;height=262\"><img class=\"w-52 rounded-xl ml-7\" src=\"https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&amp;height=263\"></div></div><div class=\"mt-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl\"><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block md:hidden bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Health Score</h6><img class=\"w-1/3 md:w-auto mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-11112022-113720.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left hidden md:block\">Health Score</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Pahami langkah untuk menjaga kesehatan dirimu dengan mengambil penilaian Health Score.</p></div></div><div class=\"col-span-2 hidden md:block bg-radial-small\"><img class=\"mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-11112022-113720.png\"></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Pemeriksaan Lab</h6><img class=\"w-1/3 md:w-auto mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-1-11112022-113855.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left leading-loose hidden md:block\">Pemeriksaan Lab​</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Pesan pemeriksaan lab, seperti check up jantung, cek diabetes, atau cek gula darah di cabang Prodia terdekat. Seluruh hasil lab akan dikirimkan langsung di aplikasi.</p></div></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block md:hidden bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Home Service</h6><img class=\"w-1/3 mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-2-11112022-113923.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left hidden md:block\">Home Service</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Lakukan pemeriksaan lab dari rumah! Cukup pesan tes dan kami akan datang untuk pengambilan sampel​.</p></div></div><div class=\"col-span-2 hidden md:block bg-radial-small\"><img class=\"mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-2-11112022-113923.png\"></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Konsultasi Kesehatan</h6><img class=\"mx-auto w-1/3 md:w-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-3-11112022-113937.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left leading-loose hidden md:block\">Konsultasi Kesehatan​</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Layanan ini akan segera hadir untukmu, nantikan fitur terbaru kami.</p></div></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block md:hidden bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Vaksinasi</h6><img class=\"w-1/3 mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-4-11112022-114032.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left hidden md:block\">Vaksinasi</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Layanan ini akan segera hadir untukmu, nantikan fitur terbaru kami.</p></div></div><div class=\"col-span-2 hidden md:block bg-radial-small\"><img class=\"mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-4-11112022-114032.png\"></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Health Shop</h6><img class=\"mx-auto w-1/3 md:w-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-5-2-11112022-114019.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left leading-loose hidden md:block\">Health Shop​</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Layanan ini akan segera hadir untukmu, nantikan fitur terbaru kami.</p></div></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block md:hidden bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Program Kesehatan Personal</h6><img class=\"w-1/3 mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-6-11112022-114059.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left hidden md:block\">Program Kesehatan Personal</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Layanan ini akan segera hadir untukmu, nantikan fitur terbaru kami.</p></div></div><div class=\"col-span-2 hidden md:block bg-radial-small\"><img class=\"mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-6-11112022-114059.png\"></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block bg-radial-small\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left block md:hidden\">Tantangan Hidup Sehat</h6><img class=\"mx-auto w-1/3 md:w-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/screen-shot-2022-10-03-at-14-50-1-6-11112022-114059.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 grid items-center\"><div><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left leading-loose hidden md:block\">Tantangan Hidup Sehat​</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Layanan ini akan segera hadir untukmu, nantikan fitur terbaru kami.</p></div></div></div><div class=\"bg-bantuan w-full rounded-xl mt-28 p-10 grid grid-cols-1 md:grid-cols-4\"><div class=\"col-span-1 md:col-span-3\"><h6 class=\"text-2xl md:text-4xl font-bold leading-snug\">Apakah Kamu memiliki pertanyaan atau membutuhkan bantuan?</h6><p class=\"mt-5\">Kami ada untukmu</p></div><div class=\"col-span-1 md:col-span-1 flex md:items-center md:justify-end justify-center mt-10 md:mt-0\"><button class=\"text-white text-base font-semibold px-7 py-2 bg-[#073231] rounded-lg\">Bantuan</button></div></div></div>", 2);
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_5];
+    }),
+    _: 1 /* STABLE */
+  }), _hoisted_6, _hoisted_7])]), _hoisted_8]), _hoisted_9])]);
 }
 
 /***/ }),
@@ -22047,9 +32377,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"\"><!-- &lt;div class=&quot;py-1 text-sm&quot;&gt;\r\n     &lt;p&gt;&lt;b&gt;&lt;inertia-link to=&quot;/&quot;&gt;Beranda &lt;/inertia-link&gt;&lt;/b&gt;&lt;/p&gt;\r\n    &lt;/div&gt; --><div class=\"\"><div class=\"my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><div></div><input type=\"text\" placeholder=\"CARI...\" class=\"rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black\"></div><div class=\"px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><h1 class=\"text-6xl text-[#073231] font-bold text-center leading-tight\">Your Personal Health &amp; Wellness Companion</h1><p class=\"text-center mt-14 leading-loose\">Kita semua unik, dengan berbagai perbedaan riwayat fisik, kondisi, dan kebutuhannya. Kami mengerti dan percaya, dengan keunikan ini dibutuhkan juga perawatan yang khusus. U by Prodia adalah aplikasi manajer kesehatan untuk mengelola kesehatan Kamu secara personal, agar Kamu bisa menjadi versi terbaik diri Kamu.</p></div><div class=\"mt-28 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><h2 class=\"text-4xl text-[#073231] font-bold text-center\">Fitur Untukmu</h2><p class=\"text-center mt-5\">Dapatkan akses ke fitur menarik untuk membuatmu tetap fit dan sehat.</p></div><div class=\"bg-custom w-full h-24 mt-20 rounded-custom z-10 min-margin relative -mr-6\"></div></div></div><div class=\"mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl -z-50\"><div class=\"w-full h-96 bg-black\"><h2 class=\"text-4xl tracking-wide font-bold text-white text-center mt-10\">Download Sekarang</h2><div></div></div><div></div><div class=\"w-full grid grid-cols-3\"><div class=\"bg-white w-full\"><h2>Pemeriksaan Lab</h2><p>Pesan pemeriksaan lab, seperti check up jantung, cek diabetes, atau cek gula darah di cabang Prodia terdekat. Seluruh hasil lab akan dikirimkan langsung di aplikasi.</p></div><div class=\"bg-red-500 w-full\"></div><div class=\"bg-blue-500 w-full\"><div><h2>Health Score</h2><p>Pahami langkah untuk menjaga kesehatan dirimu dengan mengambil penilaian Health Score.</p></div><div><h2>Home Service</h2><p>Lakukan pemeriksaan lab dari rumah! Cukup pesan tes dan kami akan datang untuk pengambilan sampel.</p></div></div></div></div>", 2);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"\"><!-- &lt;div class=&quot;py-1 text-sm&quot;&gt;\r\n     &lt;p&gt;&lt;b&gt;&lt;inertia-link to=&quot;/&quot;&gt;Beranda &lt;/inertia-link&gt;&lt;/b&gt;&lt;/p&gt;\r\n    &lt;/div&gt; --><div class=\"\"><div class=\"my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><div></div><input type=\"text\" placeholder=\"CARI...\" class=\"rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black\"></div><div class=\"px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><h1 class=\"text-6xl text-[#073231] font-bold text-center leading-tight\">Your Personal Health &amp; Wellness Companion</h1><p class=\"text-center mt-14 leading-loose\">Kita semua unik, dengan berbagai perbedaan riwayat fisik, kondisi, dan kebutuhannya. Kami mengerti dan percaya, dengan keunikan ini dibutuhkan juga perawatan yang khusus. U by Prodia adalah aplikasi manajer kesehatan untuk mengelola kesehatan Kamu secara personal, agar Kamu bisa menjadi versi terbaik diri Kamu.</p></div><div class=\"mt-28 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><h2 class=\"text-4xl text-[#073231] font-bold text-center\">Fitur Untukmu</h2><p class=\"text-center mt-5\">Dapatkan akses ke fitur menarik untuk membuatmu tetap fit dan sehat.</p></div><div class=\"bg-custom w-full h-24 mt-20 rounded-custom min-margin -mr-6\"></div></div></div><div class=\"mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl\"><div class=\"w-full h-96 bg-black\"><h2 class=\"text-4xl tracking-wide font-bold text-white text-center mt-10\">Download Sekarang</h2><div class=\"mx-auto\"><div class=\"flex justify-center mt-10\"><img class=\"w-72 rounded-xl\" src=\"https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&amp;height=262\"><img class=\"w-72 rounded-xl ml-10\" src=\"https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&amp;height=263\"></div></div></div><div></div><div class=\"w-full grid grid-cols-1 md:grid-cols-3 text-white bg-radial py-28\"><div class=\"w-full flex items-center\"><!-- &lt;div class=&quot;w-full md:flex md:justify-center hidden&quot;&gt;\r\n          &lt;img src=&quot;https://cdn.discordapp.com/attachments/915505289174847510/1073526322929868800/group-2509-14112022-092147.png&quot;/&gt;\r\n        &lt;/div&gt; --><div class=\"hidden md:block\"><h2 class=\"text-3xl mb-3 font-bold text-right\">Pemeriksaan Lab</h2><p class=\"text-right\">Pesan pemeriksaan lab, seperti check up jantung, cek diabetes, atau cek gula darah di cabang Prodia terdekat. Seluruh hasil lab akan dikirimkan langsung di aplikasi.</p></div></div><div class=\"w-full flex justify-center\"><img src=\"https://cdn.discordapp.com/attachments/915505289174847510/1073526322929868800/group-2509-14112022-092147.png\"></div><div class=\"block md:hidden mt-10 mb-16\"><h2 class=\"text-3xl mb-3 font-bold text-center\">Pemeriksaan Lab</h2><p class=\"text-center\">Pesan pemeriksaan lab, seperti check up jantung, cek diabetes, atau cek gula darah di cabang Prodia terdekat. Seluruh hasil lab akan dikirimkan langsung di aplikasi.</p></div><div class=\"w-full flex items-center\"><div><div class=\"mb-16\"><h2 class=\"text-3xl mb-3 font-bold text-center md:text-left\">Health Score</h2><p>Pahami langkah untuk menjaga kesehatan dirimu dengan mengambil penilaian Health Score.</p></div><div><h2 class=\"text-3xl mb-3 font-bold text-center md:text-left\">Home Service</h2><p>Lakukan pemeriksaan lab dari rumah! Cukup pesan tes dan kami akan datang untuk pengambilan sampel.</p></div></div></div></div><div class=\"text-center\"><button class=\"bg-white px-8 py-2 rounded-xl text-sm font-medium\">Fitur Lainnya</button></div></div><div class=\"mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mt-20\"><h2 class=\"text-3xl font-bold text text-[#073231] text-center\">Apa Kata Mereka?</h2><div class=\"w-full border border-gray-400 rounded-2xl mt-20 p-10\"><img class=\"mx-auto\" src=\"https://prodiadigital.com/assets/images/quote.svg\"><p class=\"text-center mt-5\">(Lab Test)</p><p class=\"text-center leading-relaxed\">Pemeriksaan Lab di Prodia sudah menjadi rutinitas tahunan saya sejak lama karena pilihan tes nya yang lengkap dan cabang Prodia yang tersebar di berbagai wilayah sangat memudahkan saya. Tak hanya itu, hasil pemeriksaan juga dapat diakses langsung melalui aplikasi U by Prodia. Jadi saya bisa pulang ke rumah langsung setelah menjalani Lab Test.</p></div></div>", 3);
+var _hoisted_4 = {
+  "class": "mt-28 mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
+};
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-center text-lg"
+}, "ARTIKEL", -1 /* HOISTED */);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+  "class": "font-bold text-3xl text-[#073231] text-center mt-2"
+}, "Bacaan Untukmu", -1 /* HOISTED */);
+var _hoisted_7 = {
+  "class": "mt-20 grid grid-cols-1 md:grid-cols-3 gap-10"
+};
+var _hoisted_8 = {
+  "class": "text-white bg-[#073231] px-7 py-2 w-fit rounded-lg text-sm mx-auto mt-10"
+};
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "inline"
+}, "Artikel Lainnya", -1 /* HOISTED */);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return _hoisted_1;
+  var _component_BasicCardHome = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("BasicCardHome");
+  var _component_font_awesome_icon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("font-awesome-icon");
+  var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.postsDESC.slice(0, 3), function (post) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_BasicCardHome, {
+      key: post.id,
+      item: post,
+      index: _ctx.index
+    }, null, 8 /* PROPS */, ["item", "index"]);
+  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/artikel"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
+        icon: "fa-arrow-right",
+        "class": "ml-2 whiteColorIcon"
+      })])];
+    }),
+    _: 1 /* STABLE */
+  })])])], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -22157,6 +32525,7 @@ var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(undefined), -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_trix_editor = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("trix-editor");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
     onSubmit: _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $setup.storePost && $setup.storePost.apply($setup, arguments);
@@ -22178,13 +32547,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         return $setup.post.category = $event;
       })
     }, null, 8 /* PROPS */, _hoisted_12), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $setup.post.category]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cat.category), 1 /* TEXT */)]);
-  }), 256 /* UNKEYED_FRAGMENT */)), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
-    "class": "w-full h-56 border-b border-gray-300 px-1 py-1",
-    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
-      return $setup.post.content = $event;
-    }),
-    placeholder: "Masukkan Content Post"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.content]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }), 256 /* UNKEYED_FRAGMENT */)), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <textarea class=\"w-full h-56 border-b border-gray-300 px-1 py-1\" placeholder=\"Masukkan Content Post\"></textarea> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "content",
+    type: "hidden",
+    name: "content",
+    onChange: _cache[2] || (_cache[2] = function () {
+      return $options.handleChange && $options.handleChange.apply($options, arguments);
+    })
+  }, null, 32 /* HYDRATE_EVENTS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_trix_editor, {
+    input: "content",
+    "class": "trix-content"
+  }), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "file",
     accept: "image/png, image/jpeg, image/jpg",
     id: "image",
@@ -22201,14 +32574,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
       return $setup.post.ditulis_oleh = $event;
     }),
-    placeholder: "Masukkan Content Post"
+    placeholder: "Masukkan Nama Penulis"
   }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.ditulis_oleh]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     "class": "border-b border-gray-300 w-5/6 px-1 py-1",
     "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
       return $setup.post.ditinjau_oleh = $event;
     }),
-    placeholder: "Masukkan Content Post"
+    placeholder: "Masukkan Nama Peninjau"
   }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.ditinjau_oleh]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]), _hoisted_25], 32 /* HYDRATE_EVENTS */), _hoisted_26])])]);
 }
 
@@ -22257,37 +32630,40 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "class": "font-semibold text-xl"
 }, "Isi Artikel", -1 /* HOISTED */);
 var _hoisted_12 = {
+  "class": "trix-content"
+};
+var _hoisted_13 = {
   "class": "mb-5"
 };
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
   "class": "font-semibold text-xl"
 }, "Kategori", -1 /* HOISTED */);
-var _hoisted_14 = {
+var _hoisted_15 = {
   "class": "mb-5"
 };
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
   "class": "font-semibold text-xl"
 }, "Ditulis Oleh", -1 /* HOISTED */);
-var _hoisted_16 = {
+var _hoisted_17 = {
   "class": "mb-5"
 };
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
   "class": "font-semibold text-xl"
 }, "Ditinjau Oleh", -1 /* HOISTED */);
-var _hoisted_18 = {
+var _hoisted_19 = {
   "class": "mb-5"
 };
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
   "class": "font-semibold text-xl"
 }, "Cover", -1 /* HOISTED */);
-var _hoisted_20 = ["src"];
-var _hoisted_21 = {
+var _hoisted_21 = ["src"];
+var _hoisted_22 = {
   "class": "mb-5 text-sm"
 };
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   "class": "bg-black px-10 py-2 rounded-lg hover:bg-white mb-2 mr-5 text-white hover:text-black border border-black"
 }, "EDIT", -1 /* HOISTED */);
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mx-auto px-6 sm:px-8 md:px-8 xl:px-72 bg-black py-20 rounded-b-3xl"
 }, null, -1 /* HOISTED */);
 
@@ -22300,17 +32676,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [_hoisted_3];
     }),
     _: 1 /* STABLE */
-  }), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.title), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.title), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.content), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.joinTable.category, function (cat) {
+  }), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.title), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.title), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.content.slice), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [_hoisted_14, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.joinTable.category, function (cat) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cat.category), 1 /* TEXT */);
-  }), 256 /* UNKEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.ditulis_oleh), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.ditinjau_oleh), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  }), 256 /* UNKEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [_hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.ditulis_oleh), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.joinTable.ditinjau_oleh), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: $props.joinTable.image,
     "class": "w-full rounded-xl"
-  }, null, 8 /* PROPS */, _hoisted_20)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Dibuat pada : " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.getMonthNameCreate) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getDayCreate) + ", " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getYearCreate) + " | " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getTimeCreate), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Terakhir diupdate : " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMonthNameUpdate) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getDayUpdate) + ", " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getYearUpdate) + " | " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getTimeUpdate), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+  }, null, 8 /* PROPS */, _hoisted_21)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Dibuat pada : " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.getMonthNameCreate) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getDayCreate) + ", " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getYearCreate) + " | " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getTimeCreate), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Terakhir diupdate : " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMonthNameUpdate) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getDayUpdate) + ", " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getYearUpdate) + " | " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.getTimeUpdate), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
     href: "/posts/".concat($props.joinTable.id, "/edit"),
     "class": ""
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_22];
+      return [_hoisted_23];
     }),
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
@@ -22318,7 +32694,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $setup.deletePost("".concat(_ctx.post.id));
     }, ["prevent"])),
     "class": "bg-red-700 px-10 py-2 text-white hover:bg-white hover:text-red-700 border border-red-700 rounded-lg"
-  }, "DELETE")])])])]), _hoisted_23], 64 /* STABLE_FRAGMENT */);
+  }, "DELETE")])])])]), _hoisted_24], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -22387,25 +32763,30 @@ var _hoisted_16 = {
 var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
   "class": "text-lg font-semibold pb-5 pr-5"
 }, "Upload Gambar", -1 /* HOISTED */);
-var _hoisted_18 = {
-  key: 0,
-  "class": ""
-};
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "text-lg font-semibold pb-5 pr-5"
-}, "Ditulis Oleh", -1 /* HOISTED */);
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  id: "preview",
+  "class": "w-56 object-cover p-2 border border-gray-300 mt-2 rounded-lg"
+}, null, -1 /* HOISTED */);
+var _hoisted_19 = ["src"];
 var _hoisted_20 = {
   key: 0,
   "class": ""
 };
 var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
   "class": "text-lg font-semibold pb-5 pr-5"
-}, "Ditinjau Oleh", -1 /* HOISTED */);
+}, "Ditulis Oleh", -1 /* HOISTED */);
 var _hoisted_22 = {
   key: 0,
   "class": ""
 };
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  "class": "text-lg font-semibold pb-5 pr-5"
+}, "Ditinjau Oleh", -1 /* HOISTED */);
+var _hoisted_24 = {
+  key: 0,
+  "class": ""
+};
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mt-10"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
   type: "submit",
@@ -22417,9 +32798,10 @@ var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-    onSubmit: _cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+    onSubmit: _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $setup.updatePost && $setup.updatePost.apply($setup, arguments);
-    }, ["prevent"]))
+    }, ["prevent"])),
+    enctype: "multipart/form-data"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     "class": "border-b border-gray-300 w-5/6 px-1 py-1",
@@ -22442,28 +32824,34 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $setup.post.content = $event;
     }),
     placeholder: "Masukkan Content Post"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.content]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "text",
-    "class": "border-b border-gray-300 w-5/6 px-1 py-1",
-    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
-      return $setup.post.image = $event;
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.content]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "file",
+    accept: "image/png, image/jpeg, image/jpg",
+    id: "image",
+    name: "image",
+    onInput: _cache[3] || (_cache[3] = function ($event) {
+      return $setup.post.image = $event.target.files[0];
     }),
-    placeholder: "Masukkan Content Post"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.image]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "text",
-    "class": "border-b border-gray-300 w-5/6 px-1 py-1",
-    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
-      return $setup.post.ditulis_oleh = $event;
-    }),
-    placeholder: "Masukkan Content Post"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.ditulis_oleh]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    onChange: _cache[4] || (_cache[4] = function (event) {
+      return $options.getImagePreview(event);
+    })
+  }, null, 32 /* HYDRATE_EVENTS */), _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: "../../storage/".concat($setup.post.image)
+  }, null, 8 /* PROPS */, _hoisted_19), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     "class": "border-b border-gray-300 w-5/6 px-1 py-1",
     "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
+      return $setup.post.ditulis_oleh = $event;
+    }),
+    placeholder: "Masukkan Content Post"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.ditulis_oleh]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "text",
+    "class": "border-b border-gray-300 w-5/6 px-1 py-1",
+    "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
       return $setup.post.ditinjau_oleh = $event;
     }),
     placeholder: "Masukkan Content Post"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.ditinjau_oleh]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]), _hoisted_23], 32 /* HYDRATE_EVENTS */)])])]);
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.post.ditinjau_oleh]]), $props.errors.content ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.content), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]), _hoisted_25], 32 /* HYDRATE_EVENTS */)])])]);
 }
 
 /***/ }),
@@ -22587,7 +32975,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }),
 
       _: 2 /* DYNAMIC */
-    }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(post.content.substring(0, 90)) + "....", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_18, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(post.category, function (cat) {
+    }, 1032 /* PROPS, DYNAMIC_SLOTS */, ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(post.content.substring(0, 90)) + ".... ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_18, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(post.category, function (cat) {
       return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cat.category), 1 /* TEXT */);
     }), 256 /* UNKEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
       href: "/posts/".concat(post.id, "/edit"),
@@ -22604,6 +32992,58 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": "bg-red-700 px-5 py-1 text-white rounded-xl"
     }, "DELETE", 8 /* PROPS */, _hoisted_22)])]);
   }), 128 /* KEYED_FRAGMENT */))])])])])])]), _hoisted_23], 64 /* STABLE_FRAGMENT */);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=template&id=3484b65f":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=template&id=3484b65f ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": ""
+};
+var _hoisted_2 = {
+  "class": ""
+};
+var _hoisted_3 = {
+  "class": "mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96"
+};
+var _hoisted_4 = {
+  "class": "py-1 text-sm mb-10"
+};
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Beranda ");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("> ");
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "Tentang Kami", -1 /* HOISTED */);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "grid grid-cols-1 md:grid-cols-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+  "class": "text-5xl text-[#073231] font-bold leading-tight text-center md:text-left"
+}, "Tentang Kami"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  type: "text",
+  placeholder: "CARI...",
+  "class": "rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black hidden md:block"
+})], -1 /* HOISTED */);
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96\"><p class=\"mt-14 leading-loose text-center md:text-left\">Cari tahu lebih lanjut tentang kami, your health and wellness companion.</p></div><div class=\"mt-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl\"><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block md:hidden\"><img class=\"w-4/6 mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/rectangle-62-11112022-101631.png\"></div><div class=\"col-span-3 mt-10 md:mt-0 py-14\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left\">Prodia</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Klinik laboratorium yang mengutamakan akurasi pemeriksaan medis untuk diagnosa yang lebih baik. Prodia melalui layanan yang diberikan, berambisi untuk bertranformasi menuju layanan kesehatan yang dapat diandalkan dan menjadi Center Of Excellence.</p></div><div class=\"col-span-2 hidden md:block\"><img class=\"\" src=\"https://prodiadigital.com/asset/uploads/meta/post/rectangle-62-11112022-101631.png\"></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block\"><img class=\"w-4/6 mx-auto md:w-full md:m-0\" src=\"https://prodiadigital.com/storage/meta/post/u-by-prodia-logogram-only-1-11112022-101800.svg\"></div><div class=\"col-span-3 mt-10 md:mt-0 py-14\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left leading-loose\">Your Personal Health &amp; Wellness Companion</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">U by Prodia merupakan pendamping kesehatan yang Kamu butuhkan. Kami memberikanmu program kesehatan agar Kamu dapat memiliki hidup yang lebih sehat dan berkualitas.</p></div></div><div class=\"grid grid-cols-1 md:grid-cols-5 mb-16\"><div class=\"col-span-2 block md:hidden\"><img class=\"w-4/6 mx-auto\" src=\"https://prodiadigital.com/asset/uploads/meta/post/visi-misi-12122022-125136.jpg\"></div><div class=\"col-span-3 mt-10 md:mt-0 py-14\"><h6 class=\"text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left\">Visi &amp; Misi</h6><p class=\"text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left\">Visi : Menjadi One Stop Healthcare Solution yang didukung dengan ilmu pengetahuan dan teknologi<br> Misi : Membantu individu mencapai kesehatan personal mereka</p></div><div class=\"col-span-2 hidden md:block\"><img class=\"rounded-xl\" src=\"https://prodiadigital.com/asset/uploads/meta/post/visi-misi-12122022-125136.jpg\"></div></div></div>", 2);
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_inertia_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("inertia-link");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_inertia_link, {
+    href: "/"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_5];
+    }),
+    _: 1 /* STABLE */
+  }), _hoisted_6, _hoisted_7])]), _hoisted_8]), _hoisted_9])]);
 }
 
 /***/ }),
@@ -22784,7 +33224,31 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.whiteColorIcon {\r\n  color: white;\r\n  fill: white;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.whiteColorIcon {\r\n    color: white;\r\n    fill: white;\n}\n.pa-fixed-header {\r\n    background-color: #000000 !important;\r\n    transition: background-color 0.2s ease-out;\r\n    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\n}\r\n\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n      text-decoration: none;\r\n      color: black;\n}\n.whiteColorIcon {\r\n    color: white;\r\n    fill: white;\n}\n.bg-custom {\r\n    background-image: linear-gradient(to right, #fbf38f, #fff09a, #ffeea6, #ffecb2, #ffeabe, #ffe7c1, #ffe4c4, #ffe1c8, #ffdbc5, #ffd5c2, #ffd0c0, #fecabf);\n}\n.rounded-custom {\r\n    border-radius: 50%;\n}\n.min-margin {\r\n    margin-bottom: -45px;\n}\n.bg-radial {\r\n    background: radial-gradient(50% 50% at 50% 50%, rgba(87, 74, 27, 0.64) 16.7%, rgba(77, 57, 21, 0.616008) 34.52%, rgba(40, 32, 11, 0.851788) 58.71%, #000000 100%);\n}\n.bg-bantuan {\r\n    background: linear-gradient(288.51deg, #FDC8BE 0.41%, #FCF6A4 77.28%);\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22839,6 +33303,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n          text-decoration: no
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n      text-decoration: none;\r\n      color: black;\n}\n.whiteColorIcon {\r\n    color: white;\r\n    fill: white;\n}\n.bg-custom {\r\n    background-image: linear-gradient(to right, #fbf38f, #fff09a, #ffeea6, #ffecb2, #ffeabe, #ffe7c1, #ffe4c4, #ffe1c8, #ffdbc5, #ffd5c2, #ffd0c0, #fecabf);\n}\n.rounded-custom {\r\n    border-radius: 50%;\n}\n.min-margin {\r\n    margin-bottom: -45px;\n}\n.bg-radial {\r\n    background: radial-gradient(50% 50% at 50% 50%, rgba(87, 74, 27, 0.64) 16.7%, rgba(77, 57, 21, 0.616008) 34.52%, rgba(40, 32, 11, 0.851788) 58.71%, #000000 100%);\n}\n.bg-radial-small {\r\n    background: radial-gradient(52.31% 50% at 50% 50%, rgba(87, 74, 27, 0.64) 3.88%, rgba(77, 57, 21, 0.616008) 4.72%, rgba(177, 151, 80, 0.851788) 6.4%, #000000 100%);\n}\n.bg-bantuan {\r\n    background: linear-gradient(288.51deg, #FDC8BE 0.41%, #FCF6A4 77.28%);\n}\r\n\r\n\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Home/Index.vue?vue&type=style&index=0&id=f311f62a&lang=css":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Home/Index.vue?vue&type=style&index=0&id=f311f62a&lang=css ***!
@@ -22856,7 +33344,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n      text-decoration: none;\r\n      color: black;\n}\n.bg-custom {\r\n    background-image: linear-gradient(to right, #fbf38f, #fff09a, #ffeea6, #ffecb2, #ffeabe, #ffe7c1, #ffe4c4, #ffe1c8, #ffdbc5, #ffd5c2, #ffd0c0, #fecabf);\n}\n.rounded-custom {\r\n    border-radius: 50%;\n}\n.min-margin {\r\n    margin-bottom: -45px;\n}\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n      text-decoration: none;\r\n      color: black;\n}\n.whiteColorIcon {\r\n    color: white;\r\n    fill: white;\n}\n.bg-custom {\r\n    background-image: linear-gradient(to right, #fbf38f, #fff09a, #ffeea6, #ffecb2, #ffeabe, #ffe7c1, #ffe4c4, #ffe1c8, #ffdbc5, #ffd5c2, #ffd0c0, #fecabf);\n}\n.rounded-custom {\r\n    border-radius: 50%;\n}\n.min-margin {\r\n    margin-bottom: -45px;\n}\n.bg-radial {\r\n    background: radial-gradient(50% 50% at 50% 50%, rgba(87, 74, 27, 0.64) 16.7%, rgba(77, 57, 21, 0.616008) 34.52%, rgba(40, 32, 11, 0.851788) 58.71%, #000000 100%);\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22905,6 +33393,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n        text-decoration: none;\r\n        color: black;\n}\n.backgroundColor {\r\n      background-image: linear-gradient(to right, #fbf38f, #fff09a, #ffeea6, #ffecb2, #ffeabe, #ffe7c1, #ffe4c4, #ffe1c8, #ffdbc5, #ffd5c2, #ffd0c0, #fecabf);\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\na {\r\n      text-decoration: none;\r\n      color: black;\n}\n.whiteColorIcon {\r\n    color: white;\r\n    fill: white;\n}\n.bg-custom {\r\n    background-image: linear-gradient(to right, #fbf38f, #fff09a, #ffeea6, #ffecb2, #ffeabe, #ffe7c1, #ffe4c4, #ffe1c8, #ffdbc5, #ffd5c2, #ffd0c0, #fecabf);\n}\n.rounded-custom {\r\n    border-radius: 50%;\n}\n.min-margin {\r\n    margin-bottom: -45px;\n}\n.bg-radial {\r\n    background: radial-gradient(50% 50% at 50% 50%, rgba(87, 74, 27, 0.64) 16.7%, rgba(77, 57, 21, 0.616008) 34.52%, rgba(40, 32, 11, 0.851788) 58.71%, #000000 100%);\n}\n.bg-bantuan {\r\n    background: linear-gradient(288.51deg, #FDC8BE 0.41%, #FCF6A4 77.28%);\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -46316,6 +56828,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_52ea5847_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=52ea5847&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_52ea5847_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_52ea5847_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Detail.vue?vue&type=style&index=0&id=0c682565&lang=css":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Detail.vue?vue&type=style&index=0&id=0c682565&lang=css ***!
@@ -46373,6 +56915,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_ae303024_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_7bc75390_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=7bc75390&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_7bc75390_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_7bc75390_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -46463,6 +57035,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_2e913d5d_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_3484b65f_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=3484b65f&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_3484b65f_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_3484b65f_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -46767,6 +57369,34 @@ exports["default"] = (sfc, props) => {
 
 /***/ }),
 
+/***/ "./resources/js/Components/Accordion.vue":
+/*!***********************************************!*\
+  !*** ./resources/js/Components/Accordion.vue ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Accordion_vue_vue_type_template_id_d0b0a0e6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Accordion.vue?vue&type=template&id=d0b0a0e6 */ "./resources/js/Components/Accordion.vue?vue&type=template&id=d0b0a0e6");
+/* harmony import */ var _Accordion_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Accordion.vue?vue&type=script&lang=js */ "./resources/js/Components/Accordion.vue?vue&type=script&lang=js");
+/* harmony import */ var D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Accordion_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Accordion_vue_vue_type_template_id_d0b0a0e6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Accordion.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Components/BasicCard.vue":
 /*!***********************************************!*\
   !*** ./resources/js/Components/BasicCard.vue ***!
@@ -46795,10 +57425,10 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/Components/BasicFilteredCard.vue":
-/*!*******************************************************!*\
-  !*** ./resources/js/Components/BasicFilteredCard.vue ***!
-  \*******************************************************/
+/***/ "./resources/js/Components/BasicCardHome.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/Components/BasicCardHome.vue ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -46806,15 +57436,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _BasicFilteredCard_vue_vue_type_template_id_353e77da__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BasicFilteredCard.vue?vue&type=template&id=353e77da */ "./resources/js/Components/BasicFilteredCard.vue?vue&type=template&id=353e77da");
-/* harmony import */ var _BasicFilteredCard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BasicFilteredCard.vue?vue&type=script&lang=js */ "./resources/js/Components/BasicFilteredCard.vue?vue&type=script&lang=js");
+/* harmony import */ var _BasicCardHome_vue_vue_type_template_id_767ebfa2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BasicCardHome.vue?vue&type=template&id=767ebfa2 */ "./resources/js/Components/BasicCardHome.vue?vue&type=template&id=767ebfa2");
+/* harmony import */ var _BasicCardHome_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BasicCardHome.vue?vue&type=script&lang=js */ "./resources/js/Components/BasicCardHome.vue?vue&type=script&lang=js");
 /* harmony import */ var D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_BasicFilteredCard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BasicFilteredCard_vue_vue_type_template_id_353e77da__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/BasicFilteredCard.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_BasicCardHome_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BasicCardHome_vue_vue_type_template_id_767ebfa2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/BasicCardHome.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -46890,7 +57520,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Navbar_vue_vue_type_template_id_4a80dbca__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=4a80dbca */ "./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca");
+/* harmony import */ var _Navbar_vue_vue_type_template_id_4a80dbca_class_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=4a80dbca&class=true */ "./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca&class=true");
 /* harmony import */ var _Navbar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.vue?vue&type=script&lang=js */ "./resources/js/Components/Navbar.vue?vue&type=script&lang=js");
 /* harmony import */ var _Navbar_vue_vue_type_style_index_0_id_4a80dbca_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar.vue?vue&type=style&index=0&id=4a80dbca&lang=css */ "./resources/js/Components/Navbar.vue?vue&type=style&index=0&id=4a80dbca&lang=css");
 /* harmony import */ var D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
@@ -46901,7 +57531,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Navbar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Navbar_vue_vue_type_template_id_4a80dbca__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Navbar.vue"]])
+const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Navbar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Navbar_vue_vue_type_template_id_4a80dbca_class_true__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Components/Navbar.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -46966,6 +57596,37 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Bantuan/Index.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Bantuan/Index.vue ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Index_vue_vue_type_template_id_52ea5847__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=52ea5847 */ "./resources/js/Pages/Bantuan/Index.vue?vue&type=template&id=52ea5847");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/Pages/Bantuan/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _Index_vue_vue_type_style_index_0_id_52ea5847_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Index.vue?vue&type=style&index=0&id=52ea5847&lang=css */ "./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css");
+/* harmony import */ var D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_52ea5847__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Bantuan/Index.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Blog/Detail.vue":
 /*!********************************************!*\
   !*** ./resources/js/Pages/Blog/Detail.vue ***!
@@ -47020,6 +57681,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_ae303024__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Blog/Index.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Fitur/Index.vue":
+/*!********************************************!*\
+  !*** ./resources/js/Pages/Fitur/Index.vue ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Index_vue_vue_type_template_id_7bc75390__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=7bc75390 */ "./resources/js/Pages/Fitur/Index.vue?vue&type=template&id=7bc75390");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/Pages/Fitur/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _Index_vue_vue_type_style_index_0_id_7bc75390_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Index.vue?vue&type=style&index=0&id=7bc75390&lang=css */ "./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css");
+/* harmony import */ var D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_7bc75390__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Fitur/Index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -47177,6 +57869,53 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/TentangKami/Index.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/Pages/TentangKami/Index.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Index_vue_vue_type_template_id_3484b65f__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=3484b65f */ "./resources/js/Pages/TentangKami/Index.vue?vue&type=template&id=3484b65f");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/Pages/TentangKami/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _Index_vue_vue_type_style_index_0_id_3484b65f_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Index.vue?vue&type=style&index=0&id=3484b65f&lang=css */ "./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css");
+/* harmony import */ var D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,D_Document_Github_coba_inertia_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_3484b65f__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/TentangKami/Index.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Accordion.vue?vue&type=script&lang=js":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Components/Accordion.vue?vue&type=script&lang=js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Accordion_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Accordion_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Accordion.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Accordion.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Components/BasicCard.vue?vue&type=script&lang=js":
 /*!***********************************************************************!*\
   !*** ./resources/js/Components/BasicCard.vue?vue&type=script&lang=js ***!
@@ -47193,18 +57932,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Components/BasicFilteredCard.vue?vue&type=script&lang=js":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/Components/BasicFilteredCard.vue?vue&type=script&lang=js ***!
-  \*******************************************************************************/
+/***/ "./resources/js/Components/BasicCardHome.vue?vue&type=script&lang=js":
+/*!***************************************************************************!*\
+  !*** ./resources/js/Components/BasicCardHome.vue?vue&type=script&lang=js ***!
+  \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicFilteredCard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicCardHome_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicFilteredCard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BasicFilteredCard.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicFilteredCard.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicCardHome_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BasicCardHome.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCardHome.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -47289,6 +58028,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Bantuan/Index.vue?vue&type=script&lang=js":
+/*!**********************************************************************!*\
+  !*** ./resources/js/Pages/Bantuan/Index.vue?vue&type=script&lang=js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Blog/Detail.vue?vue&type=script&lang=js":
 /*!********************************************************************!*\
   !*** ./resources/js/Pages/Blog/Detail.vue?vue&type=script&lang=js ***!
@@ -47317,6 +58072,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Index.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Fitur/Index.vue?vue&type=script&lang=js":
+/*!********************************************************************!*\
+  !*** ./resources/js/Pages/Fitur/Index.vue?vue&type=script&lang=js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -47401,6 +58172,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/TentangKami/Index.vue?vue&type=script&lang=js":
+/*!**************************************************************************!*\
+  !*** ./resources/js/Pages/TentangKami/Index.vue?vue&type=script&lang=js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/Components/Accordion.vue?vue&type=template&id=d0b0a0e6":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/Components/Accordion.vue?vue&type=template&id=d0b0a0e6 ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Accordion_vue_vue_type_template_id_d0b0a0e6__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Accordion_vue_vue_type_template_id_d0b0a0e6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Accordion.vue?vue&type=template&id=d0b0a0e6 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Accordion.vue?vue&type=template&id=d0b0a0e6");
+
+
+/***/ }),
+
 /***/ "./resources/js/Components/BasicCard.vue?vue&type=template&id=54b06ba3":
 /*!*****************************************************************************!*\
   !*** ./resources/js/Components/BasicCard.vue?vue&type=template&id=54b06ba3 ***!
@@ -47417,18 +58220,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Components/BasicFilteredCard.vue?vue&type=template&id=353e77da":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/Components/BasicFilteredCard.vue?vue&type=template&id=353e77da ***!
-  \*************************************************************************************/
+/***/ "./resources/js/Components/BasicCardHome.vue?vue&type=template&id=767ebfa2":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/Components/BasicCardHome.vue?vue&type=template&id=767ebfa2 ***!
+  \*********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicFilteredCard_vue_vue_type_template_id_353e77da__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicCardHome_vue_vue_type_template_id_767ebfa2__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicFilteredCard_vue_vue_type_template_id_353e77da__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BasicFilteredCard.vue?vue&type=template&id=353e77da */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicFilteredCard.vue?vue&type=template&id=353e77da");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BasicCardHome_vue_vue_type_template_id_767ebfa2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BasicCardHome.vue?vue&type=template&id=767ebfa2 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/BasicCardHome.vue?vue&type=template&id=767ebfa2");
 
 
 /***/ }),
@@ -47465,18 +58268,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca":
-/*!**************************************************************************!*\
-  !*** ./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca ***!
-  \**************************************************************************/
+/***/ "./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca&class=true":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca&class=true ***!
+  \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Navbar_vue_vue_type_template_id_4a80dbca__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Navbar_vue_vue_type_template_id_4a80dbca_class_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Navbar_vue_vue_type_template_id_4a80dbca__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Navbar.vue?vue&type=template&id=4a80dbca */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Navbar_vue_vue_type_template_id_4a80dbca_class_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Navbar.vue?vue&type=template&id=4a80dbca&class=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=template&id=4a80dbca&class=true");
 
 
 /***/ }),
@@ -47513,6 +58316,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Bantuan/Index.vue?vue&type=template&id=52ea5847":
+/*!****************************************************************************!*\
+  !*** ./resources/js/Pages/Bantuan/Index.vue?vue&type=template&id=52ea5847 ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_52ea5847__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_52ea5847__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=52ea5847 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=template&id=52ea5847");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Blog/Detail.vue?vue&type=template&id=0c682565":
 /*!**************************************************************************!*\
   !*** ./resources/js/Pages/Blog/Detail.vue?vue&type=template&id=0c682565 ***!
@@ -47541,6 +58360,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_ae303024__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_ae303024__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=ae303024 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Index.vue?vue&type=template&id=ae303024");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Fitur/Index.vue?vue&type=template&id=7bc75390":
+/*!**************************************************************************!*\
+  !*** ./resources/js/Pages/Fitur/Index.vue?vue&type=template&id=7bc75390 ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_7bc75390__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_7bc75390__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=7bc75390 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=template&id=7bc75390");
 
 
 /***/ }),
@@ -47625,6 +58460,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/TentangKami/Index.vue?vue&type=template&id=3484b65f":
+/*!********************************************************************************!*\
+  !*** ./resources/js/Pages/TentangKami/Index.vue?vue&type=template&id=3484b65f ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_3484b65f__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_3484b65f__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=3484b65f */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=template&id=3484b65f");
+
+
+/***/ }),
+
 /***/ "./resources/js/Components/Navbar.vue?vue&type=style&index=0&id=4a80dbca&lang=css":
 /*!****************************************************************************************!*\
   !*** ./resources/js/Components/Navbar.vue?vue&type=style&index=0&id=4a80dbca&lang=css ***!
@@ -47634,6 +58485,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Navbar_vue_vue_type_style_index_0_id_4a80dbca_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Navbar.vue?vue&type=style&index=0&id=4a80dbca&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Components/Navbar.vue?vue&type=style&index=0&id=4a80dbca&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_52ea5847_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=52ea5847&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Bantuan/Index.vue?vue&type=style&index=0&id=52ea5847&lang=css");
 
 
 /***/ }),
@@ -47660,6 +58524,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_ae303024_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=ae303024&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Blog/Index.vue?vue&type=style&index=0&id=ae303024&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_7bc75390_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=7bc75390&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Fitur/Index.vue?vue&type=style&index=0&id=7bc75390&lang=css");
 
 
 /***/ }),
@@ -47699,6 +58576,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_2e913d5d_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=2e913d5d&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Posts/Index.vue?vue&type=style&index=0&id=2e913d5d&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_style_index_0_id_3484b65f_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=style&index=0&id=3484b65f&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/TentangKami/Index.vue?vue&type=style&index=0&id=3484b65f&lang=css");
 
 
 /***/ }),
@@ -47940,10 +58830,14 @@ function compileToFunction(template, options) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Bantuan/Index": "./resources/js/Pages/Bantuan/Index.vue",
+	"./Bantuan/Index.vue": "./resources/js/Pages/Bantuan/Index.vue",
 	"./Blog/Detail": "./resources/js/Pages/Blog/Detail.vue",
 	"./Blog/Detail.vue": "./resources/js/Pages/Blog/Detail.vue",
 	"./Blog/Index": "./resources/js/Pages/Blog/Index.vue",
 	"./Blog/Index.vue": "./resources/js/Pages/Blog/Index.vue",
+	"./Fitur/Index": "./resources/js/Pages/Fitur/Index.vue",
+	"./Fitur/Index.vue": "./resources/js/Pages/Fitur/Index.vue",
 	"./Home/Index": "./resources/js/Pages/Home/Index.vue",
 	"./Home/Index.vue": "./resources/js/Pages/Home/Index.vue",
 	"./Posts/Create": "./resources/js/Pages/Posts/Create.vue",
@@ -47953,7 +58847,9 @@ var map = {
 	"./Posts/Edit": "./resources/js/Pages/Posts/Edit.vue",
 	"./Posts/Edit.vue": "./resources/js/Pages/Posts/Edit.vue",
 	"./Posts/Index": "./resources/js/Pages/Posts/Index.vue",
-	"./Posts/Index.vue": "./resources/js/Pages/Posts/Index.vue"
+	"./Posts/Index.vue": "./resources/js/Pages/Posts/Index.vue",
+	"./TentangKami/Index": "./resources/js/Pages/TentangKami/Index.vue",
+	"./TentangKami/Index.vue": "./resources/js/Pages/TentangKami/Index.vue"
 };
 
 

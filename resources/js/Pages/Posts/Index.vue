@@ -37,7 +37,11 @@
                       {{ post.title }}
                     </inertia-link>
                   </td>
-                  <td class="py-2 px-2">{{ post.content.substring(0, 90) }}....</td>
+                  <td class="py-2 px-2">
+                    <div>
+                      {{ post.content.substring(0, 90) }}....
+                    </div>
+                  </td>
                   <td class="py-2 px-2">
                     <p v-for="cat in post.category" class="mb-3">
                       {{ cat.category }}
