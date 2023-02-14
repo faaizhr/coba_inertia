@@ -2,15 +2,16 @@
   <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto  sticky top-0 z-" id="navBar">
     <div class="flex justify-between items-center">
       <div class="">
-        <img class="w-32" src="https://prodiadigital.com/assets/images/logo.svg"/>
+        <img id="blackLogo" class="w-32" src="https://prodiadigital.com/assets/images/logo.svg"/>
+        <img id="whiteLogo" class="w-32 hidden" src="https://prodiadigital.com/assets/images/logo-white.svg"/>
       </div>
       <div class=" w-full md:grid md:justify-items-end hidden">
-        <div id="">
-          <a class="mr-5"><inertia-link href="/">Beranda</inertia-link></a>
-          <a class="mr-5"><inertia-link href="/bantuan">Bantuan</inertia-link></a>
-          <a class="mr-5"><inertia-link href="/tentang-kami">Tentang Kami</inertia-link></a>
-          <a class="mr-5"><inertia-link href="/artikel">Artikel</inertia-link></a>
-          <a class="mr-5"><inertia-link href="/fitur">Fitur</inertia-link></a>
+        <div id="myDIV">
+          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/">Beranda</inertia-link></a>
+          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/bantuan">Bantuan</inertia-link></a>
+          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/tentang-kami">Tentang Kami</inertia-link></a>
+          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/artikel">Artikel</inertia-link></a>
+          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/fitur">Fitur</inertia-link></a>
           <inertia-link href="/posts" id="secButton">
             <button class="border border-[#073231] rounded-lg px-7 py-2 mr-3 ml-3 hover:bg-[#073231] hover:text-white">English</button>
           </inertia-link>
@@ -41,10 +42,10 @@
           </inertia-link>
         </li>
         <li class="py-3"><inertia-link href="/" class="text-white py-3">Beranda</inertia-link></li>
-        <li class="text-white py-3">Bantuan</li>
-        <li class="text-white py-3">Tentang Kami</li>
-        <li class="text-white py-3"><inertia-link href="/" class="text-white py-3">Artikel</inertia-link></li>
-        <li class="text-white py-3">Fitur</li>
+        <li class="text-white py-3"><inertia-link href="/bantuan" class="text-white py-3">Bantuan</inertia-link></li>
+        <li class="text-white py-3"><inertia-link href="/tentang-kami" class="text-white py-3">Tentang Kami</inertia-link></li>
+        <li class="text-white py-3"><inertia-link href="/artikel" class="text-white py-3">Artikel</inertia-link></li>
+        <li class="text-white py-3"><inertia-link href="/fitur" class="text-white py-3">Fitur</inertia-link></li>
         <li class="py-5">
           <button class="rounded-lg px-7 py-2 text-sm font-semibold bg-black text-white border border-white">English</button>
         </li>
@@ -60,7 +61,7 @@ import { Link } from '@inertiajs/inertia-vue3';
 import { Inertia } from '@inertiajs/inertia';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-// ============== ACTIVE NAVBAR =========================== //
+// ============== CHANGING CSS AFTER SCROLLING =========================== //
 
   let scrollNavbar;
 
@@ -73,6 +74,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
         const mainButton = document.querySelectorAll("#mainButton button")
         const secButton = document.querySelectorAll("#secButton button")
         const icon = document.querySelectorAll("#icon")
+        const blackLogo = document.querySelectorAll("#blackLogo")
+        const whiteLogo = document.querySelectorAll("#whiteLogo")
 
         if (document.documentElement.scrollTop > 50) {
             navBar.classList.add("pa-fixed-header");
@@ -105,6 +108,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
             for (let i = 0; i < icon.length; i++) {
                 const element = icon[i];
                 element.classList.add('whiteColorIcon');
+            }
+            for (let i = 0; i < blackLogo.length; i++) {
+                const element = blackLogo[i];
+                element.classList.add('hidden');
+            }
+            for (let i = 0; i < whiteLogo.length; i++) {
+                const element = whiteLogo[i];
+                element.classList.remove('hidden');
             }
             
         } else {
@@ -139,10 +150,24 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                 const element = icon[i];
                 element.classList.remove('whiteColorIcon');
             }
+            for (let i = 0; i < blackLogo.length; i++) {
+                const element = blackLogo[i];
+                element.classList.remove('hidden');
+            }
+            for (let i = 0; i < whiteLogo.length; i++) {
+                const element = whiteLogo[i];
+                element.classList.add('hidden');
+            }
         }
     }
 
 //=============================================================//
+
+// ========================== ACTIVE NAVBAR ==================//
+
+// 
+
+// ============================================================//
 
 export default {
   name: "Navbar",
@@ -181,5 +206,21 @@ export default {
     transition: background-color 0.2s ease-out;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
+
+  /* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
 
 </style>

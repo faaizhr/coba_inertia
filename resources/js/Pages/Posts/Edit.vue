@@ -29,7 +29,9 @@
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">CONTENT</td>
                         <td class="pb-5">
-                            <textarea class="w-full h-56 px-1 py-1 border-b border-gray-300" v-model="post.content" placeholder="Masukkan Content Post"></textarea>
+                            <!-- <textarea class="w-full h-56 px-1 py-1 border-b border-gray-300" v-model="post.content" placeholder="Masukkan Content Post"></textarea> -->
+                            <input id="content" type="hidden" name="content" @change="handleChange" :value="`${post.content}`">
+                            <trix-editor input="content"></trix-editor>
                             <div v-if="errors.content" class="mt-2 alert alert-danger">
                                 {{ errors.content }}
                             </div>
@@ -121,7 +123,17 @@
             imagediv.appendChild(newimg);
             console.log(event.target.files[0])
         },
+        handleChange() {
+            console.log(event.target.value)
+        },
+        setTextToTrix: function() {
+            this.post.content = document.getElementById("content").value; 
+        }
       },
+
+      mounted() {
+        document.addEventListener("trix-change", this.setTextToTrix); // Listen to the changes on the editor
+    },
 
       //define Composition Api
       setup(props) {

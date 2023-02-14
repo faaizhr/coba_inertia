@@ -31,14 +31,14 @@
               v-else-if="(item.category[0].category == 'Weight Management')"
               class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button v-else class="">Unknown</button>
+            <button v-else class="text-white bg-violet-600 px-4 py-1 rounded text-xs">Unknown</button>
           </div>
           <div v-if="item.category.length == 0" class="mt-2 md:mt-0 mr-0 ml-0 md:ml-auto md:mr-0">
             <button class="text-white bg-yellow-600 px-4 py-1 rounded text-xs">Uncategorized</button>
           </div>
         </div>
         <inertia-link :href="`/artikel/${item.id}`">
-          <h6 class="my-3 text-md md:text-xl font-semibold">{{ item.title }}</h6>
+          <h6 class="my-3 text-md md:text-xl font-semibold capitalize">{{ item.title }}</h6>
         </inertia-link>
         <inertia-link :href="`/artikel/${item.id}`" class="font-semibold text-sm text-gray-800 underline underline-offset-1">
           Selengkapnya

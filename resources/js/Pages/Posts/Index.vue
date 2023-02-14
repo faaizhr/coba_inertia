@@ -15,17 +15,20 @@
             <table class="bg-white rounded-2xl min-w-full">
               <thead class="bg-black rounded-3xl">
                 <tr class="">
-                  <th class="py-3 text-white">IMAGE</th>
+                  <th class="py-3 text-white">No.</th>
                   <th class="py-3 text-white">TITLE</th>
-                  <th class="py-3 text-white">CONTENT</th>
+                  <!-- <th class="py-3 text-white">CONTENT</th> -->
+                  <th class="py-3 text-white">DITULIS</th>
+                  <th class="py-3 text-white">DITINJAU</th>
                   <th class="py-3 text-white">CATEGORY</th>
                   <th class="py-3 text-white">ACTIONS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="post in joinTable" :key="post.id" class="hover:bg-slate-100">
-                  <td class="py-2 px-2"><img :src="`storage/${post.image}`"/>
-                    <inertia-link :href="`/posts/${post.id}`">
+                  <td class="py-2 px-2">
+                    <inertia-link :href="`/posts/${post.id}`" class="font-semibold">
+                      {{ post.id }}.
                     </inertia-link>
                   </td>
                   <!-- <td class="py-2 px-2"><img :src="post.image"/>
@@ -33,15 +36,25 @@
                     </inertia-link>
                   </td> -->
                   <td class="py-2 px-2">
-                    <inertia-link :href="`/posts/${post.id}`" class="font-medium">
+                    <inertia-link :href="`/posts/${post.id}`" class="font-medium capitalize">
                       {{ post.title }}
                     </inertia-link>
                   </td>
                   <td class="py-2 px-2">
+                    <inertia-link :href="`/posts/${post.id}`" class="">
+                      {{ post.ditulis_oleh }}
+                    </inertia-link>
+                  </td>
+                  <td class="py-2 px-2">
+                    <inertia-link :href="`/posts/${post.id}`" class="">
+                      {{ post.ditinjau_oleh }}
+                    </inertia-link>
+                  </td>
+                  <!-- <td class="py-2 px-2">
                     <div>
                       {{ post.content.substring(0, 90) }}....
                     </div>
-                  </td>
+                  </td> -->
                   <td class="py-2 px-2">
                     <p v-for="cat in post.category" class="mb-3">
                       {{ cat.category }}

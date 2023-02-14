@@ -89,12 +89,12 @@
 
 <template>
     <div class=" px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-1 text-sm">
-     <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b>{{ joinTable.title }}</b></p>
+     <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b class="capitalize">{{ joinTable.title }}</b></p>
     </div>
     <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
 
       <div class="col-span-2 hidden md:block sticky ">
-        <div class="sticky top-10">
+        <div class="sticky top-36 ml-5">
           <p class="mb-3">Share:</p>
           <div>
             <div class="w-10 h-10 border border-black rounded-full px-2 py-2 mb-3">
@@ -138,7 +138,7 @@
         </div>
       </div>
       <div>
-        <h1 class="mt-10 font-bold text-4xl leading-normal">{{ joinTable.title }}</h1>
+        <h1 class="mt-10 font-bold text-4xl leading-normal capitalize">{{ joinTable.title }}</h1>
         <div class="mt-10 flex justify-between">
           <p class="text-sm">Durasi membaca: 3,996 menit</p>
           <div class="flex items-center">
@@ -148,9 +148,7 @@
         </div>
         <img class="rounded-xl mt-5 w-full" :src="`../storage/${post.image}`"/>
       </div>
-      <div class="mt-10">
-        <p>{{ joinTable.content }}</p>
-      </div>
+      <div v-html="joinTable.content" class="mt-10"></div>
     </div>
   </div>
     <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl">

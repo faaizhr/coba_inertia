@@ -11,7 +11,7 @@
                         <td class="text-lg font-semibold pb-5 pr-5">JUDUL ARTIKEL</td>
                         <td class="pb-5">
                             <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.title" placeholder="Masukkan Title Post">
-                            <div v-if="errors.title" class="mt-2 alert alert-danger">
+                            <div v-if="errors.title" class="text-sm text-red-600 mt-1 ml-1">
                                 {{ errors.title }}
                             </div>
                         </td>
@@ -23,19 +23,15 @@
                                 <input type="checkbox" :id="cat.category" :value="cat.id" v-model="post.category"/>
                                 <label class="ml-3">{{ cat.category }}</label>
                             </div>
-
-                            <div v-if="errors.content" class="">
-                                {{ errors.content }}
-                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="text-lg font-semibold pb-5 pr-5">CONTENT</td>
                         <td class="pb-5">
                             <!-- <textarea class="w-full h-56 border-b border-gray-300 px-1 py-1" placeholder="Masukkan Content Post"></textarea> -->
-                            <input id="content" type="hidden" name="content" @change="handleChange">
-                            <trix-editor input="content" class="trix-content"></trix-editor>
-                            <div v-if="errors.content" class="mt-2 alert alert-danger">
+                            <input id="content" type="hidden" name="content" @change="handleChange" value="">
+                            <trix-editor input="content"></trix-editor>
+                            <div v-if="errors.content" class="text-sm text-red-600 mt-1 ml-1">
                                 {{ errors.content }}
                             </div>
                         </td>
@@ -52,8 +48,8 @@
                                 @change="(event) => getImagePreview(event)"
                             >
                             <div id="preview" class="w-56 object-cover p-2 border border-gray-300 mt-2 rounded-lg"></div>
-                            <div v-if="errors.content">
-                                {{ errors.content }}
+                            <div v-if="errors.image" class="text-sm text-red-600 mt-1 ml-1">
+                                {{ errors.image }}
                             </div>
                         </td>
                     </tr>
@@ -61,8 +57,8 @@
                         <td class="text-lg font-semibold pb-5 pr-5">Ditulis Oleh</td>
                         <td>
                             <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditulis_oleh" placeholder="Masukkan Nama Penulis">
-                            <div v-if="errors.content" class="">
-                                {{ errors.content }}
+                            <div v-if="errors.ditulis_oleh" class="text-sm text-red-600 mt-1 ml-1">
+                                {{ errors.ditulis_oleh }}
                             </div>
                         </td>
                     </tr>
@@ -70,8 +66,8 @@
                         <td class="text-lg font-semibold pb-5 pr-5">Ditinjau Oleh</td>
                         <td>
                             <input type="text" class="border-b border-gray-300 w-5/6 px-1 py-1" v-model="post.ditinjau_oleh" placeholder="Masukkan Nama Peninjau">
-                            <div v-if="errors.content" class="">
-                                {{ errors.content }}
+                            <div v-if="errors.ditinjau_oleh" class="text-sm text-red-600 mt-1 ml-1">
+                                {{ errors.ditinjau_oleh }}
                             </div>
                         </td>
                     </tr>
@@ -82,7 +78,7 @@
                       <button type="reset" class="bg-red-700 text-white text-lg font-semibold rounded-xl px-16 py-2">RESET</button>
                   </div>
               </form>
-              <h1 class="text-xl font-bold">{{ this }}</h1>
+              <h1 class="text-xl font-bold">{{ post.title }}</h1>
 
           </div>
       </div>
@@ -99,16 +95,11 @@
   import { reactive } from 'vue'
   import { Inertia } from '@inertiajs/inertia'
 
+
   export default {
 
       //layout
       layout: LayoutApp,
-
-      data() {
-        return {
-            name: ''
-        }
-      },
 
       //props
       props: {
@@ -123,19 +114,15 @@
             var newimg=document.createElement('img');
             imagediv.innerHTML='';
             newimg.src=image;
-            // newimg.width="150";
             imagediv.appendChild(newimg);
-        },
-        onChange(e) {
-          this.name = e.target.files[0];
-          console.log(e.target.files[0])
+            console.log(event.target.files[0])
         },
         handleChange() {
             console.log(event.target.value)
         },
         setTextToTrix: function() {
             this.post.content = document.getElementById("content").value; 
-    }
+        }
       },
 
     mounted() {
@@ -160,7 +147,7 @@
           function storePost() {
               
               //define variable 
-              let title   = post.title
+              let title   = post.title.toLowerCase()
               let content = post.content
               let image = post.image
               let category = post.category

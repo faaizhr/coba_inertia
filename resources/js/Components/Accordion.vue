@@ -1,14 +1,14 @@
 <template>
-  <div>
+  <div class="">
     <button
       @click="toggleAccordion()"
-      class="flex items-center space-x-3"
+      class="flex items-center justify-between w-full space-x-3"
       :aria-expanded="isOpen"
       :aria-controls="`collapse${_uid}`"
     >
       <slot name="title" />
       <svg
-        class="w-3 transition-all duration-200 transform"
+        class="w-3 transition-all duration-300 transform"
         :class="{
           'rotate-180': isOpen,
           'rotate-0': !isOpen,
@@ -31,6 +31,7 @@
     <div v-show="isOpen" :id="`collapse${_uid}`">
       <slot name="content" />
     </div>
+    <div v-if="this.isOpen == true" class="border-b border-orange-300 mt-5"></div>
   </div>
 </template>
 

@@ -15,12 +15,64 @@
         <p class="mt-14 leading-loose">Apakah Kamu membutuhkan bantuan terkait fitur dan layanan kami? Dapatkan bantuan pada panduan berikut.</p>
       </div>
       <div class="mt-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-white py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <div>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="col-span-1">
             <div>
+              <accordion class="mb-12">
+                <template v-slot:title>
+                  <span class="font-semibold text-xl">Health Score</span>
+                </template>
+                <template v-slot:content>
+                  <div class="mt-4">
+                    <p class="mb-2">Gambaran Umum</p>
+                    <p class="mb-2">Informasi Produk</p>
+                    <p class="mb-2">Permasalahan Teknis</p>
+                  </div>
+                </template>
+              </accordion>
+
+              <accordion class="mb-12">
+                <template v-slot:title>
+                  <span class="font-semibold text-xl">Health Shop</span>
+                </template>
+                <template v-slot:content>
+                  <div class="mt-4">
+                    <p class="mb-2">Gambaran Umum</p>
+                    <p class="mb-2">Pembelian</p>
+                    <p class="mb-2">Pembayaran</p>
+                    <p class="mb-2">Pengembalian Dana & Pengiriman Ulang</p>
+                  </div>
+                </template>
+              </accordion>
+
+              <accordion class="mb-12">
+                <template v-slot:title>
+                  <span class="font-semibold text-xl">Home Service</span>
+                </template>
+                <template v-slot:content>
+                  <div class="mt-4">
+                    <p class="mb-2">Informasi</p>
+                    <p class="mb-2">Proses Layanan</p>
+                    <p class="mb-2">Penjadwalan Ulang</p>
+                    <p class="mb-2">Penilaian</p>
+                  </div>
+                </template>
+              </accordion>
+
+              <accordion class="mb-12">
+                <template v-slot:title>
+                  <span class="font-semibold text-xl">Informasi Data Diri</span>
+                </template>
+                <template v-slot:content>
+                  <div class="mt-4">
+                    <p class="mb-2">Informasi</p>
+
+                  </div>
+                </template>
+              </accordion>
             </div>
           </div>
-          <div>
+          <div class="col-span-2">
 
           </div>
         </div>

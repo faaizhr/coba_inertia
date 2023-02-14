@@ -13,8 +13,8 @@
         </div>
         <div class="mb-5">
           <h6 class="font-semibold text-xl">Isi Artikel</h6>
-          <div class="trix-content">
-            {{ joinTable.content.slice }}
+          <div class="border border-gray-400 rounded-xl p-5 mt-5">
+            <div v-html="joinTable.content"></div>
           </div>
         </div>
         <div class="mb-5">
@@ -31,7 +31,7 @@
         </div>
         <div class="mb-5">
           <h6 class="font-semibold text-xl">Cover</h6>
-          <img :src="joinTable.image" class="w-full rounded-xl"/>
+          <img :src="`../../storage/${joinTable.image}`" class="rounded-lg w-72 mt-5"/>
         </div>
         <div class="mb-5 text-sm">
           <p>Dibuat pada : {{ getMonthNameCreate }} {{ getDayCreate }}, {{ getYearCreate }} | {{ getTimeCreate }}</p>

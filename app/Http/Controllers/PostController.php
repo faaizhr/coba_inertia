@@ -124,7 +124,7 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        dd($request);
+        // dd($request);
         //set validation
         $request->validate([
             'title'   => 'required',
@@ -145,10 +145,6 @@ class PostController extends Controller
         if ($request->has('category')) {
             $post->category()->sync($request->category);
         };
-        if ($request->has('iamge')) {
-            $post->post()->sync($request->file('image')->store('post-images'));
-        };
-
 
         if($post) {
             return Redirect()->route('posts.index')->with('message', 'Data Berhasil Diupdate!');

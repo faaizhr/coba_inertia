@@ -5,12 +5,24 @@
          <p><inertia-link to="/">Beranda </inertia-link>> <b>Artikel</b></p>
         </div>
         <div class="mb-20">
-          <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center">
+
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-2 items-center mb-20 h-28 md:h-10 z-20">
             <h1 class="text-5xl font-bold text-center md:text-left mb-5 md:mb-0 text-[#073231]">Bacaan Untukmu</h1>
-            <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:max-w-xs h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black"/>
+            <input type="text" placeholder="CARI..." name="seacrhbar" @change="handleChangeSearch" class="rounded-xl px-4 focus:outline-none h-12 border border-green-900 bg-transparent md:ml-auto placeholder:text-black uppercase w-full md:w-4/6"/>
+            <div></div>
+            <div class="z-50">
+              <div 
+                v-if="this.searchbar != ''" 
+                v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
+              >
+                <inertia-link :href="`/artikel/${post.id}`">
+                  <p class="capitalize text-white">{{ post.title }}</p>
+                </inertia-link>
+              </div>
+            </div>
           </div>
-  
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 z-0">
             <div class="">
               <MainCard v-for="post in postsDESC.slice(0, 1)" 
                 :key="post.id" 
@@ -56,7 +68,7 @@
           </div>
         </div>
         <div v-if="category == ''">
-          <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
+          <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
             <BasicCard v-for="post in joinTable" 
             :key="post.id"
             :item="post"
@@ -157,11 +169,11 @@
       },
       
       data() {
-          return {
+        return {
           dropDown: false,
           category: '',
-
-          };
+          searchbar: '',  
+        };
       },
       methods: {
           handleDropdown() {
@@ -175,6 +187,11 @@
           handleChangeCat(value) {
             this.category = value
             console.log("cek ceok", this.category)
+          },
+
+          handleChangeSearch(e) {
+            this.searchbar = e.target.value
+            console.log(this.searchbar)
           }
       },
   

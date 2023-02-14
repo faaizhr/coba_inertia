@@ -35,7 +35,7 @@
       </div>
       <div class="mt-2">
         <inertia-link :href="`/artikel/${item.id}`" class="">
-          <h6 class="my-3 text-lg font-semibold  text-black">{{ item.title }}</h6>
+          <h6 class="my-3 text-lg font-semibold  text-black capitalize">{{ item.title }}</h6>
         </inertia-link>
         <inertia-link :href="`/artikel/${item.id}`" class="font-bold text-black text-sm underline underline-offset-1">
           Selengkapnya

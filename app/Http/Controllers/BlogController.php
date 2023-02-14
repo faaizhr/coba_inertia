@@ -36,10 +36,7 @@ class BlogController extends Controller
         
         $postsDESC = Post::with('category')->orderBy('id', 'desc')->get();
         $category = Category::get();
-        
-
         $joinTable = Post::with('category')->get();
-
         $filter = Category::with('posts')->get();
 
         return Inertia::render('Blog/Index', [
