@@ -18,58 +18,22 @@
         <div class="grid grid-cols-1 md:grid-cols-3">
           <div class="col-span-1">
             <div>
-              <accordion class="mb-12">
-                <template v-slot:title>
-                  <span class="font-semibold text-xl">Health Score</span>
-                </template>
-                <template v-slot:content>
-                  <div class="mt-4">
-                    <p class="mb-2">Gambaran Umum</p>
-                    <p class="mb-2">Informasi Produk</p>
-                    <p class="mb-2">Permasalahan Teknis</p>
+              <h5 class="text-5xl font-bold mb-5">FAQ</h5>
+              <h6 class="text-xl font-semibold mb-10">Kategori</h6>
+              <div v-for="(question, index) in questions" :key="question.title" class="mb-7">
+                <div @click="() => handleAccordion(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
+                  <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-black'">{{ question.title }}</p>
+                  <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'blackColorIcon'"/>
+                </div>
+                <Collapse :when="questions[index].isExpanded" class="collapses">
+                  <div class="w-full mt-5">
+                    <div v-for="body in question.contents">
+                      <p class="mt-2">{{ body.subtitle }}</p>
+                    </div>
                   </div>
-                </template>
-              </accordion>
-
-              <accordion class="mb-12">
-                <template v-slot:title>
-                  <span class="font-semibold text-xl">Health Shop</span>
-                </template>
-                <template v-slot:content>
-                  <div class="mt-4">
-                    <p class="mb-2">Gambaran Umum</p>
-                    <p class="mb-2">Pembelian</p>
-                    <p class="mb-2">Pembayaran</p>
-                    <p class="mb-2">Pengembalian Dana & Pengiriman Ulang</p>
-                  </div>
-                </template>
-              </accordion>
-
-              <accordion class="mb-12">
-                <template v-slot:title>
-                  <span class="font-semibold text-xl">Home Service</span>
-                </template>
-                <template v-slot:content>
-                  <div class="mt-4">
-                    <p class="mb-2">Informasi</p>
-                    <p class="mb-2">Proses Layanan</p>
-                    <p class="mb-2">Penjadwalan Ulang</p>
-                    <p class="mb-2">Penilaian</p>
-                  </div>
-                </template>
-              </accordion>
-
-              <accordion class="mb-12">
-                <template v-slot:title>
-                  <span class="font-semibold text-xl">Informasi Data Diri</span>
-                </template>
-                <template v-slot:content>
-                  <div class="mt-4">
-                    <p class="mb-2">Informasi</p>
-
-                  </div>
-                </template>
-              </accordion>
+                </Collapse>
+                <hr v-if="question.isExpanded == true" class=" border-orange-400 mt-5"/>
+              </div>
             </div>
           </div>
           <div class="col-span-2">
@@ -86,7 +50,6 @@
         </div>
       </div>
 
-      
     </div>
   </div>
 </template>
@@ -102,45 +65,136 @@ import { Inertia } from '@inertiajs/inertia'
 //import component
 import BasicCard from '../../Components/BasicCard.vue';
 import BasicCardHome from '../../Components/BasicCardHome.vue';
-import Accordion from '../../Components/Accordion.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-//import coreui componenet
-// import '@coreui/coreui/dist/css/coreui.min.css'
-import { CAccordion } from '@coreui/vue';
-import { CAccordionItem } from '@coreui/vue';
-import { CAccordionHeader } from '@coreui/vue';
-import { CAccordionBody } from '@coreui/vue';
 
-
-
-
+import { reactive } from 'vue'
+import { Collapse } from 'vue-collapsed'
 
 export default {
 
-  layout: LayoutApp,
-    
-  components: {
-    "inertia-link": Link,
-    BasicCard,
-    BasicCardHome,
-    FontAwesomeIcon,
-    Accordion,
-    CAccordion,
-    CAccordionItem,
-    CAccordionHeader,
-    CAccordionBody,
+layout: LayoutApp,
+  
+components: {
+  "inertia-link": Link,
+  BasicCard,
+  BasicCardHome,
+  FontAwesomeIcon,
+  Collapse
 },
 
-  props: {
-      postsDESC: Array,
-  },
-  
+props: {
+    postsDESC: Array,
+},
+
+methods: {
+  handleAccordion(selectedIndex) {
+      questions.forEach((_, index) => {
+        questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
+      })
+    }
+},
+
+setup() {
+  const questions = reactive([
+    {
+      title: 'Health Score',
+      contents: [
+        {
+          subtitle: 'Gambaran Umum',
+          link: ''
+        },
+        {
+          subtitle: 'Informasi Produk',
+          link: ''
+        },
+        {
+          subtitle: 'Permasalahan Teknis',
+          link: ''
+        },
+      ],
+      isExpanded: true
+    },
+    {
+      title: 'Health Shop',
+      contents: [
+        {
+          subtitle: 'Gambaran Umum',
+          link: ''
+        },
+        {
+          subtitle: 'Pembelian',
+          link: ''
+        },
+        {
+          subtitle: 'Pembayaran',
+          link: ''
+        },
+        {
+          subtitle: 'Pengembalian Dana & Pengiriman Ulang',
+          link: ''
+        },
+      ],
+      isExpanded: false
+    },
+    {
+      title: 'Home Service',
+      contents: [
+        {
+          subtitle: 'Informasi',
+          link: ''
+        },
+        {
+          subtitle: 'Proses Layanan',
+          link: ''
+        },
+        {
+          subtitle: 'Penjadwalan Ulang',
+          link: ''
+        },
+        {
+          subtitle: 'Penilaian',
+          link: ''
+        },
+      ],
+      isExpanded: false
+    },
+    {
+      title: 'Informasi Data Diri',
+      contents: [
+        {
+          subtitle: 'Informasi',
+          link: ''
+        },
+      ],
+      isExpanded: false
+    }
+  ])
+
+  function handleAccordion(selectedIndex) {
+    questions.forEach((_, index) => {
+      questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
+    })
+    console.log(questions)
+  }
+
+  return {
+    questions,
+    handleAccordion
+  }
+}
+
 
 }
+
 </script>
 
 <style>
+
+  .collapses {
+    transition: height 600ms cubic-bezier(0.3, 0, 0.6, 1);
+  }
+
   a {
       text-decoration: none;
       color: black;
@@ -149,6 +203,14 @@ export default {
   .whiteColorIcon {
     color: white;
     fill: white;
+  }
+  .orangeColorIcon {
+    color: rgb(251 146 60);
+    fill: rgb(251 146 60);
+  }
+  .blackColorIcon {
+    color: black;
+    fill: black;
   }
 
   .bg-custom {
