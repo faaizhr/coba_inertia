@@ -5,39 +5,77 @@
       <div class="mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <div class="py-1 text-sm mb-10">
           <p><inertia-link href="/">Beranda </inertia-link>> <b>Bantuan</b></p>
-        </div>      
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <h1 class="text-5xl text-[#073231] font-bold leading-tight text-center md:text-left">Bantuan</h1>
-          <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black hidden md:block"/>
-        </div>
+        </div>  
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 items-center mb-20 h-28 md:h-10 z-20">
+            <h1 class="text-5xl font-bold text-center md:text-left mb-5 md:mb-0 text-[#073231]">Bantuan</h1>
+            <input type="text" placeholder="CARI..." name="seacrhbar" @change="handleChangeSearch" class="rounded-xl px-4 focus:outline-none h-12 border border-green-900 bg-transparent md:ml-auto placeholder:text-black uppercase w-full md:w-4/6"/>
+            <div></div>
+            <div class="z-50">
+              <div 
+                v-if="this.searchbar != ''" 
+                v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
+              >
+                <inertia-link :href="`/artikel/${post.id}`">
+                  <p class="capitalize text-white">{{ post.title }}</p>
+                </inertia-link>
+              </div>
+            </div>
+          </div>
+
       </div>
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <p class="mt-14 leading-loose">Apakah Kamu membutuhkan bantuan terkait fitur dan layanan kami? Dapatkan bantuan pada panduan berikut.</p>
       </div>
       <div class="mt-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-white py-20">
-        <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div class="col-span-1">
             <div>
               <h5 class="text-5xl font-bold mb-5">FAQ</h5>
               <h6 class="text-xl font-semibold mb-10">Kategori</h6>
-              <div v-for="(question, index) in questions" :key="question.title" class="mb-7">
-                <div @click="() => handleAccordion(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
+
+              <div v-for="(question, index) in menu" :key="question.title" class="mb-7">
+                <div @click="() => handleAccordionMenu(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
                   <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-black'">{{ question.title }}</p>
                   <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'blackColorIcon'"/>
                 </div>
-                <Collapse :when="questions[index].isExpanded" class="collapses">
+                <Collapse :when="menu[index].isExpanded" class="collapses">
                   <div class="w-full mt-5">
                     <div v-for="body in question.contents">
-                      <p class="mt-2">{{ body.subtitle }}</p>
+                      <p 
+                        @click="handleGetId(body.subId)" 
+                        :class="this.getId == body.subId ? 'mt-2 cursor-pointer text-orange-400 hover:text-orange-400' : 'mt-2 cursor-pointer text-black hover:text-orange-400'">
+                        {{ body.subtitle }}
+                      </p>
                     </div>
                   </div>
                 </Collapse>
                 <hr v-if="question.isExpanded == true" class=" border-orange-400 mt-5"/>
               </div>
+
             </div>
           </div>
+
+          <!-- <p>cek kontent id{{ this.getContentId }}</p> -->
+
           <div class="col-span-2">
 
+            <div v-for="(menu, index) in question.filter(filter => filter.subId == this.getId)" :key="menu.title" class="mb-7">
+              <div @click="() => handleAccordionQuestion(index)" class="font-semibold text-lg cursor-pointer flex justify-between gap-10">
+                <!-- <p @click="handleGetContentId(menu.contentId)" :class="menu.isExpanded == true ? 'text-orange-400' : 'text-black'">{{ menu.title }}</p> -->
+                <!-- <font-awesome-icon icon="fa-chevron-down" :class="menu.isExpanded == true ? 'orangeColorIcon' : 'blackColorIcon'"/> -->
+
+                <p @click="handleGetContentId(menu.contentId)" :class="menu.contentId == this.getContentId ? 'text-orange-400' : 'text-black'">{{ menu.title }}</p>
+                <font-awesome-icon icon="fa-chevron-down" :class="menu.contentId == this.getContentId ? 'orangeColorIcon' : 'blackColorIcon'"/>
+              </div>
+              <Collapse :when="question[index].isExpanded" class="collapses">
+                <div class="w-full mt-5">
+                  <p class="mt-2">{{ menu.content }}</p>
+                </div>
+              </Collapse>
+              <hr v-if="menu.contentId == this.getContentId" class=" border-orange-400 mt-5"/>
+            </div>
+          
           </div>
         </div>
         <div class="bg-bantuan w-full rounded-xl mt-28 p-10 grid grid-cols-1 md:grid-cols-4">
@@ -70,119 +108,73 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import { reactive } from 'vue'
 import { Collapse } from 'vue-collapsed'
+import { questions } from '../../questions';
+import { menus } from '../../questions'
 
 export default {
 
-layout: LayoutApp,
-  
-components: {
-  "inertia-link": Link,
-  BasicCard,
-  BasicCardHome,
-  FontAwesomeIcon,
-  Collapse
-},
+  layout: LayoutApp,
+    
+  components: {
+    "inertia-link": Link,
+    BasicCard,
+    BasicCardHome,
+    FontAwesomeIcon,
+    Collapse
+  },
 
-props: {
-    postsDESC: Array,
-},
+  props: {
+      postsDESC: Array,
+      joinTable: Array,
+  },
 
-methods: {
-  handleAccordion(selectedIndex) {
-      questions.forEach((_, index) => {
-        questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
+  data() {
+    return {
+      getId: '1',
+      getContentId: '',
+      searchbar: '',  
+    };
+  },
+
+  methods: {
+    handleGetId(id) {
+      this.getId = id
+    },
+    handleGetContentId(id) {
+      if ( this.getContentId == '' || this.getContentId != id ) {
+        this.getContentId = id
+      } else if ( this.getContentId == id ) {
+        this.getContentId = ''
+      }
+    },
+    handleChangeSearch(e) {
+      this.searchbar = e.target.value
+      console.log(this.searchbar)
+    }
+  },
+
+  setup() {
+    const menu = reactive(menus)
+    const question = reactive(questions)
+
+    function handleAccordionMenu(selectedIndex) {
+      menu.forEach((_, index) => {
+        menu[index].isExpanded = index === selectedIndex ? !menu[index].isExpanded : false
       })
     }
-},
-
-setup() {
-  const questions = reactive([
-    {
-      title: 'Health Score',
-      contents: [
-        {
-          subtitle: 'Gambaran Umum',
-          link: ''
-        },
-        {
-          subtitle: 'Informasi Produk',
-          link: ''
-        },
-        {
-          subtitle: 'Permasalahan Teknis',
-          link: ''
-        },
-      ],
-      isExpanded: true
-    },
-    {
-      title: 'Health Shop',
-      contents: [
-        {
-          subtitle: 'Gambaran Umum',
-          link: ''
-        },
-        {
-          subtitle: 'Pembelian',
-          link: ''
-        },
-        {
-          subtitle: 'Pembayaran',
-          link: ''
-        },
-        {
-          subtitle: 'Pengembalian Dana & Pengiriman Ulang',
-          link: ''
-        },
-      ],
-      isExpanded: false
-    },
-    {
-      title: 'Home Service',
-      contents: [
-        {
-          subtitle: 'Informasi',
-          link: ''
-        },
-        {
-          subtitle: 'Proses Layanan',
-          link: ''
-        },
-        {
-          subtitle: 'Penjadwalan Ulang',
-          link: ''
-        },
-        {
-          subtitle: 'Penilaian',
-          link: ''
-        },
-      ],
-      isExpanded: false
-    },
-    {
-      title: 'Informasi Data Diri',
-      contents: [
-        {
-          subtitle: 'Informasi',
-          link: ''
-        },
-      ],
-      isExpanded: false
+    function handleAccordionQuestion(selectedIndex) {
+      question.forEach((_, index) => {
+        question[index].isExpanded = index === selectedIndex ? !question[index].isExpanded : false
+      })
     }
-  ])
 
-  function handleAccordion(selectedIndex) {
-    questions.forEach((_, index) => {
-      questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
-    })
-    console.log(questions)
+    return {
+      menu,
+      question,
+      handleAccordionMenu,
+      handleAccordionQuestion,
+    }
   }
-
-  return {
-    questions,
-    handleAccordion
-  }
-}
 
 
 }

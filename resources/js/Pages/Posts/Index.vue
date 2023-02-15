@@ -107,7 +107,8 @@
 
     props: {
         posts: Array, // <- nama props yang dibuat di controller saat parsing data
-        joinTable: Array
+        joinTable: Array,
+        // auth: Object
     },
     
     data() {

@@ -27,7 +27,11 @@ class BantuanController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Bantuan/Index');
+        $joinTable = Post::with('category')->get();
+
+        return Inertia::render('Bantuan/Index', [
+            'joinTable' => $joinTable,
+        ]);
     }
 
     /**

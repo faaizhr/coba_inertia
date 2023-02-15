@@ -28,9 +28,11 @@ class HomeController extends Controller
     public function index()
     {
         $postsDESC = Post::with('category')->orderBy('id', 'desc')->get();
+        $joinTable = Post::with('category')->get();
 
         return Inertia::render('Home/Index', [
             'postsDESC' => $postsDESC,
+            'joinTable' => $joinTable,
         ]);
     }
 

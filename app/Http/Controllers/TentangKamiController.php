@@ -27,7 +27,11 @@ class TentangKamiController extends Controller
      */
     public function index()
     {
-        return Inertia::render('TentangKami/Index');
+        $joinTable = Post::with('category')->get();
+
+        return Inertia::render('TentangKami/Index', [
+            'joinTable' => $joinTable,
+        ]);
     }
 
     /**

@@ -5,12 +5,25 @@
      <p><b><inertia-link to="/">Beranda </inertia-link></b></p>
     </div> -->
     <div class="">
-      <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 items-center mb-20 h-28 md:h-10 z-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <div></div>
-        <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black"/>
+        <input type="text" placeholder="CARI..." name="seacrhbar" @change="handleChangeSearch" class="rounded-xl px-4 focus:outline-none h-12 border border-green-900 bg-transparent md:ml-auto placeholder:text-black uppercase w-full md:w-4/6"/>
+        <div></div>
+        <div class="z-50">
+          <div 
+            v-if="this.searchbar != ''" 
+            v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
+          >
+            <inertia-link :href="`/artikel/${post.id}`">
+              <p class="capitalize text-white">{{ post.title }}</p>
+            </inertia-link>
+          </div>
+        </div>
       </div>
+
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
-        <h1 class="text-6xl text-[#073231] font-bold text-center leading-tight">Your Personal Health & Wellness Companion</h1>
+        <h1 class="text-5xl md:text-6xl text-[#073231] font-bold text-center leading-tight">Your Personal Health & Wellness Companion</h1>
         <p class="text-center mt-14 leading-loose">Kita semua unik, dengan berbagai perbedaan riwayat fisik, kondisi, dan kebutuhannya. Kami mengerti dan percaya, dengan keunikan ini dibutuhkan juga perawatan yang khusus. U by Prodia adalah aplikasi manajer kesehatan untuk mengelola kesehatan Kamu secara personal, agar Kamu bisa menjadi versi terbaik diri Kamu.</p>
       </div>
       <div class="mt-28 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
@@ -28,9 +41,9 @@
     <div class="w-full h-96 bg-black">
       <h2 class="text-4xl tracking-wide font-bold text-white text-center mt-10">Download Sekarang</h2>
       <div class="mx-auto">
-        <div class="flex justify-center mt-10">
+        <div class="flex justify-center flex-wrap mt-10 gap-10">
           <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&height=262"/>
-          <img class="w-72 rounded-xl ml-10" src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
+          <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
         </div>
       </div>
     </div>
@@ -66,7 +79,9 @@
       </div>
     </div>
     <div class="text-center">
-      <button class="bg-white px-8 py-2 rounded-xl text-sm font-medium">Fitur Lainnya</button>
+      <inertia-link href="/fitur">
+        <button class="bg-white px-8 py-2 rounded-xl text-sm font-medium">Fitur Lainnya</button>
+      </inertia-link>
     </div>
   </div>
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mt-20">
@@ -128,29 +143,22 @@ export default {
 
   props: {
       postsDESC: Array,
+      joinTable: Array, 
   },
   
-  // data() {
-  //     return {
-  //     dropDown: false,
-  //     category: '',
 
-  //     };
-  // },
-  // methods: {
-  //     handleDropdown() {
-  //         if (this.dropDown == false) {
-  //             this.dropDown = true;
-  //         } else if (this.dropDown == true) {
-  //             this.dropDown = false
-  //         }
-  //     },
+  data() {
+    return {
+      searchbar: '',  
+    };
+  },
 
-  //     handleChangeCat(value) {
-  //       this.category = value
-  //       console.log("cek ceok", this.category)
-  //     }
-  // },
+  methods: {
+    handleChangeSearch(e) {
+      this.searchbar = e.target.value
+      console.log(this.searchbar)
+    }
+  },
 
 
 }

@@ -5,11 +5,24 @@
       <div class="mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <div class="py-1 text-sm mb-10">
           <p><inertia-link href="/">Beranda </inertia-link>> <b>Tentang Kami</b></p>
-        </div>      
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <h1 class="text-5xl text-[#073231] font-bold leading-tight text-center md:text-left">Tentang Kami</h1>
-          <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black hidden md:block"/>
-        </div>
+        </div>   
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 items-center mb-20 h-28 md:h-10 z-20">
+            <h1 class="text-5xl font-bold text-center md:text-left mb-5 md:mb-0 text-[#073231]">Tentang Kami</h1>
+            <input type="text" placeholder="CARI..." name="seacrhbar" @change="handleChangeSearch" class="rounded-xl px-4 focus:outline-none h-12 border border-green-900 bg-transparent md:ml-auto placeholder:text-black uppercase w-full md:w-4/6"/>
+            <div></div>
+            <div class="z-50">
+              <div 
+                v-if="this.searchbar != ''" 
+                v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
+              >
+                <inertia-link :href="`/artikel/${post.id}`">
+                  <p class="capitalize text-white">{{ post.title }}</p>
+                </inertia-link>
+              </div>
+            </div>
+          </div>
+
       </div>
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <p class="mt-14 leading-loose text-center md:text-left">Cari tahu lebih lanjut tentang kami, your health and wellness companion.</p>
@@ -101,6 +114,20 @@ export default {
 
   props: {
       postsDESC: Array,
+      joinTable: Array, 
+  },
+
+  data() {
+    return {
+      searchbar: '',  
+    };
+  },
+
+  methods: {
+    handleChangeSearch(e) {
+      this.searchbar = e.target.value
+      console.log(this.searchbar)
+    }
   },
   
 

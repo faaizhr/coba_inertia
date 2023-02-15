@@ -27,7 +27,11 @@ class FiturController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Fitur/Index');
+        $joinTable = Post::with('category')->get();
+
+        return Inertia::render('Fitur/Index', [
+            'joinTable' => $joinTable,
+        ]);
     }
 
     /**

@@ -17,9 +17,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('Home');
 // });
 
+Route::get('/register', [\App\Http\Controllers\RegisterController::class, 'index']);
+Route::post('/register', [\App\Http\Controllers\RegisterController::class, 'store']);
+
+Route::get('/login', [\App\Http\Controllers\LoginController::class, 'index']);
+Route::post('/login', [\App\Http\Controllers\LoginController::class, 'store']);
+Route::post('/logout', [\App\Http\Controllers\LoginController::class, 'destroy'])->middleware('auth');
+
+// Route::get('/posts', \App\Http\Controllers\PostController::class)->middleware('auth');
+
 Route::resource('/', \App\Http\Controllers\HomeController::class);
-Route::resource('/bantuan', \App\Http\Controllers\BantuanController::class);
 Route::resource('/posts', \App\Http\Controllers\PostController::class);
+Route::resource('/bantuan', \App\Http\Controllers\BantuanController::class);
 Route::resource('/artikel', \App\Http\Controllers\BlogController::class);
 Route::resource('/tentang-kami', \App\Http\Controllers\TentangKamiController::class);
 Route::resource('/fitur', \App\Http\Controllers\FiturController::class);

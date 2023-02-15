@@ -5,17 +5,30 @@
       <div class="mb-10 items-center px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <div class="py-1 text-sm mb-10">
           <p><inertia-link href="/">Beranda </inertia-link>> <b>Fitur</b></p>
-        </div>      
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <h1 class="text-5xl text-[#073231] font-bold leading-tight text-center md:text-left">Fitur</h1>
-          <input type="text" placeholder="CARI..." class="rounded-xl px-4 max-w-none focus:outline-none md:w-4/6 h-10 border border-green-900 bg-transparent md:ml-auto placeholder:text-black hidden md:block"/>
-        </div>
+        </div>  
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 items-center mb-20 h-28 md:h-10 z-20">
+            <h1 class="text-5xl font-bold text-center md:text-left mb-5 md:mb-0 text-[#073231]">Fitur</h1>
+            <input type="text" placeholder="CARI..." name="seacrhbar" @change="handleChangeSearch" class="rounded-xl px-4 focus:outline-none h-12 border border-green-900 bg-transparent md:ml-auto placeholder:text-black uppercase w-full md:w-4/6"/>
+            <div></div>
+            <div class="z-50">
+              <div 
+                v-if="this.searchbar != ''" 
+                v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
+              >
+                <inertia-link :href="`/artikel/${post.id}`">
+                  <p class="capitalize text-white">{{ post.title }}</p>
+                </inertia-link>
+              </div>
+            </div>
+          </div>
+
       </div>
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <p class="mt-14 leading-loose text-center md:text-left">Fitur dan layanan yang tersedia untuk mendukung kesehatan Kamu.</p>
-        <div class="flex justify-start mt-10">
+        <div class="flex justify-center md:justify-start flex-wrap gap-6 mt-10 ">
           <img class="w-52 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&height=262"/>
-          <img class="w-52 rounded-xl ml-7" src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
+          <img class="w-52 rounded-xl " src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
         </div>
       </div>
 
@@ -32,6 +45,19 @@
             <div>
               <h6 class="text-3xl md:text-5xl font-bold text-white mb-5 text-center md:text-left hidden md:block">Health Score</h6>
               <p class="text-lg text-white leading-loose w-full md:w-5/6 text-center md:text-left">Pahami langkah untuk menjaga kesehatan dirimu dengan mengambil penilaian Health Score.</p>
+
+              <div v-for="(question, index) in questions" :key="question.title" class="mb-7 mt-7">
+                <div @click="() => handleAccordion(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
+                  <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-white'">{{ question.title }}</p>
+                  <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'whiteColorIcon'"/>
+                </div>
+                <Collapse :when="questions[index].isExpanded" class="collapses">
+                  <div class="w-full mt-5">
+                    <p class="text-white">{{question.contents}}</p>
+                  </div>
+                </Collapse>
+                <hr :class="question.isExpanded == true ? 'border-orange-400 mt-5' : 'border-white mt-5'"/>
+              </div>
             </div>
           </div>
           <div class="col-span-2 hidden md:block bg-radial-small">
@@ -170,6 +196,8 @@ import LayoutApp from '../../Layouts/App.vue'
 //import Link dari inertia
 import { Link } from '@inertiajs/inertia-vue3';
 import { Inertia } from '@inertiajs/inertia'
+import { reactive } from 'vue'
+import { Collapse } from 'vue-collapsed'
 
 //import component
 import BasicCard from '../../Components/BasicCard.vue';
@@ -186,20 +214,70 @@ export default {
     
   components: {
     "inertia-link": Link,
-    BasicCard,
-    BasicCardHome,
     FontAwesomeIcon,
-},
+    Collapse
+  },
 
   props: {
-      postsDESC: Array,
+    joinTable: Array,
   },
+
+  data() {
+    return {
+      searchbar: '',  
+    };
+  },
+
+  methods: {
+    handleAccordion(selectedIndex) {
+      questions.forEach((_, index) => {
+        questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
+      })
+    },
+    handleChangeSearch(e) {
+      this.searchbar = e.target.value
+      console.log(this.searchbar)
+    }
+  },
+
+  setup() {
+    const questions = reactive([
+      {
+        title: 'Penilaian Risiko Penyakit',
+        contents: 'Lakukan penilaian risiko penyakit untuk membantumu memahami risiko jangka panjang terkait penyakit jantung, diabetes, hipertensi, hati dan ginjal.',
+        isExpanded: false
+      },
+      {
+        title: 'Penilaian Gaya Hidup',
+        contents: 'Layanan ini akan segera hadir untukmu, nantikan fitur terbaru kami.',
+        isExpanded: false
+      },
+    ])
+
+    function handleAccordion(selectedIndex) {
+      questions.forEach((_, index) => {
+        questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
+      })
+      console.log(questions)
+    }
+
+    return {
+      questions,
+      handleAccordion
+    }
+  }
+
+
   
 
 }
 </script>
 
 <style>
+  .collapses {
+      transition: height 600ms cubic-bezier(0.3, 0, 0.6, 1);
+  }
+
   a {
       text-decoration: none;
       color: black;
@@ -208,6 +286,10 @@ export default {
   .whiteColorIcon {
     color: white;
     fill: white;
+  }
+  .orangeColorIcon {
+    color: rgb(251 146 60);
+    fill: rgb(251 146 60);
   }
 
   .bg-custom {
