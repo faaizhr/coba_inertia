@@ -44,23 +44,26 @@ class LoginController extends Controller
             'email'     => 'required|email',
             'password'  => 'required'
         ]);
-
+        
         //get email and password from request
         $credentials = $request->only('email', 'password');
-
+        
         //attempt to login
         if (Auth::attempt($credentials)) {
-
+            
             //regenerate session
             $request->session()->regenerate();
-
+            
             //redirect route dashboard
-            return redirect('/');
+            return redirect('/posts');
+            // return redirect('/');
+            // dd($request);
         }
-
+        
         //if login fails
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
+            // dd($request)
         ]);
     }
 
@@ -104,10 +107,14 @@ class LoginController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        auth()->logout();
-
-        return redirect('/login');
+        Auth::logout();
+ 
+        $request->session()->invalidate();
+    
+        $request->session()->regenerateToken();
+    
+        return redirect('/');
     }
 }

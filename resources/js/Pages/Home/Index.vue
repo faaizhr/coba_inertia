@@ -85,11 +85,33 @@
     </div>
   </div>
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mt-20">
-    <h2 class="text-3xl font-bold text text-[#073231] text-center">Apa Kata Mereka?</h2>
-    <div class="w-full border border-gray-400 rounded-2xl mt-20 p-10">
-      <img class="mx-auto" src="https://prodiadigital.com/assets/images/quote.svg"/>
-      <p class="text-center mt-5">(Lab Test)</p>
-      <p class="text-center leading-relaxed">Pemeriksaan Lab di Prodia sudah menjadi rutinitas tahunan saya sejak lama karena pilihan tes nya yang lengkap dan cabang Prodia yang tersebar di berbagai wilayah sangat memudahkan saya. Tak hanya itu, hasil pemeriksaan juga dapat diakses langsung melalui aplikasi U by Prodia. Jadi saya bisa pulang ke rumah langsung setelah menjalani Lab Test.</p>
+    <h2 class="text-4xl font-bold text text-[#073231] text-center">Apa Kata Mereka?</h2>
+    <div v-for="feedback in comment.filter(el => el.id == this.getFeedbackId)">
+      <div class="w-full border border-gray-400 rounded-2xl mt-20 p-10 min-h-72">
+        <img class="mx-auto" src="https://prodiadigital.com/assets/images/quote.svg"/>
+        <p class="text-center mt-5">({{ feedback.layanan }})</p>
+        <p class="text-center leading-relaxed">{{ feedback.comment }}</p>
+      </div>
+    </div>
+    <div class="w-full grid grid-cols-3 gap-5 mt-6">
+      <div v-for="feedback in comment" class="">
+        <div :class="getFeedbackId == feedback.id ? 'w-full rounded-lg border border-orange-400 cursor-pointer' : 'w-full rounded-lg border border-gray-400 cursor-pointer'">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3" @click="handleGetFeedbackId(feedback.id)">
+            <div>
+              <img class="w-full h-auto object-cover rounded-l-lg" src="https://prodiadigital.com/asset/uploads/meta/post/150-1503945-transparent-user-default-user-image-2-21112022-115039.png"/>
+            </div>
+            <div class="col-span-1 md:col-span-2 flex items-center">
+              <div>
+                <p class="font-semibold">{{ feedback.nama }}</p>
+                <p class="text-xs mt-4">{{ feedback.profesi }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      
     </div>
   </div>
   <div class="mt-28 mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
@@ -119,12 +141,15 @@ import LayoutApp from '../../Layouts/App.vue'
 
 //import Link dari inertia
 import { Link } from '@inertiajs/inertia-vue3';
-import { Inertia } from '@inertiajs/inertia'
+import { Inertia } from '@inertiajs/inertia';
+import { reactive } from 'vue';
 
 //import component
 import BasicCard from '../../Components/BasicCard.vue';
 import BasicCardHome from '../../Components/BasicCardHome.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+import { feedback } from '../../questions';
 
 
 
@@ -149,7 +174,8 @@ export default {
 
   data() {
     return {
-      searchbar: '',  
+      searchbar: '',
+      getFeedbackId: '1',
     };
   },
 
@@ -157,8 +183,20 @@ export default {
     handleChangeSearch(e) {
       this.searchbar = e.target.value
       console.log(this.searchbar)
-    }
+    },
+
+    handleGetFeedbackId(id) {
+      this.getFeedbackId = id;
+    },
   },
+
+  setup() {
+    const comment = reactive(feedback)
+
+    return {
+      comment
+    }
+  }
 
 
 }

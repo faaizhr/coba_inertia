@@ -5,6 +5,15 @@
        <p><inertia-link to="/posts">Admin Panel </inertia-link>> <b>Artikel</b></p>
       </div>
       <div class="mb-20">
+        <div class="mt-10 grid grid-cols-2">
+          <div>
+            <h1 class="text-xl font-medium">Hi, {{ $page.props.user.name }}</h1>
+          </div>
+          <inertia-link href="/logout" method="post" class="mx-auto md:ml-auto md:mr-0">
+            <button class="bg-black text-white w-fit py-2 px-10 rounded-xl  hover:bg-white hover:text-black duration-200 text-base font-medium">Logout</button>
+          </inertia-link>
+        </div>
+
         <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center">
           <h1 class="text-3xl font-bold text-center md:text-left mb-5 md:mb-0">Kelola Artikel</h1>
           <inertia-link href="/posts/create" class="mx-auto md:ml-auto md:mr-0"><button class="bg-black text-white w-fit py-2 px-10 rounded-xl  hover:bg-white hover:text-black duration-200 text-lg font-semibold">Tambah Artikel</button></inertia-link>

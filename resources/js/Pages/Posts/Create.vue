@@ -78,7 +78,6 @@
                       <button type="reset" class="bg-red-700 text-white text-lg font-semibold rounded-xl px-16 py-2">RESET</button>
                   </div>
               </form>
-              <h1 class="text-xl font-bold">{{ post.title }}</h1>
 
           </div>
       </div>

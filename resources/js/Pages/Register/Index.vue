@@ -7,14 +7,17 @@
         <div>
           <label for="nama" class="text-black font-medium mb-2 block">Nama</label>
           <input type="text" name="nama" id="nama" v-model="user.name" class="w-full h-10 px-5 border border-black bg-transparent rounded-lg placeholder:text-black placeholder:text-sm focus:outline-none" placeholder="Masukkan nama Anda"/>
+          <p class="text-sm text-red-600">{{ errors.name }}</p>
         </div>
         <div class="mt-5">
           <label for="email" class="text-black font-medium mb-2 block">Email</label>
           <input type="email" name="email" id="email" v-model="user.email" class="w-full h-10 px-5 border border-black bg-transparent rounded-lg placeholder:text-black placeholder:text-sm focus:outline-none" placeholder="Masukkan alamat email"/>
+          <p class="text-sm text-red-600">{{ errors.email }}</p>
         </div>
         <div class="mt-5">
           <label for="password" class="text-black font-medium mb-2 block">Password</label>
           <input type="password" name="password" id="password" v-model="user.password" class="w-full h-10 px-5 border border-black bg-transparent rounded-lg placeholder:text-black placeholder:text-sm focus:outline-none" placeholder="Masukkan password"/>
+          <p class="text-sm text-red-600">{{ errors.password }}</p>
         </div>
         <div class="mt-5">
           <label for="password_confirmation" class="text-black font-medium mb-2 block">Password Confirmation</label>
@@ -42,6 +45,10 @@ export default {
     
   components: {
     "inertia-link": Link,
+  },
+
+  props: {
+    errors: Object
   },
 
   setup() {

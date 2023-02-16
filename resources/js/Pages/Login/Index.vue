@@ -7,10 +7,12 @@
         <div>
           <label for="email" class="text-black font-medium mb-2 block">Email</label>
           <input type="email" name="email" v-model="user.email" class="w-full h-10 px-5 border border-black bg-transparent rounded-lg placeholder:text-black placeholder:text-sm focus:outline-none" placeholder="Masukkan alamat email"/>
+          <p class="text-sm text-red-600">{{ errors.email }}</p>
         </div>
         <div class="mt-5">
           <label for="password" class="text-black font-medium mb-2 block">Password</label>
           <input type="password" name="password" v-model="user.password" class="w-full h-10 px-5 border border-black bg-transparent rounded-lg placeholder:text-black placeholder:text-sm focus:outline-none" placeholder="Masukkan password"/>
+          <p class="text-sm text-red-600">{{ errors.password }}</p>
         </div>
         <button type="submit" class="border border-black px-10 py-2 rounded-xl bg-black text-white mt-10 block mx-auto">Login</button>
         <p class="text-center mt-3 ">Belum punya akun? <inertia-link href="/register" class="font-semibold">Registrasi</inertia-link></p>
@@ -34,6 +36,10 @@ export default {
     
   components: {
     "inertia-link": Link,
+  },
+
+  props: {
+    errors: Object
   },
 
   setup() {
@@ -61,10 +67,6 @@ export default {
 </script>
 
 <style>
-
-  .collapses {
-    transition: height 600ms cubic-bezier(0.3, 0, 0.6, 1);
-  }
 
   a {
       text-decoration: none;

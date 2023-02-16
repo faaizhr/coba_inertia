@@ -32,7 +32,7 @@
   </div>
 
 
-  <div class="transition ease-in-out duration-500" :style="{ display: toggleNavbar ? 'block' : 'none' }">
+  <div class="collapses" :style="{ display: toggleNavbar ? 'block' : 'none' }">
     <div class="bg-black w-5/6 h-screen fixed top-0 right-0 p-10 rounded-l-3xl">
       <font-awesome-icon icon="fa-solid fa-xmark "  class="whiteColorIcon fa-2xl float-right cursor-pointer" @click="handleToggleNavbar"/>
       <ul class="mt-10">
@@ -193,6 +193,11 @@ export default {
 </script>
 
 <style>
+
+  .collapses {
+    transition: height 600ms cubic-bezier(0.3, 0, 0.6, 1);
+  }
+
   .whiteColorIcon {
     color: white;
     fill: white;
@@ -206,21 +211,5 @@ export default {
     transition: background-color 0.2s ease-out;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-
-  /* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
-  background-color: #666;
-  color: white;
-}
 
 </style>

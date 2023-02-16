@@ -29,22 +29,22 @@
       </div>
       <div class="mt-20 px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-white py-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div class="col-span-1">
+          <div class="col-span-1 md:bg-white bg-black md:p-0 p-7 rounded-xl text-white md:text-black">
             <div>
-              <h5 class="text-5xl font-bold mb-5">FAQ</h5>
+              <h5 class="text-5xl font-bold mb-5 text-center md:text-left">FAQ</h5>
               <h6 class="text-xl font-semibold mb-10">Kategori</h6>
 
               <div v-for="(question, index) in menu" :key="question.title" class="mb-7">
                 <div @click="() => handleAccordionMenu(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
-                  <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-black'">{{ question.title }}</p>
-                  <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'blackColorIcon'"/>
+                  <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-white md:text-black'">{{ question.title }}</p>
+                  <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'md:blackColorIcon whiteColorIcon'"/>
                 </div>
                 <Collapse :when="menu[index].isExpanded" class="collapses">
                   <div class="w-full mt-5">
                     <div v-for="body in question.contents">
                       <p 
                         @click="handleGetId(body.subId)" 
-                        :class="this.getId == body.subId ? 'mt-2 cursor-pointer text-orange-400 hover:text-orange-400' : 'mt-2 cursor-pointer text-black hover:text-orange-400'">
+                        :class="this.getId == body.subId ? 'mt-2 cursor-pointer text-orange-400 hover:text-orange-400' : 'mt-2 cursor-pointer text-white md:text-black hover:text-orange-400'">
                         {{ body.subtitle }}
                       </p>
                     </div>

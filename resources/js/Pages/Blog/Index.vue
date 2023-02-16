@@ -110,7 +110,15 @@
                       v-else-if="(post.category == 'Weight Management')"
                       class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
                     >{{ post.category }}</button>
-                    <button v-else class="text-white">Unknown</button>
+                    <button 
+                      v-else-if="(post.category == 'Active Lifestyle')"
+                      class="text-white bg-emerald-700 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button 
+                      v-else-if="(post.category == 'Cardiovascular')"
+                      class="text-white bg-cyan-600 px-4 py-1 rounded text-xs"  
+                    >{{ post.category }}</button>
+                    <button v-else class="text-white bg-violet-600 px-4 py-1 rounded text-xs">Unknown</button>
                   </div>
                   <div class="mt-2">
                     <inertia-link :href="`/artikel/${pos.id}`" class="">

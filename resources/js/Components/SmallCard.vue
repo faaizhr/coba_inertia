@@ -31,6 +31,14 @@
               v-else-if="(item.category[0].category == 'Weight Management')"
               class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
+            <button 
+              v-else-if="(item.category[0].category == 'Active Lifestyle')"
+              class="text-white bg-emerald-700 px-4 py-1 rounded text-xs"  
+            >{{ item.category[0].category }}</button>
+            <button 
+              v-else-if="(item.category[0].category == 'Cardiovascular')"
+              class="text-white bg-cyan-600 px-4 py-1 rounded text-xs"  
+            >{{ item.category[0].category }}</button>
             <button v-else class="text-white bg-violet-600 px-4 py-1 rounded text-xs">Unknown</button>
           </div>
           <div v-if="item.category.length == 0" class="mt-2 md:mt-0 mr-0 ml-0 md:ml-auto md:mr-0">
