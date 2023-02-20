@@ -6,11 +6,11 @@ import { App, plugin } from '@inertiajs/inertia-vue3'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faArrowRight, faBarsStaggered, faChevronDown, faEye, faLink, faUser, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, faBarsStaggered, faChevronDown, faChevronLeft, faCirclePlus, faEye, faHouse, faLink, faMinus, faPlus, faPlusCircle, faUser, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitter, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
-library.add(faUser, faEye, faLink, faFacebook, faTwitter, faWhatsapp, faChevronDown, faBarsStaggered, faXmark, faArrowRight, faInstagram, faYoutube, faChevronDown)
+library.add(faUser, faEye, faLink, faFacebook, faTwitter, faWhatsapp, faChevronDown, faBarsStaggered, faXmark, faArrowRight, faArrowLeft, faInstagram, faYoutube, faChevronDown, faPlus, faMinus, faHouse, faChevronLeft)
 
 import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();

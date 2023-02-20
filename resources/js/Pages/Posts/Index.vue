@@ -19,6 +19,11 @@
           <inertia-link href="/posts/create" class="mx-auto md:ml-auto md:mr-0"><button class="bg-black text-white w-fit py-2 px-10 rounded-xl  hover:bg-white hover:text-black duration-200 text-lg font-semibold">Tambah Artikel</button></inertia-link>
         </div>
 
+        <div v-if="$page.props.flash.message" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-5" role="alert">
+          <strong class="font-bold">Success! </strong>
+          <span class="block sm:inline">{{$page.props.flash.message}}</span>
+        </div>
+
         <div class="">
           <div class="">
             <table class="bg-white rounded-2xl min-w-full">

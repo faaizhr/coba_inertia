@@ -42,8 +42,8 @@ class RegisterController extends Controller
          */
         $this->validate($request, [
             'name'      => 'required',
-            'email'     => 'required|unique:users',
-            'password'  => 'required|confirmed'
+            'email'     => 'required|unique:users|email:dns',
+            'password'  => 'required|confirmed|min:8|max:255'
         ]);
 
         /**
@@ -56,7 +56,7 @@ class RegisterController extends Controller
         ]);
 
         //redirect
-        return redirect('/login')->with('status', 'Register Berhasil!');
+        return redirect('/login')->with('message', 'Register Berhasil!, Silahkan Login !');
     }
 
     /**

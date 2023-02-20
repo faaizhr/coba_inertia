@@ -37,7 +37,10 @@
               <div v-for="(question, index) in menu" :key="question.title" class="mb-7">
                 <div @click="() => handleAccordionMenu(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
                   <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-white md:text-black'">{{ question.title }}</p>
-                  <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'md:blackColorIcon whiteColorIcon'"/>
+                  <div :class="question.isExpanded == true ? 'border border-orange-400 p-custom rounded-full' : 'border md:border-black border-white p-custom rounded-full'">
+                    <font-awesome-icon v-if="question.isExpanded == false" icon="fa-plus" class="md:blackColorIcon "/>
+                    <font-awesome-icon v-else icon="fa-minus" class="orangeColorIcon"/>
+                  </div>
                 </div>
                 <Collapse :when="menu[index].isExpanded" class="collapses">
                   <div class="w-full mt-5">
@@ -61,12 +64,20 @@
           <div class="col-span-2">
 
             <div v-for="(menu, index) in question.filter(filter => filter.subId == this.getId)" :key="menu.title" class="mb-7">
-              <div @click="() => handleAccordionQuestion(index)" class="font-semibold text-lg cursor-pointer flex justify-between gap-10">
+              <div 
+                @click="() => {
+                  handleAccordionQuestion(index);
+                  handleGetContentId(menu.contentId);
+                }" 
+                class="font-semibold text-lg cursor-pointer flex justify-between gap-10 items-center">
                 <!-- <p @click="handleGetContentId(menu.contentId)" :class="menu.isExpanded == true ? 'text-orange-400' : 'text-black'">{{ menu.title }}</p> -->
                 <!-- <font-awesome-icon icon="fa-chevron-down" :class="menu.isExpanded == true ? 'orangeColorIcon' : 'blackColorIcon'"/> -->
 
-                <p @click="handleGetContentId(menu.contentId)" :class="menu.contentId == this.getContentId ? 'text-orange-400' : 'text-black'">{{ menu.title }}</p>
-                <font-awesome-icon icon="fa-chevron-down" :class="menu.contentId == this.getContentId ? 'orangeColorIcon' : 'blackColorIcon'"/>
+                <p :class="menu.contentId == this.getContentId ? 'text-orange-400' : 'text-black'">{{ menu.title }}</p>
+                <div :class="menu.contentId == this.getContentId ? 'border border-orange-400 p-custom rounded-full' : 'border border-black p-custom rounded-full'">
+                  <font-awesome-icon v-if="menu.contentId != this.getContentId" icon="fa-plus" class="blackColorIcon"/>
+                  <font-awesome-icon v-else icon="fa-minus" class="orangeColorIcon"/>
+                </div>
               </div>
               <Collapse :when="question[index].isExpanded" class="collapses">
                 <div class="w-full mt-5">
@@ -185,6 +196,10 @@ export default {
 
   .collapses {
     transition: height 600ms cubic-bezier(0.3, 0, 0.6, 1);
+  }
+
+  .p-custom {
+    padding: 1px 7px 0px 7px;
   }
 
   a {

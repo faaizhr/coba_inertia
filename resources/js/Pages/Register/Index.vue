@@ -2,6 +2,9 @@
   
   <div class="w-full h-screen bg-[#073231] pt-20">
     <div class="w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 bg-custom mx-auto rounded-xl p-10">
+      <inertia-link href="/">
+        <font-awesome-icon icon="fa-chevron-left" class=""/>
+      </inertia-link>
       <h1 class="text-black text-5xl font-bold text-center mb-10">Register</h1>
       <form @submit.prevent="storeRegister">
         <div>
@@ -36,6 +39,7 @@
 import { reactive } from 'vue'
 import { Link } from '@inertiajs/inertia-vue3';
 import { Inertia } from '@inertiajs/inertia'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 
 
@@ -45,6 +49,7 @@ export default {
     
   components: {
     "inertia-link": Link,
+    FontAwesomeIcon
   },
 
   props: {

@@ -2,7 +2,19 @@
   
   <div class="w-full h-screen bg-[#073231] pt-20">
     <div class="w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 bg-custom mx-auto rounded-xl p-10">
-      <h1 class="text-black text-5xl font-bold text-center mb-10">Login</h1>
+
+      <inertia-link href="/">
+        <font-awesome-icon icon="fa-chevron-left" class=""/>
+      </inertia-link>
+
+      <h1 class="text-black text-5xl font-bold text-center mb-10 mt-5">Login</h1>
+
+      <div v-if="$page.props.flash.message" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-5" role="alert">
+        <strong class="font-bold">Success! </strong>
+        <span class="block sm:inline">{{$page.props.flash.message}}</span>
+      </div>
+      
+      <!-- <p class="text-xl text-emerald-600 font-semibold">{{ $page.props.flash.message }}</p> -->
       <form @submit.prevent="storeLogin">
         <div>
           <label for="email" class="text-black font-medium mb-2 block">Email</label>
@@ -27,6 +39,7 @@
 import { reactive } from 'vue'
 import { Link } from '@inertiajs/inertia-vue3';
 import { Inertia } from '@inertiajs/inertia'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 
 
@@ -36,6 +49,8 @@ export default {
     
   components: {
     "inertia-link": Link,
+    FontAwesomeIcon
+    
   },
 
   props: {

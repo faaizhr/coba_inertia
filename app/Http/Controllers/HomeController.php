@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Category;
+use App\Models\Feedback;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 
@@ -29,10 +30,12 @@ class HomeController extends Controller
     {
         $postsDESC = Post::with('category')->orderBy('id', 'desc')->get();
         $joinTable = Post::with('category')->get();
+        $feedback = Feedback::get();
 
         return Inertia::render('Home/Index', [
             'postsDESC' => $postsDESC,
             'joinTable' => $joinTable,
+            'feedback' => $feedback,
         ]);
     }
 

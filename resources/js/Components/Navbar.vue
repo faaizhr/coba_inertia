@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center">
       <div class="">
         <img id="blackLogo" class="w-32" src="https://prodiadigital.com/assets/images/logo.svg"/>
-        <img id="whiteLogo" class="w-32 hidden" src="https://prodiadigital.com/assets/images/logo-white.svg"/>
+        <img id="whiteLogo" class="w-24 hidden" src="https://prodiadigital.com/assets/images/logo-white.svg"/>
       </div>
       <div class=" w-full md:grid md:justify-items-end hidden">
         <div id="myDIV">

@@ -42,17 +42,41 @@
       <h2 class="text-4xl tracking-wide font-bold text-white text-center mt-10">Download Sekarang</h2>
       <div class="mx-auto">
         <div class="flex justify-center flex-wrap mt-10 gap-10">
-          <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&height=262"/>
-          <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
+          <a href="https://play.google.com/store/apps/details?id=com.prodiadigital.patient" target="_blank">
+            <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&height=262"/>
+          </a>
+          <a href="https://apps.apple.com/id/app/u-by-prodia/id6443986153" target="_blank">
+            <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
+          </a>
         </div>
       </div>
     </div>
-    <div></div>
+    <div>
+      <!-- <div class="block">
+        <div class="animation">
+          <div class="first">
+            <img src="http://fpoimg.com/200x200?text=First">
+          </div>
+          <div>
+            <img src="http://fpoimg.com/200x200?text=Second">
+          </div>
+          <div>
+            <img src="http://fpoimg.com/200x200?text=Third">
+          </div>
+          <div>
+            <img src="http://fpoimg.com/200x200">
+          </div>
+          <div>
+            <img src="http://fpoimg.com/200x200">
+          </div>
+          <div>
+            <img src="http://fpoimg.com/200x200">
+          </div>
+        </div>
+      </div> -->
+    </div>
     <div class="w-full grid grid-cols-1 md:grid-cols-3 text-white bg-radial py-28">
       <div class=" w-full flex items-center">
-        <!-- <div class="w-full md:flex md:justify-center hidden">
-          <img src="https://cdn.discordapp.com/attachments/915505289174847510/1073526322929868800/group-2509-14112022-092147.png"/>
-        </div> -->
         <div class="hidden md:block">
           <h2 class="text-3xl mb-3 font-bold text-right">Pemeriksaan Lab</h2>
           <p class="text-right">Pesan pemeriksaan lab, seperti check up jantung, cek diabetes, atau cek gula darah di cabang Prodia terdekat. Seluruh hasil lab akan dikirimkan langsung di aplikasi.</p>
@@ -84,36 +108,46 @@
       </inertia-link>
     </div>
   </div>
+
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mt-20">
     <h2 class="text-4xl font-bold text text-[#073231] text-center">Apa Kata Mereka?</h2>
-    <div v-for="feedback in comment.filter(el => el.id == this.getFeedbackId)">
+    <div v-for="feedback in feedback.filter(el => el.id == this.getFeedbackId)">
       <div class="w-full border border-gray-400 rounded-2xl mt-20 p-10 min-h-72">
         <img class="mx-auto" src="https://prodiadigital.com/assets/images/quote.svg"/>
         <p class="text-center mt-5">({{ feedback.layanan }})</p>
         <p class="text-center leading-relaxed">{{ feedback.comment }}</p>
       </div>
     </div>
-    <div class="w-full grid grid-cols-3 gap-5 mt-6">
-      <div v-for="feedback in comment" class="">
-        <div :class="getFeedbackId == feedback.id ? 'w-full rounded-lg border border-orange-400 cursor-pointer' : 'w-full rounded-lg border border-gray-400 cursor-pointer'">
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-3" @click="handleGetFeedbackId(feedback.id)">
-            <div>
-              <img class="w-full h-auto object-cover rounded-l-lg" src="https://prodiadigital.com/asset/uploads/meta/post/150-1503945-transparent-user-default-user-image-2-21112022-115039.png"/>
-            </div>
-            <div class="col-span-1 md:col-span-2 flex items-center">
-              <div>
-                <p class="font-semibold">{{ feedback.nama }}</p>
-                <p class="text-xs mt-4">{{ feedback.profesi }}</p>
+
+    <div class="flex justify-center items-center mt-6">
+      <div @click="prevFeedback" class="mr-3 cursor-pointer">
+        <font-awesome-icon icon="fa-arrow-left" class=""/>
+      </div>
+        <div class="w-full grid grid-cols-3 gap-5">
+          <div v-for="feedback in feedback" class="">
+            <div :class="getFeedbackId == feedback.id ? 'w-full rounded-lg border border-orange-400 cursor-pointer' : 'w-full rounded-lg border border-gray-400 cursor-pointer'">
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-3" @click="handleGetFeedbackId(feedback.id)">
+                <div>
+                  <img class="w-full h-auto object-cover rounded-l-lg" src="https://prodiadigital.com/asset/uploads/meta/post/150-1503945-transparent-user-default-user-image-2-21112022-115039.png"/>
+                </div>
+                <div class="col-span-1 md:col-span-2 flex items-center">
+                  <div>
+                    <p class="font-semibold">{{ feedback.nama }}</p>
+                    <p class="text-xs mt-4">{{ feedback.profesi }}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+      <div @click="nextFeedback" class="ml-3 cursor-pointer">
+        <font-awesome-icon icon="fa-arrow-right" class=""/>
       </div>
     </div>
-    <div>
-      
-    </div>
+
   </div>
+
+
   <div class="mt-28 mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
     <p class="text-center text-lg">ARTIKEL</p>
     <h2 class="font-bold text-3xl text-[#073231] text-center mt-2">Bacaan Untukmu</h2>
@@ -153,6 +187,17 @@ import { feedback } from '../../questions';
 
 
 
+// ========================================================
+
+window.onload = function () {
+  initSmoothScrolling('.block','smoothscroll');
+}
+
+
+// ========================================================
+
+
+
 
 
 export default {
@@ -169,13 +214,14 @@ export default {
   props: {
       postsDESC: Array,
       joinTable: Array, 
+      feedback: Array,
   },
   
 
   data() {
     return {
       searchbar: '',
-      getFeedbackId: '1',
+      getFeedbackId: 1,
     };
   },
 
@@ -188,21 +234,53 @@ export default {
     handleGetFeedbackId(id) {
       this.getFeedbackId = id;
     },
+
+    nextFeedback() {
+      if (this.getFeedbackId >= feedback.length) {
+        this.getFeedbackId = 1;
+      } else
+      this.getFeedbackId = this.getFeedbackId + 1;
+    },
+
+    prevFeedback() {
+      if (this.getFeedbackId <= 1) {
+        this.getFeedbackId = feedback.length;
+      } else
+      this.getFeedbackId = this.getFeedbackId - 1;
+    }
   },
 
-  setup() {
-    const comment = reactive(feedback)
+  // setup() {
+  //   const comment = reactive(feedback)
 
-    return {
-      comment
-    }
-  }
+  //   return {
+  //     comment
+  //   }
+  // }
 
 
 }
 </script>
 
 <style>
+  /* .block {
+    overflow: hidden;
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+  }
+  .animation {
+    width: auto;
+    height: 100px;
+    font-size: 0px;
+  }
+  .animation div {
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding: 0 10px;
+  } */
+
   a {
       text-decoration: none;
       color: black;

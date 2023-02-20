@@ -159,23 +159,28 @@
           //function updatePost
           function updatePost() {
               
-              //define variable 
-              let title   = post.title
-              let content = post.content
-              let image = post.image
-              let category = post.category
-              let ditulis_oleh = post.ditulis_oleh
-              let ditinjau_oleh = post.ditinjau_oleh
+            //define variable 
+            let title   = post.title
+            let content = post.content
+            let image = post.image
+            let category = post.category
+            let ditulis_oleh = post.ditulis_oleh
+            let ditinjau_oleh = post.ditinjau_oleh
 
               //send data
-              Inertia.put(`/posts/${props.post.id}`, {
+            Inertia.put(`/posts/${props.post.id}`, {
                   title: title,
                   content: content,
                   image: image,
                   category: category,
                   ditulis_oleh: ditulis_oleh,
                   ditinjau_oleh: ditinjau_oleh,
-              })
+            })
+
+            // Inertia.post(`/posts/${props.post.id}`, {
+            //     _method: 'put',
+            //     image: post.image,
+            // })
            
           }
 

@@ -27,8 +27,12 @@
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <p class="mt-14 leading-loose text-center md:text-left">Fitur dan layanan yang tersedia untuk mendukung kesehatan Kamu.</p>
         <div class="flex justify-center md:justify-start flex-wrap gap-6 mt-10 ">
-          <img class="w-52 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&height=262"/>
-          <img class="w-52 rounded-xl " src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
+          <a href="https://play.google.com/store/apps/details?id=com.prodiadigital.patient" target="_blank">
+            <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553106165575740/Untitled-1.png?width=875&height=262"/>
+          </a>
+          <a href="https://apps.apple.com/id/app/u-by-prodia/id6443986153" target="_blank">
+            <img class="w-72 rounded-xl" src="https://media.discordapp.net/attachments/915505289174847510/1073553105951662170/Untitled-2.png?width=875&height=263"/>
+          </a>
         </div>
       </div>
 
@@ -49,7 +53,10 @@
               <div v-for="(question, index) in questions" :key="question.title" class="mb-7 mt-7">
                 <div @click="() => handleAccordion(index)" class="font-semibold text-lg cursor-pointer flex justify-between">
                   <p :class="question.isExpanded == true ? 'text-orange-400' : 'text-white'">{{ question.title }}</p>
-                  <font-awesome-icon icon="fa-chevron-down" :class="question.isExpanded == true ? 'orangeColorIcon' : 'whiteColorIcon'"/>
+                  <div :class="question.isExpanded == true ? 'border border-orange-400 p-custom rounded-full' : 'border border-white p-custom rounded-full'">
+                    <font-awesome-icon v-if="question.isExpanded == false" icon="fa-plus" class="whiteColorIcon "/>
+                    <font-awesome-icon v-else icon="fa-minus" class="orangeColorIcon"/>
+                  </div>
                 </div>
                 <Collapse :when="questions[index].isExpanded" class="collapses">
                   <div class="w-full mt-5">
@@ -58,6 +65,7 @@
                 </Collapse>
                 <hr :class="question.isExpanded == true ? 'border-orange-400 mt-5' : 'border-white mt-5'"/>
               </div>
+
             </div>
           </div>
           <div class="col-span-2 hidden md:block bg-radial-small">
@@ -276,6 +284,10 @@ export default {
 <style>
   .collapses {
       transition: height 600ms cubic-bezier(0.3, 0, 0.6, 1);
+  }
+
+  .p-custom {
+    padding: 1px 7px 0px 7px;
   }
 
   a {
