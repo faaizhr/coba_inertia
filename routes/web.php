@@ -31,6 +31,7 @@ Route::resource('/bantuan', \App\Http\Controllers\BantuanController::class);
 Route::resource('/artikel', \App\Http\Controllers\BlogController::class);
 Route::resource('/tentang-kami', \App\Http\Controllers\TentangKamiController::class);
 Route::resource('/fitur', \App\Http\Controllers\FiturController::class);
+// Route::resource('/category', \App\Http\Controllers\CategoryController::class);
 
 Route::get('/artikel/{id}', [BlogController::class, 'show']);
 Route::get('/posts/{id}', [PostController::class, 'show']);

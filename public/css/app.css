@@ -683,6 +683,21 @@ video {
 .mt-1 {
   margin-top: 0.25rem;
 }
+.-ml-10 {
+  margin-left: -2.5rem;
+}
+.-ml-8 {
+  margin-left: -2rem;
+}
+.-ml-6 {
+  margin-left: -1.5rem;
+}
+.-ml-7 {
+  margin-left: -1.75rem;
+}
+.-mr-7 {
+  margin-right: -1.75rem;
+}
 .block {
   display: block;
 }
@@ -1274,6 +1289,10 @@ video {
 .text-emerald-600 {
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;

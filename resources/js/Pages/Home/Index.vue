@@ -16,7 +16,7 @@
             v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
           >
             <inertia-link :href="`/artikel/${post.id}`">
-              <p class="capitalize text-white">{{ post.title }}</p>
+              <p class="capitalize text-white text-sm">{{ post.title }}</p>
             </inertia-link>
           </div>
         </div>
@@ -112,7 +112,7 @@
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mt-20">
     <h2 class="text-4xl font-bold text text-[#073231] text-center">Apa Kata Mereka?</h2>
     <div v-for="feedback in feedback.filter(el => el.id == this.getFeedbackId)">
-      <div class="w-full border border-gray-400 rounded-2xl mt-20 p-10 min-h-72">
+      <div class="w-full border border-gray-400 rounded-2xl mt-20 p-10 min-h-96">
         <img class="mx-auto" src="https://prodiadigital.com/assets/images/quote.svg"/>
         <p class="text-center mt-5">({{ feedback.layanan }})</p>
         <p class="text-center leading-relaxed">{{ feedback.comment }}</p>
@@ -120,7 +120,7 @@
     </div>
 
     <div class="flex justify-center items-center mt-6">
-      <div @click="prevFeedback" class="mr-3 cursor-pointer">
+      <div @click="prevFeedback" class="mr-3 cursor-pointer -ml-7">
         <font-awesome-icon icon="fa-arrow-left" class=""/>
       </div>
         <div class="w-full grid grid-cols-3 gap-5">
@@ -140,7 +140,7 @@
             </div>
           </div>
         </div> 
-      <div @click="nextFeedback" class="ml-3 cursor-pointer">
+      <div @click="nextFeedback" class="ml-3 cursor-pointer -mr-7">
         <font-awesome-icon icon="fa-arrow-right" class=""/>
       </div>
     </div>
@@ -227,7 +227,7 @@ export default {
 
   methods: {
     handleChangeSearch(e) {
-      this.searchbar = e.target.value
+      this.searchbar = e.target.value.toLowerCase()
       console.log(this.searchbar)
     },
 

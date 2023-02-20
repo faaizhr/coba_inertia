@@ -90,9 +90,9 @@
     </div>
   </div>
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 bg-black py-20 rounded-b-3xl">
-    <h1 class="text-3xl font-bold inline text-black">Artikel Lainnya</h1>
+    <h1 class="text-3xl font-bold inline text-white">Artikel Lainnya</h1>
     <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 z-0">
-      <BasicCard v-for="post in posts" 
+      <BasicCard v-for="post in posts.slice(0, 3)" 
         :key="post.id"
         :item="post"
         :index="index"

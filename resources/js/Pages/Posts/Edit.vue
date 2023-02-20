@@ -48,9 +48,11 @@
                                 @input="post.image = $event.target.files[0]"
                                 @change="(event) => getImagePreview(event)"
                             >
-                            <div id="preview" class="w-56 object-cover p-2 border border-gray-300 mt-2 rounded-lg">
+                            <div>
+                                <div v-if="post.image" id="preview" class="w-56 object-cover p-2 border border-gray-300 mt-2 rounded-lg">
+                                <img :src="`../../storage/${post.image}`"/>
                             </div>
-                            <img :src="`../../storage/${post.image}`"/>
+                            </div>
                             <div v-if="errors.content" class="">
                                 {{ errors.content }}
                             </div>
@@ -93,6 +95,7 @@
 
   import { reactive } from 'vue'
   import { Inertia } from '@inertiajs/inertia'
+//   import { router } from '@inertiajs/vue3'
 
   export default {
 
@@ -168,7 +171,17 @@
             let ditinjau_oleh = post.ditinjau_oleh
 
               //send data
-            Inertia.put(`/posts/${props.post.id}`, {
+            // Inertia.put(`/posts/${props.post.id}`, {
+            //       title: title,
+            //       content: content,
+            //       image: image,
+            //       category: category,
+            //       ditulis_oleh: ditulis_oleh,
+            //       ditinjau_oleh: ditinjau_oleh,
+            // })
+
+            Inertia.post(`/posts/${props.post.id}`, {
+                  _method: 'put',
                   title: title,
                   content: content,
                   image: image,
@@ -176,11 +189,6 @@
                   ditulis_oleh: ditulis_oleh,
                   ditinjau_oleh: ditinjau_oleh,
             })
-
-            // Inertia.post(`/posts/${props.post.id}`, {
-            //     _method: 'put',
-            //     image: post.image,
-            // })
            
           }
 

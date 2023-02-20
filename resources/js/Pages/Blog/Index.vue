@@ -16,7 +16,7 @@
                 v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
               >
                 <inertia-link :href="`/artikel/${post.id}`">
-                  <p class="capitalize text-white">{{ post.title }}</p>
+                  <p class="capitalize text-white text-sm">{{ post.title }}</p>
                 </inertia-link>
               </div>
             </div>
@@ -69,7 +69,7 @@
         </div>
         <div v-if="category == ''">
           <div class="container grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
-            <BasicCard v-for="post in joinTable" 
+            <BasicCard v-for="post in joinTable.slice(0, 9)" 
             :key="post.id"
             :item="post"
             :index="index"
@@ -90,6 +90,7 @@
                     {{ post.category }}
                   </button> -->
                   <div class="flex justify-end">
+                    <!-- <inertia-link href="/category"></inertia-link> -->
                     <button 
                       v-if="(post.category == 'Diet Program')"
                       class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
@@ -122,7 +123,7 @@
                   </div>
                   <div class="mt-2">
                     <inertia-link :href="`/artikel/${pos.id}`" class="">
-                      <h6 class="my-3 text-lg font-semibold  text-white">{{ pos.title }}</h6>
+                      <h6 class="my-3 text-lg font-semibold  text-white capitalize">{{ pos.title }}</h6>
                     </inertia-link>
                     <inertia-link :href="`/artikel/${pos.id}`" class="font-bold text-white text-sm underline underline-offset-1">
                       Selengkapnya
@@ -194,11 +195,12 @@
 
           handleChangeCat(value) {
             this.category = value
+            this.dropDown = false
             console.log("cek ceok", this.category)
           },
 
           handleChangeSearch(e) {
-            this.searchbar = e.target.value
+            this.searchbar = e.target.value.toLowerCase()
             console.log(this.searchbar)
           }
       },

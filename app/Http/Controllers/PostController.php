@@ -132,7 +132,7 @@ class PostController extends Controller
         $request->validate([
             'title'   => 'required',
             'content' => 'required',
-            // 'image' => 'required',
+            'image' => 'required',
             'ditulis_oleh' => 'required',
             'ditinjau_oleh' => 'required',
         ]);
@@ -141,7 +141,7 @@ class PostController extends Controller
         $post->update([
             'title'     => $request->title,
             'content'   => $request->content,
-            // 'image'   => $request->file('image')->store('post-images'),
+            'image'   => $request->file('image')->store('post-images'),
             'ditulis_oleh'   => $request->ditulis_oleh,
             'ditinjau_oleh'   => $request->ditinjau_oleh,
         ]);

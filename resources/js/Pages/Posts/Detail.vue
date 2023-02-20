@@ -2,14 +2,14 @@
 
   <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
     <div class="py-1 text-sm">
-     <p><inertia-link to="/posts">Admin Panel </inertia-link>> Artikel > <b>{{ joinTable.title }}</b></p>
+     <p><inertia-link href="/posts">Admin Panel </inertia-link>> Artikel > <b class="capitalize">{{ joinTable.title }}</b></p>
     </div>
     <div class="mb-20">
       <h1 class="text-3xl font-bold text-center md:text-left my-10">Detail Artikel</h1>
       <div class="w-full bg-white p-5 rounded-xl">
         <div class="mb-5">
-          <h6 class="font-semibold text-xl">Judul Artikel</h6>
-          <p>{{ joinTable.title }}</p>
+          <h6 class="font-semibold text-xl ">Judul Artikel</h6>
+          <p class="capitalize">{{ joinTable.title }}</p>
         </div>
         <div class="mb-5">
           <h6 class="font-semibold text-xl">Isi Artikel</h6>
@@ -31,7 +31,7 @@
         </div>
         <div class="mb-5">
           <h6 class="font-semibold text-xl">Cover</h6>
-          <img :src="`../../storage/${joinTable.image}`" class="rounded-lg w-72 mt-5"/>
+          <img :src="`../../storage/${joinTable.image}`" class="rounded-lg w-72 mt-2"/>
         </div>
         <div class="mb-5 text-sm">
           <p>Dibuat pada : {{ getMonthNameCreate }} {{ getDayCreate }}, {{ getYearCreate }} | {{ getTimeCreate }}</p>

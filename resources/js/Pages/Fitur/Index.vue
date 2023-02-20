@@ -17,7 +17,7 @@
                 v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" class="bg-black w-full md:w-4/6 float-right p-3 border-b border-gray-300 z-20"
               >
                 <inertia-link :href="`/artikel/${post.id}`">
-                  <p class="capitalize text-white">{{ post.title }}</p>
+                  <p class="capitalize text-white text-sm">{{ post.title }}</p>
                 </inertia-link>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default {
       })
     },
     handleChangeSearch(e) {
-      this.searchbar = e.target.value
+      this.searchbar = e.target.value.toLowerCase()
       console.log(this.searchbar)
     }
   },
@@ -287,7 +287,7 @@ export default {
   }
 
   .p-custom {
-    padding: 1px 7px 0px 7px;
+    padding: 1px 6px 0px 6px;
   }
 
   a {

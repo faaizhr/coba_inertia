@@ -6,12 +6,12 @@
         <img id="whiteLogo" class="w-24 hidden" src="https://prodiadigital.com/assets/images/logo-white.svg"/>
       </div>
       <div class=" w-full md:grid md:justify-items-end hidden">
-        <div id="myDIV">
-          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/">Beranda</inertia-link></a>
-          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/bantuan">Bantuan</inertia-link></a>
-          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/tentang-kami">Tentang Kami</inertia-link></a>
-          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/artikel">Artikel</inertia-link></a>
-          <a class="mr-5 hover:border-b-2 border-orange-400 duration-200"><inertia-link href="/fitur">Fitur</inertia-link></a>
+        <div>
+          <inertia-link class="mr-5 hover:border-b-2 border-orange-400 duration-200" href="/">Beranda</inertia-link>
+          <inertia-link class="mr-5 hover:border-b-2 border-orange-400 duration-200" href="/bantuan">Bantuan</inertia-link>
+          <inertia-link class="mr-5 hover:border-b-2 border-orange-400 duration-200" href="/tentang-kami">Tentang Kami</inertia-link>
+          <inertia-link class="mr-5 hover:border-b-2 border-orange-400 duration-200" href="/artikel">Artikel</inertia-link>
+          <inertia-link class="mr-5 hover:border-b-2 border-orange-400 duration-200" href="/fitur">Fitur</inertia-link>
           <inertia-link href="/posts" id="secButton">
             <button class="border border-[#073231] rounded-lg px-7 py-2 mr-3 ml-3 hover:bg-[#073231] hover:text-white">English</button>
           </inertia-link>
@@ -41,11 +41,11 @@
             <button class="rounded-lg px-5 py-2 bg-white text-sm font-semibold">Admin Site</button>
           </inertia-link>
         </li>
-        <li class="py-3"><inertia-link href="/" class="text-white py-3">Beranda</inertia-link></li>
-        <li class="text-white py-3"><inertia-link href="/bantuan" class="text-white py-3">Bantuan</inertia-link></li>
-        <li class="text-white py-3"><inertia-link href="/tentang-kami" class="text-white py-3">Tentang Kami</inertia-link></li>
-        <li class="text-white py-3"><inertia-link href="/artikel" class="text-white py-3">Artikel</inertia-link></li>
-        <li class="text-white py-3"><inertia-link href="/fitur" class="text-white py-3">Fitur</inertia-link></li>
+        <li class="py-3"><inertia-link href="/" :class=" $page.url === '/' ? 'font-semibold text-white py-3' : 'text-white py-3'">Beranda</inertia-link></li>
+        <li class="py-3"><inertia-link href="/bantuan" :class=" $page.url === '/bantuan' ? 'font-semibold text-white py-3' : 'text-white py-3'">Bantuan</inertia-link></li>
+        <li class="py-3"><inertia-link href="/tentang-kami" :class=" $page.url === '/tentang-kami' ? 'font-semibold text-white py-3' : 'text-white py-3'">Tentang Kami</inertia-link></li>
+        <li class="py-3"><inertia-link href="/artikel" :class=" $page.url === '/artikel' ? 'font-semibold text-white py-3' : 'text-white py-3'">Artikel</inertia-link></li>
+        <li class="py-3"><inertia-link href="/fitur" :class=" $page.url === '/fitur' ? 'font-semibold text-white py-3' : 'text-white py-3'">Fitur</inertia-link></li>
         <li class="py-5">
           <button class="rounded-lg px-7 py-2 text-sm font-semibold bg-black text-white border border-white">English</button>
         </li>

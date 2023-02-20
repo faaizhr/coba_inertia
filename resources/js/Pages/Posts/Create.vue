@@ -4,7 +4,7 @@
       <div class="">
           <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
               <h1 class="text-3xl font-bold text-center md:text-left mb-5">TAMBAH ARTIKEL</h1>
-              <form @submit.prevent="storePost" enctype="multipart/form-data">
+              <form @submit.prevent="storePost">
               <div class="bg-white p-5 rounded-xl">
                 <table class="bg-white min-w-full table-auto">
                     <tr class="">
