@@ -2,7 +2,7 @@
   
       <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
         <div class="py-1 text-sm">
-         <p><inertia-link to="/">Beranda </inertia-link>> <b>Artikel</b></p>
+         <p><inertia-link href="/">Beranda </inertia-link>> <b>Artikel</b></p>
         </div>
         <div class="mb-20">
 
@@ -86,41 +86,6 @@
                   </inertia-link>
                 </div>
                 <div class="pt-3">
-                  <!-- <button v-if="post.category == 'Sleep'" class="bg-green-500 px-5 py-1 text-white">
-                    {{ post.category }}
-                  </button> -->
-                  <div class="flex justify-end">
-                    <!-- <inertia-link href="/category"></inertia-link> -->
-                    <button 
-                      v-if="(post.category == 'Diet Program')"
-                      class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button 
-                      v-else-if="(post.category == 'Sleep')"
-                      class="text-white bg-amber-700 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button 
-                      v-else-if="(post.category == 'Healthy Eating')"
-                      class="text-white bg-teal-600 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button 
-                      v-else-if="(post.category == 'Mindfullness & Stress')"
-                      class="text-white bg-orange-700 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button 
-                      v-else-if="(post.category == 'Weight Management')"
-                      class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button 
-                      v-else-if="(post.category == 'Active Lifestyle')"
-                      class="text-white bg-emerald-700 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button 
-                      v-else-if="(post.category == 'Cardiovascular')"
-                      class="text-white bg-cyan-600 px-4 py-1 rounded text-xs"  
-                    >{{ post.category }}</button>
-                    <button v-else class="text-white bg-violet-600 px-4 py-1 rounded text-xs">Unknown</button>
-                  </div>
                   <div class="mt-2">
                     <inertia-link :href="`/artikel/${pos.id}`" class="">
                       <h6 class="my-3 text-lg font-semibold  text-white capitalize">{{ pos.title }}</h6>

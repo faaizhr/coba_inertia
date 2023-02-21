@@ -110,7 +110,7 @@
   </div>
 
   <div class="mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mt-20">
-    <h2 class="text-4xl font-bold text text-[#073231] text-center">Apa Kata Mereka?</h2>
+    <h2 class="text-5xl font-bold text text-[#073231] text-center">Apa Kata Mereka?</h2>
     <div v-for="feedback in feedback.filter(el => el.id == this.getFeedbackId)">
       <div class="w-full border border-gray-400 rounded-2xl mt-20 p-10 min-h-96">
         <img class="mx-auto" src="https://prodiadigital.com/assets/images/quote.svg"/>
@@ -150,7 +150,7 @@
 
   <div class="mt-28 mx-auto px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96">
     <p class="text-center text-lg">ARTIKEL</p>
-    <h2 class="font-bold text-3xl text-[#073231] text-center mt-2">Bacaan Untukmu</h2>
+    <h2 class="font-bold text-5xl text-[#073231] text-center mt-2">Bacaan Untukmu</h2>
     <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10">
       <BasicCardHome v-for="post in postsDESC.slice(0, 3)" 
         :key="post.id"

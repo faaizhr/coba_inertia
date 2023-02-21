@@ -1,7 +1,7 @@
 
 <template>
     <div class=" px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto py-1 text-sm">
-     <p><inertia-link href="/posts">Beranda </inertia-link>> <b>Artikel</b> > <b class="capitalize">{{ joinTable.title }}</b></p>
+     <p><inertia-link href="/">Beranda </inertia-link>> <inertia-link href="/artikel">Artikel</inertia-link> > <b class="capitalize">{{ joinTable.title }}</b></p>
     </div>
     <div class="px-6 sm:px-8 md:px-8 xl:px-56 2xl:px-96 mx-auto my-20 grid grid-cols-1 md:grid-cols-9">
 
@@ -43,30 +43,37 @@
           <div class="flex justify-start md:justify-end gap-5">
             <div v-for="cat in joinTable.category">
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-if="(cat.category == 'Diet Program')" 
                 class="text-white bg-green-500 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0 "
               >{{ cat.category }}</button>
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-else-if="(cat.category == 'Sleep')"
                 class="text-white bg-amber-700 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0"  
               >{{ cat.category }}</button>
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-else-if="(cat.category == 'Healthy Eating')"
                 class="text-white bg-teal-600 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0"  
               >{{ cat.category }}</button>
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-else-if="(cat.category == 'Mindfullness & Stress')"
                 class="text-white bg-orange-700 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0"  
               >{{ cat.category }}</button>
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-else-if="(cat.category == 'Weight Management')"
                 class="text-white bg-red-700 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0"  
               >{{ cat.category }}</button>
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-else-if="(cat.category == 'Active Lifestyle')"
                 class="text-white bg-emerald-700 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0"  
               >{{ cat.category }}</button>
               <button 
+                @click="$inertia.get(`/category/${cat.slug}`)"
                 v-else-if="(cat.category == 'Cardiovascular')"
                 class="text-white bg-cyan-600 px-4 py-1 rounded text-xs mt-3 mb-2 md:mt-0"  
               >{{ cat.category }}</button>

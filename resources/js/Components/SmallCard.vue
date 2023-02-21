@@ -11,31 +11,38 @@
         <div class="grid grid-cols-1 md:grid-cols-2">
           <p class="text-sm md:text-base">{{ getMonthName }} {{ getDay }}, {{ getYear }}</p>
           <div v-if="item.category.length > 0" class="mt-2 md:mt-0 mr-0 ml-0 md:ml-auto md:mr-0">
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-if="(item.category[0].category == 'Diet Program')"
               class="text-white bg-green-500 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-else-if="(item.category[0].category == 'Sleep')"
               class="text-white bg-amber-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-else-if="(item.category[0].category == 'Healthy Eating')"
               class="text-white bg-teal-600 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-else-if="(item.category[0].category == 'Mindfullness & Stress')"
               class="text-white bg-orange-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-else-if="(item.category[0].category == 'Weight Management')"
               class="text-white bg-red-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-else-if="(item.category[0].category == 'Active Lifestyle')"
               class="text-white bg-emerald-700 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>
-            <button 
+            <button
+              @click="$inertia.get(`/category/${item.category[0].slug}`)" 
               v-else-if="(item.category[0].category == 'Cardiovascular')"
               class="text-white bg-cyan-600 px-4 py-1 rounded text-xs"  
             >{{ item.category[0].category }}</button>

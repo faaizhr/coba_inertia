@@ -54,12 +54,14 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $joinTable = Post::with('category')->find($id);
+        $category = Category::with('posts')->where('slug', '=', $slug)->get();
+        $joinTable = Post::with('category')->get();
 
         return Inertia::render('Category/Detail', [
             'joinTable'=>$joinTable,
+            'category'=>$category,
         ]);
     }
 

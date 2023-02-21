@@ -6,6 +6,9 @@
               <h1 class="text-3xl font-bold text-center md:text-left mb-5">EDIT POST</h1>
               <form @submit.prevent="updatePost" enctype="multipart/form-data">
               <div class="bg-white p-5 rounded-xl">
+                <inertia-link href="/posts">
+                    <font-awesome-icon icon="fa-chevron-left" class="mb-5 fa-xl"/>
+                </inertia-link>
                 <table class="bg-white min-w-full table-auto">
                     <tr class="">
                         <td class="text-lg font-semibold pb-5 pr-5">JUDUL ARTIKEL</td>
@@ -95,12 +98,19 @@
 
   import { reactive } from 'vue'
   import { Inertia } from '@inertiajs/inertia'
+  import { Link } from '@inertiajs/inertia-vue3';
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 //   import { router } from '@inertiajs/vue3'
 
   export default {
 
       //layout
       layout: LayoutApp,
+      components: {
+        "inertia-link": Link,
+        FontAwesomeIcon
+    },
+
 
       data() {
         return {
