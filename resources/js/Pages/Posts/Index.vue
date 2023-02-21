@@ -17,6 +17,8 @@
         <div class="my-10 grid grid-cols-1 md:grid-cols-2 mb-10 items-center">
           <h1 class="text-3xl font-bold text-center md:text-left mb-5 md:mb-0">Kelola Artikel</h1>
           <inertia-link href="/posts/create" class="mx-auto md:ml-auto md:mr-0"><button class="bg-black text-white w-fit py-2 px-10 rounded-xl  hover:bg-white hover:text-black duration-200 text-lg font-semibold">Tambah Artikel</button></inertia-link>
+          <div></div>
+          <input type="text" placeholder="CARI..." name="seacrhbar" @change="handleChangeSearch" class="rounded-xl px-4 focus:outline-none h-12 border border-green-900 bg-transparent md:ml-auto placeholder:text-black uppercase w-full md:w-4/6 mt-10"/>
         </div>
 
         <div v-if="$page.props.flash.message" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-5" role="alert">
@@ -39,7 +41,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="post in joinTable" :key="post.id" class="hover:bg-slate-100">
+                <tr v-for="post in joinTable.filter(posts => posts.title.includes(this.searchbar))" :key="post.id" class="hover:bg-slate-100">
                   <td class="py-2 px-2">
                     <inertia-link :href="`/posts/${post.id}`" class="font-semibold">
                       {{ post.id }}.
@@ -127,12 +129,8 @@
     
     data() {
         return {
-        dropDown: false,
-        // number: [
-        //   x = 1,
-        //   y = 2,
-        //   jumlah = null
-        // ]
+          dropDown: false,  
+          searchbar: '',  
         };
     },
     methods: {
@@ -146,6 +144,10 @@
                 this.dropDown = false
             }
         },
+        handleChangeSearch(e) {
+            this.searchbar = e.target.value.toLowerCase()
+            console.log(this.searchbar)
+        }
     },
 
     setup() {
